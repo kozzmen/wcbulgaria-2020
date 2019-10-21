@@ -1935,8 +1935,9 @@ object {
 }
 .widget #subscribe-email {
   flex: 1 1 100%;
+  margin: 0;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .widget #subscribe-email {
     flex: 0 1 60%;
   }
@@ -1944,7 +1945,7 @@ object {
 .widget #subscribe-email input {
   width: 100%;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .widget #subscribe-email input {
     width: inherit;
   }
@@ -1952,7 +1953,7 @@ object {
 .widget #subscribe-submit {
   margin: 0 auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .widget #subscribe-submit {
     flex: 0 1 30%;
   }
