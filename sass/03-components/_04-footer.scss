@@ -1,0 +1,32 @@
+/*_______ Footer _______*/
+.site-footer{
+	width: 100%;
+	padding: 3rem 0;
+}
+.site-info{
+	text-align: center;
+	p{
+		font-size: .75rem;
+		color: $color__primary;
+	}
+	a{
+		color: $color__primary;
+		padding: 0;
+	}
+}
+
+.site-info-generator{
+	display: none;
+}
+.site-info-network{
+	display: inline-block;
+	vertical-align: middle;
+	width: 2rem;
+	height: 2rem;
+	text-indent: -9999px;
+	background-image: url(https://2020.europe.wordcamp.org/files/2019/10/wordpress-icon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	margin: 0 auto;
+}

@@ -1,0 +1,124 @@
+/*!
+Theme Name: CampSite 2017
+Theme URI: http://underscores.me/
+Author: Bernhard Kau
+Author URI: https://kau-boys.com
+Description: A new WordCamp Base Theme. For a quicker start, check out the <a href="https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/">style guide</a>.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wordcamporg
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+CampSite 2017 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+	## Mixins
+	## Colors
+	## Fonts
+	## Structure
+	## Columns
+
+# Normalize
+
+# Base
+	## Accessibility
+	## Elements
+	## Alignments
+	## Typography
+	## Forms
+	## Buttons
+	## Galleries
+	## Media
+	## Posts and pages
+	## Comments
+	## Infinite-scroll
+
+# Components
+	## General layout
+	## Header
+	## Navigation
+	## Sidebar
+	## Footer
+	## Widgets
+
+# Layout
+	## Content - Sidebar
+	## Sidebar - Content
+	## No Sidebar
+	## Full width
+
+# Templates
+	## Post feed
+	## Single
+	## Custom blocks
+	## Contact form
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+@import "01-variables/01-mixins";
+@import "01-variables/02-colors";
+@import "01-variables/03-fonts";
+@import "01-variables/04-structure";
+@import "01-variables/05-columns";
+
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "02-base/00-normalize";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "02-base/00-normalize";
+@import "02-base/01-accessibility";
+@import "02-base/02-elements";
+@import "02-base/03-alignments";
+@import "02-base/04-typography";
+@import "02-base/05-forms";
+@import "02-base/06-buttons";
+@import "02-base/07-galleries";
+@import "02-base/08-media";
+@import "02-base/09-posts-and-pages";
+@import "02-base/10-comments";
+@import "02-base/11-infinite-scroll";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "03-components/00-general-layout";
+@import "03-components/01-header";
+@import "03-components/02-navigation";
+@import "03-components/03-sidebar";
+@import "03-components/04-footer";
+@import "03-components/05-widgets";
+@import "03-components/06-blocks";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+// @import "04-layout/01-content-sidebar";
+// @import "04-layout/02-sidebar-content";
+@import "04-layout/03-no-sidebar";
+@import "04-layout/04-full-width";
+
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+@import "05-templates/01-blog-feed";
+@import "05-templates/02-single";
+@import "05-templates/03-custom-blocks";
+@import "05-templates/04-contact-form";

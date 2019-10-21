@@ -1,0 +1,58 @@
+button,
+.more-link,
+.wp-block-button__link,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	position: relative;
+	display: table;
+	width: auto;
+	font-family: $font__secondary;
+	font-weight: 800;
+	font-size: 1.25rem;
+	line-height: 100%;
+	color: $color__primary;
+	text-align: center;
+	text-decoration: none;
+	margin: 1rem auto;
+	padding: 1rem;
+	background-color: white;
+	border: .25rem solid $color__primary;
+	border-radius: 0;
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+	@media (min-width: 480px){
+		font-size: 1.5rem;
+		padding: 1rem 2rem;
+	}
+	&:hover{
+		color: white;
+		background-color: $color__primary;
+	}
+	&:active{
+		background-color: $color__grey;
+	}
+	&:focus{
+		outline: 1px solid $color__secondary;
+	}
+	&.invert{
+		color: white;
+		background-color: $color__primary;
+	}
+}
+
+.wp-block-button{
+	&.anchor-link{
+		a:after{
+			content: ' ';
+			font-family: 'dashicons';
+			vertical-align: middle;
+		}
+	}
+}
+
+.edit-link {
+	display: block;
+	font-size: 1rem;
+	text-decoration: underline;
+}

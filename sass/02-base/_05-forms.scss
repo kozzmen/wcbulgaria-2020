@@ -1,0 +1,111 @@
+fieldset{
+	border: none;
+	padding: 0;
+	margin: 0 auto 1rem;
+}
+
+label{
+	display: block;
+	font-weight: 800;
+	font-size: 1.25rem;
+	line-height: 120%;
+	text-align: left;
+	color: primary;
+	margin-bottom: .25rem;
+}
+
+input,
+select,
+textarea {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 100%;
+	color: $color__primary;
+	padding: .75rem;
+	background-color: white;
+	border: none;
+	border: .125rem solid $color__primary;
+	outline: none;
+	resize: none;
+	@media (min-width: 480px){
+		font-size: 1.25rem;
+	}
+	&:focus{
+		border-color: $color__text-input-focus;
+	}
+	&::placeholder{
+		color: gris_claro;
+	}
+}
+
+input[type="checkbox"]{
+	position: relative;
+	min-width: 1rem;
+	width: 1rem;
+	height: 1rem;
+	min-height: auto;
+	padding: 0;
+	overflow: hidden;
+	&:checked{
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			font-family: 'dashicons';
+			font-size: 1rem;
+		}
+	}
+	&:focus{
+		outline: 1px solid secondary;
+	}
+}
+
+input[type="radio"]{
+	min-width: 1rem;
+	width: 1rem;
+	height: 1rem;
+	padding: 0;
+	border-radius: 100%;
+	margin-bottom: 0;
+	&:checked{
+		position: relative;
+		background-color: secondary;
+	}
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label{
+	margin-left: 1rem;
+	margin-bottom: 0;
+}
+
+select {
+	position: relative;
+    max-width: 100%; 
+	padding-right: 2rem;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjgzIDE2LjQybDkuMTcgOS4xNyA5LjE3LTkuMTcgMi44MyAyLjgzLTEyIDEyLTEyLTEyeiIvPjxwYXRoIGQ9Ik0wLS43NWg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PC9zdmc+ ');
+    background-repeat: no-repeat;
+    background-position: right .5rem top 50%;
+    background-size: 1.5rem auto;
+	border-radius: 0;
+	option{
+		&[value=""]
+		&:first-child{
+			color: $color__grey;
+		}
+	}
+	&:invalid{
+		color: $color__grey;
+	}
+}
+
+textarea {
+	width: 100%;
+}

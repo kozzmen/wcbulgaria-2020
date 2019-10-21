@@ -1,0 +1,179 @@
+/*_______ Main navigation _______*/
+.main-navigation {
+	display: block;
+	width: 100%;
+	order: 2;
+	margin: 1rem auto;
+	.menu{
+		display:flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		list-style: none;
+		margin: 0;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 100vw;
+		height: 100vh;
+		padding: 2rem;
+		background-color: rgba(27,27,27,.8);
+		z-index: 1;
+		@extend %transition;
+		@media (min-width: 768px){
+			position: initial;
+			width: initial;
+			height: initial;
+			flex-flow: row wrap;
+			padding:0;
+			background-color: transparent;
+		}
+		.menu-item{
+			font-family: $font__secondary;
+			font-weight: 700;
+			font-size: 1.5rem;
+			line-height: 100%;
+			text-transform: uppercase;
+			padding: .5rem;
+			margin: 0 0 1rem;
+			@media (min-width: 768px){
+				flex: 0 0 auto;
+				font-size: 1.25rem;
+				padding: .25rem 0;
+				margin: 0 1rem;
+				border-bottom: .25rem solid transparent;
+			}
+			a{
+				line-height: 100%;
+				color: white;
+				@media (min-width: 768px){
+					color: initial;
+				}
+				&:hover{
+					color: $color__grey_light;
+				}
+			}
+			&.current-menu-item{
+				background-color: white;
+				a{
+					color: $color__primary;
+				}
+				@media (min-width: 768px){
+					border-color: $color__primary;
+				}	
+			}
+		}
+	}
+
+	li {
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/*_______ Mobile navigation _______*/
+.menu-toggle{
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	display: block;
+	width: 2.5rem;
+	height: 2rem;
+	font-size: 0;
+	padding:0;
+	background-color: transparent !important;
+	border:none;
+	margin: 0;
+	z-index: 2;
+	@extend %transition;
+	@media (min-width: 768px) {
+		display: none;
+	}
+	&:before{
+	    content: "";
+		position: absolute;
+		top: 0;
+		left: .25rem;
+		font-family: 'dashicons';
+		font-size: 2rem;
+		line-height: 2rem;
+		color: $color__primary;
+	}
+	&:focus{
+		outline: 0;
+	}
+}
+
+.main-navigation{
+	&.toggled-on{
+		.menu{
+			right: 0;
+		}
+		.menu-toggle{
+			position: fixed;
+			&:before{
+				content: "";
+				left: -.25rem;
+				font-size: 3rem;
+				color: white;
+			}
+		}
+	}
+}
+
+/*_______ Post navigation _______*/
+.posts-navigation,
+.post-navigation {
+	.site-main & {
+		@extend %inner;
+		padding: 4rem 2rem;
+		overflow: hidden;
+	}
+	.nav-links{
+		a{
+			font-weight: 400;
+			font-family: $font__secondary;
+			line-height: 100%;
+			padding-bottom: .125rem;
+			border-bottom: .125rem solid;
+		}
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+		a:before{
+			content: " ";
+			font-family: 'dashicons';
+			font-weight: 800;
+			vertical-align: middle;
+		}
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+		a:after{
+			content: " ";
+			font-family: 'dashicons';
+			vertical-align: middle;
+		}
+	}
+}
+
+/*_______ Comments navigation _______*/
+.comment-navigation{}

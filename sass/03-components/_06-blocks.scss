@@ -1,0 +1,74 @@
+/*_______ Common Blocks _______*/
+.wp-block-verse{
+	font-family: $font__secondary;
+	font-size: 1.25rem;
+}
+
+.wp-block-latest-posts{
+	list-style: none;
+	margin-bottom: 4rem;
+	li{
+		font-family: $font__secondary;
+		font-weight: 800;
+		font-size: 2rem;
+		line-height: 120%;
+		border-left: .25rem solid;
+		padding-left: 1rem;
+		margin-bottom: 2rem;
+	}
+	&.is-grid{
+		li{
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.wp-block-quote,
+.wp-block-pullquote{
+	position: relative;
+	padding-left: 2rem;
+	margin-bottom: 3rem;
+	p{
+		font-family: $font__secondary;
+		font-style: italic;
+		font-size: 1.5rem;
+		&:before{
+			content: '\201F';
+			font-size: 4rem;
+			line-height: 4rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	cite{
+		font-style: normal;
+	}
+	&.is-large{
+		padding-left: 2.5rem;
+		margin-bottom: 3rem;
+		p{
+			font-size: 2rem;
+		}
+	}
+}
+.wp-block-pullquote{
+	padding: 2rem;
+}
+
+.wp-block-cover-image-text,
+.wp-block-cover__inner-container{
+	font-family: $font__secondary;
+}
+
+.wp-block-media-text {
+    align-items: self-start;
+	grid-template-columns: 40% auto;
+	margin-bottom: 8rem;
+	&.has-media-on-the-right{
+		grid-template-columns: auto 40%;
+	}
+	.wp-block-media-text__media{
+		margin-bottom: 2rem;
+	}
+}

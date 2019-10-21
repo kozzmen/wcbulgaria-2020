@@ -1,0 +1,46 @@
+/*_______ Blog feed (Posts page, archives) _______*/
+.hfeed{
+	.post{
+		@extend %inner-tiny;
+		@extend %inner-padding;
+		position:relative;
+		margin-bottom: 4rem;
+		@extend %transition;
+		.entry-header{
+			margin-bottom: 1rem;
+		}
+		.entry-image{
+			img{
+				filter: grayscale(100%);
+				@extend %transition;
+			}
+		}
+		.entry-title{
+			display:block;
+			margin-bottom: .5rem;
+			&:hover{
+				a{
+					color: $color__primary;
+					text-decoration: underline;
+				}
+			}
+		}
+		.entry-meta{
+			font-size: 80%;
+		}
+		.more-link{
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+		.entry-footer{
+			display:none;
+		}
+		&:hover{
+			.entry-image{
+				img{
+					filter: grayscale(0);
+				}
+			}
+		}
+	}
+}

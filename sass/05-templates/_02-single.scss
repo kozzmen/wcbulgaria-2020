@@ -1,0 +1,61 @@
+/*_______ Single view of post and page _______*/
+.entry-title{
+	font-size: 2.75rem;
+	@media (min-width: 480px){
+		font-size: 4rem;
+	}
+}
+
+.single{
+	.entry-header{
+		@extend %inner;
+		@extend %inner-padding;
+		margin-bottom: 4rem;
+	}
+	.entry-title,
+	.entry-meta{
+		@extend %inner-tiny;
+	}
+}
+
+.page .entry-header,
+.hfeed .page-header{
+	@extend %inner-tiny;
+	@extend %inner-padding;
+	margin-bottom: 4rem;
+	padding-left: 1rem;
+	border-left: .5rem solid;
+	.entry-title{
+		font-size: 2.5rem;
+		margin-bottom: 0;
+	}
+}
+
+.single,
+.page{
+	.entry-content{
+		> *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide){
+			@extend %inner-tiny;
+			@extend %inner-padding;
+		}
+	}
+	.entry-footer{
+		@extend %inner;
+		@extend %inner-padding;
+	}
+}
+
+.tags-links a {
+    display: inline-block;
+    line-height: 100%;
+    background-color: $color__grey_minimus;
+    padding: .25rem .5rem;
+    margin-bottom: .5rem;
+    &:before {
+		content: "\f323";
+		font-family: 'dashicons';
+		vertical-align: middle;
+		margin-right: .25rem;
+		font-size: .875rem;
+	}
+}
