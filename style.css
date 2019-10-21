@@ -1945,11 +1945,6 @@ object {
 .widget #subscribe-email input {
   width: 100%;
 }
-@media (min-width: 768px) {
-  .widget #subscribe-email input {
-    width: inherit;
-  }
-}
 .widget #subscribe-submit {
   margin: 0 auto;
 }
