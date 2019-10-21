@@ -1911,7 +1911,7 @@ object {
 }
 
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 2rem;
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
@@ -1934,10 +1934,28 @@ object {
   flex: 1 1 100%;
 }
 .widget #subscribe-email {
-  flex: 0 1 60%;
+  flex: 1 1 100%;
+}
+@media (min-width: 480px) {
+  .widget #subscribe-email {
+    flex: 0 1 60%;
+  }
+}
+.widget #subscribe-email input {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .widget #subscribe-email input {
+    width: inherit;
+  }
 }
 .widget #subscribe-submit {
-  flex: 0 1 30%;
+  margin: 0 auto;
+}
+@media (min-width: 480px) {
+  .widget #subscribe-submit {
+    flex: 0 1 30%;
+  }
 }
 
 /*_______ Common Blocks _______*/
