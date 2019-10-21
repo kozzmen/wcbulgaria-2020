@@ -1009,6 +1009,7 @@ p {
 }
 p a {
   text-decoration: underline;
+  word-break: break-word;
 }
 
 dfn, cite, em, i {
