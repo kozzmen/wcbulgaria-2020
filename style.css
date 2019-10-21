@@ -77,11 +77,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
 }
 
-.comments-area, .hfeed .post, .single .entry-title,
-.single .entry-meta, .page .entry-header,
-.hfeed .page-header, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
-.page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .alignwide, .site-header, .site-main .posts-navigation,
-.site-main .post-navigation, #secondary, .jetpack_subscription_widget, .single .entry-header, .single .entry-footer,
+.alignwide, .site-header, .site-main .posts-navigation,
+.site-main .post-navigation, #secondary, .single .entry-header, .single .entry-footer,
 .page .entry-footer, .block-imagecontents,
 .block-contentsimage, .block-imagecontents-content, .block-numbers, .contact-form {
   max-width: 100%;
@@ -89,25 +86,32 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  .comments-area, .hfeed .post, .single .entry-title,
-  .single .entry-meta, .page .entry-header,
-  .hfeed .page-header, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
-  .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .alignwide, .site-header, .site-main .posts-navigation,
-  .site-main .post-navigation, #secondary, .jetpack_subscription_widget, .single .entry-header, .single .entry-footer,
+  .alignwide, .site-header, .site-main .posts-navigation,
+  .site-main .post-navigation, #secondary, .single .entry-header, .single .entry-footer,
   .page .entry-footer, .block-imagecontents,
   .block-contentsimage, .block-imagecontents-content, .block-numbers, .contact-form {
     max-width: 1200px;
   }
 }
 
-.comments-area, .hfeed .post, .single .entry-title,
+.comments-area, .widget .jetpack_subscription_widget, .hfeed .post, .single .entry-title,
 .single .entry-meta, .page .entry-header,
 .hfeed .page-header, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide) {
-  max-width: 720px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .comments-area, .widget .jetpack_subscription_widget, .hfeed .post, .single .entry-title,
+  .single .entry-meta, .page .entry-header,
+  .hfeed .page-header, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
+  .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide) {
+    max-width: 720px;
+  }
 }
 
-.comments-area, .jetpack_subscription_widget, .hfeed .post, .single .entry-header, .page .entry-header,
+.comments-area, .widget .jetpack_subscription_widget, .hfeed .post, .single .entry-header, .page .entry-header,
 .hfeed .page-header, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
 .page .entry-footer, .block-imagecontents-content, .block-numbers, .contact-form {
@@ -115,7 +119,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   margin-right: 1rem;
 }
 @media (min-width: 768px) {
-  .comments-area, .jetpack_subscription_widget, .hfeed .post, .single .entry-header, .page .entry-header,
+  .comments-area, .widget .jetpack_subscription_widget, .hfeed .post, .single .entry-header, .page .entry-header,
   .hfeed .page-header, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
   .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
   .page .entry-footer, .block-imagecontents-content, .block-numbers, .contact-form {
@@ -1882,10 +1886,10 @@ object {
 }
 
 /*_______ Suscription widget _______*/
-.jetpack_subscription_widget {
+.widget .jetpack_subscription_widget {
   margin-bottom: 4rem;
 }
-.jetpack_subscription_widget button {
+.widget .jetpack_subscription_widget button {
   margin-left: 0;
 }
 
