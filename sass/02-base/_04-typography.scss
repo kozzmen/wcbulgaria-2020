@@ -67,12 +67,12 @@ blockquote {
 }
 
 address {
-	text-style: italic;
+	font-style: italic;
 	margin: 0 0 1.5rem;
 }
 
 pre {
-	padding: 1rem;
+	padding: 1.6em;
 	background: $color__background-pre;
 	font-family: $font__pre;
 	@include font-size(0.9375);
@@ -80,7 +80,6 @@ pre {
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
-	padding: 1.6em;
 }
 
 code, kbd, tt, var {
