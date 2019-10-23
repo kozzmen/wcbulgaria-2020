@@ -60,11 +60,7 @@
 		line-height: 100%;
 		text-align: right;
 		text-decoration: none;
-		padding-top: .5rem;
-		padding-bottom: 1rem;
-		padding-left: 1rem;
-		padding-right: .5rem;
-		padding-bottom: .5rem;
+		padding: .5rem .5rem .5rem 1rem;
 		margin: 0;
 		max-width: 100%;
 		overflow: hidden;
@@ -116,7 +112,7 @@
 }
 .wceu-subtitle{
 	font-weight: 400;
-	font-weight: 1.75rem;
+	font-size: 1.75rem;
 	margin-bottom: .5rem;
 }
 .wceu-date{

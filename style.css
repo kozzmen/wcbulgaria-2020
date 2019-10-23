@@ -1021,12 +1021,12 @@ blockquote {
 }
 
 address {
-  text-style: italic;
+  font-style: italic;
   margin: 0 0 1.5rem;
 }
 
 pre {
-  padding: 1rem;
+  padding: 1.6em;
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
@@ -1035,7 +1035,6 @@ pre {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em;
 }
 
 code, kbd, tt, var {
@@ -1182,7 +1181,7 @@ label {
   font-size: 1.25rem;
   line-height: 120%;
   text-align: left;
-  color: primary;
+  color: #272727;
   margin-bottom: .25rem;
 }
 
@@ -1220,7 +1219,7 @@ textarea:focus {
 input::placeholder,
 select::placeholder,
 textarea::placeholder {
-  color: gris_claro;
+  color: #968f88;
 }
 
 input[type="checkbox"] {
@@ -1243,7 +1242,7 @@ input[type="checkbox"]:checked:after {
   font-size: 1rem;
 }
 input[type="checkbox"]:focus {
-  outline: 1px solid secondary;
+  outline: 1px solid #143CA4;
 }
 
 input[type="radio"] {
@@ -1256,7 +1255,7 @@ input[type="radio"] {
 }
 input[type="radio"]:checked {
   position: relative;
-  background-color: secondary;
+  background-color: #143CA4;
 }
 
 input[type="checkbox"] + label,
@@ -1632,11 +1631,7 @@ object {
   line-height: 100%;
   text-align: right;
   text-decoration: none;
-  padding-top: .5rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: .5rem;
-  padding-bottom: .5rem;
+  padding: .5rem .5rem .5rem 1rem;
   margin: 0;
   max-width: 100%;
   overflow: hidden;
@@ -1692,7 +1687,7 @@ object {
 
 .wceu-subtitle {
   font-weight: 400;
-  font-weight: 1.75rem;
+  font-size: 1.75rem;
   margin-bottom: .5rem;
 }
 
