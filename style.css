@@ -1290,6 +1290,7 @@ textarea {
 button,
 .more-link,
 .wp-block-button__link,
+.wp-block-button__link:visited,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -1315,6 +1316,7 @@ input[type="submit"] {
   button,
   .more-link,
   .wp-block-button__link,
+  .wp-block-button__link:visited,
   input[type="button"],
   input[type="reset"],
   input[type="submit"] {
@@ -1325,6 +1327,7 @@ input[type="submit"] {
 button:hover,
 .more-link:hover,
 .wp-block-button__link:hover,
+.wp-block-button__link:visited:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -1334,6 +1337,7 @@ input[type="submit"]:hover {
 button:active,
 .more-link:active,
 .wp-block-button__link:active,
+.wp-block-button__link:visited:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
@@ -1342,6 +1346,7 @@ input[type="submit"]:active {
 button:focus,
 .more-link:focus,
 .wp-block-button__link:focus,
+.wp-block-button__link:visited:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
@@ -1350,6 +1355,7 @@ input[type="submit"]:focus {
 button.invert,
 .more-link.invert,
 .wp-block-button__link.invert,
+.wp-block-button__link:visited.invert,
 input[type="button"].invert,
 input[type="reset"].invert,
 input[type="submit"].invert {
