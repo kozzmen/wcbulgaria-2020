@@ -1155,6 +1155,10 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
+.site-content .posted-on a {
+  display: inline-block;
+}
+
 /*_______ Captions _______*/
 .wp-caption {
   margin-bottom: 1.5em;
