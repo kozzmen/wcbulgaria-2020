@@ -48,6 +48,11 @@ h6{
 	margin: 0 0 1rem;
 }
 
+.big-title {
+	font-size: 2.5rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
 
 /*_______ Typography elements _______*/
 p {
@@ -72,13 +77,13 @@ address {
 }
 
 pre {
-	padding: 1.6em;
-	background: $color__background-pre;
-	font-family: $font__pre;
-	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6em;
 	max-width: 100%;
+	@include font-size(0.9375);
+	font-family: $font__pre;
+	line-height: $font__line-height-pre;
+	padding: 1rem;
+	background: $color__background-pre;
+	margin-bottom: 1.6em;
 	overflow: auto;
 }
 
@@ -107,8 +112,8 @@ ul{
 	list-style: disc;
 	margin: 0;
 	li{
-		margin-bottom: 1rem;
 		padding: 0;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -138,36 +143,43 @@ table {
 }
 
 .wp-block-table{
-	min-width: 95%;
-	max-width: 95% !important;
+	min-width: calc(100% - 2rem);
+	max-width: calc(100% - 2rem) !important;
+	line-height: 100%;
 	text-align: center;
 	margin-bottom: 2rem;
 	border-collapse: collapse;
-	word-break: break-all;
+	word-break: break-word;
 	@media (min-width: 768px){
 		min-width: inherit;
 		max-width: $size__content-tiny !important;
 		word-break: keep-all;
 	}
-	th,
-	thead,
-	tr:first-of-type{
-		color: white;
-		background-color: $color__primary;
-		td{
-			border-color: white;
-			border-top-color: $color__primary;
-			&:first-child{
-				border-left-color: $color__primary;
-			}
-			&:last-child{
-				border-right-color: $color__primary;
+	&.headed-table{
+		tr:first-child{
+			color: white;
+			background-color: $color__primary;
+			td{
+				border-color: white;
+				border-top-color: $color__primary;
+				&:first-child{
+					border-left-color: $color__primary;
+				}
+				&:last-child{
+					border-right-color: $color__primary;
+				}
 			}
 		}
+		td{
+			padding: .5rem;
+			border: 1px solid;
+		}
 	}
-	td{
-		padding: .5rem;
-		border: 1px solid;
+	&.firstcol-bigger{
+		td:first-child {
+			text-align: left;
+			width: 50%;
+		}
 	}
 }
 
@@ -192,14 +204,19 @@ a {
 	}
 }
 
-.site-content a {
+.entry-content a {
 	text-decoration: underline;
 }
 
-.site-content .posted-on a {
+.entry-meta a {
 	display: inline-block;
+	text-decoration: underline;
 }
 
+a.wp-block-button__link,
+a.more-link, .entry-title a {
+	text-decoration: none;
+}
 
 /*_______ Captions _______*/
 .wp-caption {

@@ -1,7 +1,6 @@
 button,
 .more-link,
 .wp-block-button__link,
-.wp-block-button__link:visited,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -25,6 +24,9 @@ input[type="submit"] {
 	@media (min-width: 480px){
 		font-size: 1.5rem;
 		padding: 1rem 2rem;
+	}
+	&:visited{
+		color: $color__primary;
 	}
 	&:hover{
 		color: white;
