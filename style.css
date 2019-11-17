@@ -2258,7 +2258,11 @@ object {
 .hfeed .post .entry-header {
   margin-bottom: 1rem;
 }
+.hfeed .post .entry-image {
+  margin-bottom: .5rem;
+}
 .hfeed .post .entry-image img {
+  display: block;
   filter: grayscale(100%);
 }
 .hfeed .post .entry-title {
@@ -2343,6 +2347,10 @@ object {
   }
 }
 
+.wp-block-column:not(.block-imagecontents-image) {
+  padding: 0 1rem;
+}
+
 .block-imagecontents-preheading {
   font-weight: 400;
   font-size: 1.25rem;
@@ -2405,6 +2413,20 @@ object {
   font-weight: 500;
   font-size: 1.5rem;
   margin: 0;
+}
+
+/*_______ Big separators _______*/
+.wp-block-separator.is-style-wide {
+  margin: 8rem 0;
+}
+
+/*_______ Gray Background _______*/
+.gray-bg {
+  background-color: #eee;
+  padding-top: 1rem;
+  padding-bottom: .2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 /*_______ Contact form _______*/
@@ -2613,12 +2635,12 @@ object {
   outline: none;
   border: 0;
 }
-.tix-payment-method .tix-tab-selected {
+.tix-payment-method .tix-payment-tab .tix-tab-selected {
   font-weight: 700;
   color: white;
   padding: .5rem !important;
   background-color: #272727;
-  border-bottom: 0;
+  border: none;
   outline: none;
 }
 
@@ -2647,13 +2669,14 @@ object {
   padding: 0;
 }
 
-#tix .tix-checkout-button {
+#tix .tix-submit .tix-checkout-button {
   display: block;
-  float: none !important;
-  text-transform: none !important;
-  letter-spacing: 0 !important;
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-  border: .25rem solid !important;
-  border-radius: 0 !important;
+  float: none;
+  text-transform: none;
+  letter-spacing: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: .25rem solid;
+  border-radius: 0;
+  margin-top: 4rem;
 }

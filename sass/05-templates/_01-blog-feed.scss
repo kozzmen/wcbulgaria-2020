@@ -10,7 +10,9 @@
 			margin-bottom: 1rem;
 		}
 		.entry-image{
+			margin-bottom: .5rem;
 			img{
+				display:block;
 				filter: grayscale(100%);
 				@extend %transition;
 			}

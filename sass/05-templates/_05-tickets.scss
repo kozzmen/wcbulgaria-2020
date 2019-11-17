@@ -153,14 +153,14 @@
 			outline: none;
 			border: 0;
 		}
-	}
-	.tix-tab-selected {
-		font-weight: 700;
-		color: white;
-		padding: .5rem !important;
-		background-color: $color__primary;
-		border-bottom: 0;
-		outline: none;
+		.tix-tab-selected {
+			font-weight: 700;
+			color: white;
+			padding: .5rem !important;
+			background-color: $color__primary;
+			border: none;
+			outline: none;
+		}
 	}
 }
 
@@ -189,13 +189,14 @@
 	}
 }
 
-#tix .tix-checkout-button {
+#tix .tix-submit .tix-checkout-button {
     display: block;
-    float: none !important;
-    text-transform: none !important;
-    letter-spacing: 0 !important;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-    border: .25rem solid !important;
-    border-radius: 0 !important;
+    float: none;
+    text-transform: none;
+    letter-spacing: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: .25rem solid;
+    border-radius: 0;
+    margin-top: 4rem;
 }

@@ -23,6 +23,11 @@
 		flex: 0 0 55%;
 	}
 }
+
+.wp-block-column:not(.block-imagecontents-image) {
+	padding: 0 1rem;
+}
+
 .block-imagecontents-preheading{
 	font-weight: 400;
 	font-size: 1.25rem;
@@ -77,4 +82,18 @@
 	font-weight: 500;
 	font-size: 1.5rem;
 	margin: 0;
+}
+
+/*_______ Big separators _______*/
+.wp-block-separator.is-style-wide {
+	margin: 8rem 0;
+}
+
+/*_______ Gray Background _______*/
+.gray-bg {
+	background-color: #eee;
+	padding-top: 1rem;
+	padding-bottom: .2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
 }
