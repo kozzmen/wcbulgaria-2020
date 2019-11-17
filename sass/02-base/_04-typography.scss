@@ -148,11 +148,21 @@ table {
 	max-width: 100%;
 	width: 100%;
 	margin: 0 0 2rem;
-	text-align: center;
+	text-align: left;
+	border-collapse: collapse;
 	thead{
 		font-size: .875rem;
-		@media (min-width: 768px){
-			font-size: 1.25rem;
+		text-align: left;
+		border-bottom: .125rem solid $color__primary;
+		th{
+			padding: .25rem;
+		}
+		+ tbody{
+			&:before{
+				content: '';
+				display: block;
+				padding-top: 1rem;
+			}
 		}
 	}
 }

@@ -1144,15 +1144,21 @@ table {
   max-width: 100%;
   width: 100%;
   margin: 0 0 2rem;
-  text-align: center;
+  text-align: left;
+  border-collapse: collapse;
 }
 table thead {
   font-size: .875rem;
+  text-align: left;
+  border-bottom: 0.125rem solid #272727;
 }
-@media (min-width: 768px) {
-  table thead {
-    font-size: 1.25rem;
-  }
+table thead th {
+  padding: .25rem;
+}
+table thead + tbody:before {
+  content: '';
+  display: block;
+  padding-top: 1rem;
 }
 
 .wp-block-table {
@@ -2489,6 +2495,7 @@ object {
   .tix_tickets_table:not(.tix-attendee-form) thead, .tix_tickets_table:not(.tix-attendee-form) tbody, .tix_tickets_table:not(.tix-attendee-form) th, .tix_tickets_table:not(.tix-attendee-form) td, .tix_tickets_table:not(.tix-attendee-form) tr {
     display: block;
     max-width: 100%;
+    border: none;
   }
   .tix_tickets_table:not(.tix-attendee-form) thead tr {
     position: absolute;
@@ -2522,11 +2529,14 @@ object {
 }
 
 .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) {
-  max-width: 100%;
-  display: block;
-  width: 99%;
+  text-align: left;
 }
 @media (max-width: 480px) {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) {
+    max-width: 100%;
+    display: block;
+    width: 99%;
+  }
   .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) tr {
     margin-bottom: 4rem;
   }
@@ -2554,6 +2564,10 @@ object {
   .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(4):before {
     content: "Quantity:";
   }
+}
+
+.tix-js input[type="submit"] {
+  float: none !important;
 }
 
 /*_______ Order Sumary _______*/
