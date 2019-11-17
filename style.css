@@ -1155,7 +1155,7 @@ table thead {
 table thead th {
   padding: .25rem;
 }
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   table thead + tbody:before {
     content: '';
     display: block;
