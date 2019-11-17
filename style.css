@@ -2507,12 +2507,12 @@ object {
     border: none;
     border-bottom: 1px solid #DADADD;
     margin-bottom: .5rem;
-    		/*
-    		Label the data
-        	You could also use a data-* attribute and content for this.
-        	That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync.
-        	Lea Verou has a clever way to handle with text-shadow.
-    		*/
+    /*
+    Label the data
+    You could also use a data-* attribute and content for this.
+    That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync.
+    Lea Verou has a clever way to handle with text-shadow.
+    */
   }
   .tix-order-summary td:before {
     /* Now like a table header */
@@ -2600,23 +2600,21 @@ object {
   font-weight: 700;
 }
 
-.tix-submit {
+#tix .tix-submit {
   width: 100%;
   padding: 2rem 1rem;
   border-top: .25rem dashed;
 }
-
-#tix-preferred-payment-option {
+#tix .tix-submit #tix-preferred-payment-option {
   display: none;
 }
-
-.tix-payment-method {
+#tix .tix-submit .tix-payment-method {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: flex-end;
 }
-.tix-payment-method .tix-payment-tab {
+#tix .tix-submit .tix-payment-method .tix-payment-tab {
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -2629,25 +2627,32 @@ object {
   font-family: "Source Code Pro", sans-serif;
   flex: 1 1 auto;
 }
-.tix-payment-method .tix-payment-tab:hover {
+#tix .tix-submit .tix-payment-method .tix-payment-tab:hover {
   color: white;
   background-color: #272727;
   outline: none;
   border: 0;
 }
-.tix-payment-method .tix-payment-tab.tix-tab-selected {
-  font-weight: 700 !important;
-  color: white !important;
-  padding: .5rem !important;
-  background-color: #272727 !important;
-  border: none !important;
+#tix .tix-submit .tix-payment-method .tix-payment-tab.tix-tab-selected {
+  font-weight: 700;
+  color: white;
+  padding: .5rem;
+  background-color: #272727;
+  border: none;
 }
-
-.tix-hidden {
-  display: none !important;
+#tix .tix-submit .tix-alternate-payment-option {
+  float: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
 }
-
-.tix-payment-method-container {
+#tix .tix-submit .tix-alternate-payment-option label {
+  color: #272727;
+  font-size: 1.25rem;
+  padding: 0;
+}
+#tix .tix-submit .tix-payment-method-container {
   float: none;
   width: 100%;
   display: flex;
@@ -2655,19 +2660,9 @@ object {
   padding: 0;
   margin: 2rem auto;
 }
-.tix-payment-method-container .tix-alternate-payment-option {
-  float: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
+#tix .tix-submit .tix-payment-method-container.tix-hidden {
+  display: none;
 }
-.tix-payment-method-container .tix-alternate-payment-option label {
-  color: #272727;
-  font-size: 1.25rem;
-  padding: 0;
-}
-
 #tix .tix-submit .tix-checkout-button {
   display: block;
   float: none;
