@@ -2635,13 +2635,12 @@ object {
   outline: none;
   border: 0;
 }
-.tix-payment-method .tix-payment-tab .tix-tab-selected {
-  font-weight: 700;
-  color: white;
+.tix-payment-method .tix-payment-tab.tix-tab-selected {
+  font-weight: 700 !important;
+  color: white !important;
   padding: .5rem !important;
-  background-color: #272727;
-  border: none;
-  outline: none;
+  background-color: #272727 !important;
+  border: none !important;
 }
 
 .tix-hidden {

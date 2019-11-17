@@ -153,13 +153,12 @@
 			outline: none;
 			border: 0;
 		}
-		.tix-tab-selected {
-			font-weight: 700;
-			color: white;
+		&.tix-tab-selected {
+			font-weight: 700 !important;
+			color: white !important;
 			padding: .5rem !important;
-			background-color: $color__primary;
-			border: none;
-			outline: none;
+			background-color: $color__primary !important;
+			border: none !important;
 		}
 	}
 }
