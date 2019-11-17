@@ -6,7 +6,7 @@ body{
 }
 
 /*_______ Headings _______*/
-#{headings(1,6)} {
+@include headings() {
 	font-family: $font__secondary;
 	font-weight: 800;
 	clear: both;
@@ -15,19 +15,19 @@ body{
 h1{
 	font-size: 2.5rem;
 	line-height: 110%;
-	margin: 0 0 1.5rem;
+	margin: 0 0 1rem;
 }
 
 h2{
 	font-size: 2rem;
 	line-height: 110%;
-	margin: 0 0 1.5rem;
+	margin: 0 0 1rem;
 }
 
 h3{
 	font-size: 1.75rem;
 	line-height: 110%;
-	margin: 0 0 1.5rem;
+	margin: 0 0 1rem;
 }
 
 h4{
@@ -46,6 +46,14 @@ h6{
 	font-size: 1.125rem;
 	line-height: 110%;
 	margin: 0 0 1rem;
+}
+
+.entry-content{
+	@include headings(){
+		&:not(:first-child){
+			margin-top: 1em;
+		}
+	}
 }
 
 .big-title {
@@ -140,6 +148,13 @@ table {
 	max-width: 100%;
 	width: 100%;
 	margin: 0 0 2rem;
+	text-align: center;
+	thead{
+		font-size: .875rem;
+		@media (min-width: 768px){
+			font-size: 1.25rem;
+		}
+	}
 }
 
 .wp-block-table{

@@ -54,6 +54,11 @@ input[type="submit"] {
 	}
 }
 
+a.wp-block-button__link,
+a.more-link, .entry-title a {
+	text-decoration: none;
+}
+
 .edit-link {
 	display: block;
 	font-size: 1rem;

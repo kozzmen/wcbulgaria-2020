@@ -961,7 +961,37 @@ body {
 }
 
 /*_______ Headings _______*/
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  clear: both;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  clear: both;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  clear: both;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  clear: both;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  clear: both;
+}
+
+h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   clear: both;
@@ -970,19 +1000,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.5rem;
   line-height: 110%;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
 }
 
 h2 {
   font-size: 2rem;
   line-height: 110%;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
 }
 
 h3 {
   font-size: 1.75rem;
   line-height: 110%;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
 }
 
 h4 {
@@ -1001,6 +1031,25 @@ h6 {
   font-size: 1.125rem;
   line-height: 110%;
   margin: 0 0 1rem;
+}
+
+.entry-content h1:not(:first-child) {
+  margin-top: 1em;
+}
+.entry-content h2:not(:first-child) {
+  margin-top: 1em;
+}
+.entry-content h3:not(:first-child) {
+  margin-top: 1em;
+}
+.entry-content h4:not(:first-child) {
+  margin-top: 1em;
+}
+.entry-content h5:not(:first-child) {
+  margin-top: 1em;
+}
+.entry-content h6:not(:first-child) {
+  margin-top: 1em;
 }
 
 .big-title {
@@ -1095,6 +1144,15 @@ table {
   max-width: 100%;
   width: 100%;
   margin: 0 0 2rem;
+  text-align: center;
+}
+table thead {
+  font-size: .875rem;
+}
+@media (min-width: 768px) {
+  table thead {
+    font-size: 1.25rem;
+  }
 }
 
 .wp-block-table {
@@ -1195,11 +1253,16 @@ fieldset {
 label {
   display: block;
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 120%;
   text-align: left;
   color: #272727;
   margin-bottom: .25rem;
+}
+@media (min-width: 480px) {
+  label {
+    font-size: 1.25rem;
+  }
 }
 
 input,
@@ -1218,6 +1281,7 @@ textarea {
   background-color: white;
   border: none;
   border: 0.125rem solid #272727;
+  border-radius: 0;
   outline: none;
   resize: none;
 }
@@ -1239,40 +1303,50 @@ textarea::placeholder {
   color: #968f88;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   position: relative;
-  min-width: 1rem;
-  width: 1rem;
-  height: 1rem;
-  min-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 1.5rem;
+  min-width: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  min-height: 1.5rem;
   padding: 0;
   overflow: hidden;
 }
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: 1px solid #0e0e0e;
+}
+
 input[type="checkbox"]:checked:after {
   content: '';
+  position: absolute;
+  top: 0;
+  left: -3px;
+  font-family: 'dashicons';
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+input[type="radio"] {
+  border-radius: 100%;
+}
+input[type="radio"]:checked {
+  position: relative;
+}
+input[type="radio"]:checked:after {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  font-family: 'dashicons';
-  font-size: 1rem;
-}
-input[type="checkbox"]:focus {
-  outline: 1px solid #143CA4;
-}
-
-input[type="radio"] {
-  min-width: 1rem;
-  width: 1rem;
-  height: 1rem;
-  padding: 0;
+  background-color: #272727;
+  border: .125rem solid white;
   border-radius: 100%;
-  margin-bottom: 0;
-}
-input[type="radio"]:checked {
-  position: relative;
-  background-color: #143CA4;
 }
 
 input[type="checkbox"] + label,
@@ -1285,11 +1359,10 @@ select {
   position: relative;
   max-width: 100%;
   padding-right: 2rem;
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjgzIDE2LjQybDkuMTcgOS4xNyA5LjE3LTkuMTcgMi44MyAyLjgzLTEyIDEyLTEyLTEyeiIvPjxwYXRoIGQ9Ik0wLS43NWg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PC9zdmc+ ");
+  background-image: url("https://2020.europe.wordcamp.org/files/2019/10/arrow-down.png");
   background-repeat: no-repeat;
-  background-position: right .5rem top 50%;
-  background-size: 1.5rem auto;
-  border-radius: 0;
+  background-position: right 1rem top 50%;
+  background-size: 1rem;
 }
 select option[value=""]
 select option:first-child {
@@ -1297,6 +1370,11 @@ select option:first-child {
 }
 select:invalid {
   color: #737477;
+}
+
+_:-ms-lang(x),
+select {
+  background-image: none;
 }
 
 textarea {
@@ -1369,7 +1447,7 @@ button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
-  outline: 1px solid #143CA4;
+  outline: 1px solid #0e0e0e;
 }
 button.invert,
 .more-link.invert,
@@ -1385,6 +1463,11 @@ input[type="submit"].invert {
   content: ' ';
   font-family: 'dashicons';
   vertical-align: middle;
+}
+
+a.wp-block-button__link,
+a.more-link, .entry-title a {
+  text-decoration: none;
 }
 
 .edit-link {
@@ -2372,4 +2455,203 @@ object {
 .contact-form-submission {
   padding: 1rem;
   background-color: #C4C4C4;
+}
+
+/*_______ Order Sumary _______*/
+@media (max-width: 480px) {
+  .tix-order-summary {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  .tix-order-summary thead, .tix-order-summary tbody, .tix-order-summary th, .tix-order-summary td, .tix-order-summary tr {
+    display: block;
+  }
+  .tix-order-summary thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .tix-order-summary tr {
+    margin: 0 0 1rem 0;
+  }
+  .tix-order-summary td {
+    /* Behave  like a "row" */
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 120%;
+    text-align: left;
+    padding-left: 50%;
+    padding-bottom: .5rem;
+    border: none;
+    border-bottom: 1px solid #DADADD;
+    margin-bottom: .5rem;
+    		/*
+    		Label the data
+        	You could also use a data-* attribute and content for this.
+        	That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync.
+        	Lea Verou has a clever way to handle with text-shadow.
+    		*/
+  }
+  .tix-order-summary td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 20%;
+    left: 0;
+    width: 50%;
+    font-size: .875rem;
+    line-height: 100%;
+    text-align: right;
+    padding-right: 1rem;
+    white-space: nowrap;
+  }
+  .tix-order-summary td[class^="tix-column-"] {
+    font-size: 1rem;
+  }
+  .tix-order-summary td[class^="tix-column-"] strong {
+    font-weight: 400;
+  }
+  .tix-order-summary td[class^="tix-column-"]:nth-of-type(1):before {
+    content: "Description:";
+  }
+  .tix-order-summary td[class^="tix-column-"]:nth-of-type(2):before {
+    content: "Per Ticket:";
+  }
+  .tix-order-summary td[class^="tix-column-"]:nth-of-type(3):before {
+    content: "Quantity:";
+  }
+  .tix-order-summary td[class^="tix-column-"]:nth-of-type(4):before {
+    content: "Price:";
+  }
+  .tix-order-summary .tix-row-total td {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+  }
+  .tix-order-summary .tix-row-total td:first-child {
+    display: none;
+  }
+  .tix-order-summary .tix-row-total td:nth-of-type(2):before {
+    content: "Total:";
+  }
+}
+
+/*_______ Registry information _______*/
+.tix-attendee-form tr {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 2rem;
+}
+@media (min-width: 480px) {
+  .tix-attendee-form tr {
+    flex-flow: row nowrap;
+    margin-bottom: 4rem;
+  }
+}
+.tix-attendee-form tr td.tix-left {
+  width: 100%;
+  text-align: left;
+  line-height: 120%;
+  margin-bottom: .5rem;
+}
+@media (min-width: 480px) {
+  .tix-attendee-form tr td.tix-left {
+    width: 40%;
+    text-align: right;
+  }
+}
+.tix-attendee-form tr td.tix-right {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .tix-attendee-form tr td.tix-right {
+    width: 58%;
+    margin-left: 2rem;
+  }
+}
+.tix-attendee-form tr .tix-required-star {
+  color: #0e0e0e;
+  font-weight: 700;
+}
+
+.tix-submit {
+  width: 100%;
+  padding: 2rem 1rem;
+  border-top: .25rem dashed;
+}
+
+#tix-preferred-payment-option {
+  display: none;
+}
+
+.tix-payment-method {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.tix-payment-method .tix-payment-tab {
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding: .5rem;
+  margin: 0;
+  text-align: center;
+  line-height: 100%;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: "Source Code Pro", sans-serif;
+  flex: 1 1 auto;
+}
+.tix-payment-method .tix-payment-tab:hover {
+  color: white;
+  background-color: #272727;
+  outline: none;
+  border: 0;
+}
+.tix-payment-method .tix-tab-selected {
+  font-weight: 700;
+  color: white;
+  padding: .5rem;
+  background-color: #272727;
+  border-bottom: 0;
+  outline: none;
+}
+
+.tix-hidden {
+  display: none !important;
+}
+
+.tix-payment-method-container {
+  float: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 2rem auto;
+}
+.tix-payment-method-container .tix-alternate-payment-option {
+  float: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+.tix-payment-method-container .tix-alternate-payment-option label {
+  color: #272727;
+  font-size: 1.25rem;
+  padding: 0;
+}
+
+#tix .tix-checkout-button {
+  display: block;
+  float: none;
+  text-transform: none;
+  letter-spacing: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: .25rem solid;
+  border-radius: 0;
+  margin-top: 4rem;
 }
