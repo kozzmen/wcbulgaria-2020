@@ -1155,10 +1155,12 @@ table thead {
 table thead th {
   padding: .25rem;
 }
-table thead + tbody:before {
-  content: '';
-  display: block;
-  padding-top: 1rem;
+@media (max-width: 480px) {
+  table thead + tbody:before {
+    content: '';
+    display: block;
+    padding-top: 1rem;
+  }
 }
 
 .wp-block-table {
@@ -2505,6 +2507,7 @@ object {
   .tix_tickets_table:not(.tix-attendee-form) td {
     /* Behave  like a "row" */
     position: relative;
+    width: 100%;
     font-size: 1.25rem;
     line-height: 120%;
     text-align: left;

@@ -157,11 +157,13 @@ table {
 		th{
 			padding: .25rem;
 		}
-		+ tbody{
-			&:before{
-				content: '';
-				display: block;
-				padding-top: 1rem;
+		@media (max-width: 480px){
+			+ tbody{
+				&:before{
+					content: '';
+					display: block;
+					padding-top: 1rem;
+				}
 			}
 		}
 	}
