@@ -2480,56 +2480,87 @@ object {
   background-color: #C4C4C4;
 }
 
-/*_______ Order Sumary _______*/
+/*_______ Tickets table _______*/
 @media (max-width: 480px) {
-  .tix-order-summary {
+  .tix_tickets_table:not(.tix-attendee-form) {
     /* Force table to not be like tables anymore */
     /* Hide table headers (but not display: none;, for accessibility) */
   }
-  .tix-order-summary thead, .tix-order-summary tbody, .tix-order-summary th, .tix-order-summary td, .tix-order-summary tr {
+  .tix_tickets_table:not(.tix-attendee-form) thead, .tix_tickets_table:not(.tix-attendee-form) tbody, .tix_tickets_table:not(.tix-attendee-form) th, .tix_tickets_table:not(.tix-attendee-form) td, .tix_tickets_table:not(.tix-attendee-form) tr {
     display: block;
+    max-width: 100%;
   }
-  .tix-order-summary thead tr {
+  .tix_tickets_table:not(.tix-attendee-form) thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .tix-order-summary tr {
-    margin: 0 0 1rem 0;
-  }
-  .tix-order-summary td {
+  .tix_tickets_table:not(.tix-attendee-form) td {
     /* Behave  like a "row" */
     position: relative;
     font-size: 1.25rem;
     line-height: 120%;
     text-align: left;
-    padding-left: 50%;
+    padding-left: 40%;
     padding-bottom: .5rem;
     border: none;
-    border-bottom: 1px solid #DADADD;
     margin-bottom: .5rem;
-    /*
-    Label the data
-    You could also use a data-* attribute and content for this.
-    That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync.
-    Lea Verou has a clever way to handle with text-shadow.
-    */
   }
-  .tix-order-summary td:before {
+  .tix_tickets_table:not(.tix-attendee-form) td:before {
     /* Now like a table header */
     position: absolute;
     /* Top/left values mimic padding */
     top: 20%;
     left: 0;
-    width: 50%;
-    font-size: .875rem;
+    width: 40%;
+    font-size: .75rem;
     line-height: 100%;
     text-align: right;
     padding-right: 1rem;
     white-space: nowrap;
   }
+}
+
+.tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) {
+  max-width: 100%;
+  display: block;
+  width: 99%;
+}
+@media (max-width: 480px) {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) tr {
+    margin-bottom: 4rem;
+  }
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td {
+    padding-left: 40%;
+  }
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td:before {
+    width: 35%;
+  }
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"] {
+    font-size: 1rem;
+  }
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"] select {
+    max-width: 5rem;
+  }
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(1):before {
+    content: "Description:";
+  }
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(2):before {
+    content: "Price:";
+  }
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(3):before {
+    content: "Remaining:";
+  }
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(4):before {
+    content: "Quantity:";
+  }
+}
+
+/*_______ Order Sumary _______*/
+@media (max-width: 480px) {
   .tix-order-summary td[class^="tix-column-"] {
     font-size: 1rem;
+    border-bottom: 1px solid #DADADD;
   }
   .tix-order-summary td[class^="tix-column-"] strong {
     font-weight: 400;
@@ -2564,7 +2595,7 @@ object {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 480px) {
   .tix-attendee-form tr {
@@ -2593,7 +2624,7 @@ object {
     margin-left: 2rem;
   }
 }
-.tix-attendee-form td.tix-right input, .tix-attendee-form td.tix-right textarea {
+.tix-attendee-form td.tix-right input, .tix-attendee-form td.tix-right textarea, .tix-attendee-form td.tix-right select {
   width: 100% !important;
 }
 .tix-attendee-form .tix-required-star {
