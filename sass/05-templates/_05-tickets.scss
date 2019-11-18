@@ -1,6 +1,6 @@
 /*_______ Tickets table _______*/
-.tix_tickets_table:not(.tix-attendee-form){
-	@media (max-width: 480px)  {
+.tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table){
+	@media (max-width: 480px){
 		/* Force table to not be like tables anymore */
 		thead, tbody, th, td, tr {
 			display: block;
@@ -41,7 +41,7 @@
 	}
 }
 
-.tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary){
+.tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table){
 	text-align: left;
 	@media (max-width: 480px)  {
 		max-width: 100%;
@@ -82,7 +82,7 @@
 }
 
 /*_______ Order Sumary _______*/
-.tix-order-summary{
+.tix-order-summary, .tix_invoice_table{
 	@media (max-width: 480px)  {
 		td{
 			&[class^="tix-column-"]{
@@ -124,7 +124,7 @@
 }
 
 /*_______ Registry information _______*/
-.tix-attendee-form{
+.tix-attendee-form, .tix_invoice_table{
 	tr {
 		width: 100%;
 		display: flex;
@@ -139,10 +139,17 @@
 		width: 100%;
 		text-align:left;
 		line-height: 120%;
-		margin-bottom: 1rem;
+		margin-bottom: .5rem;
 		@media (min-width: 480px){
 			width: 40%;
 			text-align: right;
+		}
+		label{
+			font-weight: 400;
+			font-size: 1.25rem;
+			@media (min-width: 480px){
+				text-align: right;
+			}
 		}
 	}
 	td.tix-right{
@@ -165,6 +172,19 @@
 		font-size: 70%;
 		color: $color__grey;
 	}	
+}
+
+.camptix-invoice-toggle-wrapper{
+	display: block;
+	margin-bottom: 4rem;
+	label[for="camptix-need-invoice"]{
+		display: inline-block;
+		margin-left: .5rem;
+	}
+}
+
+.tix_invoice_table{
+	margin-top: 2rem;
 }
 
 #tix{

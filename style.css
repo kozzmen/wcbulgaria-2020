@@ -2490,21 +2490,21 @@ object {
 
 /*_______ Tickets table _______*/
 @media (max-width: 480px) {
-  .tix_tickets_table:not(.tix-attendee-form) {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) {
     /* Force table to not be like tables anymore */
     /* Hide table headers (but not display: none;, for accessibility) */
   }
-  .tix_tickets_table:not(.tix-attendee-form) thead, .tix_tickets_table:not(.tix-attendee-form) tbody, .tix_tickets_table:not(.tix-attendee-form) th, .tix_tickets_table:not(.tix-attendee-form) td, .tix_tickets_table:not(.tix-attendee-form) tr {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) thead, .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) tbody, .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) th, .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) td, .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) tr {
     display: block;
     max-width: 100%;
     border: none;
   }
-  .tix_tickets_table:not(.tix-attendee-form) thead tr {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .tix_tickets_table:not(.tix-attendee-form) td {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) td {
     /* Behave  like a "row" */
     position: relative;
     width: 100%;
@@ -2516,7 +2516,7 @@ object {
     border: none;
     margin-bottom: .5rem;
   }
-  .tix_tickets_table:not(.tix-attendee-form) td:before {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table) td:before {
     /* Now like a table header */
     position: absolute;
     /* Top/left values mimic padding */
@@ -2531,40 +2531,40 @@ object {
   }
 }
 
-.tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) {
+.tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) {
   text-align: left;
 }
 @media (max-width: 480px) {
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) {
     max-width: 100%;
     display: block;
     width: 99%;
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) tr {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) tr {
     margin-bottom: 4rem;
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) td {
     padding-left: 40%;
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td:before {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) td:before {
     width: 35%;
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"] {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) td[class^="tix-column-"] {
     font-size: 1rem;
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"] select {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) td[class^="tix-column-"] select {
     max-width: 5rem;
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(1):before {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) td[class^="tix-column-"]:nth-of-type(1):before {
     content: "Description:";
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(2):before {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) td[class^="tix-column-"]:nth-of-type(2):before {
     content: "Price:";
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(3):before {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) td[class^="tix-column-"]:nth-of-type(3):before {
     content: "Remaining:";
   }
-  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary) td[class^="tix-column-"]:nth-of-type(4):before {
+  .tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table) td[class^="tix-column-"]:nth-of-type(4):before {
     content: "Quantity:";
   }
 }
@@ -2575,84 +2575,106 @@ object {
 
 /*_______ Order Sumary _______*/
 @media (max-width: 480px) {
-  .tix-order-summary td[class^="tix-column-"] {
+  .tix-order-summary td[class^="tix-column-"], .tix_invoice_table td[class^="tix-column-"] {
     font-size: 1rem;
     border-bottom: 1px solid #DADADD;
   }
-  .tix-order-summary td[class^="tix-column-"] strong {
+  .tix-order-summary td[class^="tix-column-"] strong, .tix_invoice_table td[class^="tix-column-"] strong {
     font-weight: 400;
   }
-  .tix-order-summary td[class^="tix-column-"]:nth-of-type(1):before {
+  .tix-order-summary td[class^="tix-column-"]:nth-of-type(1):before, .tix_invoice_table td[class^="tix-column-"]:nth-of-type(1):before {
     content: "Description:";
   }
-  .tix-order-summary td[class^="tix-column-"]:nth-of-type(2):before {
+  .tix-order-summary td[class^="tix-column-"]:nth-of-type(2):before, .tix_invoice_table td[class^="tix-column-"]:nth-of-type(2):before {
     content: "Per Ticket:";
   }
-  .tix-order-summary td[class^="tix-column-"]:nth-of-type(3):before {
+  .tix-order-summary td[class^="tix-column-"]:nth-of-type(3):before, .tix_invoice_table td[class^="tix-column-"]:nth-of-type(3):before {
     content: "Quantity:";
   }
-  .tix-order-summary td[class^="tix-column-"]:nth-of-type(4):before {
+  .tix-order-summary td[class^="tix-column-"]:nth-of-type(4):before, .tix_invoice_table td[class^="tix-column-"]:nth-of-type(4):before {
     content: "Price:";
   }
-  .tix-order-summary .tix-row-total td {
+  .tix-order-summary .tix-row-total td, .tix_invoice_table .tix-row-total td {
     font-size: 1.5rem;
     font-weight: 700;
     border: none;
   }
-  .tix-order-summary .tix-row-total td:first-child {
+  .tix-order-summary .tix-row-total td:first-child, .tix_invoice_table .tix-row-total td:first-child {
     display: none;
   }
-  .tix-order-summary .tix-row-total td:nth-of-type(2):before {
+  .tix-order-summary .tix-row-total td:nth-of-type(2):before, .tix_invoice_table .tix-row-total td:nth-of-type(2):before {
     content: "Total:";
   }
 }
 
 /*_______ Registry information _______*/
-.tix-attendee-form tr {
+.tix-attendee-form tr, .tix_invoice_table tr {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
   margin-bottom: 2rem;
 }
 @media (min-width: 480px) {
-  .tix-attendee-form tr {
+  .tix-attendee-form tr, .tix_invoice_table tr {
     flex-flow: row nowrap;
     margin-bottom: 4rem;
   }
 }
-.tix-attendee-form td.tix-left {
+.tix-attendee-form td.tix-left, .tix_invoice_table td.tix-left {
   width: 100%;
   text-align: left;
   line-height: 120%;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 @media (min-width: 480px) {
-  .tix-attendee-form td.tix-left {
+  .tix-attendee-form td.tix-left, .tix_invoice_table td.tix-left {
     width: 40%;
     text-align: right;
   }
 }
-.tix-attendee-form td.tix-right {
+.tix-attendee-form td.tix-left label, .tix_invoice_table td.tix-left label {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+@media (min-width: 480px) {
+  .tix-attendee-form td.tix-left label, .tix_invoice_table td.tix-left label {
+    text-align: right;
+  }
+}
+.tix-attendee-form td.tix-right, .tix_invoice_table td.tix-right {
   width: 100%;
 }
 @media (min-width: 480px) {
-  .tix-attendee-form td.tix-right {
+  .tix-attendee-form td.tix-right, .tix_invoice_table td.tix-right {
     width: 58%;
     margin-left: 2rem;
   }
 }
-.tix-attendee-form td.tix-right input, .tix-attendee-form td.tix-right textarea, .tix-attendee-form td.tix-right select {
+.tix-attendee-form td.tix-right input, .tix-attendee-form td.tix-right textarea, .tix-attendee-form td.tix-right select, .tix_invoice_table td.tix-right input, .tix_invoice_table td.tix-right textarea, .tix_invoice_table td.tix-right select {
   width: 100% !important;
 }
-.tix-attendee-form .tix-required-star {
+.tix-attendee-form .tix-required-star, .tix_invoice_table .tix-required-star {
   color: #0e0e0e;
   font-weight: 700;
 }
-.tix-attendee-form .tix-row-question-3851 .tix-left:after {
+.tix-attendee-form .tix-row-question-3851 .tix-left:after, .tix_invoice_table .tix-row-question-3851 .tix-left:after {
   content: "(include @)";
   display: block;
   font-size: 70%;
   color: #737477;
+}
+
+.camptix-invoice-toggle-wrapper {
+  display: block;
+  margin-bottom: 4rem;
+}
+.camptix-invoice-toggle-wrapper label[for="camptix-need-invoice"] {
+  display: inline-block;
+  margin-left: .5rem;
+}
+
+.tix_invoice_table {
+  margin-top: 2rem;
 }
 
 #tix .tix-submit {
