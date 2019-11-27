@@ -77,7 +77,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
 }
 
-.alignwide, .site-header, .site-main .posts-navigation,
+.alignwide,
+.is-style-wide, .site-header, .site-main .posts-navigation,
 .site-main .post-navigation, #secondary, .single .entry-header, .single .entry-footer,
 .page .entry-footer, .block-imagecontents,
 .block-contentsimage, .block-imagecontents-content, .block-numbers, .contact-form {
@@ -86,7 +87,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  .alignwide, .site-header, .site-main .posts-navigation,
+  .alignwide,
+  .is-style-wide, .site-header, .site-main .posts-navigation,
   .site-main .post-navigation, #secondary, .single .entry-header, .single .entry-footer,
   .page .entry-footer, .block-imagecontents,
   .block-contentsimage, .block-imagecontents-content, .block-numbers, .contact-form {
@@ -916,13 +918,14 @@ figure > * {
 }
 
 .aligncenter {
-  clear: both;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  clear: both;
 }
 
-.alignwide {
+.alignwide,
+.is-style-wide {
   clear: both;
 }
 
@@ -2243,6 +2246,11 @@ object {
   margin-bottom: 2rem;
 }
 
+/*_______ Big separators _______*/
+.wp-block-separator.is-style-wide {
+  margin: 4rem auto;
+}
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -2428,11 +2436,6 @@ object {
   font-weight: 500;
   font-size: 1.5rem;
   margin: 0;
-}
-
-/*_______ Big separators _______*/
-.wp-block-separator.is-style-wide {
-  margin: 8rem 0;
 }
 
 /*_______ Gray Background _______*/

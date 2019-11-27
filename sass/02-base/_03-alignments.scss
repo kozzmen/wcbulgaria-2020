@@ -12,18 +12,19 @@
 }
 
 .aligncenter {
-	clear: both;
 	@include center-block;
+	clear: both;
 }
 
-.alignwide{
-	clear: both;
+.alignwide,
+.is-style-wide{
 	@extend %inner;
+	clear: both;
 }
 
 .alignfull{
-	clear: both;
 	@extend %full;
+	clear: both;
 }
 
 /*_______ Clearings _______*/
