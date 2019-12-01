@@ -1,5 +1,146 @@
-/*_______ Tickets table _______*/
-.tix_tickets_table:not(.tix-attendee-form):not(.tix_invoice_table){
+/*_______ Tickets form _______*/
+.tix-js{
+	max-width: 960px !important;
+	border-top: .25rem dashed;
+	padding-top: 2rem;
+	margin: 8rem auto;
+	.tix_tickets_table{
+		display: flex;
+		justify-content: flex-start;
+		align-items: stretch;
+		thead{
+			display: none;
+		}
+		tbody{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			@media (min-width: 650px) {
+				flex-flow: row wrap;
+			}
+		}
+		tr[class^="tix-ticket-"] {
+			flex-flow: row wrap;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			text-align: center;
+			background-color: white;
+			border: .5rem solid;
+			margin: 0 5% 2rem;
+			&:focus{
+				box-shadow: 0 0 25px rgba(0, 0, 0, .2);
+			}
+			@media (min-width: 650px) {
+				flex: 0 1 40%;
+				max-width: 40%;
+				margin: 0 2% 2rem;
+			}
+		}
+	}
+	.tix-column-description{
+		text-align: center;
+		padding: 0;
+		margin-bottom: 2rem;
+		br{
+			display: none;
+		}
+	}
+	.tix-ticket-title {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 100%;
+		color: white;
+		padding: 1rem;
+		background-color: #272727;
+		margin-bottom: 1rem;
+	}
+	.tix-ticket-excerpt {
+		display: block;
+		font-size: 1.125rem;
+		line-height: 120%;
+		padding: 0 2rem;
+	}
+	.tix-column-price {
+		font-size: 2rem;
+		font-weight: 700;
+		text-align: center;
+		line-height: 100%;
+		margin: auto auto .5rem;
+	}
+	.tix-column-quantity, .tix-column-remaining {
+		flex: 0 1 100%;
+		margin: auto auto 0;
+	}
+	.tix-column-remaining {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		&:before {
+			content: 'Only ';
+		}
+		&:after {
+			content: ' remaining';
+		}
+	}
+	.tix-column-quantity{
+		padding: 0 2rem;
+		&:before {
+			content: 'Choose your quantity';
+			display:block;
+			line-height: 100%;
+		}
+		select{
+			max-width: 8rem;
+			margin: 1rem auto;
+		}
+	}
+	.tix-row-coupon {
+		display: flex;
+		flex: 1 1 100%;
+		text-align: center;
+		td{
+			width: 100%;
+			text-align: center !important;
+		}
+	}
+	#tix-coupon-container {
+		text-align: center;
+		input {
+			display: inline;
+			margin: 0;
+			padding: .5rem .875rem;
+			box-sizing: border-box;
+			vertical-align: middle;
+		}
+		&#tix-coupon-input {
+			max-width: 30%;
+		}
+		input[type="submit"] {
+			font-size: 1.125rem;
+			color: inherit;
+			background-color: white;
+			padding: .675rem;
+		}
+	}
+}
+
+#tix input[type="submit"]{
+	float: none !important;
+	display: block;
+	color: white;
+	text-transform: none;
+	letter-spacing: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: $color__primary;
+	border: .25rem solid $color__primary;
+	border-radius: 0;
+	margin: 2rem auto 0;
+}
+
+/*_______ Order Sumary _______*/
+.tix-order-summary{
 	@media (max-width: 480px){
 		/* Force table to not be like tables anymore */
 		thead, tbody, th, td, tr {
@@ -37,57 +178,8 @@
 				padding-right: 1rem;
 				white-space: nowrap;
 			}
-		}
-	}
-}
-
-.tix_tickets_table:not(.tix-attendee-form):not(.tix-order-summary):not(.tix_invoice_table){
-	text-align: left;
-	@media (max-width: 480px)  {
-		max-width: 100%;
-		display: block;
-		width: 99%;
-		tr{
-			margin-bottom: 4rem;
-		}
-		td{
-			padding-left: 40%;
-			&:before {
-				width: 35%;
-			}	
 			&[class^="tix-column-"]{
 				font-size: 1rem;
-				select{
-					max-width: 5rem;
-				}
-				&:nth-of-type(1):before {
-					content: "Description:";
-				}
-				&:nth-of-type(2):before {
-					content: "Price:";
-				}
-				&:nth-of-type(3):before {
-					content: "Remaining:";
-				}
-				&:nth-of-type(4):before {
-					content: "Quantity:";
-				}
-			}
-		}
-	}
-}
-
-.tix-js input[type="submit"]{
-	float: none !important;
-}
-
-/*_______ Order Sumary _______*/
-.tix-order-summary, .tix_invoice_table{
-	@media (max-width: 480px)  {
-		td{
-			&[class^="tix-column-"]{
-				font-size: 1rem;
-				border-bottom: 1px solid $color__grey_minimus;
 				strong{
 					font-weight: 400;
 				}
@@ -245,21 +337,10 @@
 			display: flex;
 			justify-content: center;
 			padding: 0;
-			margin: 2rem auto;
+			margin: 2rem auto 4rem;
 			&.tix-hidden {
 				display: none;
 			}
 		}
-		.tix-checkout-button {
-			display: block;
-			float: none;
-			text-transform: none;
-			letter-spacing: 0;
-			padding-top: 1rem;
-			padding-bottom: 1rem;
-			border: .25rem solid $color__primary;
-			border-radius: 0;
-			margin-top: 4rem;
-		}	
 	}
 }
