@@ -27,7 +27,7 @@
 			text-align: center;
 			background-color: white;
 			border: .5rem solid;
-			margin: 0 5% 2rem;
+			margin: 0 auto 2rem;
 			&:focus{
 				box-shadow: 0 0 25px rgba(0, 0, 0, .2);
 			}
@@ -92,7 +92,7 @@
 		}
 		select{
 			max-width: 8rem;
-			margin: 1rem auto;
+			margin: 1rem auto 2rem;
 		}
 	}
 	.tix-row-coupon {
@@ -107,19 +107,18 @@
 	#tix-coupon-container {
 		text-align: center;
 		input {
-			display: inline;
-			margin: 0;
+			display: inline !important;
+			vertical-align: middle;
 			padding: .5rem .875rem;
 			box-sizing: border-box;
-			vertical-align: middle;
+			margin: 0 auto 1rem !important;
 		}
 		&#tix-coupon-input {
 			max-width: 30%;
 		}
 		input[type="submit"] {
+			max-width: 12rem;
 			font-size: 1.125rem;
-			color: inherit;
-			background-color: white;
 			padding: .675rem;
 		}
 	}
@@ -137,6 +136,9 @@
 	border: .25rem solid $color__primary;
 	border-radius: 0;
 	margin: 2rem auto 0;
+	@media (min-width: 650px) {
+		width: 100%;
+	}
 }
 
 /*_______ Order Sumary _______*/

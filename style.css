@@ -2637,7 +2637,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container:a
   text-align: center;
   background-color: white;
   border: .5rem solid;
-  margin: 0 5% 2rem;
+  margin: 0 auto 2rem;
 }
 .tix-js .tix_tickets_table tr[class^="tix-ticket-"]:focus {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
@@ -2704,7 +2704,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container:a
 }
 .tix-js .tix-column-quantity select {
   max-width: 8rem;
-  margin: 1rem auto;
+  margin: 1rem auto 2rem;
 }
 .tix-js .tix-row-coupon {
   display: flex;
@@ -2719,19 +2719,18 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container:a
   text-align: center;
 }
 .tix-js #tix-coupon-container input {
-  display: inline;
-  margin: 0;
+  display: inline !important;
+  vertical-align: middle;
   padding: .5rem .875rem;
   box-sizing: border-box;
-  vertical-align: middle;
+  margin: 0 auto 1rem !important;
 }
 .tix-js #tix-coupon-container#tix-coupon-input {
   max-width: 30%;
 }
 .tix-js #tix-coupon-container input[type="submit"] {
+  max-width: 12rem;
   font-size: 1.125rem;
-  color: inherit;
-  background-color: white;
   padding: .675rem;
 }
 
@@ -2747,6 +2746,11 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container:a
   border: 0.25rem solid #272727;
   border-radius: 0;
   margin: 2rem auto 0;
+}
+@media (min-width: 650px) {
+  #tix input[type="submit"] {
+    width: 100%;
+  }
 }
 
 /*_______ Order Sumary _______*/
