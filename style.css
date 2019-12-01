@@ -2720,6 +2720,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container:a
 }
 .tix-js #tix-coupon-container input {
   display: inline !important;
+  max-width: 20rem;
   vertical-align: middle;
   padding: .5rem .875rem;
   box-sizing: border-box;
@@ -2737,6 +2738,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container:a
 #tix input[type="submit"] {
   float: none !important;
   display: block;
+  width: 100%;
   color: white;
   text-transform: none;
   letter-spacing: 0;
@@ -2749,7 +2751,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container:a
 }
 @media (min-width: 650px) {
   #tix input[type="submit"] {
-    width: 100%;
+    width: auto;
   }
 }
 

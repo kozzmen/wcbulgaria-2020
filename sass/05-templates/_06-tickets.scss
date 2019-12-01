@@ -108,6 +108,7 @@
 		text-align: center;
 		input {
 			display: inline !important;
+			max-width: 20rem;
 			vertical-align: middle;
 			padding: .5rem .875rem;
 			box-sizing: border-box;
@@ -127,6 +128,7 @@
 #tix input[type="submit"]{
 	float: none !important;
 	display: block;
+	width: 100%;
 	color: white;
 	text-transform: none;
 	letter-spacing: 0;
@@ -137,7 +139,7 @@
 	border-radius: 0;
 	margin: 2rem auto 0;
 	@media (min-width: 650px) {
-		width: 100%;
+		width: auto;
 	}
 }
 
