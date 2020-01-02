@@ -1,0 +1,117 @@
+button,
+.wp-block-button__link,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	position: relative;
+	display: table;
+	width: auto;
+	font-family: $font__secondary;
+	font-weight: 800;
+	font-size: 1rem;
+	line-height: 100%;
+	color: $color__primary;
+	text-align: center;
+	text-decoration: none;
+	margin: 1rem auto;
+	padding: 1em 1.5em;
+	background-color: white;
+	border: .25rem solid $color__primary;
+	border-radius: 0;
+	cursor: pointer;
+	@extend %transition;
+	@media (min-width: 480px){
+		font-size: 1.25rem;
+	}
+	&:visited{
+		color: $color__primary;
+	}
+	&:hover{
+		background-color: $color__primary;
+		border-color:  $color__primary;
+	}
+	&:active{
+		background-color: $color__grey;
+	}
+	&:focus{
+		outline: 1px solid $color__secondary;
+	}
+	&.invert{
+		color: white;
+		background-color: $color__primary;
+	}
+}
+.wp-block-button{
+	&.with-icon{
+		.wp-block-button__link{
+			display: inline-block;
+			font-size: 1.25rem;
+			padding: .5em 1em;
+			background-color: $color__tertiary;
+			border-color:  $color__tertiary;
+			box-shadow: -0.25em 0.25rem 0 $color__black-blue;
+			&:before{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 1.5rem;
+				font-weight: normal;
+				margin-right: .5rem;
+			}
+			&:hover{
+				color: $color__primary;
+				background-color: $color__secondary;
+				border-color: $color__secondary;
+				box-shadow: -0.125em 0.125rem 0 $color__black-blue;
+			}
+		}
+		&.map{
+			.wp-block-button__link{
+				&:before{
+					content: "\f231";
+					font-family: 'dashicons';
+				}
+			}
+		}
+	}
+}
+.wceu-big-btn{
+	.wp-block-button__link{
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-decoration: none;
+		padding: .5em 1em;
+		background-color: $color__secondary;
+		border-color: $color__secondary;
+		box-shadow: -.25em .25em 0 $color__black_blue;
+		@media(min-width: 480px){
+			font-size: 2rem;
+			
+		}
+		&:hover{
+			background-color: $color__tertiary;
+			border-color: $color__tertiary;
+			box-shadow: -.125em .125em 0 $color__black_blue;
+		}
+	}
+}
+
+.wp-block-button{
+	&.anchor-link{
+		a:after{
+			content: ' ';
+			font-family: 'dashicons';
+			vertical-align: middle;
+		}
+	}
+}
+
+a.wp-block-button__link,
+a.more-link, .entry-title a {
+	text-decoration: none;
+}
+
+.edit-link {
+	display: block;
+	font-size: 1rem;
+	text-decoration: underline;
+}

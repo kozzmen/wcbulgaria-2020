@@ -1,9 +1,10 @@
+@charset "utf-8";
 /*!
-Theme Name: CampSite 2017
-Theme URI: http://underscores.me/
-Author: Bernhard Kau
-Author URI: https://kau-boys.com
-Description: A new WordCamp Base Theme. For a quicker start, check out the <a href="https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/">style guide</a>.
+Theme Name: WCEU2020 (based on CampSite 2017)
+Theme URI: https://2020.europe.wordcamp.org/
+Author: Bernhard Kau & Roberto Tuñón
+Author URI: https://2020.europe.wordcamp.org/
+Description: WCEU2020 theme based on the WordCamp Base Theme Campsite 2017. For a quicker start, check out the <a href="https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/">style guide</a>.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,84 +24,107 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Variables
+	## Mixins
+	## Colors
+	## Fonts
+	## Structure
+	## Columns
+
 # Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
+
+# Base
+	## Accessibility
+	## Elements
+	## Alignments
+	## Typography
+	## Forms
+	## Buttons
+	## Galleries
+	## Media
 	## Posts and pages
 	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
+	## Infinite-scroll
+
+# Components
+	## General layout
+	## Header
+	## Navigation
+	## Sidebar
+	## Footer
+	## Widgets
+
+# Layout
+	## Content - Sidebar
+	## Sidebar - Content
+	## No Sidebar
+	## Full width
+
+# Templates
+	## Post feed
+	## Single
+	## Custom blocks
+	## Contact form
+
+/*--------------------------------------------------------------
+# Variables
 --------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+@import "01-variables/01-mixins";
+@import "01-variables/02-colors";
+@import "01-variables/03-fonts";
+@import "01-variables/04-structure";
+@import "01-variables/05-columns";
+
 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import "normalize";
+@import "02-base/00-normalize";
 
 /*--------------------------------------------------------------
-# Typography
+# Base
 --------------------------------------------------------------*/
-@import "typography/typography";
+@import "02-base/00-normalize";
+@import "02-base/01-accessibility";
+@import "02-base/02-elements";
+@import "02-base/03-alignments";
+@import "02-base/04-typography";
+@import "02-base/05-forms";
+@import "02-base/06-buttons";
+@import "02-base/07-galleries";
+@import "02-base/08-media";
+@import "02-base/09-posts-and-pages";
+@import "02-base/10-comments";
+@import "02-base/11-infinite-scroll";
 
 /*--------------------------------------------------------------
-# Elements
+# Components
 --------------------------------------------------------------*/
-@import "elements/elements";
+@import "03-components/00-general-layout";
+@import "03-components/01-header";
+@import "03-components/02-navigation";
+@import "03-components/03-sidebar";
+@import "03-components/04-footer";
+@import "03-components/05-widgets";
+@import "03-components/06-blocks";
 
 /*--------------------------------------------------------------
-# Forms
+# Layout
 --------------------------------------------------------------*/
-@import "forms/forms";
+// @import "04-layout/01-content-sidebar";
+// @import "04-layout/02-sidebar-content";
+@import "04-layout/03-no-sidebar";
+@import "04-layout/04-full-width";
+@import "04-layout/05-nocontent";
 
 /*--------------------------------------------------------------
-# Navigation
+# Templates
 --------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-@import "media/media";
+@import "05-templates/00-home";
+@import "05-templates/01-blog-feed";
+@import "05-templates/02-single";
+@import "05-templates/03-custom-blocks";
+@import "05-templates/04-contact-form";
+@import "05-templates/05-organisers";
+@import "05-templates/06-tickets";
+@import "05-templates/07-sponsors";

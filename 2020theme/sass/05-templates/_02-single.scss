@@ -1,0 +1,166 @@
+/*_______ Single view of post and page _______*/
+.entry-title{
+	@include font-size(2.75);
+	@media (min-width: 480px){
+		@include font-size(4);
+	}
+}
+
+.single{
+	.site-content{
+		margin-bottom: 0;
+	}
+	.entry-header{
+		position: relative;
+		z-index: 1;
+		margin-bottom: 2rem;
+	}
+	.entry-image{
+		width: 100%;
+		max-height: 20rem;
+		margin-bottom: 1rem;
+		overflow: hidden;
+		@media (min-width: 768px){
+			max-height: 40rem;
+		}
+		img{
+			display: block;
+			width: auto;
+			height: 100%;
+			@media (min-width: 768px){
+				width: 100%;
+				height: auto;
+			}
+		}
+		// &:after{
+		// 	content: '';
+		// 	width: 100%;
+		// 	height: 15rem;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	background-color: $color__black_blue;
+		// 	opacity: .6;
+		// }
+	}
+	.entry-title{
+		@extend %inner-tiny;
+		@extend %inner-padding;
+		color: $color__primary;
+		z-index: 2;
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+	.entry-meta{
+		@extend %inner-tiny;
+		@extend %inner-padding;
+		font-size: 1rem;
+		color: $color__secondary;
+		a{
+			color: $color__secondary;
+			text-decoration: none;
+		}
+		.byline{
+			display: none;
+		}
+	}
+}
+
+.page .entry-header,
+.hfeed .page-header{
+	padding: 7rem 2rem;
+	margin-bottom: 4rem;
+	background-color: $color__tertiary;
+	.entry-title,
+	.page-title{
+		text-align: center;
+		margin: 0;
+	}
+}
+
+.single,
+.page{
+	.entry-content{
+		> *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide){
+			@extend %inner-tiny;
+			@extend %inner-padding;
+		}
+		p,
+		ol,
+		ul{
+			+ %headings{
+				margin-top: 1em;
+			}
+		}
+		ol, ul{
+			list-style: none;
+			margin: 0 auto 1em;
+		}
+		ul:not(.wordcamp-post-list){
+			padding-left: 2.5rem;
+			li{
+				position: relative;
+				padding: 0;
+				margin-bottom: 1rem;
+				&:before{
+					content: '';
+					position: absolute;
+					top: .875em;
+					left: -2rem;
+					width: .75em;
+					height: .25rem;
+					background-color: $color__secondary;
+				}
+			}
+		}
+		ol {
+			padding-left: 2.5rem;
+			counter-reset: orderedlist-counter;
+			li{
+				position: relative;
+				padding: 0;
+				margin-bottom: 1rem;
+				counter-increment: orderedlist-counter;
+				&:before{
+					content: counter(orderedlist-counter) ". ";
+					position: absolute;
+					top: 0;
+					left: -2rem;
+					width: 1.25rem;
+					height: 1.25rem;
+					font-weight: 800;
+					line-height: .5rem;
+					text-indent: -.25rem;
+					color: $color__secondary;
+					background-color: $color__tertiary;
+					margin-top: .5rem;
+				}
+			}
+		}
+	}
+	.entry-footer{
+		@extend %inner-tiny;
+		@extend %inner-padding;
+		padding-top: 1rem;
+		border-top: .05rem solid;
+	}
+}
+
+.tags-links a {
+	display: inline-block;
+	line-height: 100%;
+	color: $color__primary;
+	background-color: $color__tertiary;
+	padding: .125rem .25rem;
+	margin-bottom: .5rem;
+	&:before {
+		content: "\f323";
+		font-family: 'dashicons';
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: .25rem;
+		font-size: .875rem;
+		text-decoration: none;
+		color: $color__secondary;
+		border: none;
+	}
+}

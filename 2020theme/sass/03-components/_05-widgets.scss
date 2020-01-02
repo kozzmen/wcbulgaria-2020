@@ -1,0 +1,44 @@
+.widget {
+	margin: 0 0 2rem;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/*_______ Suscription widget _______*/
+.widget{
+	// &.jetpack_subscription_widget{
+	// 	@extend %inner-tiny;
+	// 	@extend %inner-padding;
+	// 	margin-bottom: 4rem;
+	// 	// form{
+	// 	// 	display: flex;
+	// 	// 	align-items: center;
+	// 	// 	flex-flow: row wrap;
+	// 	// }
+	// 	button{
+	// 		margin-left: 0;
+	// 	}
+	// }
+	// #subscribe-text{
+	// 	flex: 1 1 100%;
+	// }
+	// #subscribe-email{
+	// 	flex: 1 1 100%;
+	// 	margin: 0;
+	// 	@media (min-width: 768px){
+	// 		flex: 0 1 60%;
+	// 	}
+	// 	input{
+	// 		width: 100%;
+	// 	}
+	// }
+	// #subscribe-submit{
+	// 	margin: 0 auto;
+	// 	@media (min-width: 768px){
+	// 		flex: 0 1 30%;
+	// 	}
+	// }
+}

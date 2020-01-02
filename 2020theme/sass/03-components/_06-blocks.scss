@@ -1,0 +1,125 @@
+/*_______ Common Blocks _______*/
+.wp-block-verse{
+	font-family: $font__secondary;
+	font-size: 1.25rem;
+}
+
+.wp-block-latest-posts{
+	list-style: none;
+	margin-bottom: 4rem;
+	li{
+		font-family: $font__secondary;
+		font-weight: 800;
+		font-size: 2rem;
+		line-height: 120%;
+		border-left: .25rem solid;
+		padding-left: 1rem;
+		margin-bottom: 2rem;
+	}
+	&.is-grid{
+		li{
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.wp-block-quote,
+.wp-block-pullquote{
+	position: relative;
+	cite{
+		font-style: normal;
+		color: $color__grey_blue;
+		a{
+			color: $color__grey_blue;
+		}
+	}
+	&.is-style-default{
+		padding-left: 1rem;
+		padding-right: 20%;
+		border-left: .5rem solid $color__secondary;
+		p{
+			font-style: italic;
+			font-size: 1.25rem;
+			font-weight: 800;
+			line-height: 140%;
+			margin-bottom: 0;
+			// &:before{
+			// 	content: '';
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// 	width: .5rem;
+			// 	height: 100%;
+			// 	background-color: $color__secondary;
+			// }
+		}
+	}
+	&.is-style-large{
+		padding: 1rem 10% 0 2.5rem;
+		p{
+			font-weight: 700;
+			font-style: italic;
+			font-size: 2rem;
+			line-height: 120%;
+			margin-bottom: .25rem;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 2rem;
+			height: 90%;
+			background-color: $color__tertiary;
+			margin: .75rem 0 0;
+		}
+		&:after{
+			content: '“';
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-weight: 700;
+			font-size: 4.875rem;
+			font-style: normal;
+			line-height: 4.875rem;
+			color: $color__secondary;
+		}
+	}
+}
+.wp-block-pullquote{
+	padding: 2rem;
+}
+
+.wp-block-cover{
+	.wp-block-cover-image-text,
+	.wp-block-cover__inner-container{
+		width: initial;
+		font-family: $font__secondary;
+	}
+}
+
+.wp-block-media-text {
+	grid-template-columns: 40% auto;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	&.has-media-on-the-right{
+		grid-template-columns: auto 40%;
+		.wp-block-media-text__content{
+			padding: 0 2rem 0 0;
+		}
+	}
+	%headings{
+		margin-top: 0;
+	}
+	.wp-block-media-text__media{
+		margin-bottom: 2rem;
+	}
+	.wp-block-media-text__content{
+		padding: 0 0 0 2rem;
+	}
+}
+
+/*_______ Big separators _______*/
+.wp-block-separator.is-style-wide {
+	margin: 4rem auto;
+}

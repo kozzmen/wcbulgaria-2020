@@ -1,0 +1,113 @@
+/*_______ Comments area _______*/
+.comments-area{
+	padding: 5rem 0;
+	background-color: $color__tertiary;
+}
+
+.comments-title, .comment-respond,.comment-list{
+	@extend %inner-tiny;
+	@extend %inner-padding;
+}
+
+.comments-title{
+	font-size: 2.5rem;
+}
+
+
+/*_______ Comment list _______*/
+.comment-list {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 4rem;
+    & li {
+		margin-bottom: 2rem;
+	}
+	.comment-body{
+		margin-bottom: 2rem;
+	}
+	.comment-meta{
+		margin-bottom: 1rem;
+	}
+	.comment-author{
+		display: flex;
+		.avatar{
+			margin-right: 1rem;
+		}
+		.fn{
+			margin-right: .5rem;
+		}
+	}
+	.comment-metadata{
+		font-size: .875rem;
+		margin: .5rem 0;
+		a{
+			color: $color__primary;
+		}
+	}
+	.comment-awaiting-moderation{
+		display: block;
+		font-size: 1rem;
+		color: $color__grey_blue;
+		border-left: .125rem solid;
+		padding-left: .5rem;
+	}
+	.comment-content{
+		p{
+			font-size: 1.25rem;
+			margin-bottom: 1rem;
+		}
+	}
+	.comment-reply-link{
+		display: inline-block;
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: $color__grey_blue;
+		padding: .25rem 1rem;
+		border: .25rem solid;
+	}
+	.children{
+		list-style: none;
+		padding: 0;
+	}
+}
+
+
+/*_______ Comment respond _______*/
+.comment-respond{
+	border-top: .125rem solid;
+	padding-top: 1.5rem;
+	.comment-reply-title{
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	.comment-notes{
+		font-size: 1.25rem;
+	}
+	.comment-content a {
+		word-wrap: break-word;
+	}
+	.bypostauthor {
+		display: block;
+	}
+
+	.comment-form-cookies-consent{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		label{
+			font-size: 1rem;
+		}
+	}
+}
+
+.no-comments {
+    background-color: $color__primary;
+    color: white;
+    padding: .25rem .5rem;
+    display: inline-block;
+    &:before {
+		content: "\f158";
+		font-family: 'dashicons';
+		vertical-align: middle;
+	}
+}
