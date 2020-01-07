@@ -2357,6 +2357,56 @@ body.admin-bar {
     body.admin-bar .site-header {
       top: 46px; } }
 
+.widget.widget_eu_cookie_law_widget {
+  bottom: 15px;
+  right: 15px;
+  left: initial; }
+  .widget.widget_eu_cookie_law_widget #eu-cookie-law {
+    border: 5px solid #27509F;
+    padding: 20px 20px 65px 20px;
+    max-width: 350px;
+    font-size: 13px;
+    line-height: 1.7;
+    background-color: #F4EDE4;
+    background-color: rgba(244, 237, 228, 0.95);
+    color: #27509F;
+    margin-left: 10px;
+    font-weight: 600; }
+    .widget.widget_eu_cookie_law_widget #eu-cookie-law form {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: 100%; }
+      .widget.widget_eu_cookie_law_widget #eu-cookie-law form input {
+        float: initial;
+        display: inline-block;
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+        color: #F4EDE4;
+        background-color: #27509F;
+        border: 3px solid #27509F;
+        letter-spacing: 0.6px;
+        padding: 6px 12px;
+        margin: 0 0 0 auto;
+        display: block; }
+        @media not all and (hover: none) {
+          .widget.widget_eu_cookie_law_widget #eu-cookie-law form input:hover {
+            background-color: #F4EDE4;
+            color: #27509F;
+            font-size: 13px;
+            border: 3px solid #27509F;
+            font-weight: 600;
+            padding: 6px 12px; } }
+  @media only screen and (max-width: 666px) {
+    .widget.widget_eu_cookie_law_widget {
+      /**
+        * Tablet Portrait
+        */ }
+      .widget.widget_eu_cookie_law_widget #eu-cookie-law form {
+        bottom: 5px;
+        right: 5px; } }
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
