@@ -11,4 +11,13 @@ body.admin-bar {
             top: 46px;
         }
     }
+
+	/**
+	 * Phone
+	 */
+    @media screen and (max-width: 600px) {
+        #wpadminbar {
+            position: fixed;
+        }
+    }
 }
