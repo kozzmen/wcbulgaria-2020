@@ -41,6 +41,7 @@ input[type="submit"] {
 		background-color: $color__primary;
 	}
 }
+
 .wp-block-button{
 	&.with-icon{
 		.wp-block-button__link{
@@ -74,6 +75,7 @@ input[type="submit"] {
 		}
 	}
 }
+
 .wceu-big-btn{
 	.wp-block-button__link{
 		font-size: 1.5rem;
@@ -108,6 +110,20 @@ input[type="submit"] {
 a.wp-block-button__link,
 a.more-link, .entry-title a {
 	text-decoration: none;
+}
+
+.more-link{
+	display: table;
+	font-size: .875rem;
+	font-weight: 700;
+	color: $color__primary;
+	margin-left: auto;
+	margin-right: 0;
+	margin-bottom: 0;
+	border-bottom: .125rem solid;
+	&:hover{
+		color: $color__secondary;
+	}
 }
 
 .edit-link {

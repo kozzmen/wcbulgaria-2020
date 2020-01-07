@@ -15,6 +15,18 @@
 		z-index: 1;
 		margin-bottom: 2rem;
 	}
+	.entry-header-content{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		@extend %inner;
+		margin: 0 auto;
+		padding: 4rem;
+		background-color: rgba(26, 29, 36, .6);
+		.entry-title{
+			color: $color__secondary;
+		}
+	}
 	.entry-image{
 		width: 100%;
 		max-height: 20rem;
@@ -95,7 +107,7 @@
 			list-style: none;
 			margin: 0 auto 1em;
 		}
-		ul:not(.wordcamp-post-list){
+		ul:not(.wordcamp-post-list):not(.wp-block-latest-posts__list):not(.wp-block-gallery){
 			padding-left: 2.5rem;
 			li{
 				position: relative;

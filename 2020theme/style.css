@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
-Theme Name: WCEU2020 (based on CampSite 2017)
-Theme URI: https://2020.europe.wordcamp.org/
+Theme Name: Campsite 2020
+Theme URI: http://underscores.me/
 Author: Bernhard Kau & Roberto Tuñón
 Author URI: https://2020.europe.wordcamp.org/
 Description: WCEU2020 theme based on the WordCamp Base Theme Campsite 2017. For a quicker start, check out the <a href="https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/">style guide</a>.
@@ -72,7 +72,7 @@ button,
 .wp-block-button__link,
 input[type="button"],
 input[type="reset"],
-input[type="submit"], .wceu-pseudologo:after, .wceu-pseudologo a, .main-navigation .menu, .main-navigation .menu .menu-item, .main-navigation .menu .menu-item a, .menu-toggle, .blog .post,
+input[type="submit"], .wceu-pseudologo:after, .wceu-pseudologo a, .main-navigation .menu, .main-navigation .menu .menu-item, .main-navigation .menu .menu-item a, .menu-toggle, .custom-posts-pagination .page-numbers, .blog .post,
 .archive .post, .blog .post .entry-image img,
 .archive .post .entry-image img {
   transition: all .25s ease-in-out;
@@ -85,7 +85,7 @@ input[type="submit"], .wceu-pseudologo:after, .wceu-pseudologo a, .main-navigati
 
 .alignwide,
 .is-style-wide, .posts-navigation,
-.post-navigation, #secondary, .footer-widgets-block, .blog .site-main, .block-imagecontents,
+.post-navigation, .custom-posts-pagination, #secondary, .footer-widgets-block, .blog .site-main, .single .entry-header-content, .block-imagecontents,
 .block-contentsimage, .block-imagecontents-content, .block-numbers, .contact-form, .wcorg-sponsors {
   max-width: 100%;
   margin-left: auto;
@@ -94,7 +94,7 @@ input[type="submit"], .wceu-pseudologo:after, .wceu-pseudologo a, .main-navigati
 @media (min-width: 768px) {
   .alignwide,
   .is-style-wide, .posts-navigation,
-  .post-navigation, #secondary, .footer-widgets-block, .blog .site-main, .block-imagecontents,
+  .post-navigation, .custom-posts-pagination, #secondary, .footer-widgets-block, .blog .site-main, .single .entry-header-content, .block-imagecontents,
   .block-contentsimage, .block-imagecontents-content, .block-numbers, .contact-form, .wcorg-sponsors {
     max-width: 1200px;
   }
@@ -118,7 +118,7 @@ input[type="submit"], .wceu-pseudologo:after, .wceu-pseudologo a, .main-navigati
 }
 
 .alignwide,
-.is-style-wide, .comments-title, .comment-respond, .comment-list, .error404 .content-area,
+.is-style-wide, .comments-title, .comment-respond, .comment-list, .custom-posts-pagination, .error404 .content-area,
 .search-no-results .content-area, .blog .site-main, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
 .page .entry-footer, .block-imagecontents-content, .block-numbers, .contact-form, .wcorg-sponsors {
@@ -127,7 +127,7 @@ input[type="submit"], .wceu-pseudologo:after, .wceu-pseudologo a, .main-navigati
 }
 @media (min-width: 768px) {
   .alignwide,
-  .is-style-wide, .comments-title, .comment-respond, .comment-list, .error404 .content-area,
+  .is-style-wide, .comments-title, .comment-respond, .comment-list, .custom-posts-pagination, .error404 .content-area,
   .search-no-results .content-area, .blog .site-main, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
   .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
   .page .entry-footer, .block-imagecontents-content, .block-numbers, .contact-form, .wcorg-sponsors {
@@ -1234,9 +1234,6 @@ table thead th {
 a {
   text-decoration: none;
 }
-a:visited {
-  color: #27509F;
-}
 a:hover, a:focus, a:active {
   color: #968f88;
 }
@@ -1250,9 +1247,6 @@ a:hover, a:active {
 
 .entry-title a {
   text-decoration: underline;
-}
-.entry-title a:visited {
-  color: #27509F;
 }
 
 .entry-content a {
@@ -1547,6 +1541,20 @@ input[type="submit"].invert {
 a.wp-block-button__link,
 a.more-link, .entry-title a {
   text-decoration: none;
+}
+
+.more-link {
+  display: table;
+  font-size: .875rem;
+  font-weight: 700;
+  color: #27509F;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 0;
+  border-bottom: .125rem solid;
+}
+.more-link:hover {
+  color: #F59E00;
 }
 
 .edit-link {
@@ -2224,6 +2232,35 @@ object {
   vertical-align: middle;
 }
 
+.custom-posts-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.custom-posts-pagination .page-numbers {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 100%;
+  text-align: center;
+  color: #F4EDE4;
+  padding: .5rem;
+  background-color: #F59E00;
+  margin: 0 .5rem;
+}
+.custom-posts-pagination .page-numbers.current {
+  color: #F4EDE4;
+  background-color: #DADADD;
+}
+.custom-posts-pagination .page-numbers:not(.current):hover {
+  color: #F4EDE4;
+  background-color: #27509F;
+}
+
 /*_______ Comments navigation _______*/
 /*_______ Sidebar _______*/
 #primary-sidebar {
@@ -2313,13 +2350,11 @@ object {
   color: #F4EDE4;
   border-bottom: .05rem solid;
 }
-.footer-widgets-block .widget_nav_menu .menu .menu-item-has-children > a {
-  display: none;
-}
 .footer-widgets-block .widget_nav_menu .menu .sub-menu {
   padding-left: 0;
+  margin-top: 1rem;
   margin-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 #footer-widget-1 {
@@ -2448,10 +2483,19 @@ object {
   color: #27509F;
 }
 .site-info a {
+  display: block;
   font-size: .875rem;
   color: #27509F;
   padding: 0;
-  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .site-info a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.site-info span {
+  display: none;
 }
 
 .site-info-generator {
@@ -2459,20 +2503,16 @@ object {
   vertical-align: middle;
 }
 .site-info-generator:after {
-  content: '';
   display: block;
-  vertical-align: middle;
-  width: 2rem;
-  height: 2rem;
-  background-image: url(https://2020.europe.wordcamp.org/files/2019/12/wordpress-icon-blue.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  content: "\f324";
+  font-family: 'dashicons';
+  font-size: 2rem;
   margin: .5rem auto;
 }
 @media (min-width: 768px) {
   .site-info-generator:after {
     display: inline-block;
+    vertical-align: middle;
     margin: 0 1rem;
   }
 }
@@ -2483,7 +2523,7 @@ object {
 }
 
 .privacy-policy-link {
-  display: none;
+  display: none !important;
 }
 
 .widget {
@@ -2516,6 +2556,8 @@ object {
 }
 .wp-block-latest-posts.is-grid li {
   font-size: 1.5rem;
+  border: none;
+  padding-left: 0;
 }
 
 .wp-block-quote,
@@ -2757,7 +2799,25 @@ object {
 }
 .blog .post .entry-header,
 .archive .post .entry-header {
+  padding: 0;
+  background-color: transparent;
   margin-bottom: .5rem;
+}
+.blog .post .entry-header .entry-title,
+.archive .post .entry-header .entry-title {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 100%;
+  text-align: left;
+  margin-bottom: .25rem;
+}
+.blog .post .entry-header .entry-title a,
+.archive .post .entry-header .entry-title a {
+  color: #27509F;
+}
+.blog .post .entry-header .entry-title:hover a,
+.archive .post .entry-header .entry-title:hover a {
+  text-decoration: underline;
 }
 .blog .post .entry-image,
 .archive .post .entry-image {
@@ -2768,21 +2828,6 @@ object {
 .blog .post .entry-image img,
 .archive .post .entry-image img {
   display: block;
-}
-.blog .post .entry-title,
-.archive .post .entry-title {
-  display: block;
-  font-size: 1.5rem;
-  line-height: 100%;
-  margin-bottom: .25rem;
-}
-.blog .post .entry-title a,
-.archive .post .entry-title a {
-  color: #27509F;
-}
-.blog .post .entry-title:hover a,
-.archive .post .entry-title:hover a {
-  text-decoration: underline;
 }
 .blog .post .entry-meta,
 .archive .post .entry-meta {
@@ -2796,6 +2841,11 @@ object {
 .blog .post .entry-meta a,
 .archive .post .entry-meta a {
   color: inherit;
+}
+.blog .post .entry-content,
+.archive .post .entry-content {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .blog .post .entry-content h1, .blog .post .entry-content h2, .blog .post .entry-content h3,
 .blog .post .entry-content h4, .blog .post .entry-content h5, .blog .post .entry-content h6, .blog .post .entry-content p,
@@ -2817,8 +2867,7 @@ object {
   font-size: .875rem;
   font-weight: 700;
   color: #27509F;
-  padding: .25rem .5rem;
-  background-color: #F4EDE4;
+  margin-top: auto;
   margin-left: auto;
   margin-right: 0;
   margin-bottom: 0;
@@ -2851,6 +2900,17 @@ object {
   position: relative;
   z-index: 1;
   margin-bottom: 2rem;
+}
+.single .entry-header-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: rgba(26, 29, 36, 0.6);
+}
+.single .entry-header-content .entry-title {
+  color: #F59E00;
 }
 .single .entry-image {
   width: 100%;
@@ -2946,18 +3006,18 @@ object {
   list-style: none;
   margin: 0 auto 1em;
 }
-.single .entry-content ul:not(.wordcamp-post-list),
-.page .entry-content ul:not(.wordcamp-post-list) {
+.single .entry-content ul:not(.wordcamp-post-list):not(.wp-block-latest-posts__list):not(.wp-block-gallery),
+.page .entry-content ul:not(.wordcamp-post-list):not(.wp-block-latest-posts__list):not(.wp-block-gallery) {
   padding-left: 2.5rem;
 }
-.single .entry-content ul:not(.wordcamp-post-list) li,
-.page .entry-content ul:not(.wordcamp-post-list) li {
+.single .entry-content ul:not(.wordcamp-post-list):not(.wp-block-latest-posts__list):not(.wp-block-gallery) li,
+.page .entry-content ul:not(.wordcamp-post-list):not(.wp-block-latest-posts__list):not(.wp-block-gallery) li {
   position: relative;
   padding: 0;
   margin-bottom: 1rem;
 }
-.single .entry-content ul:not(.wordcamp-post-list) li:before,
-.page .entry-content ul:not(.wordcamp-post-list) li:before {
+.single .entry-content ul:not(.wordcamp-post-list):not(.wp-block-latest-posts__list):not(.wp-block-gallery) li:before,
+.page .entry-content ul:not(.wordcamp-post-list):not(.wp-block-latest-posts__list):not(.wp-block-gallery) li:before {
   content: '';
   position: absolute;
   top: .875em;
