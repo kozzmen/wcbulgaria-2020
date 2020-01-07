@@ -2422,7 +2422,7 @@ body .wp-block-cover.home-header {
   background-size: 1180px;
   background-repeat: no-repeat;
   background-position: 10% 50%;
-  background-color: #27509f;
+  background-color: #27509F;
   /**
          * Tablet & Small Monitors
          */
@@ -2432,6 +2432,8 @@ body .wp-block-cover.home-header {
   /**
          * Phone
          */ }
+  body .wp-block-cover.home-header .wp-block-button__link:hover, body .wp-block-cover.home-header .wp-block-button__link:visited {
+    color: #27509F; }
   @media only screen and (max-width: 1450px) {
     body .wp-block-cover.home-header {
       background-size: 950px; }
@@ -2493,9 +2495,9 @@ body .wp-block-cover.home-header {
         text-align: left;
         float: left;
         margin-left: 0; }
-        body .wp-block-cover.home-header .wp-block-button a {
-          font-size: 22px;
-          margin: 0; } }
+      body .wp-block-cover.home-header .wp-block-button__link {
+        font-size: 22px;
+        margin: 0; } }
 
 /*--------------------------------------------------------------
 # Layout

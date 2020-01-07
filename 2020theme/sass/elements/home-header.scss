@@ -6,7 +6,13 @@ body {
         background-size: 1180px;
         background-repeat: no-repeat;
         background-position: 10% 50%;
-        background-color: #27509f;
+        background-color: $color__primary;
+
+        .wp-block-button__link {
+            &:hover, &:visited {
+                color: $color__primary;
+            }
+        }
 
         @media only screen and (max-width: 1450px) {
             background-size: 950px;
@@ -97,11 +103,10 @@ body {
                 text-align: left;
                 float: left;
                 margin-left: 0;
-
-                a {
-                    font-size: 22px;
-                    margin: 0;
-                }
+            }
+            .wp-block-button__link {
+                font-size: 22px;
+                margin: 0;
             }
          }
 
