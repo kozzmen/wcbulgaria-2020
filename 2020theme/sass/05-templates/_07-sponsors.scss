@@ -27,15 +27,16 @@ div[class^="wcorg-sponsor-level-"] {
 	}
 	h2, h3, h4, h5, h6{
 		flex: 1 1 100%;
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 		text-align: center;
 		margin-bottom: 1.5rem;
 		&:before{
-			content: '';
+			content: '.....';
 			display: block;
-			width: 4rem;
-			border-bottom: .5rem dotted $color__secondary;
-			margin: 0 auto .5rem;
+			font-size: 2.5rem;
+			line-height: 100%;
+			color: $color__secondary;
+			margin: 0 auto .25rem;
 		}
 	}
 }

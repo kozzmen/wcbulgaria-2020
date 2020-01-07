@@ -1,8 +1,12 @@
+/*_______ Color variables _______*/
+
+/*_______ Brand colors _______*/
 $color__primary: 		#27509F;
 $color__secondary: 		#F59E00;
 $color__tertiary: 		#F4EDE4;
 $color__black_blue: 	#233353;
 
+/*_______ Grays _______*/
 $color__grey_blue: 		#787f86;
 $color__grey: 			#737477;
 $color__grey_light: 	#968f88;
@@ -10,7 +14,7 @@ $color__grey_morelight: #9e9e9e;
 $color__grey_verylight: #C4C4C4;
 $color__grey_minimus: 	#DADADD;
 
-
+/*_______ Element colors _______*/
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -31,3 +35,190 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
+
+
+/*_______ WCEU brand patterns _______*/
+$wceupattern: random(10);
+$patterns-list: pattern01, pattern02, pattern03, pattern04, pattern05, pattern06, pattern07, pattern08, pattern09, pattern10;
+
+$nth: nth($patterns-list, $wceupattern);
+
+.pattern01{
+	background-image: 
+		repeating-linear-gradient(45deg,
+			transparent,
+			transparent 5%,
+			$color__secondary 5%,
+			$color__secondary 15%
+		);
+	background-color: $color__tertiary;
+}
+
+.pattern02{
+	background:
+		radial-gradient(circle,
+			transparent 0%,
+			$color__tertiary 0%,
+			$color__tertiary 30%,
+			transparent 30%,
+			transparent
+		),
+		radial-gradient(circle,
+			transparent 0%,
+			$color__tertiary 0%,
+			$color__tertiary 30%,
+			transparent 30%,
+			transparent
+		)
+		50px 50px,
+		linear-gradient(
+			$color__primary 25%,
+			transparent 25%
+		)
+		0 -6px,
+		linear-gradient(90deg,
+			$color__primary 25%,
+			transparent 25%
+		)
+		-6px 0;
+	background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+	// transform: scale(1.5) rotate(45deg);
+	overflow: hiddden;
+	background-color: $color__tertiary;
+}
+
+.pattern03{
+	background-image:
+		radial-gradient(
+			$color__secondary 72%,
+			transparent 72%
+		);
+	background-size: 100px 100px;
+	background-color: $color__tertiary;
+}
+
+.pattern04{
+	background:
+		linear-gradient(245deg,
+			$color__primary 25%,
+			$color__primary 25%,
+			transparent 25%,
+			transparent 25%
+			)
+		0 -50px,
+		linear-gradient(295deg,
+			$color__primary 25%,
+			$color__primary 25%,
+			transparent 25%,
+			transparent 25%
+			)
+		0 -50px,
+		linear-gradient(65deg,
+			$color__primary 25%,
+			$color__primary 25%,
+			transparent 25%,
+			transparent 25%
+		),
+		linear-gradient(115deg,
+			$color__primary 25%,
+			$color__primary 25%,
+			transparent 25%,
+			transparent 25%
+		);
+	background-size: 50px 100px;
+	background-color: $color__tertiary;
+}
+
+.pattern05{
+	background-image:
+		radial-gradient(
+			$color__secondary 50%,
+			transparent 50%
+		);
+	background-size: 40px 40px;
+	background-color: $color__tertiary;
+}
+
+.pattern06{
+	background-image: 
+		repeating-linear-gradient(90deg,
+			transparent 0,
+			transparent 10%,
+			$color__primary 10%,
+			$color__primary 25%
+		);
+	background-color: $color__tertiary;
+}
+
+.pattern07{
+	background:
+		linear-gradient(90deg,
+			transparent 80%,
+			$color__tertiary 80%
+		),
+		linear-gradient(
+			$color__secondary 80%,
+			transparent 80%
+		);
+	background-size: 70px 70px;
+	background-color: $color__tertiary;
+}
+
+.pattern08{
+	background:
+		linear-gradient( 225deg,
+			$color__tertiary,
+			$color__tertiary 63%,
+			transparent 63%
+		),
+		linear-gradient(45deg,
+			$color__primary 50%,
+			transparent 50%
+		);
+	background-size: 100%, 50px 50px;
+	background-color: $color__tertiary;
+}
+
+.pattern09{
+	background-image:
+		radial-gradient(
+			$color__secondary 71%,
+			transparent 71%
+		);
+	background-size: 50px 50px;
+	background-color: $color__tertiary;
+}
+
+.pattern10{
+	background:
+		linear-gradient(155deg,
+			$color__primary 23%,
+			$color__primary 23%,
+			transparent 23%,
+			transparent 23%
+			)
+		-25px -25px,
+		linear-gradient(205deg,
+			$color__primary 23%,
+			$color__primary 23%,
+			transparent 23%,
+			transparent 23%
+			)
+		-25px -25px,
+		linear-gradient(335deg,
+			$color__primary 23%,
+			$color__primary 23%,
+			transparent 23%,
+			transparent 23%
+		)
+		0 -25px,
+		linear-gradient(25deg,
+			$color__primary 23%,
+			$color__primary 23%,
+			transparent 23%,
+			transparent 23%
+		)
+		0 -25px;
+	background-size: 50px 25px;
+	background-color: $color__tertiary;
+}
