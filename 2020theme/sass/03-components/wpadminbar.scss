@@ -1,0 +1,14 @@
+body.admin-bar {
+    .site-header {
+        top: 32px;
+    }
+
+	/**
+	 * Tablet Portrait
+	 */
+    @include tablet-portrait {
+        .site-header {
+            top: 46px;
+        }
+    }
+}

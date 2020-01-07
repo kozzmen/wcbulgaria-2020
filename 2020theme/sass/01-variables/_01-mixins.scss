@@ -50,3 +50,55 @@ h4, h5, h6 {
 %transition{
 	transition: all .25s ease-in-out;
 }
+
+// Keyframes Animation
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+// Check if browser support hover effect
+@mixin is-hover-supported {
+    @media not all and (hover: none) {
+        @content;
+    }
+}
+
+// Responsive Media Codes
+$phone-portrait : 666px;
+$phone : 736px;
+$tablet-portrait : 768px;
+$tablet : 1024px;
+$laptops : 1600px;
+$desktops: 1800px;
+
+@mixin tablet {
+  @media only screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin tablet-portrait {
+    @media only screen and (max-width: #{$tablet-portrait}) {
+      @content;
+    }
+}
+@mixin phone {
+    @media only screen and (max-width: #{$phone}) {
+      @content;
+    }
+}
+@mixin phone-portrait {
+    @media only screen and (max-width: #{$phone-portrait}) {
+      @content;
+    }
+}
