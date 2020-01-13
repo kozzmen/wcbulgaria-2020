@@ -11,7 +11,13 @@
 	z-index: 10;
 	@media(min-width: 769px){
 		margin: 0 auto;
-		padding: 0 10%;
+		padding: 0 13%;
+	}
+	@media(min-width: 1024px){
+		padding: 0 12%;
+	}
+	@media(min-width: 1920px){
+		padding: 0 18%;
 	}
 }
 
@@ -24,9 +30,9 @@
 	padding: .5rem 2.5rem;
 	background-color: $color__tertiary;
 	@media(min-width: 769px){
-		width: 300px;
 		height: 100%;
-		padding: .5rem 0;
+		padding: .5rem 3rem;
+		margin-right: 2rem;
 	}
 	.custom-header-media{
 		display: none;

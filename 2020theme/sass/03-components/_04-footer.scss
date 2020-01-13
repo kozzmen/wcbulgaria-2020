@@ -9,11 +9,13 @@
 	background-color: $color__primary;
 	margin-bottom: 2.5rem;
 }
+
 .footer-widgets-block{
 	@extend %inner;
 	padding: 0 2rem;
 	@media (min-width: 768px){
 		display: flex;
+		flex-flow: row wrap;
 		justify-content: space-between;
 	}
 	p{
@@ -59,21 +61,22 @@
 				font-size: 1rem;
 				line-height: 100%;
 				margin-bottom: 1rem;
-				&.more-info{
-					display: none;
+				a{
+					color: $color__tertiary;
+					border-bottom: .05rem solid;
+					@extend %transition;
+					&:hover{
+						color: $color__grey_light;
+					}
 				}
-			}
-			a{
-				color: $color__tertiary;
-				border-bottom: .05rem solid;
-			}
-			.sub-menu{
-				list-style: none;
-				padding-left: .5rem;
-				border-left: .05rem solid white;
-				margin-top: .75rem;
-				margin-left: 0;
-				margin-bottom: 1rem;
+				.sub-menu{
+					list-style: none;
+					padding-left: .5rem;
+					border-left: .05rem solid $color__tertiary;
+					margin-top: .75rem;
+					margin-left: 0;
+					margin-bottom: 1rem;
+				}
 			}
 		}
 	}
@@ -96,8 +99,14 @@
 }
 
 #text-4,
-.jetpack_subscription_widget{
-	flex: 0 1 35%;
+.jetpack_subscription_widget,
+#nav_menu-6{
+	@media(min-width: 768px){
+		flex: 0 1 48%;
+	}
+	@media (min-width: 769px){
+		flex: 0 1 35%;	
+	}
 	#subscribe-text{
 		p{
 			font-size: 1rem;
@@ -126,22 +135,8 @@
 		}
 	}
 }
-.widget_search{
-	margin-top: auto !important;
-	margin-bottom: 0 !important;
-	label{
-		float: left;
-		width: 60%;
-		height: 2.5rem;
-	}
-	.search-submit{
-		width: 40%;
-		height: 2.5rem;
-	}
-}
 
 #nav_menu-6{
-	flex: 0 1 30%;
 	.menu-social-container{
 		.menu{
 			display: flex;
@@ -191,6 +186,26 @@
 		}
 	}
 }
+
+
+.widget_search{
+	max-width: 700px;
+	margin: 2rem 0 0 auto !important;
+	@media(min-width: 769px){
+		margin-top: auto !important;
+		margin-bottom: 0 !important;
+	}
+	label{
+		float: left;
+		width: 60%;
+		height: 2.5rem;
+	}
+	.search-submit{
+		width: 40%;
+		height: 2.5rem;
+	}
+}
+
 
 .search-form{
 	label, input{

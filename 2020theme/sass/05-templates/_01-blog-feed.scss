@@ -12,9 +12,19 @@
 	}
 }
 
+.archive,
+.search-results{
+	.hentry{
+		max-width: $size__content-moretiny !important;
+		padding: 0 2rem;
+		margin: 0 auto 4rem !important;
+	}
+}
+
 .blog,
-.archive{
-	.post{
+.archive,
+.search-results{
+	.hentry{
 		position:relative;
 		@media(min-width: 480px){
 			flex: 0 0 48%;
@@ -34,6 +44,7 @@
 			.entry-title{
 				display:block;
 				font-size:1.5rem;
+				font-weight: 700;
 				line-height: 100%;
 				text-align: left;
 				margin-bottom: .25rem;
@@ -69,12 +80,12 @@
 		.entry-content{
 			margin-top: 0;
 			margin-bottom: 0;
-			%headings, p{
-				font-size: 1rem;
-				font-weight: 400;
-				line-height: 120%;
-				margin-bottom: .5rem;
-			}
+		}
+		%headings, p{
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 140%;
+			margin-bottom: .5rem;
 		}
 		.more-link{
 			display: table;
