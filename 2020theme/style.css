@@ -1011,6 +1011,8 @@ p {
   p a {
     text-decoration: underline;
     word-break: break-word; }
+  p a:visited {
+    color: #27509F; }
   p.has-small-font-size {
     font-size: 16px;
     font-size: 1rem; }

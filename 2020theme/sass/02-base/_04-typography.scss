@@ -88,10 +88,13 @@ p {
 	@media (min-width: 768px){
 		@include font-size(1.5);
 	}
-	a{
+	a {
 		text-decoration: underline;
 		word-break: break-word;
-	}
+    }
+    a:visited {
+        color: #27509F;
+    }
 	&.has-small-font-size{
 		@include font-size(1);
 	}
