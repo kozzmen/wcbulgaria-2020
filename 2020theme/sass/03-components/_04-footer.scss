@@ -23,6 +23,7 @@
 	select,
 	textarea {
 		height: 2.5rem;
+		color: $color__tertiary;
 		background-color: transparent;
 		border-color: $color__tertiary;
 		&::placeholder{
@@ -33,6 +34,7 @@
 	input[type="submit"] {
 		height: 2.5rem;
 		font-size: 1.25rem;
+		color: $color__primary;
 		padding: 0;
 		background-color: $color__tertiary;
 		border-color: $color__tertiary;

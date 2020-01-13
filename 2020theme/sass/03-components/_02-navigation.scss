@@ -67,12 +67,14 @@
 						color: $color__tertiary;
 						border-bottom: .125rem solid;
 					}
+					&:hover{
+						color: $color__grey_verylight;
+					}
 				}
 			}
 			&.emphasised{
 				text-align: center;
 				text-decoration: none;
-				background-color: $color__secondary;
 				box-shadow: -.25em .25rem 0 $color__black_blue;
 				@media (min-width: 769px){
 					width: auto;
@@ -81,24 +83,20 @@
 				a{
 					color: $color__primary;
 					padding: .75rem 1rem;
-				}
-				&:hover{
-					background-color: $color__tertiary;
-					box-shadow: -0.125em 0.125rem 0 $color__black-blue;
-					a{
-						opacity: 1;
+					background-color: $color__secondary;
+					&:focus{
+						outline: .125rem solid $color__tertiary;
 					}
 				}
 				&.current-menu-item{
 					box-shadow: none;
 					a{
-						color: $color__tertiary;
+						color: $color__primary;
+						background-color: $color__tertiary;
+						box-shadow: -0.125em 0.125rem 0 $color__black-blue;
 						border:none;
 					}
 				}
-			}
-			&.more-info{
-				display: none;
 			}
 			&.menu-item-has-children{
 				position: relative;
@@ -118,16 +116,11 @@
 						}
 					}
 				}
-				.dropdown-toggle{
-					display: none;
-				}
-				&.current-menu-parent{
-					@media (min-width: 769px){
-						color: $color__tertiary;
-						border-bottom: .125rem solid;
-					}
-				}
-				&:hover{
+				&.focus,
+				&:focus-within,
+				&:hover,
+				> a:focus,
+				> a:hover					{
 					border-color: transparent !important;
 					@media (min-width: 769px){
 						a:after{
@@ -138,6 +131,15 @@
 						.sub-menu{
 							max-height: 30rem;
 						}
+					}
+				}
+				.dropdown-toggle{
+					display: none;
+				}
+				&.current-menu-parent{
+					@media (min-width: 769px){
+						color: $color__tertiary;
+						border-bottom: .125rem solid;
 					}
 				}
 			}
@@ -223,17 +225,24 @@
 		}
 	}
 }
+
 .more-info{
 	display: block;
 	width: 100%;
 	text-align: center;
-	font-size: 0;
 	font-weight: 700;
+	font-size: 0;
+    line-height: 100%;
+    text-decoration: none;
 	color: $color__tertiary !important;
+	padding: 0;
 	margin: 0;
+	@extend %transition;
 	@media (min-width: 769px){
 		font-size: 1rem;
 		padding: 0;
+    	padding-left: .5rem;
+		border: .125rem solid $color__secondary;
 	}
 	&:after{
 		content: "\f346";
@@ -244,8 +253,21 @@
 		line-height: 100%;
 		padding: .5rem;
 		background-color: $color__secondary;
+		@extend %transition;
 		@media (min-width: 769px){
 			margin-left: .5rem;
+		}
+	}
+	&:focus{
+		outline: .125rem solid $color__tertiary;
+	}
+	&:hover{
+		color: $color__primary !important;
+		background-color: $color__tertiary;
+		border-color: $color__tertiary;
+		&:after{
+			color: $color__primary;
+			background-color: $color__tertiary;
 		}
 	}
 }

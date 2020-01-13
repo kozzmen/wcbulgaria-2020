@@ -24,6 +24,7 @@ input[type="submit"] {
 	&:visited{
 		color: inherit;
 	}
+	&:focus,
 	&:hover{
 		color: $color__primary;
 		background-color: white;
@@ -32,13 +33,11 @@ input[type="submit"] {
 	&:active{
 		background-color: $color__grey;
 	}
-	&:focus{
-		border-color: $color__secondary;
-	}
 	&.invert{
 		color: $color__tertiary;
 		background-color: $color__primary;
 		border-color: $color__primary;
+		&:focus,
 		&:hover{
 			color: $color__primary;
 			background-color: transparent;
@@ -62,6 +61,10 @@ input[type="submit"] {
 		@media(min-width: 480px){
 			font-size: 1.75rem;
 		}
+		&:focus{
+			outline: none;
+		}
+		&:focus,
 		&:hover{
 			color: $color__tertiary;
 			background-color: $color__secondary;
@@ -80,6 +83,10 @@ input[type="submit"] {
 			border: .25rem solid $color__primary;
 			border-radius: 0;
 			box-shadow: none;
+			&:focus{
+				outline: none;
+			}
+			&:focus,
 			&:hover{
 				color: $color__tertiary;
 				background-color: $color__primary;

@@ -257,8 +257,7 @@ a {
 		color: $color__grey-light;
 	}
 	&:focus {
-		outline: none;
-		inset: .125rem solid
+		outline: .125rem solid $color__secondary;
 	}
 	&:hover,
 	&:active {

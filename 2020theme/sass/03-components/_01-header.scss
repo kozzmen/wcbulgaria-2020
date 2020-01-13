@@ -36,6 +36,10 @@
 			display: block;
 			margin: 0;
 			padding: 0;
+			@extend %transition;
+			&:hover{
+				opacity: .7;
+			}
 		}
 		.custom-logo{
 			width: 88px;

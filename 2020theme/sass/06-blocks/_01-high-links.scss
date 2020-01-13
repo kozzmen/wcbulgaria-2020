@@ -11,8 +11,13 @@
 			padding: 1.5rem !important;
 			margin-bottom: 1rem;
 			@extend %transition;
+			&:focus,
+			&:focus-within,
 			&:hover{
 				background-color: $color__secondary;
+				a{
+					outline: none;
+				}
 			}
 			.wp-block-image{
 				width: 100%;
