@@ -16,11 +16,17 @@
 }
 
 .custom-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 	flex: 0 0 auto;
-	padding: 1rem 2.5rem;
+	padding: .5rem 2.5rem;
 	background-color: $color__tertiary;
 	@media(min-width: 769px){
-		padding: 1rem 4rem;
+		width: 300px;
+		height: 100%;
+		padding: .5rem 0;
 	}
 	.custom-header-media{
 		display: none;
@@ -28,103 +34,15 @@
 	.site-branding{
 		.custom-logo-link{
 			display: block;
+			margin: 0;
+			padding: 0;
+		}
+		.custom-logo{
+			width: 88px;
 			height: auto;
-			.custom-logo{
-				width: auto;
-				height: 3rem;
+			@media(min-width: 769px){
+				width: 111px;
 			}
 		}
-	}
-}
-
-.main-navigation{
-	// flex: 0 0 auto;
-}
-
-#header-widgets{
-	flex: 1 1 100%;
-	width: 100%;
-	display: flex;
-	flex-flow: row nowrap;
-	// flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
-	color: $color__tertiary;
-}
-
-.wceu-pseudologo{
-	position: relative;
-	margin: 0 0 2rem;
-	&:after{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		display: block;
-		width: 100%;
-		height: .5rem;
-		background-color: $color__tertiary;
-		@extend %transition;
-		z-index: -1;
-	}
-	&:hover{
-		color: white;
-		&:after{
-			height: 100%
-		}
-	}
-	&:focus{
-		&:after{
-			background-color: $color__grey;
-		}
-	}
-	a{
-		display: block;
-		width: 12.5rem;
-		font-weight: 800;
-		font-size: 3.25rem;
-		line-height: 100%;
-		text-align: right;
-		text-decoration: none;
-		padding-top: .5rem;
-		padding-bottom: 1rem;
-		padding-left: 1rem;
-		padding-right: .5rem;
-		padding-bottom: .5rem;
-		margin: 0;
-		max-width: 100%;
-		overflow: hidden;
-		@extend %transition;
-		span{
-			display: block;
-			font-size: 3.25rem;
-			line-height: 100%;
-		}
-		&:after{
-			content: '.';
-			display: block;
-			font-size: 3.25rem;
-			line-height: 100%;
-			margin-top: -1rem;
-		}
-		&:hover{
-			color: white;
-		}
-		&:focus{
-			background-color: $color__grey;
-		}
-	}
-}
-
-#header-widget-2,
-.site-description{
-	text-align: right;
-	padding: 0 2rem;
-	@media (min-width: 1200px){
-		flex: 0 1 60%;
-		padding: 0;
-		margin: 2rem 10% 0 0;
-	}
-	.widget_text{
-		margin-bottom: 0;
 	}
 }

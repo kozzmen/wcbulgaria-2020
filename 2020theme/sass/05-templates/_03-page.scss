@@ -1,0 +1,12 @@
+/*_______ Page template _______*/
+.page .entry-header,
+.hfeed .page-header{
+	padding: 7rem 2rem;
+	margin-bottom: 4rem;
+	background-color: $color__tertiary;
+	.entry-title,
+	.page-title{
+		text-align: center;
+		margin: 0;
+	}
+}

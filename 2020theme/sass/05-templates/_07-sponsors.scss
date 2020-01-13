@@ -22,8 +22,8 @@ div[class^="wcorg-sponsor-level-"] {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 4rem;
 	&:not(:last-of-type){
-		margin-bottom: 4rem;
 	}
 	h2, h3, h4, h5, h6{
 		flex: 1 1 100%;
@@ -42,7 +42,7 @@ div[class^="wcorg-sponsor-level-"] {
 }
 .wcorg-sponsor{
 	max-width: 80%;
-	margin: 1rem auto;
+	margin: .5rem auto;
 	@media(min-width: 768px){
 		max-width: inherit;
 		margin-top: 0;

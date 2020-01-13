@@ -18,7 +18,7 @@ $size__content-minimun: 300px;
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	@media (min-width: 768px){
+	@media (min-width: 769px){
 		max-width: $size__content-max;
 	}
 }
@@ -27,16 +27,16 @@ $size__content-minimun: 300px;
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	@media (min-width: 768px){
+	@media (min-width: 769px){
 		max-width: $size__content-tiny;
 	}
 }
 
 %inner-padding{
 	// padding: 0 2rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	@media (min-width: 768px){
+	margin-left: 2rem;
+	margin-right: 2rem;
+	@media (min-width: 769px){
 		margin-left: auto;
 		margin-right: auto;
 	}
