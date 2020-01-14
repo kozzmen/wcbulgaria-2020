@@ -22,7 +22,8 @@
 	display: block;
 }
 
-.wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption{
+.wp-block-gallery .blocks-gallery-image figcaption,
+.wp-block-gallery .blocks-gallery-item figcaption{
 	color: $color__primary;
 	background:linear-gradient(0deg,rgba(200,200,200,.7),rgba(200,200,200,.3) 70%,transparent)
 }

@@ -34,15 +34,6 @@ hr {
 	clear: both;
 }
 
-.wp-block-separator{
-	&.is-style-dots{
-		&:before{
-			font-weight: 800;
-			font-size: 2rem;
-		}
-	}
-}
-
 img {
 	max-width: 100%; /* Adhere to container width. */
 	height: auto; /* Make sure images are scaled correctly. */
