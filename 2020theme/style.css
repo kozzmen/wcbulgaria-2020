@@ -1063,7 +1063,7 @@ input[type="submit"] {
       background-color: transparent; }
 
 .wp-block-button {
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
   .wp-block-button .wp-block-button__link {
     font-weight: 700;
     font-size: 1.5rem;
@@ -2360,12 +2360,15 @@ body.admin-bar {
     border: none; }
 
 /*_______ Page template _______*/
+.page-template-default .entry-header,
 .page-template .entry-header,
 .search-results .page-header,
 .archive .page-header {
   padding: 7rem 2rem;
   margin-bottom: 4rem;
   background-color: #F4EDE4; }
+  .page-template-default .entry-header .entry-title,
+  .page-template-default .entry-header .page-title,
   .page-template .entry-header .entry-title,
   .page-template .entry-header .page-title,
   .search-results .page-header .entry-title,
