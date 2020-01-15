@@ -124,35 +124,35 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "03-components/07-cookies-advise";
 
 /*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
-// @import "04-layouts/01-content-sidebar";
-// @import "04-layouts/02-sidebar-content";
-@import "04-layouts/03-no-sidebar";
-@import "04-layouts/04-full-width";
-@import "04-layouts/05-nocontent";
-
-/*--------------------------------------------------------------
 # Blocks
 --------------------------------------------------------------*/
-@import "06-blocks/00-group";
-@import "06-blocks/01-image";
-@import "06-blocks/02-media-text";
-@import "06-blocks/03-quotes";
-@import "06-blocks/04-separators";
-@import "06-blocks/05-latest-posts";
-@import "06-blocks/06-high-links";
-@import "06-blocks/07-high-links-inline";
-@import "06-blocks/08-notations";
-@import "06-blocks/09-address";
-@import "06-blocks/10-image-contents";
-@import "06-blocks/11-numbers";
-@import "06-blocks/12-home-header";
-@import "06-blocks/13-table";
+@import "04-blocks/01-group";
+@import "04-blocks/02-image";
+@import "04-blocks/03-table";
+@import "04-blocks/04-media-text";
+@import "04-blocks/05-quotes";
+@import "04-blocks/06-separators";
+@import "04-blocks/07-latest-posts";
+@import "04-blocks/08-high-links";
+@import "04-blocks/09-high-links-inline";
+@import "04-blocks/10-notations";
+@import "04-blocks/11-address";
+@import "04-blocks/12-home-header";
+@import "04-blocks/13-image-contents";
+@import "04-blocks/14-numbers";
 
 /*--------------------------------------------------------------
 # Templates
 --------------------------------------------------------------*/
+/*---------
+# Layouts
+---------*/
+// @import "05-templates/layouts/01-content-sidebar";
+// @import "05-templates/layouts/02-sidebar-content";
+@import "05-templates/layouts/03-no-sidebar";
+@import "05-templates/layouts/04-full-width";
+@import "05-templates/layouts/05-nocontent";
+
 @import "05-templates/00-home";
 @import "05-templates/01-blog-feed";
 @import "05-templates/02-single";

@@ -10,6 +10,7 @@
 	}
 	.wp-block-columns{
 		justify-content: space-between;
+		color: $color__primary;
 		.wp-block-column{
 			&:first-child{
 				flex: 0 1 100%;
@@ -80,7 +81,7 @@
 		transition:
 			width 0.25s ease-out,
 			height 0.25s ease-out 0.25s;
-		animation: borderbefore .25s ease-out 7s forwards;
+		animation: borderbefore .25s ease-out 5s forwards;
 	}
 	.dots{
 		position: relative;
@@ -205,15 +206,14 @@
 	height: 108px;
 	font-size: 3.375rem;
 	line-height: 100%;
-	color: $color__primary !important;
 	margin-top: 1.5rem;
 	margin-bottom: .5rem;
 	span{
 		margin-left:-400px;
 		animation: slidein .2s ease-in-out forwards;
-		animation-delay: 8s;
+		animation-delay: 5.5s;
 		&:last-of-type{
-			animation-delay: 8.5s;
+			animation-delay: 5.75s;
 		}
 	}
 }
@@ -223,7 +223,7 @@
 	margin: 0;
 	margin-left:-400px;
 	animation: slidein .2s ease-in-out forwards;
-	animation-delay: 9s;
+	animation-delay: 6s;
 }
 
 @keyframes slidein {
@@ -232,7 +232,7 @@
 }
 
 
-/*_______ Big claim content _______*/
+/*_______ Event data (previously on home header) _______*/
 .wceu-data-title,
 .wceu-data-subtitle{
 	line-height: 100%;
@@ -241,7 +241,7 @@
 }
 .wceu-data-title{
 	font-size: 1.5rem;
-	color: $color__primary !important;
+	color: $color__primary;
 	@media(min-width: 480px){
 		font-size: 2rem;
 	}
@@ -249,17 +249,18 @@
 .wceu-data-subtitle{
 	font-weight: 400;
 	font-size: 1rem;
-	color: $color__primary !important;
+	color: $color__primary;
 	margin-bottom: .5rem;
 	@media(min-width: 480px){
 		font-size: 1.75rem;
 	}
 }
+
+/*_______ Big claim content _______*/
 .wceu-claim{
 	font-weight: 700;
-	font-size: 2.25rem;
+	font-size: 10vw;
 	line-height: 100%;
-	color: $color__primary !important;
 	margin: 0 0 2rem;
 	@media(min-width: 480px){
 		font-size: 3rem;
