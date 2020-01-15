@@ -61,16 +61,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## No Sidebar
 	## Full width
 
-# Templates
-	## Home
-	## Blog feed
-	## Single
-	## Page
-	## Contact form
-	## Organisers
-	## Tickets
-	## Sponsors
-
 # Blocks
 	## Group block
 	## High links (custom block)
@@ -85,6 +75,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Numbers (custom block)
 	## Home header
 
+# Templates
+	## Home
+	## Blog feed
+	## Single
+	## Page
+	## Contact form
+	## Organisers
+	## Tickets
+	## Sponsors
 
 /*--------------------------------------------------------------
 # Variables
@@ -134,18 +133,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "04-layouts/05-nocontent";
 
 /*--------------------------------------------------------------
-# Templates
---------------------------------------------------------------*/
-@import "05-templates/00-home";
-@import "05-templates/01-blog-feed";
-@import "05-templates/02-single";
-@import "05-templates/03-page";
-@import "05-templates/04-contact-form";
-@import "05-templates/05-organisers";
-@import "05-templates/06-tickets";
-@import "05-templates/07-sponsors";
-
-/*--------------------------------------------------------------
 # Blocks
 --------------------------------------------------------------*/
 @import "06-blocks/00-group";
@@ -161,3 +148,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "06-blocks/10-image-contents";
 @import "06-blocks/11-numbers";
 @import "06-blocks/12-home-header";
+@import "06-blocks/13-table";
+
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+@import "05-templates/00-home";
+@import "05-templates/01-blog-feed";
+@import "05-templates/02-single";
+@import "05-templates/03-page";
+@import "05-templates/04-contact-form";
+@import "05-templates/05-organisers";
+@import "05-templates/06-tickets";
+@import "05-templates/07-sponsors";
+@import "05-templates/08-attendees";

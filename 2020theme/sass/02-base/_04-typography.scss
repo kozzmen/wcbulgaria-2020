@@ -181,73 +181,6 @@ dd {
 }
 
 
-/*_______ Tables _______*/
-table {
-	max-width: 100%;
-	width: 100%;
-	margin: 0 0 2rem;
-	text-align: left;
-	border-collapse: collapse;
-	thead{
-		font-size: .875rem;
-		text-align: left;
-		border-bottom: .125rem solid $color__primary;
-		th{
-			padding: .25rem;
-		}
-		@media (min-width: 480px){
-			+ tbody{
-				&:before{
-					content: '';
-					display: block;
-					padding-top: 1rem;
-				}
-			}
-		}
-	}
-}
-
-.wp-block-table{
-	min-width: calc(100% - 2rem);
-	max-width: calc(100% - 2rem) !important;
-	line-height: 100%;
-	text-align: center;
-	margin-bottom: 2rem;
-	border-collapse: collapse;
-	word-break: break-word;
-	@media (min-width: 769px){
-		min-width: inherit;
-		max-width: $size__content-tiny !important;
-		word-break: keep-all;
-	}
-	&.headed-table{
-		tr:first-child{
-			color: white;
-			background-color: $color__primary;
-			td{
-				border-color: white;
-				border-top-color: $color__primary;
-				&:first-child{
-					border-left-color: $color__primary;
-				}
-				&:last-child{
-					border-right-color: $color__primary;
-				}
-			}
-		}
-		td{
-			padding: .5rem;
-			border: 1px solid;
-		}
-	}
-	&.firstcol-bigger{
-		td:first-child {
-			text-align: left;
-			width: 50%;
-		}
-	}
-}
-
 /*_______ Links _______*/
 a {
 	text-decoration: none;
@@ -273,6 +206,7 @@ a {
 
 .entry-content{
 	a {
+		color: inherit;
 		text-decoration: underline;
 	}
 }
