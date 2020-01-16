@@ -27,34 +27,41 @@
 					margin: 0;
 					a{
 						display: flex;
-						padding-bottom: 2rem;
+						padding-bottom: 1rem;
+						@media (min-width: 480px){
+							padding-bottom: 2rem;
+						}
 						img{
-							max-width: 5rem;
+							max-width: 4rem;
 							height: auto;
 							margin-left: 0;
+							@media (min-width: 480px){
+								max-width: 5rem;
+							}
 						}
 					}
 				}
 			}
-			#{headings(1,6)},
-			p, a{
-				position: relative;
-				display: block;
-				font-size: 2rem;
-				color: $color__tertiary;
-				text-decoration: none;
-				margin-top: auto;
-				margin-bottom: 0;
-			}
-			#{headings(1,6)},
+			%headings,
 			p{
+				position: relative;
+				padding-right: 2rem;
+				&:after{
+					content: "\f344";
+					font-family: 'dashicons';
+					position: absolute;
+					bottom: 0;
+					right: 0;
+				}
 				a{
-					&:after{
-						content: "\f344";
-						font-family: 'dashicons';
-						position: absolute;
-						bottom: 0;
-						right: 0;
+					display: block;
+					font-size: 1.75rem;
+					color: $color__tertiary;
+					text-decoration: none;
+					margin-top: auto;
+					margin-bottom: 0;
+					@media (min-width: 480px){
+						font-size: 2rem;
 					}
 				}
 			}

@@ -220,7 +220,7 @@
 .wceu-subtitle{
 	font-size: 3rem;
 	color: $color__secondary !important;
-	margin: 0;
+	margin-top: 0 !important;
 	margin-left:-400px;
 	animation: slidein .2s ease-in-out forwards;
 	animation-delay: 6s;
