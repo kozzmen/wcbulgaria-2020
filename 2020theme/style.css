@@ -2077,6 +2077,9 @@ body.admin-bar {
   list-style: none;
   margin-bottom: 1rem; }
 
+.entry-content li > ul, .entry-content li > ol {
+  margin: 1rem 0; }
+
 .entry-content ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid) {
   padding-left: 1.5rem; }
   @media (min-width: 480px) {
@@ -2505,8 +2508,19 @@ table {
     line-height: 120%; }
     .notation p:last-of-type {
       margin-bottom: 0; }
+  .notation ul, .notation ol {
+    margin-top: 0;
+    padding-left: 1rem; }
+  .notation.toc {
+    background-color: transparent; }
 
-p + .notation {
+p + .notation,
+h1 + .notation,
+h2 + .notation,
+h3 + .notation,
+h4 + .notation,
+h5 + .notation,
+h6 + .notation {
   margin-top: 4rem; }
 
 /*_______ Address block (Paragraph block for a phisical address) _______*/

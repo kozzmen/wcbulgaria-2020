@@ -21,7 +21,16 @@
 			margin-bottom: 0;
 		}
 	}
+	ul, ol{
+		margin-top: 0;
+		padding-left: 1rem;
+	}
+	&.toc{
+		background-color: transparent;
+	}
 }
-p + .notation{
+
+p + .notation,
+%headings + .notation{
 	margin-top: 4rem;
 }
