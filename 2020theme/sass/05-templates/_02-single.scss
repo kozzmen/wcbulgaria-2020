@@ -84,12 +84,8 @@
 			@extend %inner-tiny;
 			@extend %inner-padding;
 		}
-		p,
-		ol,
-		ul{
-			+ %headings{
-				margin-top: 1em;
-			}
+		* + %headings{
+			margin-top: 1em;
 		}
 	}
 	.entry-footer{

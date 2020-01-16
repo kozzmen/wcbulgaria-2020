@@ -291,12 +291,18 @@
 		color: $color__secondary;
 		font-weight: 700;
 	}
-	.tix-row-question-3851 .tix-left:after {
+	.tix-row-question-3968 .tix-left:after {
 		content: "(include @)";
 		display: block;
 		font-size: 70%;
 		color: $color__grey;
-	}	
+	}
+	.tix-row-question-3969.tix-left:after {
+		content: "(https required)";
+		display: block;
+		font-size: 70%;
+		color: $color__grey;
+	}
 }
 
 .camptix-invoice-toggle-wrapper{

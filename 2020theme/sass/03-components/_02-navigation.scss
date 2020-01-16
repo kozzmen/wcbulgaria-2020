@@ -334,6 +334,10 @@
 			color: $color__primary;
 			padding-bottom: .125rem;
 			border-bottom: .125rem solid;
+			@extend %transition;
+			&:hover{
+				color: $color__secondary;
+			}
 		}
 	}
 
