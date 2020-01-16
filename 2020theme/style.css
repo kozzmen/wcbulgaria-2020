@@ -2441,15 +2441,19 @@ table {
       .salient-links .wp-block-columns .wp-block-column h4, .salient-links .wp-block-columns .wp-block-column h5, .salient-links .wp-block-columns .wp-block-column h6,
       .salient-links .wp-block-columns .wp-block-column p {
         position: relative;
-        padding-right: 2rem; }
+        padding-right: 2rem;
+        margin: auto 0 0;
+        line-height: 80%; }
         .salient-links .wp-block-columns .wp-block-column h1:after, .salient-links .wp-block-columns .wp-block-column h2:after, .salient-links .wp-block-columns .wp-block-column h3:after,
         .salient-links .wp-block-columns .wp-block-column h4:after, .salient-links .wp-block-columns .wp-block-column h5:after, .salient-links .wp-block-columns .wp-block-column h6:after,
         .salient-links .wp-block-columns .wp-block-column p:after {
-          content: "\f344";
-          font-family: 'dashicons';
           position: absolute;
           bottom: 0;
-          right: 0; }
+          right: 0;
+          content: "\f344";
+          font-family: 'dashicons';
+          font-size: 1.75rem;
+          color: #F4EDE4; }
         .salient-links .wp-block-columns .wp-block-column h1 a, .salient-links .wp-block-columns .wp-block-column h2 a, .salient-links .wp-block-columns .wp-block-column h3 a, .salient-links .wp-block-columns .wp-block-column h4 a, .salient-links .wp-block-columns .wp-block-column h5 a, .salient-links .wp-block-columns .wp-block-column h6 a,
         .salient-links .wp-block-columns .wp-block-column p a {
           display: block;

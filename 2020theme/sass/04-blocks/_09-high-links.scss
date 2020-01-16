@@ -46,12 +46,16 @@
 			p{
 				position: relative;
 				padding-right: 2rem;
+				margin: auto 0 0;
+    			line-height: 80%;
 				&:after{
-					content: "\f344";
-					font-family: 'dashicons';
 					position: absolute;
 					bottom: 0;
 					right: 0;
+					content: "\f344";
+					font-family: 'dashicons';
+					font-size: 1.75rem;
+					color: $color__tertiary;
 				}
 				a{
 					display: block;
