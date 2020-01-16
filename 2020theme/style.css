@@ -2622,6 +2622,7 @@ h6 + .notation {
     .wceu-logo .wceuicon:before,
     .wceu-logo .wceuicon:after,
     .wceu-logo .wceu-logo-text * {
+      animation: none !important;
       animation-delay: 0s !important;
       animation-duration: 0s !important; }
     .wceu-logo .wceuicon:after {
