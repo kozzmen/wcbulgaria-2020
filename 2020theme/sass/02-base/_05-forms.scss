@@ -51,16 +51,18 @@ textarea {
 /* Change autocomplete styles in WebKit */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+select:-webkit-autofill:hover{
 	border: .1875rem solid $color__primary !important;
 	-webkit-text-fill-color: $color__primary !important;
 	-webkit-box-shadow: 0 0 0px 1000px $color__tertiary inset !important;
+}
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill:focus{
+	border: .1875rem solid $color__secondary !important;
 }
 
 input[type="checkbox"],
