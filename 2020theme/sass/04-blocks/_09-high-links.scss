@@ -1,0 +1,63 @@
+/*_______ Block with highlighted links _______*/
+.salient-links{
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+	.wp-block-columns{
+		margin-bottom: 0;
+		.wp-block-column{
+			display: flex;
+			flex-flow: column wrap;
+			background-color: $color__primary;
+			padding: 1.5rem !important;
+			margin-bottom: 1rem;
+			@extend %transition;
+			&:focus,
+			&:focus-within,
+			&:hover{
+				background-color: $color__secondary;
+				a{
+					outline: none;
+				}
+			}
+			.wp-block-image{
+				width: 100%;
+				margin: 0;
+				figure{
+					width: 100%;
+					margin: 0;
+					a{
+						display: flex;
+						padding-bottom: 2rem;
+						img{
+							max-width: 5rem;
+							height: auto;
+							margin-left: 0;
+						}
+					}
+				}
+			}
+			#{headings(1,6)},
+			p, a{
+				position: relative;
+				display: block;
+				font-size: 2rem;
+				color: $color__tertiary;
+				text-decoration: none;
+				margin-top: auto;
+				margin-bottom: 0;
+			}
+			#{headings(1,6)},
+			p{
+				a{
+					&:after{
+						content: "\f344";
+						font-family: 'dashicons';
+						position: absolute;
+						bottom: 0;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}

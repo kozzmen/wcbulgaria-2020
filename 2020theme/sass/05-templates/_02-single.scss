@@ -96,7 +96,10 @@
 			margin-bottom: 1rem;
 		}
 		ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid){
-			padding-left: 2.5rem;
+			padding-left: .5rem;
+			@media (min-width: 480px){
+				padding-left: 2.5rem;
+			}
 			li{
 				position: relative;
 				padding: 0;
@@ -104,17 +107,24 @@
 				&:before{
 					content: '';
 					position: absolute;
-					top: .875em;
-					left: -2rem;
+					top: .5em;
+					left: -1.5rem;
 					width: .75em;
 					height: .25rem;
 					background-color: $color__secondary;
+					@media (min-width: 480px){
+						top: .875em;
+						left: -2rem;
+					}
 				}
 			}
 		}
 		ol {
 			padding-left: 2.5rem;
 			counter-reset: orderedlist-counter;
+			@media (min-width: 480px){
+				padding-left: 2.5rem;
+			}
 			li{
 				position: relative;
 				padding: 0;
@@ -124,15 +134,18 @@
 					content: counter(orderedlist-counter) ". ";
 					position: absolute;
 					top: 0;
-					left: -2rem;
+				    left: -1.5rem;
 					width: 1.25rem;
 					height: 1.25rem;
 					font-weight: 800;
 					line-height: .5rem;
-					text-indent: -.25rem;
 					color: $color__secondary;
 					background-color: $color__tertiary;
 					margin-top: .5rem;
+					@media (min-width: 480px){
+						left: -2rem;
+						text-indent: -.25rem;
+					}
 				}
 			}
 		}

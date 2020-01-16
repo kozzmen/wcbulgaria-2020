@@ -13,8 +13,8 @@ input[type="submit"] {
 	text-decoration: none;
 	margin: 1rem auto;
 	padding: .75em 1.25em;
-	background-color: $color__tertiary;
-	border: .25rem solid $color__tertiary;
+	background-color: white;
+	border: .25rem solid $color__primary;
 	border-radius: 0;
 	cursor: pointer;
 	@extend %transition;
@@ -26,9 +26,8 @@ input[type="submit"] {
 	}
 	&:focus,
 	&:hover{
-		color: $color__primary;
-		background-color: white;
-		border-color: $color__primary;
+		color: $color__tertiary;
+		background-color: $color__primary;
 	}
 	&:active{
 		background-color: $color__grey;
@@ -36,11 +35,10 @@ input[type="submit"] {
 	&.invert{
 		color: $color__tertiary;
 		background-color: $color__primary;
-		border-color: $color__primary;
 		&:focus,
 		&:hover{
 			color: $color__primary;
-			background-color: transparent;
+			background-color: $color__tertiary;
 		}
 	}
 }

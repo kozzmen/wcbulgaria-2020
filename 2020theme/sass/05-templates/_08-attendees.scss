@@ -19,6 +19,9 @@
 		&:hover{
 			background-color: $color__tertiary;
 		}
+		.tix-field{
+			margin-left: 0 !important;
+		}
 		.avatar{
 			display: block;
 			position: absolute;
@@ -31,15 +34,19 @@
 			background-color: $color__grey_verylight;
 		}
 		.tix-attendee-name{
-			font-size: 1.125rem;
+			font-size: 1.125rem !important;
 			font-weight: 700;
 			line-height: 120%;
 		}
 		.tix-attendee-twitter,
 		.tix-attendee-url{
-			display: block;
-			font-size: .875rem;
+			display: block !important;
+			font-size: .875rem !important;
 			line-height: 140%;
+			word-break: break-word;
+			&:hover{
+				color: $color__secondary;
+			}
 		}
 	}
 	&.tix-columns-2{

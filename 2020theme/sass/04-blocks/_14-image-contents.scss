@@ -1,0 +1,38 @@
+/*_______ Image-Contents block (from the temporary theme) _______*/
+.block-imagecontents,
+.block-contentsimage{
+	@extend %inner;
+}
+.block-imagecontents-image{
+	@media (min-width: 768px){
+		flex: 0 0 40%;
+	}
+}
+.block-imagecontents-content{
+	@extend %inner;
+	@extend %inner-padding;
+	@media (min-width: 768px){
+		flex: 0 0 55%;
+	}
+}
+
+.block-imagecontents-preheading{
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 100%;
+	text-transform: uppercase;
+	margin-bottom: .25rem;
+}
+.block-imagecontents-title{
+	font-size: 2.5rem;
+	line-height: 120%;
+	margin-bottom: .5rem;
+	@media (min-width: 800px){
+		font-size: 4rem;
+		line-height: 100%;
+	}
+}
+.block-imagecontents-text{
+	font-size: 1.5rem;
+	line-height: 120%;
+}
