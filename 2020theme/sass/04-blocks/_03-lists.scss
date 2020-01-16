@@ -5,7 +5,7 @@
 		margin-bottom: 1rem;
 	}
 	ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid){
-		padding-left: .5rem;
+		padding-left: 1.5rem;
 		@media (min-width: 480px){
 			padding-left: 2.5rem;
 		}
@@ -16,20 +16,19 @@
 			&:before{
 				content: '';
 				position: absolute;
-				top: .5em;
+				top: .75em;
 				left: -1.5rem;
 				width: .75em;
 				height: .25rem;
 				background-color: $color__secondary;
 				@media (min-width: 480px){
-					top: .875em;
-					left: -2rem;
+					top: .675em;
 				}
 			}
 		}
 	}
 	ol{
-		padding-left: 2.5rem;
+		padding-left: 1.5rem;
 		counter-reset: orderedlist-counter;
 		@media (min-width: 480px){
 			padding-left: 2.5rem;
