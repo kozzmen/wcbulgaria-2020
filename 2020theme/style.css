@@ -3482,7 +3482,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
   font-size: 70%;
   color: #737477; }
 
-.tix-attendee-form .tix-row-question-3969.tix-left:after, .tix_invoice_table .tix-row-question-3969.tix-left:after {
+.tix-attendee-form .tix-row-question-3969 .tix-left:after, .tix_invoice_table .tix-row-question-3969 .tix-left:after {
   content: "(https required)";
   display: block;
   font-size: 70%;
