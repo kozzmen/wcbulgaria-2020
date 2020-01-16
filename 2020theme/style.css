@@ -2624,14 +2624,14 @@ h6 + .notation {
     .wceu-logo .wceu-logo-text * {
       animation-delay: 0s !important;
       animation-duration: 0s !important; }
-    .wceu-logo:after {
+    .wceu-logo .wceuicon:after {
       width: 100%;
       height: 100%; }
-    .wceu-logo .dot {
+    .wceu-logo .wceuicon .dot {
       opacity: 1;
       position: relative;
       left: 0; }
-      .wceu-logo .dot:nth-of-type(3) {
+      .wceu-logo .wceuicon .dot:nth-of-type(3) {
         transform: scale(2.75);
         background-color: #F59E00;
         background-image: url(https://2020.europe.wordcamp.org/files/2020/01/wordpress-icon-white.png);
