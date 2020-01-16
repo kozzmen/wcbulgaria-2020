@@ -3429,8 +3429,8 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
     font-size: 1.5rem;
     font-weight: 700;
     color: #27509F;
-    background-color: #F4EDE4 !important;
-    border: none !important;
+    background-color: #F4EDE4;
+    border: none;
     border-left: 0.25rem solid #F59E00;
     border-radius: 0; }
     #tix #tix-errors .tix-error:before {
