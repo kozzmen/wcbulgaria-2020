@@ -902,7 +902,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: inherit;
+  border: 0.1875rem solid #27509F;
   -webkit-text-fill-color: #27509F;
   -webkit-box-shadow: 0 0 0px 1000px #F4EDE4 inset; }
 
