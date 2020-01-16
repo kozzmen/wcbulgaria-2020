@@ -819,6 +819,8 @@ a {
 .entry-content a {
   color: inherit;
   text-decoration: underline; }
+  .entry-content a:hover {
+    color: #F59E00; }
 
 a.wp-block-button__link,
 a.more-link, .entry-title a {
@@ -1018,7 +1020,6 @@ input[type="submit"] {
       background-color: #F4EDE4; }
 
 .wp-block-button {
-  text-align: center;
   margin-bottom: 2rem; }
   .wp-block-button .wp-block-button__link {
     font-weight: 700;
@@ -1532,6 +1533,7 @@ body.admin-bar {
             color: #F4EDE4;
             border-bottom: .125rem solid; } }
   .main-navigation .sub-menu {
+    list-style: none;
     width: auto;
     margin: 0 auto;
     overflow: hidden;
@@ -1673,6 +1675,7 @@ body.admin-bar {
     font-weight: 400;
     font-family: "PT Sans", sans-serif;
     line-height: 100%;
+    color: #27509F;
     padding-bottom: .125rem;
     border-bottom: .125rem solid; }
   .posts-navigation .nav-previous,
@@ -2972,6 +2975,10 @@ h6 + .notation {
     margin-left: auto;
     margin-right: 0;
     margin-bottom: 0; }
+    .blog .hentry .more-link:hover,
+    .archive .hentry .more-link:hover,
+    .search-results .hentry .more-link:hover {
+      color: #F59E00; }
   .blog .hentry .entry-footer,
   .archive .hentry .entry-footer,
   .search-results .hentry .entry-footer {

@@ -208,6 +208,9 @@ a {
 	a {
 		color: inherit;
 		text-decoration: underline;
+		&:hover{
+			color: $color__secondary;
+		}
 	}
 }
 

@@ -96,6 +96,9 @@
 			margin-left: auto;
 			margin-right: 0;
 			margin-bottom: 0;
+			&:hover{
+				color: $color__secondary;
+			}
 		}
 		.entry-footer{
 			display:none;
