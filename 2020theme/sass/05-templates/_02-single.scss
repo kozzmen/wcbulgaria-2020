@@ -90,6 +90,9 @@
 		* + %headings{
 			margin-top: 1em;
 		}
+		%headings + %headings{
+			margin-top: inherit;
+		}
 		span[id^="more-"]{
 			display: none;
 		}
