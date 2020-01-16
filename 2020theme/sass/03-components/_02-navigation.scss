@@ -54,10 +54,10 @@
 				@extend %transition;
 				@media (min-width: 769px){
 					font-size: 1rem;
+					padding: .25rem;
 				}
 				@media (min-width: 1025px){
 					font-size: 1.25rem;
-					padding: .25rem;
 				}
 				&:hover{
 					color: $color__secondary;
@@ -190,9 +190,12 @@
 			}
 			a{
 				font-size: 1.25rem;
+				color: $color__tertiary;
 				@media (min-width: 769px){
+					font-size: 1rem;
+				}
+				@media (min-width: 1025px){
 					font-size: 1.25rem;
-					color: $color__tertiary;
 				}
 			}
 			&.current-menu-item{

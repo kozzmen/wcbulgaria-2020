@@ -95,6 +95,7 @@
 			line-height: 100%;
 		}
 		select{
+			font-weight: 700;
 			max-width: 8rem;
 			margin: 1rem auto 2rem;
 		}
@@ -129,22 +130,29 @@
 	}
 }
 
-#tix input[type="submit"]{
-	float: none !important;
-	display: block;
-	width: 100%;
-	font-size: 1.5rem;
-	color: white;
-	text-transform: none;
-	letter-spacing: 0;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	background-color: $color__primary;
-	border: .25rem solid $color__primary;
-	border-radius: 0;
-	margin: 2rem auto 0;
-	@media (min-width: 650px) {
-		width: auto;
+#tix{
+	input[type="submit"]{
+		float: none !important;
+	}
+	#tix-errors{
+		margin: 1.5rem auto;
+		.tix-error{
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: $color__primary;
+			background-color: $color__tertiary !important;
+			border: none !important;
+			border-left: .25rem solid $color__secondary;
+			border-radius: 0;
+			&:before {
+				content: "\f153";
+				font-family: 'dashicons';
+				display: inline-block;
+				vertical-align: middle;
+				color: $color__secondary;
+				margin-right: .5rem;
+			}
+		}
 	}
 }
 

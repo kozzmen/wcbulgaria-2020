@@ -874,7 +874,7 @@ textarea {
   padding: .5em .75em;
   background-color: white;
   border: none;
-  border: 0.125rem solid #27509F;
+  border: 0.1875rem solid #27509F;
   border-radius: 0;
   outline: none;
   resize: none; }
@@ -1003,7 +1003,8 @@ input[type="submit"] {
   input[type="button"]:active,
   input[type="reset"]:active,
   input[type="submit"]:active {
-    background-color: #737477; }
+    color: #27509F;
+    background-color: #F59E00; }
   button.invert,
   input[type="button"].invert,
   input[type="reset"].invert,
@@ -1463,11 +1464,11 @@ body.admin-bar {
         color: #F4EDE4; }
         @media (min-width: 769px) {
           .main-navigation .menu .menu-item a {
-            font-size: 1rem; } }
+            font-size: 1rem;
+            padding: .25rem; } }
         @media (min-width: 1025px) {
           .main-navigation .menu .menu-item a {
-            font-size: 1.25rem;
-            padding: .25rem; } }
+            font-size: 1.25rem; } }
         .main-navigation .menu .menu-item a:hover {
           color: #F59E00; }
       .main-navigation .menu .menu-item.current-menu-item > a {
@@ -1570,11 +1571,14 @@ body.admin-bar {
           .main-navigation .sub-menu .menu-item:last-of-type {
             margin-bottom: 1rem; } }
       .main-navigation .sub-menu .menu-item a {
-        font-size: 1.25rem; }
+        font-size: 1.25rem;
+        color: #F4EDE4; }
         @media (min-width: 769px) {
           .main-navigation .sub-menu .menu-item a {
-            font-size: 1.25rem;
-            color: #F4EDE4; } }
+            font-size: 1rem; } }
+        @media (min-width: 1025px) {
+          .main-navigation .sub-menu .menu-item a {
+            font-size: 1.25rem; } }
       .main-navigation .sub-menu .menu-item.current-menu-item a {
         color: #9e9e9e;
         border: none; }
@@ -3301,7 +3305,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
     background-color: #27509F; }
 
 .wordcamp-organizers + .wordcamp-organizers {
-  margin-bottom: 4rem; }
+  margin-bottom: 6rem; }
   @media (min-width: 768px) {
     .wordcamp-organizers + .wordcamp-organizers {
       float: right;
@@ -3390,6 +3394,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
       display: block;
       line-height: 100%; }
     .tix-js .tix-column-quantity select {
+      font-weight: 700;
       max-width: 8rem;
       margin: 1rem auto 2rem; }
   .tix-js .tix-row-coupon {
@@ -3416,22 +3421,25 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
       padding: .675rem; }
 
 #tix input[type="submit"] {
-  float: none !important;
-  display: block;
-  width: 100%;
-  font-size: 1.5rem;
-  color: white;
-  text-transform: none;
-  letter-spacing: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #27509F;
-  border: 0.25rem solid #27509F;
-  border-radius: 0;
-  margin: 2rem auto 0; }
-  @media (min-width: 650px) {
-    #tix input[type="submit"] {
-      width: auto; } }
+  float: none !important; }
+
+#tix #tix-errors {
+  margin: 1.5rem auto; }
+  #tix #tix-errors .tix-error {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #27509F;
+    background-color: #F4EDE4 !important;
+    border: none !important;
+    border-left: 0.25rem solid #F59E00;
+    border-radius: 0; }
+    #tix #tix-errors .tix-error:before {
+      content: "\f153";
+      font-family: 'dashicons';
+      display: inline-block;
+      vertical-align: middle;
+      color: #F59E00;
+      margin-right: .5rem; }
 
 /*_______ Order Sumary _______*/
 @media (max-width: 480px) {

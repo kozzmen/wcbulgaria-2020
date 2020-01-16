@@ -30,7 +30,8 @@ input[type="submit"] {
 		background-color: $color__primary;
 	}
 	&:active{
-		background-color: $color__grey;
+		color: $color__primary;
+		background-color: $color__secondary;
 	}
 	&.invert{
 		color: $color__tertiary;

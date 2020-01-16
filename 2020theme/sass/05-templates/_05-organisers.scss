@@ -60,7 +60,7 @@
 	}
 }
 
-p+.wordcamp-organizers{
+p + .wordcamp-organizers{
 	&:first-of-type{
 		.wordcamp-post-list__post{
 			@media (min-width: 768px){
@@ -101,7 +101,7 @@ p+.wordcamp-organizers{
 }
 
 .wordcamp-organizers + .wordcamp-organizers{
-	margin-bottom: 4rem;
+	margin-bottom: 6rem;
 	@media (min-width: 768px){
 		float:right;
 		width: 50%;
