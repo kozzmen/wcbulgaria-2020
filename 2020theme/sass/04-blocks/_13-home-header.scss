@@ -72,9 +72,6 @@
 					transform: scale(2.75);
 					background-color: $color__secondary;
 					background-image: url(https://2020.europe.wordcamp.org/files/2020/01/wordpress-icon-white.png);
-					background-size: 77%;
-					background-repeat: no-repeat;
-					background-position: center;
 					margin: 2.5% -10% 0 20.5%;
 				}
 			}
@@ -148,6 +145,9 @@
 			width: 2rem;
 			height: 2rem;
 			background-color: $color__primary;
+			background-size: 77%;
+			background-repeat: no-repeat;
+			background-position: center;
 			border-radius: 100%;
 			margin: 9% 8%;
 			overflow: hidden;
