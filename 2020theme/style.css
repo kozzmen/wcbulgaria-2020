@@ -184,16 +184,14 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
     .page .entry-footer {
       max-width: 720px; } }
 
-.alignwide,
-.is-style-wide, .comments-title, .comment-respond, .comment-list, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
+.comments-title, .comment-respond, .comment-list, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
 .search-no-results .content-area, .blog .site-main, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
 .page .entry-footer, .contact-form, .wcorg-sponsors {
   margin-left: 2rem;
   margin-right: 2rem; }
-  @media (min-width: 1280px) {
-    .alignwide,
-    .is-style-wide, .comments-title, .comment-respond, .comment-list, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
+  @media (min-width: 769px) {
+    .comments-title, .comment-respond, .comment-list, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
     .search-no-results .content-area, .blog .site-main, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
     .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
     .page .entry-footer, .contact-form, .wcorg-sponsors {
@@ -611,6 +609,9 @@ figure {
 
 .alignwide,
 .is-style-wide {
+  padding: 0 2rem;
+  margin-left: auto;
+  margin-right: auto;
   clear: both; }
 
 .alignfull {
@@ -2207,6 +2208,25 @@ table {
     text-align: left;
     width: 50%; }
 
+/*_______ Colums block _______*/
+.wp-block-columns .wp-block-column > h1, .wp-block-columns .wp-block-column > h2, .wp-block-columns .wp-block-column > h3,
+.wp-block-columns .wp-block-column > h4, .wp-block-columns .wp-block-column > h5, .wp-block-columns .wp-block-column > h6 {
+  margin-top: 0; }
+
+.wp-block-columns.info-columns .wp-block-column {
+  padding-left: .5rem;
+  border-left: 0.25rem solid #F4EDE4;
+  margin-bottom: 2rem;
+  align-self: stretch; }
+  .wp-block-columns.info-columns .wp-block-column > h1, .wp-block-columns.info-columns .wp-block-column > h2, .wp-block-columns.info-columns .wp-block-column > h3,
+  .wp-block-columns.info-columns .wp-block-column > h4, .wp-block-columns.info-columns .wp-block-column > h5, .wp-block-columns.info-columns .wp-block-column > h6 {
+    font-size: 2rem;
+    margin-bottom: .25em; }
+  .wp-block-columns.info-columns .wp-block-column p {
+    font-size: 1.25rem; }
+    .wp-block-columns.info-columns .wp-block-column p.address-block {
+      font-size: .875rem; }
+
 /*_______ Media-text block _______*/
 .wp-block-media-text {
   grid-template-columns: 40% auto;
@@ -3224,6 +3244,11 @@ h6 + .notation {
   .archive .page-header .page-title {
     text-align: center;
     margin: 0; }
+  .page-template-default .entry-header .entry-image,
+  .page-template .entry-header .entry-image,
+  .search-results .page-header .entry-image,
+  .archive .page-header .entry-image {
+    display: none; }
 
 /*_______ Contact form _______*/
 .contact-form {

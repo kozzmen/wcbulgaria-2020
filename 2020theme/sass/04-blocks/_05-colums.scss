@@ -1,0 +1,28 @@
+/*_______ Colums block _______*/
+.wp-block-columns {
+	.wp-block-column{
+		> %headings{
+			margin-top: 0;
+		}
+	}
+	&.info-columns{
+		.wp-block-column{
+			padding-left: .5rem;
+			border-left: .25rem solid $color__tertiary;
+			margin-bottom: 2rem;
+			align-self: stretch;
+			> %headings{
+				font-size: 2rem;
+				margin-bottom: .25em;
+			}
+			p{
+				font-size: 1.25rem;
+				&.address-block{
+					font-size: .875rem;
+				}
+			}
+		}
+		&:last-of-type{
+		}
+	}
+}

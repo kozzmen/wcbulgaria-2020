@@ -1,0 +1,12 @@
+/*_______ Big separators _______*/
+.wp-block-separator{
+	&.is-style-wide {
+		margin: 4rem auto;
+	}
+	&.is-style-dots{
+		&:before{
+			font-weight: 800;
+			font-size: 2rem;
+		}
+	}
+}
