@@ -1,10 +1,4 @@
 /*_______ Single view of post and page _______*/
-.entry-title{
-	@include font-size(2.5);
-	@media (min-width: 769px){
-		@include font-size(4);
-	}
-}
 
 .single{
 	.site-content{
@@ -88,7 +82,7 @@
 			@extend %inner-tiny;
 			@extend %inner-padding;
 		}
-		* + %headings{
+		*:not([id^="more-"]) + %headings{
 			margin-top: 1em;
 		}
 		%headings + %headings{

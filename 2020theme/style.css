@@ -3201,14 +3201,6 @@ h6 + .notation {
     filter: grayscale(0); }
 
 /*_______ Single view of post and page _______*/
-.entry-title {
-  font-size: 40px;
-  font-size: 2.5rem; }
-  @media (min-width: 769px) {
-    .entry-title {
-      font-size: 64px;
-      font-size: 4rem; } }
-
 .single .site-content {
   margin-bottom: 0; }
 
@@ -3272,14 +3264,14 @@ h6 + .notation {
 .single .entry-content,
 .page .entry-content {
   /*_______ Anchors navigation fix _______*/ }
-  .single .entry-content * + h1, .single .entry-content * + h2, .single .entry-content * + h3,
-  .single .entry-content * + h4, .single .entry-content * + h5, .single .entry-content * + h6,
-  .page .entry-content * + h1,
-  .page .entry-content * + h2,
-  .page .entry-content * + h3,
-  .page .entry-content * + h4,
-  .page .entry-content * + h5,
-  .page .entry-content * + h6 {
+  .single .entry-content *:not([id^="more-"]) + h1, .single .entry-content *:not([id^="more-"]) + h2, .single .entry-content *:not([id^="more-"]) + h3,
+  .single .entry-content *:not([id^="more-"]) + h4, .single .entry-content *:not([id^="more-"]) + h5, .single .entry-content *:not([id^="more-"]) + h6,
+  .page .entry-content *:not([id^="more-"]) + h1,
+  .page .entry-content *:not([id^="more-"]) + h2,
+  .page .entry-content *:not([id^="more-"]) + h3,
+  .page .entry-content *:not([id^="more-"]) + h4,
+  .page .entry-content *:not([id^="more-"]) + h5,
+  .page .entry-content *:not([id^="more-"]) + h6 {
     margin-top: 1em; }
   .single .entry-content h1 + h1, .single .entry-content h2 + h1, .single .entry-content h3 + h1, .single .entry-content h4 + h1, .single .entry-content h5 + h1, .single .entry-content h6 + h1, .single .entry-content h1 + h2, .single .entry-content h2 + h2, .single .entry-content h3 + h2, .single .entry-content h4 + h2, .single .entry-content h5 + h2, .single .entry-content h6 + h2, .single .entry-content h1 + h3, .single .entry-content h2 + h3, .single .entry-content h3 + h3, .single .entry-content h4 + h3, .single .entry-content h5 + h3, .single .entry-content h6 + h3,
   .single .entry-content h1 + h4,
