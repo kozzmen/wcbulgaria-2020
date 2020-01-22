@@ -40,10 +40,7 @@
 			@extend %transition;
 			@media (min-width: 769px){
 				flex: 0 0 auto;
-				margin: 0 .5rem;
-				&:last-of-type{
-					margin-right:0;
-				}
+				margin: 0 0 0 1rem;
 			}
 			a{
 				display: block;
@@ -54,13 +51,15 @@
 				@extend %transition;
 				@media (min-width: 769px){
 					font-size: 1rem;
-					padding: .25rem;
+					padding: .5rem;
 				}
 				@media (min-width: 1025px){
 					font-size: 1.25rem;
 				}
-				&:hover{
-					color: $color__secondary;
+			}
+			&:hover{
+				@media (min-width: 769px){
+					background-color: $color__secondary;
 				}
 			}
 			&.current-menu-item{
@@ -104,7 +103,6 @@
 			&.menu-item-has-children{
 				position: relative;
 				background-color: transparent;
-				border-bottom: none;
 				@media (min-width: 769px){
 					> a{
 						&:after{
@@ -123,9 +121,9 @@
 				&:focus-within,
 				&:hover,
 				> a:focus,
-				> a:hover					{
-					border-color: transparent !important;
+				> a:hover{
 					@media (min-width: 769px){
+						background-color: $color__secondary;
 						a:after{
 							transform: rotate(180deg);
 						}
@@ -162,19 +160,20 @@
 		z-index: 10;
 		@media (min-width: 769px){
 			position: absolute;
-			top: 1.5rem;
+			top: 1.25rem;
 			left: 0;
 			width: 16rem;
 			max-height: 0;
-			padding: 0 1rem;
+			padding: 0;
 			border: none;
 			background-color: $color__secondary;
 			overflow: hidden;
 			transition: all .25s ease-in-out;
 		}
 		.menu-item{
+			width: 100%;
 			line-height: 120%;
-			margin: 0 0 1rem;
+			margin: 0 0 .5rem;
 			&:last-of-type{
 				margin-bottom: 0;
 			}
@@ -183,20 +182,25 @@
 				line-height: 140%;
 				text-align: left;
 				padding: 0;
-				margin: 1rem 0 .5rem;
-				&:last-of-type{
-					margin-bottom: 1rem;
-				}
+				margin:0;
 			}
 			a{
 				font-size: 1.25rem;
 				color: $color__tertiary;
+				padding: .5rem .25rem;
 				@media (min-width: 769px){
+					padding: 1rem;
 					font-size: 1rem;
 				}
 				@media (min-width: 1025px){
 					font-size: 1.25rem;
 				}
+			}
+			&:hover{
+				background-color: $color__grey_blue;
+			}
+			&:active{
+				background-color: $color__primary;
 			}
 			&.current-menu-item{
 				a{
@@ -282,7 +286,7 @@
 	font-weight: 400;
 	font-size: 0;
 	padding:0;
-	background-color: transparent !important;
+	background-color: transparent;
 	border:none;
 	margin: 0;
 	z-index: 20;
@@ -324,103 +328,63 @@
 
 /*_______ Post navigation _______*/
 .posts-navigation,
-.post-navigation {
+.post-navigation{
+	flex: 1 1 100%;	
 	@extend %inner;
-	flex: 1 1 100%;
-	padding: 4rem 2.5rem;
+	padding: 4rem 0;
 	overflow: hidden;
-	@media (min-width: 800px){
-		padding: 0;
-	}
 	.nav-links{
-		position: relative;
-		display: flex;
 		div{
-			flex: 0 1 50%;
-			margin: 0 auto;
-			border-bottom: .25rem solid secondary;
+			width: 50%;
+		}
+		a{
+			display: inline-block;
+			vertical-align: middle;
+			font-weight: 700;
+			font-size: .875rem;
+			line-height: 80%;
+			padding: .75rem;
+			color: $color__primary;
+			background-color: $color__secondary;
+			border: .125rem solid $color__secondary;
 			@extend %transition;
-			@media (min-width: 800px){
-				position: fixed;
-				top: 50%;
-				z-index: 50;
+			@media (min-width: 350px) {
+				font-size: 1rem;
 			}
-			a{
-				position: relative;
-				display: block;
-				line-height: 100%;
+			@media (min-width: 768px) {
+				font-size: 1.25rem;
+			}
+			&:hover{
 				color: $color__primary;
-				@extend %transition;
-				@media (min-width: 800px){
-					font-size: 0;
-					width: 3rem;
-					height: 3rem;
-					background-color: $color__secondary;
-				}
-				&:before,
-				&:after{
-					position: absolute;
-					top: 0;
-					padding: .25rem;
-					background-color: $color__secondary;
-					@extend %transition;
-					@media (min-width: 800px){
-						top: 50%;
-						left: 20%;
-						right: 20%;
-						display: block;
-						font-weight: 800;
-						font-size: 1.5rem;
-						line-height: 0;
-						color: $color__tertiary;
-						padding: 0;
-					}
-				}
-				&:hover{
-					background-color: $color__primary;
-				}
+				background-color: transparent;
+				border-color: $color__primary;
 			}
-			&.nav-previous{
-				left: 0;
-				text-align: left;
-				a{
-					&:before{
-						content: " ";
-						font-family: 'dashicons';
-						font-weight: 800;
-						left: -2.5rem;
-						@media (min-width: 800px){
-							left: 20%;
-							right: 20%;
-						}
-					}
-					&:hover{
-						&:before{
-							left: 0;
-						}
-					}
-				}
+			&:active{
+				color: $color__tertiary;
+				background-color: $color__primary;
+				border-color: $color__primary;
 			}
-			&.nav-next{
-				right: 0;
-				text-align: right;
-				a{
-					&:after{
-						content: " ";
-						font-family: 'dashicons';
-						right: -2.5rem;
-						@media (min-width: 800px){
-							left: 20%;
-							right: 20%;
-						}
-					}
-					&:hover{
-						&:after{
-							right: 0;
-						}
-					}
-				}
-			}
+		}
+	}
+	.nav-previous {
+		float: left;
+		a:before{
+			content: " ";
+			font-family: 'dashicons';
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: .25rem;
+		}
+	}
+	.nav-next {
+		float: right;
+		text-align: right;
+		a:after{
+			content: " ";
+			font-family: 'dashicons';
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: .25rem;
 		}
 	}
 }
