@@ -57,6 +57,8 @@
 					font-size: 1.25rem;
 				}
 			}
+			&:focus,
+			&:focus-within,
 			&:hover{
 				@media (min-width: 769px){
 					background-color: $color__secondary;
@@ -68,9 +70,6 @@
 					@media (min-width: 769px){
 						color: $color__tertiary;
 						border-bottom: .125rem solid;
-					}
-					&:hover{
-						color: $color__grey_verylight;
 					}
 				}
 			}
@@ -127,8 +126,6 @@
 						a:after{
 							transform: rotate(180deg);
 						}
-					}
-					@media (min-width: 769px){
 						.sub-menu{
 							max-height: 30rem;
 						}
@@ -160,15 +157,18 @@
 		z-index: 10;
 		@media (min-width: 769px){
 			position: absolute;
-			top: 1.25rem;
+			top: 1rem;
 			left: 0;
-			width: 16rem;
+			width: 12rem;
 			max-height: 0;
 			padding: 0;
 			border: none;
 			background-color: $color__secondary;
 			overflow: hidden;
 			transition: all .25s ease-in-out;
+		}
+		@media (min-width: 1025px){
+			top: 1.25rem;
 		}
 		.menu-item{
 			width: 100%;
@@ -186,7 +186,7 @@
 			}
 			a{
 				font-size: 1.25rem;
-				color: $color__tertiary;
+				color: $color__tertiary;	
 				padding: .5rem .25rem;
 				@media (min-width: 769px){
 					padding: 1rem;
@@ -196,6 +196,8 @@
 					font-size: 1.25rem;
 				}
 			}
+			&:focus,
+			&:focus-within,
 			&:hover{
 				background-color: $color__grey_blue;
 			}
@@ -203,12 +205,9 @@
 				background-color: $color__primary;
 			}
 			&.current-menu-item{
+				background-color: $color__grey_blue;
 				a{
-					color: $color__grey_morelight;
 					border: none;
-				}
-				&:hover{
-					
 				}
 			}
 			
@@ -421,16 +420,6 @@
 			color: $color__tertiary;
 			background-color: $color__primary;
 		}
-	}
-}
-
-/*_______ Anchors navigation fix _______*/
-%headings{
-	&[id]::before {
-		content: '';
-		display: block;
-		height: 8rem;
-		margin: -8rem 0 0;
 	}
 }
 
