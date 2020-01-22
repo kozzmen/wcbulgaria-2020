@@ -1,5 +1,7 @@
 /*_______ Colums block _______*/
 .wp-block-columns {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 	.wp-block-column{
 		> %headings{
 			margin-top: 0;
@@ -7,7 +9,7 @@
 	}
 	&.info-columns{
 		.wp-block-column{
-			padding-left: .5rem;
+			padding-left: .75em;
 			border-left: .25rem solid $color__tertiary;
 			margin-bottom: 2rem;
 			align-self: stretch;
@@ -15,7 +17,9 @@
 				font-size: 2rem;
 				margin-bottom: .25em;
 			}
-			p{
+			p,
+			ul,
+			ol{
 				font-size: 1.25rem;
 				&.address-block{
 					font-size: .875rem;

@@ -96,6 +96,9 @@
 		span[id^="more-"]{
 			display: none;
 		}
+		a{
+			word-break: break-word;
+		}
 	}
 	.entry-footer{
 		@extend %inner-tiny;
@@ -138,8 +141,13 @@
 		.nav-links{
 			position: relative;
 			display: flex;
+			justify-content: space-between;
+			align-items: center;
 			div{
 				flex: 0 1 50%;
+				align-self: stretch;
+				display: flex;
+				align-items: center;
 				margin: 0 auto;
 				border-bottom: .25rem solid secondary;
 				@extend %transition;
@@ -150,9 +158,12 @@
 				}
 				a{
 					position: relative;
-					display: block;
+					font-size: 1rem;
 					line-height: 100%;
 					color: $color__primary;
+					padding: 0;
+					background-color: transparent;
+					border: none;
 					@extend %transition;
 					@media (min-width: 800px){
 						font-size: 0;
@@ -163,9 +174,9 @@
 					&:before,
 					&:after{
 						position: absolute;
-						top: 0;
+						top: 25%;
+						bottom: 25%;
 						padding: .25rem;
-						background-color: $color__secondary;
 						@extend %transition;
 						@media (min-width: 800px){
 							top: 50%;
@@ -179,47 +190,74 @@
 							padding: 0;
 						}
 					}
+					&:focus,
 					&:hover{
-						background-color: $color__primary;
+						outline: none;
+						color: $color__secondary;
+						@media (min-width: 800px){
+							background-color: $color__primary;
+						}
 					}
 				}
 				&.nav-previous{
+					justify-content: flex-start;
 					left: 0;
 					text-align: left;
+					padding-left: .5rem;
+					border-left: .125rem solid $color__secondary;
+					@media (min-width: 800px){
+						padding: 0;
+						border: none
+					}
 					a{
 						&:before{
 							content: " ";
 							font-family: 'dashicons';
 							font-weight: 800;
-							left: -2.5rem;
+							left: -2.25rem;
 							@media (min-width: 800px){
 								left: 20%;
 								right: 20%;
 							}
 						}
+						&:focus,
 						&:hover{
 							&:before{
-								left: 0;
+								@media (min-width: 800px){
+									left: 0;
+								}
 							}
 						}
 					}
 				}
 				&.nav-next{
+					justify-content: flex-end;
 					right: 0;
 					text-align: right;
+					padding-right: .5rem;
+					border-right: .125rem solid $color__secondary;
+					@media (min-width: 800px){
+						padding: 0;
+						border: none
+					}
 					a{
+						display: block;
+						line-height: 100%;
 						&:after{
 							content: " ";
 							font-family: 'dashicons';
-							right: -2.5rem;
+							right: -2.25rem;
 							@media (min-width: 800px){
 								left: 20%;
 								right: 20%;
 							}
 						}
+						&:focus,
 						&:hover{
 							&:after{
-								right: 0;
+								@media (min-width: 800px){
+									right: 0;
+								}
 							}
 						}
 					}

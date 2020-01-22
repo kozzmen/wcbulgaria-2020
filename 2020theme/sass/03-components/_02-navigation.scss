@@ -336,6 +336,9 @@
 	.nav-links{
 		div{
 			width: 50%;
+			@media (min-width: 768px) {
+				width: auto;
+			}
 		}
 		a{
 			display: inline-block;
