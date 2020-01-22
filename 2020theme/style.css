@@ -90,8 +90,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .site-branding .custom-logo-link, .main-navigation .menu, .main-navigation .menu .menu-item, .main-navigation .menu .menu-item a, .more-info, .more-info:after, .menu-toggle, .posts-navigation .nav-links a,
-.post-navigation .nav-links a, .custom-posts-pagination .page-numbers, .footer-widgets-block .widget_nav_menu .menu .menu-item a, .salient-links .wp-block-columns .wp-block-column, .high-links-inline .wp-block-media-text, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .blog .hentry,
+input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .site-branding .custom-logo-link, .main-navigation .menu, .main-navigation .menu .menu-item, .main-navigation .menu .menu-item a, .more-info, .more-info:after, .menu-toggle, .posts-navigation .nav-links div,
+.post-navigation .nav-links div, .posts-navigation .nav-links div a,
+.post-navigation .nav-links div a, .posts-navigation .nav-links div a:before, .posts-navigation .nav-links div a:after,
+.post-navigation .nav-links div a:before,
+.post-navigation .nav-links div a:after, .custom-posts-pagination .page-numbers, .footer-widgets-block .widget_nav_menu .menu .menu-item a, .salient-links .wp-block-columns .wp-block-column, .high-links-inline .wp-block-media-text, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .blog .hentry,
 .archive .hentry,
 .search-results .hentry, .blog .hentry .entry-image img,
 .archive .hentry .entry-image img,
@@ -170,7 +173,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
     .block-contentsimage, .block-imagecontents-content, .block-numbers, .blog .site-main, .single .entry-header-content, .contact-form, .wcorg-sponsors {
       max-width: 1200px; } }
 
-.comments-title, .comment-respond, .comment-list, .error404 .content-area,
+.comments-title, .comment-respond, .comment-list, .no-comments, .error404 .content-area,
 .search-no-results .content-area, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
 .page .entry-footer {
@@ -178,20 +181,20 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 769px) {
-    .comments-title, .comment-respond, .comment-list, .error404 .content-area,
+    .comments-title, .comment-respond, .comment-list, .no-comments, .error404 .content-area,
     .search-no-results .content-area, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
     .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
     .page .entry-footer {
       max-width: 720px; } }
 
-.comments-title, .comment-respond, .comment-list, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
+.comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
 .search-no-results .content-area, .blog .site-main, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
 .page .entry-footer, .contact-form, .wcorg-sponsors {
   margin-left: 2rem;
   margin-right: 2rem; }
   @media (min-width: 769px) {
-    .comments-title, .comment-respond, .comment-list, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
+    .comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
     .search-no-results .content-area, .blog .site-main, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
     .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
     .page .entry-footer, .contact-form, .wcorg-sponsors {
@@ -1324,10 +1327,10 @@ object {
       font-size: 1rem; }
 
 .no-comments {
-  background-color: #27509F;
+  display: block;
   color: white;
   padding: .25rem .5rem;
-  display: inline-block; }
+  background-color: #27509F; }
   .no-comments:before {
     content: "\f158";
     font-family: 'dashicons';
@@ -1564,13 +1567,13 @@ body.admin-bar {
     @media (min-width: 769px) {
       .main-navigation .sub-menu {
         position: absolute;
-        top: 2.5rem;
+        top: 1.5rem;
         left: 0;
         width: 16rem;
         max-height: 0;
         padding: 0 1rem;
         border: none;
-        background-color: #27509F;
+        background-color: #F59E00;
         overflow: hidden;
         transition: all .25s ease-in-out; } }
     .main-navigation .sub-menu .menu-item {
@@ -1584,7 +1587,7 @@ body.admin-bar {
           line-height: 140%;
           text-align: left;
           padding: 0;
-          margin: 0 0 .5rem; }
+          margin: 1rem 0 .5rem; }
           .main-navigation .sub-menu .menu-item:last-of-type {
             margin-bottom: 1rem; } }
       .main-navigation .sub-menu .menu-item a {
@@ -1690,39 +1693,98 @@ body.admin-bar {
 .posts-navigation,
 .post-navigation {
   flex: 1 1 100%;
-  padding: 4rem 2rem;
+  padding: 4rem 2.5rem;
   overflow: hidden; }
-  .posts-navigation .nav-links a,
-  .post-navigation .nav-links a {
-    font-weight: 400;
-    font-family: "PT Sans", sans-serif;
-    line-height: 100%;
-    color: #27509F;
-    padding-bottom: .125rem;
-    border-bottom: .125rem solid; }
-    .posts-navigation .nav-links a:hover,
-    .post-navigation .nav-links a:hover {
-      color: #F59E00; }
-  .posts-navigation .nav-previous,
-  .post-navigation .nav-previous {
-    float: left;
-    width: 50%; }
-    .posts-navigation .nav-previous a:before,
-    .post-navigation .nav-previous a:before {
-      content: " ";
-      font-family: 'dashicons';
-      font-weight: 800;
-      vertical-align: middle; }
-  .posts-navigation .nav-next,
-  .post-navigation .nav-next {
-    float: right;
-    text-align: right;
-    width: 50%; }
-    .posts-navigation .nav-next a:after,
-    .post-navigation .nav-next a:after {
-      content: " ";
-      font-family: 'dashicons';
-      vertical-align: middle; }
+  @media (min-width: 800px) {
+    .posts-navigation,
+    .post-navigation {
+      padding: 0; } }
+  .posts-navigation .nav-links,
+  .post-navigation .nav-links {
+    position: relative;
+    display: flex; }
+    .posts-navigation .nav-links div,
+    .post-navigation .nav-links div {
+      flex: 0 1 50%;
+      margin: 0 auto;
+      border-bottom: .25rem solid secondary; }
+      @media (min-width: 800px) {
+        .posts-navigation .nav-links div,
+        .post-navigation .nav-links div {
+          position: fixed;
+          top: 50%;
+          z-index: 50; } }
+      .posts-navigation .nav-links div a,
+      .post-navigation .nav-links div a {
+        position: relative;
+        display: block;
+        line-height: 100%;
+        color: #27509F; }
+        @media (min-width: 800px) {
+          .posts-navigation .nav-links div a,
+          .post-navigation .nav-links div a {
+            font-size: 0;
+            width: 3rem;
+            height: 3rem;
+            background-color: #F59E00; } }
+        .posts-navigation .nav-links div a:before, .posts-navigation .nav-links div a:after,
+        .post-navigation .nav-links div a:before,
+        .post-navigation .nav-links div a:after {
+          position: absolute;
+          top: 0;
+          padding: .25rem;
+          background-color: #F59E00; }
+          @media (min-width: 800px) {
+            .posts-navigation .nav-links div a:before, .posts-navigation .nav-links div a:after,
+            .post-navigation .nav-links div a:before,
+            .post-navigation .nav-links div a:after {
+              top: 50%;
+              left: 20%;
+              right: 20%;
+              display: block;
+              font-weight: 800;
+              font-size: 1.5rem;
+              line-height: 0;
+              color: #F4EDE4;
+              padding: 0; } }
+        .posts-navigation .nav-links div a:hover,
+        .post-navigation .nav-links div a:hover {
+          background-color: #27509F; }
+      .posts-navigation .nav-links div.nav-previous,
+      .post-navigation .nav-links div.nav-previous {
+        left: 0;
+        text-align: left; }
+        .posts-navigation .nav-links div.nav-previous a:before,
+        .post-navigation .nav-links div.nav-previous a:before {
+          content: " ";
+          font-family: 'dashicons';
+          font-weight: 800;
+          left: -2.5rem; }
+          @media (min-width: 800px) {
+            .posts-navigation .nav-links div.nav-previous a:before,
+            .post-navigation .nav-links div.nav-previous a:before {
+              left: 20%;
+              right: 20%; } }
+        .posts-navigation .nav-links div.nav-previous a:hover:before,
+        .post-navigation .nav-links div.nav-previous a:hover:before {
+          left: 0; }
+      .posts-navigation .nav-links div.nav-next,
+      .post-navigation .nav-links div.nav-next {
+        right: 0;
+        text-align: right; }
+        .posts-navigation .nav-links div.nav-next a:after,
+        .post-navigation .nav-links div.nav-next a:after {
+          content: " ";
+          font-family: 'dashicons';
+          right: -2.5rem; }
+          @media (min-width: 800px) {
+            .posts-navigation .nav-links div.nav-next a:after,
+            .post-navigation .nav-links div.nav-next a:after {
+              left: 20%;
+              right: 20%; } }
+        .posts-navigation .nav-links div.nav-next a:hover:after,
+        .post-navigation .nav-links div.nav-next a:hover:after {
+          right: 0; }
 
 .custom-posts-pagination {
   display: flex;
@@ -1748,6 +1810,14 @@ body.admin-bar {
     .custom-posts-pagination .page-numbers:not(.current):hover {
       color: #F4EDE4;
       background-color: #27509F; }
+
+/*_______ Anchors navigation fix _______*/
+h1[id]::before, h2[id]::before, h3[id]::before,
+h4[id]::before, h5[id]::before, h6[id]::before {
+  content: '';
+  display: block;
+  height: 8rem;
+  margin: -8rem 0 0; }
 
 /*_______ Comments navigation _______*/
 /*_______ Sidebar _______*/
