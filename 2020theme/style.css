@@ -2565,22 +2565,19 @@ table {
       .salient-links .wp-block-columns .wp-block-column .wp-block-image {
         width: 100%;
         margin: 0; }
-        .salient-links .wp-block-columns .wp-block-column .wp-block-image figure {
-          width: 100%;
-          margin: 0; }
-          .salient-links .wp-block-columns .wp-block-column .wp-block-image figure a {
-            display: flex;
-            padding-bottom: 1rem; }
+        .salient-links .wp-block-columns .wp-block-column .wp-block-image a {
+          display: flex;
+          padding-bottom: 1rem; }
+          @media (min-width: 480px) {
+            .salient-links .wp-block-columns .wp-block-column .wp-block-image a {
+              padding-bottom: 2rem; } }
+          .salient-links .wp-block-columns .wp-block-column .wp-block-image a img {
+            max-width: 4rem;
+            height: auto;
+            margin-left: 0; }
             @media (min-width: 480px) {
-              .salient-links .wp-block-columns .wp-block-column .wp-block-image figure a {
-                padding-bottom: 2rem; } }
-            .salient-links .wp-block-columns .wp-block-column .wp-block-image figure a img {
-              max-width: 4rem;
-              height: auto;
-              margin-left: 0; }
-              @media (min-width: 480px) {
-                .salient-links .wp-block-columns .wp-block-column .wp-block-image figure a img {
-                  max-width: 5rem; } }
+              .salient-links .wp-block-columns .wp-block-column .wp-block-image a img {
+                max-width: 5rem; } }
       .salient-links .wp-block-columns .wp-block-column h1, .salient-links .wp-block-columns .wp-block-column h2, .salient-links .wp-block-columns .wp-block-column h3,
       .salient-links .wp-block-columns .wp-block-column h4, .salient-links .wp-block-columns .wp-block-column h5, .salient-links .wp-block-columns .wp-block-column h6,
       .salient-links .wp-block-columns .wp-block-column p {
@@ -3769,23 +3766,38 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
 #tix input[type="submit"] {
   float: none !important; }
 
-#tix #tix-errors {
+#tix #tix-errors,
+#tix #tix-infos {
   margin: 1.5rem auto; }
-  #tix #tix-errors .tix-error {
+  #tix #tix-errors .tix-error,
+  #tix #tix-errors .tix-info,
+  #tix #tix-infos .tix-error,
+  #tix #tix-infos .tix-info {
     font-size: 1.5rem;
     font-weight: 700;
     color: #27509F;
     background-color: #F4EDE4;
     border: none;
-    border-left: 0.25rem solid #F59E00;
+    border-left: .25rem solid;
     border-radius: 0; }
-    #tix #tix-errors .tix-error:before {
+  #tix #tix-errors .tix-error,
+  #tix #tix-infos .tix-error {
+    border-color: #F59E00 #tix #tix-errors .tix-error, #tix #tix-infos .tix-error; }
+    #tix #tix-errors .tix-error :before,
+    #tix #tix-infos .tix-error :before {
       content: "\f153";
       font-family: 'dashicons';
       display: inline-block;
       vertical-align: middle;
       color: #F59E00;
       margin-right: .5rem; }
+  #tix #tix-errors .tix-info:before,
+  #tix #tix-infos .tix-info:before {
+    content: "\f529";
+    font-family: 'dashicons';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5rem; }
 
 /*_______ Order Sumary _______*/
 @media (max-width: 480px) {

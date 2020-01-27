@@ -134,22 +134,36 @@
 	input[type="submit"]{
 		float: none !important;
 	}
-	#tix-errors{
+	#tix-errors,
+	#tix-infos{
 		margin: 1.5rem auto;
-		.tix-error{
+		.tix-error,
+		.tix-info{
 			font-size: 1.5rem;
 			font-weight: 700;
 			color: $color__primary;
 			background-color: $color__tertiary;
 			border: none;
-			border-left: .25rem solid $color__secondary;
+			border-left: .25rem solid;
 			border-radius: 0;
+		}
+		.tix-error{
+			border-color: $color__secondary
 			&:before {
 				content: "\f153";
 				font-family: 'dashicons';
 				display: inline-block;
 				vertical-align: middle;
 				color: $color__secondary;
+				margin-right: .5rem;
+			}
+		}
+		.tix-info{
+			&:before {
+				content: "\f529";
+				font-family: 'dashicons';
+				display: inline-block;
+				vertical-align: middle;
 				margin-right: .5rem;
 			}
 		}
