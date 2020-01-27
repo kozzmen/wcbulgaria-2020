@@ -177,6 +177,12 @@ input[type="submit"] {
 		@media(min-width: 480px){
 			font-size: 2rem;
 		}
+		&:focus,
+		&:hover{
+			color: $color__tertiary !important;
+			background-color: $color__primary;
+			box-shadow: -.125em .125em 0 $color__grey;
+		}
 	}
 }
 

@@ -1155,6 +1155,10 @@ input[type="submit"] {
     @media (min-width: 480px) {
       .wceu-big-btn .wp-block-button__link {
         font-size: 2rem; } }
+    .wceu-big-btn .wp-block-button__link:focus, .wceu-big-btn .wp-block-button__link:hover {
+      color: #F4EDE4 !important;
+      background-color: #27509F;
+      box-shadow: -0.125em 0.125em 0 #737477; }
 
 .more-link {
   display: table;
@@ -2582,6 +2586,7 @@ table {
       .salient-links .wp-block-columns .wp-block-column p {
         position: relative;
         padding-right: 2rem;
+        margin-top: 0 !important;
         margin: auto 0 0;
         line-height: 80%; }
         .salient-links .wp-block-columns .wp-block-column h1:after, .salient-links .wp-block-columns .wp-block-column h2:after, .salient-links .wp-block-columns .wp-block-column h3:after,
