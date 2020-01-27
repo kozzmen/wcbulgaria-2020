@@ -8,14 +8,50 @@
 		}
 	}
 	&.info-columns{
-		.wp-block-column{
+		justify-content: center;
+		.wp-block-column:not(:empty){
 			padding-left: .75em;
 			border-left: .25rem solid $color__tertiary;
 			margin-bottom: 2rem;
 			align-self: stretch;
-			> %headings{
-				font-size: 2rem;
+			h2{
+				@include font-size(2);
+				margin-bottom: .5em;
+				@media (min-width: 769px){
+					@include font-size(2.5);
+				}
+			}
+
+			h3{
+				@include font-size(1.5);
+				margin-bottom: .5em;
+				@media (min-width: 769px){
+					@include font-size(1.875);
+				}
+			}
+
+			h4{
+				@include font-size(1.25);
 				margin-bottom: .25em;
+				@media (min-width: 769px){
+					@include font-size(1.5);
+				}
+			}
+			  
+			h5{
+				@include font-size(1.125);
+				margin-bottom: .25em;
+				@media (min-width: 769px){
+					@include font-size(1.25);
+				}
+			}
+
+			h6{
+				@include font-size(1);
+				margin-bottom: .125em;
+				@media (min-width: 769px){
+					@include font-size(1.125);
+				}
 			}
 			p,
 			ul,

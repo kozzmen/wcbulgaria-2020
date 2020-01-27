@@ -7,7 +7,6 @@ body{
 
 /*_______ Headings _______*/
 @include headings {
-	font-family: $font__secondary;
 	font-weight: 700;
 	clear: both;
 }
