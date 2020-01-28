@@ -26,6 +26,15 @@ body {
 	box-sizing: inherit;
 }
 
+*{
+	&::selection{		
+		background-color: $color__secondary;
+	}
+	&::-moz-selection{
+		background-color: $color__secondary;
+	}
+}
+
 hr {
 	background-color: $color__primary;
 	border: 0;

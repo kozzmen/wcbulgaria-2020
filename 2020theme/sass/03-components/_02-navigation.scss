@@ -76,7 +76,8 @@
 			&.emphasised{
 				text-align: center;
 				text-decoration: none;
-				box-shadow: -.25em .25rem 0 $color__black_blue;
+				background-color: $color__secondary;
+				box-shadow: -.25em .25em 0 $color__black_blue;
 				@media (min-width: 769px){
 					width: auto;
 					margin: 0 0 0 1rem;
@@ -84,9 +85,22 @@
 				a{
 					color: $color__primary;
 					padding: .75rem 1rem;
-					background-color: $color__secondary;
-					&:focus{
-						outline: .125rem solid $color__tertiary;
+				}
+				&:focus,
+				&:focus-within,
+				&:hover{
+					@media (min-width: 769px){
+						background-color: $color__tertiary;
+						box-shadow: -.125em .125em 0 $color__black_blue;
+					}
+				}
+				&:active{
+					@media (min-width: 769px){
+						background-color: $color__black_blue;
+						box-shadow: 0 0 0 $color__black_blue;
+						a{
+							color: $color__tertiary;
+						}
 					}
 				}
 				&.current-menu-item{

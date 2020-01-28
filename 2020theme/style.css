@@ -101,7 +101,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
 .single .post-navigation .nav-links div, .single .posts-navigation .nav-links div a,
 .single .post-navigation .nav-links div a, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
 .single .post-navigation .nav-links div a:before,
-.single .post-navigation .nav-links div a:after {
+.single .post-navigation .nav-links div a:after, .error404 .page-content .widget ul li a, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before {
   transition: all .25s ease-in-out; }
 
 /*_______ Color variables _______*/
@@ -109,7 +109,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
 /*_______ Grays _______*/
 /*_______ Element colors _______*/
 /*_______ WCEU brand patterns _______*/
-.pattern01, .wp-block-latest-posts.is-grid li:nth-of-type(1):before {
+.pattern01, .wp-block-latest-posts.is-grid li:nth-of-type(1):before, .error404 .page-header {
   background-image: repeating-linear-gradient(45deg, transparent, transparent 5%, #F59E00 5%, #F59E00 15%);
   background-color: #F4EDE4; }
 
@@ -165,7 +165,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
 .alignwide,
 .is-style-wide, .posts-navigation,
 .post-navigation, .custom-posts-pagination, #secondary, .footer-widgets-block, .block-imagecontents,
-.block-contentsimage, .block-imagecontents-content, .block-numbers, .blog .site-main, .single .entry-header-content, .single .posts-navigation,
+.block-contentsimage, .block-imagecontents-content, .block-numbers, .blog .site-main, .single .posts-navigation,
 .single .post-navigation, .contact-form, .wcorg-sponsors {
   max-width: 100%;
   margin-left: auto;
@@ -174,35 +174,39 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
     .alignwide,
     .is-style-wide, .posts-navigation,
     .post-navigation, .custom-posts-pagination, #secondary, .footer-widgets-block, .block-imagecontents,
-    .block-contentsimage, .block-imagecontents-content, .block-numbers, .blog .site-main, .single .entry-header-content, .single .posts-navigation,
+    .block-contentsimage, .block-imagecontents-content, .block-numbers, .blog .site-main, .single .posts-navigation,
     .single .post-navigation, .contact-form, .wcorg-sponsors {
       max-width: 1200px; } }
 
-.comments-title, .comment-respond, .comment-list, .no-comments, .error404 .content-area,
-.search-no-results .content-area, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
-.page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
-.page .entry-footer {
+.single .entry-image, .single .entry-title {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 769px) {
-    .comments-title, .comment-respond, .comment-list, .no-comments, .error404 .content-area,
-    .search-no-results .content-area, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
+    .single .entry-image, .single .entry-title {
+      max-width: 840px; } }
+
+.comments-title, .comment-respond, .comment-list, .no-comments, .search-no-results .content-area, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
+.page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
+.page .entry-footer, .error404 .page-header .page-title, .error404 .page-content {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 769px) {
+    .comments-title, .comment-respond, .comment-list, .no-comments, .search-no-results .content-area, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
     .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
-    .page .entry-footer {
+    .page .entry-footer, .error404 .page-header .page-title, .error404 .page-content {
       max-width: 720px; } }
 
-.comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
-.search-no-results .content-area, .blog .site-main, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
+.comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .search-no-results .content-area, .blog .site-main, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
-.page .entry-footer, .contact-form, .wcorg-sponsors {
+.page .entry-footer, .contact-form, .wcorg-sponsors, .error404 .page-content {
   margin-left: 2rem;
   margin-right: 2rem; }
   @media (min-width: 769px) {
-    .comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .error404 .content-area,
-    .search-no-results .content-area, .blog .site-main, .single .entry-title, .single .entry-meta, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
+    .comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .search-no-results .content-area, .blog .site-main, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
     .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
-    .page .entry-footer, .contact-form, .wcorg-sponsors {
+    .page .entry-footer, .contact-form, .wcorg-sponsors, .error404 .page-content {
       margin-left: auto;
       margin-right: auto; } }
 
@@ -566,6 +570,12 @@ body {
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
+
+*::selection {
+  background-color: #F59E00; }
+
+*::-moz-selection {
+  background-color: #F59E00; }
 
 hr {
   background-color: #27509F;
@@ -1538,17 +1548,25 @@ body.admin-bar {
       .main-navigation .menu .menu-item.emphasised {
         text-align: center;
         text-decoration: none;
-        box-shadow: -0.25em 0.25rem 0 #233353; }
+        background-color: #F59E00;
+        box-shadow: -0.25em 0.25em 0 #233353; }
         @media (min-width: 769px) {
           .main-navigation .menu .menu-item.emphasised {
             width: auto;
             margin: 0 0 0 1rem; } }
         .main-navigation .menu .menu-item.emphasised a {
           color: #27509F;
-          padding: .75rem 1rem;
-          background-color: #F59E00; }
-          .main-navigation .menu .menu-item.emphasised a:focus {
-            outline: 0.125rem solid #F4EDE4; }
+          padding: .75rem 1rem; }
+        @media (min-width: 769px) {
+          .main-navigation .menu .menu-item.emphasised:focus, .main-navigation .menu .menu-item.emphasised:focus-within, .main-navigation .menu .menu-item.emphasised:hover {
+            background-color: #F4EDE4;
+            box-shadow: -0.125em 0.125em 0 #233353; } }
+        @media (min-width: 769px) {
+          .main-navigation .menu .menu-item.emphasised:active {
+            background-color: #233353;
+            box-shadow: 0 0 0 #233353; }
+            .main-navigation .menu .menu-item.emphasised:active a {
+              color: #F4EDE4; } }
         .main-navigation .menu .menu-item.emphasised.current-menu-item {
           box-shadow: none; }
           .main-navigation .menu .menu-item.emphasised.current-menu-item a {
@@ -1985,6 +2003,16 @@ body.admin-bar {
     @media (min-width: 768px) {
       #footer-widget-2 .widget_search {
         margin: auto 0 0 auto; } }
+    #footer-widget-2 .widget_search .search-form label, #footer-widget-2 .widget_search .search-form input {
+      display: inline-block;
+      margin: 0; }
+    #footer-widget-2 .widget_search .search-form label {
+      float: left;
+      width: 60%;
+      height: 2.5rem; }
+    #footer-widget-2 .widget_search .search-form .search-submit {
+      width: 40%;
+      height: 2.5rem; }
 
 #text-4 #subscribe-text p,
 .jetpack_subscription_widget #subscribe-text p,
@@ -2060,19 +2088,6 @@ body.admin-bar {
       width: 1.5rem;
       height: 1.5rem;
       margin: 0 auto .5rem; }
-
-.search-form label, .search-form input {
-  display: inline-block;
-  margin: 0; }
-
-.search-form label {
-  float: left;
-  width: 60%;
-  height: 2.5rem; }
-
-.search-form .search-submit {
-  width: 40%;
-  height: 2.5rem; }
 
 .site-info {
   text-align: center; }
@@ -3272,28 +3287,17 @@ h6 + .notation {
   margin-bottom: 0; }
 
 .single .entry-header {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 2rem; }
-
-.single .entry-header-content {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 0 auto;
-  padding: 4rem;
-  background-color: rgba(26, 29, 36, 0.6); }
-  .single .entry-header-content .entry-title {
-    color: #F59E00; }
+  display: flex;
+  flex-flow: column wrap;
+  padding: 5rem 2rem 0;
+  background-color: #F4EDE4;
+  margin-bottom: 2rem;
+  z-index: 1; }
 
 .single .entry-image {
-  width: 100%;
-  max-height: 20rem;
-  margin-bottom: 2rem;
-  overflow: hidden; }
-  @media (min-width: 768px) {
-    .single .entry-image {
-      max-height: 40rem; } }
+  margin-bottom: -4rem;
+  overflow: hidden;
+  order: 3; }
   .single .entry-image img {
     display: block;
     width: auto;
@@ -3305,21 +3309,26 @@ h6 + .notation {
 
 .single .entry-title {
   color: #27509F;
+  text-align: center;
   z-index: 2;
   margin-top: 0;
   margin-bottom: 1rem; }
 
 .single .entry-meta {
   font-size: 1rem;
-  color: #F59E00; }
+  color: #F59E00;
+  margin-bottom: 2rem; }
   @media (min-width: 769px) {
     .single .entry-meta {
-      font-size: 1.25rem; } }
+      font-size: 1.125rem; } }
   .single .entry-meta a {
     color: #F59E00;
     text-decoration: none; }
   .single .entry-meta .byline {
     display: none; }
+
+.single .entry-content {
+  margin-top: 6rem; }
 
 .single .site-content a:focus, .single .site-content a:hover,
 .page .site-content a:focus,
@@ -4254,3 +4263,100 @@ div[class^="wcorg-sponsor-level-"] {
       .tix-attendee-list.tix-columns-5 li {
         flex: 0 0 18%;
         max-width: 18%; } }
+
+/*_______ 404 page _______*/
+.error404 .page-header {
+  padding: 7rem 2rem; }
+  .error404 .page-header .page-title {
+    text-align: center;
+    margin: 0;
+    color: #27509F;
+    padding: 1.5rem;
+    margin: 0 auto;
+    background-color: #F4EDE4; }
+
+.error404 .page-content > p {
+  padding: 1.5rem;
+  margin: -4rem auto 4rem;
+  background-color: #F4EDE4; }
+
+.error404 .page-content .search-form {
+  max-width: 400px;
+  margin: 4rem auto; }
+  .error404 .page-content .search-form label, .error404 .page-content .search-form input {
+    display: inline-block;
+    margin: 0; }
+  .error404 .page-content .search-form label {
+    float: left;
+    width: 60%;
+    height: 2.5rem; }
+  .error404 .page-content .search-form .search-submit {
+    font-size: 1.25rem;
+    height: 2.65rem;
+    width: 40%;
+    color: #F4EDE4;
+    padding: .5rem 1rem;
+    background-color: #27509F; }
+    @media (min-width: 480px) {
+      .error404 .page-content .search-form .search-submit {
+        height: auto;
+        font-size: 1.5rem;
+        padding: .625rem 1rem; } }
+
+.error404 .page-content .widget {
+  display: block;
+  margin-bottom: 4rem; }
+  @media (min-width: 480px) {
+    .error404 .page-content .widget {
+      width: 45%; }
+      .error404 .page-content .widget:first-of-type {
+        float: left; }
+      .error404 .page-content .widget:nth-of-type(2), .error404 .page-content .widget:nth-of-type(3) {
+        float: right; } }
+  .error404 .page-content .widget .widgettitle,
+  .error404 .page-content .widget .widget-title {
+    font-size: 1.75rem; }
+  .error404 .page-content .widget ul {
+    list-style: none;
+    padding: 0; }
+    .error404 .page-content .widget ul li {
+      font-size: 1.25rem;
+      line-height: 140%;
+      padding-left: .5rem;
+      border-left: 0.25rem solid #F59E00; }
+      .error404 .page-content .widget ul li a {
+        text-decoration: underline; }
+        .error404 .page-content .widget ul li a:visited {
+          color: #27509F; }
+        .error404 .page-content .widget ul li a:hover {
+          color: #F59E00; }
+  .error404 .page-content .widget.widget_tag_cloud {
+    float: none;
+    width: 100%; }
+    .error404 .page-content .widget.widget_tag_cloud .tagcloud {
+      display: block;
+      width: 100%; }
+    .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link {
+      display: inline-block;
+      font-size: 1.5rem !important;
+      line-height: 120%;
+      color: #27509F;
+      background-color: #F4EDE4;
+      padding: .25rem .5rem;
+      margin-right: .5rem;
+      margin-bottom: 1rem; }
+      .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before {
+        content: "\f323";
+        font-family: 'dashicons';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: .25rem;
+        font-size: .875rem;
+        text-decoration: none;
+        color: #F59E00;
+        border: none; }
+      .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:focus, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:hover {
+        color: #F59E00;
+        background-color: #27509F; }
+        .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:focus:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:hover:before {
+          color: #F4EDE4; }
