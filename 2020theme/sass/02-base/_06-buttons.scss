@@ -65,8 +65,8 @@ input[type="submit"] {
 		}
 		&:focus,
 		&:hover{
-			color: $color__tertiary;
-			background-color: $color__secondary;
+			color: $color__tertiary !important;
+			background-color: $color__primary;
 			box-shadow: -.125em .125em 0 $color__grey;
 		}
 	}

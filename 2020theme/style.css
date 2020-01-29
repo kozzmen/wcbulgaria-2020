@@ -1079,8 +1079,8 @@ input[type="submit"] {
     .wp-block-button .wp-block-button__link:focus {
       outline: none; }
     .wp-block-button .wp-block-button__link:focus, .wp-block-button .wp-block-button__link:hover {
-      color: #F4EDE4;
-      background-color: #F59E00;
+      color: #F4EDE4 !important;
+      background-color: #27509F;
       box-shadow: -0.125em 0.125em 0 #737477; }
   .wp-block-button.is-style-outline .wp-block-button__link {
     font-weight: 700;
