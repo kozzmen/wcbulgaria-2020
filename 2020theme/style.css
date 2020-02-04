@@ -1857,6 +1857,11 @@ body.admin-bar {
 .site-footer {
   width: 100%;
   padding: 0 0 2.5rem; }
+  .site-footer:before {
+    content: '';
+    display: block;
+    height: 8rem;
+    margin: -8rem 0 0; }
 
 #footer-widgets {
   padding: 2.5rem 0;
@@ -2282,13 +2287,14 @@ table {
         padding-top: 1rem; } }
 
 .wp-block-table {
-  font-size: 1.25rem;
-  line-height: 160%;
+  font-size: 1rem;
+  line-height: 120%;
   margin-bottom: 2rem;
   border-collapse: collapse;
   word-break: break-word; }
   @media (min-width: 769px) {
     .wp-block-table {
+      font-size: 1.25rem;
       min-width: inherit;
       max-width: 720px !important;
       word-break: keep-all; } }
@@ -2297,15 +2303,20 @@ table {
     color: white;
     background-color: #27509F; }
     .wp-block-table thead th {
+      font-size: 1rem;
+      line-height: 120%;
       padding: .5rem 1rem;
       border-color: white;
       border-top-color: #27509F; }
+      @media (min-width: 769px) {
+        .wp-block-table thead th {
+          font-size: 1.25rem; } }
       .wp-block-table thead th:first-child {
         border-left-color: #27509F; }
       .wp-block-table thead th:last-child {
         border-right-color: #27509F; }
   .wp-block-table td {
-    padding: .5rem 1rem; }
+    padding: 1rem .5rem; }
   .wp-block-table tfoot {
     color: #27509F;
     background-color: #F4EDE4; }
@@ -2779,7 +2790,9 @@ h6 + .notation {
     width: 100%; }
   .home-header .wp-block-columns {
     justify-content: space-between;
-    color: #27509F; }
+    color: #27509F;
+    margin-top: 0;
+    margin-bottom: 0; }
     .home-header .wp-block-columns .wp-block-column:first-child {
       flex: 0 1 100%;
       min-width: 260px;

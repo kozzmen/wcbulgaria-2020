@@ -11,6 +11,8 @@
 	.wp-block-columns{
 		justify-content: space-between;
 		color: $color__primary;
+		margin-top: 0;
+		margin-bottom: 0;
 		.wp-block-column{
 			&:first-child{
 				flex: 0 1 100%;

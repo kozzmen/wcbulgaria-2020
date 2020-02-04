@@ -25,12 +25,13 @@ table {
 }
 
 .wp-block-table{
-	font-size: 1.25rem;
-	line-height: 160%;
+	font-size: 1rem;
+	line-height: 120%;
 	margin-bottom: 2rem;
 	border-collapse: collapse;
 	word-break: break-word;
 	@media (min-width: 769px){
+		font-size: 1.25rem;
 		min-width: inherit;
 		max-width: $size__content-tiny !important;
 		word-break: keep-all;
@@ -40,9 +41,14 @@ table {
 		color: white;
 		background-color: $color__primary;
 		th{
+			font-size: 1rem;
+			line-height: 120%;
 			padding: .5rem 1rem;
 			border-color: white;
 			border-top-color: $color__primary;
+			@media (min-width: 769px){
+				font-size: 1.25rem;
+			}
 			&:first-child{
 				border-left-color: $color__primary;
 			}
@@ -52,7 +58,7 @@ table {
 		}
 	}
 	td{
-		padding: .5rem 1rem;
+		padding: 1rem .5rem;
 	}
 	tfoot{
 		color: $color__primary;

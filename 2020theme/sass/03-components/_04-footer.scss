@@ -2,6 +2,12 @@
 .site-footer{
 	width: 100%;
 	padding: 0 0 2.5rem;
+	&:before {
+		content: '';
+		display: block;
+		height: 8rem;
+		margin: -8rem 0 0;
+	}
 }
 
 #footer-widgets{
