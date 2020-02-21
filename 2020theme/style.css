@@ -3150,8 +3150,8 @@ h6 + .notation {
   margin-right: 0 !important; }
   @media (min-width: 769px) {
     .sharedaddy {
-      margin-left: auto;
-      margin-right: auto; } }
+      margin-left: auto !important;
+      margin-right: auto !important; } }
   .sharedaddy .sd-title {
     display: block !important;
     font-size: 1.5rem !important;
