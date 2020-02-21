@@ -165,7 +165,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
 .alignwide,
 .is-style-wide, .posts-navigation,
 .post-navigation, .custom-posts-pagination, #secondary, .footer-widgets-block, .block-imagecontents,
-.block-contentsimage, .block-imagecontents-content, .block-numbers, .blog .site-main, .single .posts-navigation,
+.block-contentsimage, .block-imagecontents-content, .block-numbers, .sharedaddy, .blog .site-main, .single .posts-navigation,
 .single .post-navigation, .contact-form, .wcorg-sponsors {
   max-width: 100%;
   margin-left: auto;
@@ -174,7 +174,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
     .alignwide,
     .is-style-wide, .posts-navigation,
     .post-navigation, .custom-posts-pagination, #secondary, .footer-widgets-block, .block-imagecontents,
-    .block-contentsimage, .block-imagecontents-content, .block-numbers, .blog .site-main, .single .posts-navigation,
+    .block-contentsimage, .block-imagecontents-content, .block-numbers, .sharedaddy, .blog .site-main, .single .posts-navigation,
     .single .post-navigation, .contact-form, .wcorg-sponsors {
       max-width: 1200px; } }
 
@@ -198,13 +198,13 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
     .page .entry-footer, .error404 .page-header .page-title, .error404 .page-content {
       max-width: 720px; } }
 
-.comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .search-no-results .content-area, .blog .site-main, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
+.comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .sharedaddy, .search-no-results .content-area, .blog .site-main, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
 .page .entry-footer, .contact-form, .wcorg-sponsors, .error404 .page-content {
   margin-left: 2rem;
   margin-right: 2rem; }
   @media (min-width: 769px) {
-    .comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .search-no-results .content-area, .blog .site-main, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
+    .comments-title, .comment-respond, .comment-list, .no-comments, .custom-posts-pagination, .block-imagecontents-content, .block-numbers, .sharedaddy, .search-no-results .content-area, .blog .site-main, .single .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
     .page .entry-content > :not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .single .entry-footer,
     .page .entry-footer, .contact-form, .wcorg-sponsors, .error404 .page-content {
       margin-left: auto;
@@ -3159,7 +3159,7 @@ h6 + .notation {
     justify-content: center;
     align-items: center; }
     .sharedaddy ul li {
-      margin: 0 1rem !important; }
+      margin: 0 .75rem .75rem !important; }
       .sharedaddy ul li:before {
         display: none !important; }
       .sharedaddy ul li .share-icon {

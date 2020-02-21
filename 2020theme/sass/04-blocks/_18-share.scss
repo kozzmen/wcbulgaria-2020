@@ -3,6 +3,8 @@
 	display: block;
 	width: 100%;
 	margin: 4rem 0;
+	@extend %inner;
+	@extend %inner-padding;
 	.sd-title{
 		display: block !important;
 		font-size: 1.5rem !important;
@@ -19,7 +21,7 @@
 		justify-content: center;
 		align-items: center;
 		li{
-			margin: 0 1rem !important;
+			margin: 0 .75rem .75rem !important;
 			&:before{
 				display: none !important;
 			}
