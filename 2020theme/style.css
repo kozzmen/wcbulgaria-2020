@@ -3144,8 +3144,7 @@ h6 + .notation {
 .sharedaddy {
   display: block;
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 4rem; }
+  margin: 4rem 0 !important; }
   .sharedaddy .sd-title {
     display: block !important;
     font-size: 1.5rem !important;
@@ -3165,14 +3164,23 @@ h6 + .notation {
         display: none !important; }
       .sharedaddy ul li .share-icon {
         position: static !important;
-        padding: 1rem !important;
-        line-height: 100% !important; }
+        display: block !important;
+        line-height: 100% !important;
+        padding: .5rem !important; }
+        @media (min-width: 900px) {
+          .sharedaddy ul li .share-icon {
+            padding: 1rem !important; } }
         .sharedaddy ul li .share-icon:before {
           display: block !important;
-          font-size: 1rem !important; }
+          font-size: 1.5rem !important; }
           @media (min-width: 900px) {
             .sharedaddy ul li .share-icon:before {
               font-size: 2rem !important; } }
+        .sharedaddy ul li .share-icon .sharing-screen-reader-text, .sharedaddy ul li .share-icon span {
+          display: none;
+          width: 0;
+          height: 0;
+          line-height: 0; }
       .sharedaddy ul li.share-end {
         display: none !important; }
 

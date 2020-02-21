@@ -2,8 +2,7 @@
 .sharedaddy{
 	display: block;
 	width: 100%;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	margin: 4rem 0 !important;
 	.sd-title{
 		display: block !important;
 		font-size: 1.5rem !important;
@@ -26,14 +25,24 @@
 			}
 			.share-icon{
 				position: static !important;
-				padding: 1rem !important;
+				display: block !important;
 				line-height: 100% !important;
+				padding: .5rem !important;
+				@media (min-width: 900px){
+					padding: 1rem !important;
+				}
 				&:before{
 					display: block !important;
-					font-size: 1rem !important;	
+					font-size: 1.5rem !important;	
 					@media (min-width: 900px){
 						font-size: 2rem !important;	
 					}
+				}
+				.sharing-screen-reader-text, span{
+					display:none;
+					width: 0;
+					height: 0;
+					line-height: 0;
 				}
 			}
 			&.share-end{
