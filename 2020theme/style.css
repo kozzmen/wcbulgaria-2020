@@ -3169,7 +3169,10 @@ h6 + .notation {
         line-height: 100% !important; }
         .sharedaddy ul li .share-icon:before {
           display: block !important;
-          font-size: 2rem !important; }
+          font-size: 1rem !important; }
+          @media (min-width: 900px) {
+            .sharedaddy ul li .share-icon:before {
+              font-size: 2rem !important; } }
       .sharedaddy ul li.share-end {
         display: none !important; }
 

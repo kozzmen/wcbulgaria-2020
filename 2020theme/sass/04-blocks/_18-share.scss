@@ -30,7 +30,10 @@
 				line-height: 100% !important;
 				&:before{
 					display: block !important;
-					font-size: 2rem !important;	
+					font-size: 1rem !important;	
+					@media (min-width: 900px){
+						font-size: 2rem !important;	
+					}
 				}
 			}
 			&.share-end{
