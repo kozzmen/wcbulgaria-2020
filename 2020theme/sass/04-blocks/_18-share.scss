@@ -2,7 +2,14 @@
 .sharedaddy{
 	display: block;
 	width: 100%;
-	margin: 4rem 0 !important;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	margin-left: 0;
+	margin-right: 0;
+	@media (min-width: 769px){
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.sd-title{
 		display: block !important;
 		font-size: 1.5rem !important;
