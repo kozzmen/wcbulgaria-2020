@@ -3140,6 +3140,38 @@ h6 + .notation {
       font-size: 80%;
       margin-right: .25rem; }
 
+/*_______ Jetpack sharing block _______*/
+.sharedaddy {
+  display: block;
+  width: 100%;
+  margin: 4rem 0; }
+  .sharedaddy .sd-title {
+    display: block !important;
+    font-size: 1.5rem !important;
+    line-height: 100% !important;
+    text-align: center;
+    margin: 0 0 1rem 0 !important; }
+    .sharedaddy .sd-title:before {
+      display: none !important; }
+  .sharedaddy ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+    .sharedaddy ul li {
+      margin: 0 1rem !important; }
+      .sharedaddy ul li:before {
+        display: none !important; }
+      .sharedaddy ul li .share-icon {
+        position: static !important;
+        padding: 1rem !important;
+        line-height: 100% !important; }
+        .sharedaddy ul li .share-icon:before {
+          display: block !important;
+          font-size: 2rem !important; }
+      .sharedaddy ul li .share-end {
+        display: none !important; }
+
 /*--------------------------------------------------------------
 # Templates
 --------------------------------------------------------------*/

@@ -1,0 +1,40 @@
+/*_______ Jetpack sharing block _______*/
+.sharedaddy{
+	display: block;
+	width: 100%;
+	margin: 4rem 0;
+	.sd-title{
+		display: block !important;
+		font-size: 1.5rem !important;
+		line-height: 100% !important;
+		text-align: center;
+		margin: 0 0 1rem 0 !important;
+		&:before{
+			display: none !important;
+		}
+	}
+	ul{
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		li{
+			margin: 0 1rem !important;
+			&:before{
+				display: none !important;
+			}
+			.share-icon{
+				position: static !important;
+				padding: 1rem !important;
+				line-height: 100% !important;
+				&:before{
+					display: block !important;
+					font-size: 2rem !important;	
+				}
+			}
+			.share-end{
+				display: none !important;
+			}
+		}
+	}
+}
