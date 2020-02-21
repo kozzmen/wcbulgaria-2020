@@ -3146,8 +3146,8 @@ h6 + .notation {
   width: 100%;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  margin-left: 0;
-  margin-right: 0; }
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
   @media (min-width: 769px) {
     .sharedaddy {
       margin-left: auto;
