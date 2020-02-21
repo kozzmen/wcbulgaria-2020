@@ -2,9 +2,8 @@
 .sharedaddy{
 	display: block;
 	width: 100%;
-	margin: 4rem 0;
-	@extend %inner;
-	@extend %inner-padding;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 	.sd-title{
 		display: block !important;
 		font-size: 1.5rem !important;
@@ -34,7 +33,7 @@
 					font-size: 2rem !important;	
 				}
 			}
-			.share-end{
+			&.share-end{
 				display: none !important;
 			}
 		}
