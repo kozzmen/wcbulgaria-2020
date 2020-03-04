@@ -2,18 +2,20 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+	float: none !important;
 	position: relative;
 	display: table;
 	width: auto;
 	font-weight: 700;
 	font-size: 1.5rem;
+	letter-spacing: 0 !important;
 	line-height: 100%;
 	color: $color__primary;
 	text-align: center;
 	text-transform: none !important;
 	text-decoration: none;
 	margin: 1rem auto;
-	padding: .75em 1.25em;
+	padding: .75em 1.25em !important;
 	background-color: white;
 	border: .25rem solid $color__primary !important;
 	border-radius: 0 !important;

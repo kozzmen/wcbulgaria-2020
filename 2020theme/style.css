@@ -1004,18 +1004,20 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  float: none !important;
   position: relative;
   display: table;
   width: auto;
   font-weight: 700;
   font-size: 1.5rem;
+  letter-spacing: 0 !important;
   line-height: 100%;
   color: #27509F;
   text-align: center;
   text-transform: none !important;
   text-decoration: none;
   margin: 1rem auto;
-  padding: .75em 1.25em;
+  padding: .75em 1.25em !important;
   background-color: white;
   border: 0.25rem solid #27509F !important;
   border-radius: 0 !important;
@@ -4100,7 +4102,8 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: flex-end; }
+    align-items: flex-end;
+    margin-bottom: 4rem; }
     #tix .tix-submit .tix-payment-method .tix-payment-tab {
       border: none;
       border-radius: 0;
@@ -4129,7 +4132,8 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 1rem; }
     #tix .tix-submit .tix-alternate-payment-option label {
       color: #27509F;
       font-size: 1.25rem;
@@ -4140,7 +4144,7 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
     display: flex;
     justify-content: center;
     padding: 0;
-    margin: 2rem auto 4rem; }
+    margin: 2rem auto; }
     #tix .tix-submit .tix-payment-method-container.tix-hidden {
       display: none; }
 

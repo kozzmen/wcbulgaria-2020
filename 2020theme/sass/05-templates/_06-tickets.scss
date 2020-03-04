@@ -353,6 +353,7 @@
 			flex-flow: row nowrap;
 			justify-content: center;
 			align-items: flex-end;
+			margin-bottom: 4rem;
 			.tix-payment-tab {
 				border: none;
 				border-radius: 0;
@@ -386,6 +387,7 @@
 			justify-content: flex-start;
 			align-items: center;
 			padding: 0;
+			margin-bottom: 1rem;
 			label {
 				color: $color__primary;
 				font-size: 1.25rem;
@@ -398,7 +400,7 @@
 			display: flex;
 			justify-content: center;
 			padding: 0;
-			margin: 2rem auto 4rem;
+			margin: 2rem auto;
 			&.tix-hidden {
 				display: none;
 			}
