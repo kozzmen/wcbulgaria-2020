@@ -10,12 +10,13 @@ input[type="submit"] {
 	line-height: 100%;
 	color: $color__primary;
 	text-align: center;
+	text-transform: none !important;
 	text-decoration: none;
 	margin: 1rem auto;
 	padding: .75em 1.25em;
 	background-color: white;
-	border: .25rem solid $color__primary;
-	border-radius: 0;
+	border: .25rem solid $color__primary !important;
+	border-radius: 0 !important;
 	cursor: pointer;
 	@extend %transition;
 	@media (min-width: 480px){

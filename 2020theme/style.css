@@ -1012,12 +1012,13 @@ input[type="submit"] {
   line-height: 100%;
   color: #27509F;
   text-align: center;
+  text-transform: none !important;
   text-decoration: none;
   margin: 1rem auto;
   padding: .75em 1.25em;
   background-color: white;
-  border: 0.25rem solid #27509F;
-  border-radius: 0;
+  border: 0.25rem solid #27509F !important;
+  border-radius: 0 !important;
   cursor: pointer; }
   @media (min-width: 480px) {
     button,
@@ -4041,23 +4042,23 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
       margin-left: 2rem; } }
   .tix-attendee-form td.tix-right br, .tix_invoice_table td.tix-right br {
     display: none; }
+  .tix-attendee-form td.tix-right label, .tix_invoice_table td.tix-right label {
+    margin-left: 10%;
+    margin-bottom: 1.5rem; }
+    @media (min-width: 480px) {
+      .tix-attendee-form td.tix-right label, .tix_invoice_table td.tix-right label {
+        margin-left: 0; } }
+    .tix-attendee-form td.tix-right label:first-child, .tix_invoice_table td.tix-right label:first-child {
+      margin-top: 1rem; }
+      @media (min-width: 480px) {
+        .tix-attendee-form td.tix-right label:first-child, .tix_invoice_table td.tix-right label:first-child {
+          margin-top: 0; } }
   .tix-attendee-form td.tix-right input[type="radio"],
   .tix-attendee-form td.tix-right input[type="checkbox"], .tix_invoice_table td.tix-right input[type="radio"],
   .tix_invoice_table td.tix-right input[type="checkbox"] {
     float: left;
     margin-right: .5rem;
     margin-bottom: 1rem; }
-  .tix-attendee-form td.tix-right > label, .tix_invoice_table td.tix-right > label {
-    margin-left: 10%;
-    margin-bottom: 1.5rem; }
-    @media (min-width: 480px) {
-      .tix-attendee-form td.tix-right > label, .tix_invoice_table td.tix-right > label {
-        margin-left: 0; } }
-    .tix-attendee-form td.tix-right > label:first-child, .tix_invoice_table td.tix-right > label:first-child {
-      margin-top: 1rem; }
-      @media (min-width: 480px) {
-        .tix-attendee-form td.tix-right > label:first-child, .tix_invoice_table td.tix-right > label:first-child {
-          margin-top: 0; } }
   .tix-attendee-form td.tix-right input, .tix-attendee-form td.tix-right textarea, .tix-attendee-form td.tix-right select, .tix_invoice_table td.tix-right input, .tix_invoice_table td.tix-right textarea, .tix_invoice_table td.tix-right select {
     width: 100% !important; }
   .tix-attendee-form td.tix-right textarea, .tix_invoice_table td.tix-right textarea {
