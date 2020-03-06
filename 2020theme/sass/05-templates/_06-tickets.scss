@@ -405,5 +405,18 @@
 				display: none;
 			}
 		}
+		.tix-checkout-button{
+			float: none;
+			letter-spacing: 0;
+			text-transform: none;
+			padding: .75em 1.25em;
+			border: .25rem solid $color__primary;
+			border-radius: 0;
+			&:focus,
+			&:hover{
+				color: $color__tertiary;
+				background-color: $color__primary;
+			}
+		}
 	}
 }

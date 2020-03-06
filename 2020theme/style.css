@@ -1004,23 +1004,23 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  float: none !important;
+  float: none;
   position: relative;
   display: table;
   width: auto;
   font-weight: 700;
   font-size: 1.5rem;
-  letter-spacing: 0 !important;
+  letter-spacing: 0;
   line-height: 100%;
   color: #27509F;
   text-align: center;
-  text-transform: none !important;
+  text-transform: none;
   text-decoration: none;
   margin: 1rem auto;
-  padding: .75em 1.25em !important;
+  padding: .75em 1.25em;
   background-color: white;
-  border: 0.25rem solid #27509F !important;
-  border-radius: 0 !important;
+  border: 0.25rem solid #27509F;
+  border-radius: 0;
   cursor: pointer; }
   @media (min-width: 480px) {
     button,
@@ -4147,6 +4147,16 @@ p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
     margin: 2rem auto; }
     #tix .tix-submit .tix-payment-method-container.tix-hidden {
       display: none; }
+  #tix .tix-submit .tix-checkout-button {
+    float: none;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: .75em 1.25em;
+    border: 0.25rem solid #27509F;
+    border-radius: 0; }
+    #tix .tix-submit .tix-checkout-button:focus, #tix .tix-submit .tix-checkout-button:hover {
+      color: #F4EDE4;
+      background-color: #27509F; }
 
 /*_______ Sponsors list _______*/
 .home-sponsors {

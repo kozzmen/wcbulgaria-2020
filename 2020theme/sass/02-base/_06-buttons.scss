@@ -2,23 +2,23 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	float: none !important;
+	float: none;
 	position: relative;
 	display: table;
 	width: auto;
 	font-weight: 700;
 	font-size: 1.5rem;
-	letter-spacing: 0 !important;
+	letter-spacing: 0;
 	line-height: 100%;
 	color: $color__primary;
 	text-align: center;
-	text-transform: none !important;
+	text-transform: none;
 	text-decoration: none;
 	margin: 1rem auto;
-	padding: .75em 1.25em !important;
+	padding: .75em 1.25em;
 	background-color: white;
-	border: .25rem solid $color__primary !important;
-	border-radius: 0 !important;
+	border: .25rem solid $color__primary;
+	border-radius: 0;
 	cursor: pointer;
 	@extend %transition;
 	@media (min-width: 480px){
