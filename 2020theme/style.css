@@ -109,7 +109,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
 /*_______ Grays _______*/
 /*_______ Element colors _______*/
 /*_______ WCEU brand patterns _______*/
-.pattern01, .wp-block-latest-posts.is-grid li:nth-of-type(1):before, .error404 .page-header {
+.pattern01, .error404 .page-header {
   background-image: repeating-linear-gradient(45deg, transparent, transparent 5%, #F59E00 5%, #F59E00 15%);
   background-color: #F4EDE4; }
 
@@ -129,7 +129,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
   background-size: 50px 100px;
   background-color: #F4EDE4; }
 
-.pattern05, .wp-block-latest-posts.is-grid li:nth-of-type(3):before {
+.pattern05 {
   background-image: radial-gradient(#F59E00 50%, transparent 50%);
   background-size: 40px 40px;
   background-color: #F4EDE4; }
@@ -153,7 +153,7 @@ input[type="submit"], .wp-block-button .wp-block-button__link, .custom-header .s
   background-size: 50px 50px;
   background-color: #F4EDE4; }
 
-.pattern10, .wp-block-latest-posts.is-grid li:nth-of-type(2):before {
+.pattern10 {
   background: linear-gradient(155deg, #27509F 23%, #27509F 23%, transparent 23%, transparent 23%) -25px -25px, linear-gradient(205deg, #27509F 23%, #27509F 23%, transparent 23%, transparent 23%) -25px -25px, linear-gradient(335deg, #27509F 23%, #27509F 23%, transparent 23%, transparent 23%) 0 -25px, linear-gradient(25deg, #27509F 23%, #27509F 23%, transparent 23%, transparent 23%) 0 -25px;
   background-size: 50px 25px;
   background-color: #F4EDE4; }
@@ -2579,14 +2579,6 @@ table {
       .wp-block-latest-posts.is-grid li {
         flex: 0 0 31.333%;
         max-width: 31.333%; } }
-    .wp-block-latest-posts.is-grid li:before {
-      content: '';
-      display: block;
-      width: calc(100% + 2rem);
-      height: 12rem;
-      padding: .5rem;
-      margin: 0 -1rem 1rem;
-      overflow: hidden; }
     .wp-block-latest-posts.is-grid li:focus, .wp-block-latest-posts.is-grid li:focus-within, .wp-block-latest-posts.is-grid li:hover {
       background-color: #F4EDE4; }
   .wp-block-latest-posts.is-grid a {
@@ -2599,6 +2591,13 @@ table {
     .wp-block-latest-posts.is-grid a:focus, .wp-block-latest-posts.is-grid a:hover {
       text-decoration: underline;
       outline: 0; }
+  .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image {
+    max-height: 12rem;
+    margin-bottom: .5rem !important;
+    overflow: hidden; }
+    .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image img {
+      width: 100%;
+      height: auto; }
   .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-date {
     font-weight: 400;
     font-size: 1rem;
@@ -2610,6 +2609,8 @@ table {
     font-weight: 400;
     line-height: 120%;
     margin: 0; }
+    .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt .more-link {
+      display: none !important; }
     .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a {
       display: table;
       font-size: 1rem;
