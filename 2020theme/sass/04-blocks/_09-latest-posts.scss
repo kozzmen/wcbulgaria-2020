@@ -1,13 +1,7 @@
 /*_______ Latest posts Block _______*/
-.block-posts{ //Custom class for a group with title + latest posts block
-	.wp-block-column{
-		margin-bottom: 1.5rem;
-	}
-}
-
 .wp-block-latest-posts{
 	list-style: none;
-	margin-bottom: 4rem;
+	margin-bottom: 0;
 	li{
 		font-weight: 800;
 		font-size: 2rem;

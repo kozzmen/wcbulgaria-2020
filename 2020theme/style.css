@@ -2549,12 +2549,9 @@ table {
     margin-top: 0 !important; }
 
 /*_______ Latest posts Block _______*/
-.block-posts .wp-block-column {
-  margin-bottom: 1.5rem; }
-
 .wp-block-latest-posts {
   list-style: none;
-  margin-bottom: 4rem; }
+  margin-bottom: 0; }
   .wp-block-latest-posts li {
     font-weight: 800;
     font-size: 2rem;
