@@ -16,7 +16,6 @@
 			width: 100%;
 			border: none;
 			padding: 0;
-			padding: 0 1rem;
 			margin: 0 auto 2rem;
 			overflow: hidden;
 			@media(min-width: 480px){
@@ -34,6 +33,20 @@
 				background-color: $color__tertiary;
 			}
 		}
+		.wp-block-latest-posts__featured-image{
+			max-height: 12rem;
+			margin-bottom: .5rem !important;
+			overflow: hidden;
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		a,
+		.wp-block-latest-posts__post-date,
+		.wp-block-latest-posts__post-excerpt{
+			padding: 0 1rem;
+		}
 		a{
 			display: block;
 			font-size: 2rem;
@@ -45,15 +58,6 @@
 			&:hover{
 				text-decoration: underline;
 				outline: 0;
-			}
-		}
-		.wp-block-latest-posts__featured-image{
-			max-height: 12rem;
-		    margin-bottom: .5rem !important;
-			overflow: hidden;
-			img{
-				width: 100%;
-				height: auto;
 			}
 		}
 		.wp-block-latest-posts__post-date{
