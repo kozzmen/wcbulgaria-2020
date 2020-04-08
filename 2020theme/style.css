@@ -3750,16 +3750,16 @@ h6 + .notation {
     flex: 1 1 31.333%;
     margin: 0 1% 3rem; } }
 @media (min-width: 768px) {
-  p + .wordcamp-organizers:not(:first-of-type) {
+  p + .wordcamp-organizers:not([class*="global-leads"]) {
     display: block;
     float: left;
     width: 30%;
     margin-left: 10% !important; } }
-p + .wordcamp-organizers:not(:first-of-type) .wordcamp-post-list__post {
+p + .wordcamp-organizers:not([class*="global-leads"]) .wordcamp-post-list__post {
   max-width: initial; }
-p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container {
+p + .wordcamp-organizers:not([class*="global-leads"]) .wordcamp-image__avatar-container {
   position: relative; }
-  p + .wordcamp-organizers:not(:first-of-type) .wordcamp-image__avatar-container:after {
+  p + .wordcamp-organizers:not([class*="global-leads"]) .wordcamp-image__avatar-container:after {
     content: 'Team Lead';
     position: absolute;
     display: block;

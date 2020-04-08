@@ -79,7 +79,7 @@ p + .wordcamp-organizers{
 			}
 		}
 	}
-	&:not(:first-of-type){
+	&:not([class*="global-leads"]){
 		@media (min-width: 768px){
 			display:block;
 			float: left;
