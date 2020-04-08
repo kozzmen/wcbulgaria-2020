@@ -148,7 +148,7 @@
 			border-radius: 0;
 		}
 		.tix-error{
-			border-color: $color__secondary
+			border-color: $color__secondary;
 			&:before {
 				content: "\f153";
 				font-family: 'dashicons';
