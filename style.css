@@ -2559,11 +2559,16 @@ object {
 }
 
 @media (min-width: 768px) {
-  p + .wordcamp-organizers:first-of-type .wordcamp-post-list__post {
-    max-width: 31.333%;
-    flex: 1 1 31.333%;
+  .wordcamp-organizers.global-leads-two-columns .wordcamp-post-list__post {
+    max-width: 48%;
+    flex: 1 1 48%;
     margin: 0 1% 3rem;
   }
+  .wordcamp-organizers.global-leads-three-columns .wordcamp-post-list__post {
+     max-width: 31.333%;
+     flex: 1 1 31.333%;
+     margin: 0 1% 3rem;
+   }
 }
 @media (min-width: 768px) {
   p + .wordcamp-organizers:not(:first-of-type) {
