@@ -3171,14 +3171,15 @@ h6 + .notation {
   padding: 1.25rem;
   background-color: white;
   border: 0.125rem solid #27509F;
-  box-shadow: 0.5rem 0.5rem 0 #F4EDE4;
+  box-shadow: -0.25em 0.25em 0 #27509F;
   margin-bottom: 1rem; }
   #speaker-session-names img, .wcpt-schedule tbody tr td.wcpt-session-type-session img, .wcpt-schedule tbody tr td.wcpt-session-type-custom img, .wordcamp-post-list .wordcamp-post-list__post img {
     display: block;
     filter: grayscale(100); }
   #speaker-session-names:hover, .wcpt-schedule tbody tr td.wcpt-session-type-session:hover, .wcpt-schedule tbody tr td.wcpt-session-type-custom:hover, .wordcamp-post-list .wordcamp-post-list__post:hover {
     transform-origin: center;
-    box-shadow: 0 0 0 #F4EDE4;
+    border-color: #F59E00;
+    box-shadow: -0.125em 0.125em 0 #F59E00;
     z-index: 5; }
     #speaker-session-names:hover img, .wcpt-schedule tbody tr td.wcpt-session-type-session:hover img, .wcpt-schedule tbody tr td.wcpt-session-type-custom:hover img, .wordcamp-post-list .wordcamp-post-list__post:hover img {
       filter: grayscale(0); }
@@ -4586,7 +4587,7 @@ div[class^="wcorg-sponsor-level-"] {
   margin-bottom: -3rem; }
 
 .single-wcb_speaker .entry-title:before {
-  background-image: url(https://2020.spain.wordcamp.org/files/2020/04/icono-ponentes.png); }
+  background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-speaker.png); }
 
 .single-wcb_session .entry-header {
   padding-bottom: 2rem;
@@ -4595,7 +4596,7 @@ div[class^="wcorg-sponsor-level-"] {
 .single-wcb_session .entry-title {
   text-align: left; }
   .single-wcb_session .entry-title:before {
-    background-image: url(https://2020.spain.wordcamp.org/files/2020/04/icono-asistir.png);
+    background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-session.png);
     margin: 0 0 1rem; }
 
 /*_______ Speaker single _______*/
