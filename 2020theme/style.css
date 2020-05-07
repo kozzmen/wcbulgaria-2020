@@ -4649,9 +4649,11 @@ div[class^="wcorg-sponsor-level-"] {
 #session-speaker-names {
   display: inline-block;
   list-style: none;
+  padding-left: 0;
   margin-left: 0 !important; }
   #session-speaker-names li {
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     #session-speaker-names li:before {
       display: none; }
     #session-speaker-names li a {
@@ -4662,7 +4664,7 @@ div[class^="wcorg-sponsor-level-"] {
   margin: 0 auto;
   display: block; }
   .session-categories-links:before {
-    content: 'Categoría: ';
+    content: 'Category: ';
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 1rem; }
