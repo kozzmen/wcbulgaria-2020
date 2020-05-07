@@ -61,16 +61,7 @@
 }
 
 p + .wordcamp-organizers{
-	&.global-leads-two-columns{
-		.wordcamp-post-list__post{
-			@media (min-width: 768px){
-				max-width: 48%;
-				flex: 1 1 48%;
-				margin: 0 1% 3rem;
-			}
-		}
-	}
-	&.global-leads-three-columns{
+	&:first-of-type{
 		.wordcamp-post-list__post{
 			@media (min-width: 768px){
 				max-width: 31.333%;
@@ -79,7 +70,7 @@ p + .wordcamp-organizers{
 			}
 		}
 	}
-	&:not([class*="global-leads"]){
+	&:not(:first-of-type){
 		@media (min-width: 768px){
 			display:block;
 			float: left;
@@ -106,7 +97,7 @@ p + .wordcamp-organizers{
 			}
 		}
 	}
-
+	
 }
 
 .wordcamp-organizers + .wordcamp-organizers{
