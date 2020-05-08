@@ -1,0 +1,175 @@
+/*_______ Schedule page _______*/
+.wcpt-schedule{
+	border-collapse: separate;
+	border-spacing: 0 .625rem;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	@media (min-width: 700px){
+		border-spacing: .625rem;
+	}
+	thead{
+		background-color: $color__tertiary;
+		border: none;
+		th{	
+			font-family: $font__main;
+			font-weight: 700;
+			font-size: 1.5rem;
+			text-align: center;		
+			padding: .5rem;
+			&.wcpt-col-time{
+				text-indent: -9999px;
+				background-color: white;
+			}
+		}
+	}
+	tbody{
+		width: 100%;
+		tr{
+			border: none;
+			vertical-align: top;
+			td{
+				&.wcpt-time{
+					display: table-cell;
+					width: auto;
+					font-weight: 700;
+					font-size: 1.25rem;
+					color: $color__tertiary;
+					padding: 1rem;
+					background-color: $color__secondary;
+					@media (min-width: 700px){
+				    	width: 7%;
+				    }
+				}
+				&.wcpt-session-type-session,
+				&.wcpt-session-type-custom{
+					position: relative;
+					width: auto;
+					@extend %camptix-item;
+					box-shadow: .25rem .25rem 0 $color__tertiary;
+					line-height: 100%;
+					@media (min-width: 700px){
+						width: 45%;
+					}
+					&:hover{
+						transform: none;
+						background-color: white;
+						box-shadow: initial;
+					}
+					.wcpt-session-title{
+						font-family: $font__main;
+						font-weight: 700;
+						font-size: 1.25rem;
+						text-decoration: none;
+					}
+				}
+				&.wcb-speaker-nando-pappalardo,
+				&.wcb-speaker-pablo-honey,
+				&.wcb-speaker-clara-avila,
+				&.wcb-speaker-jose-peleato,
+				&.wcb-speaker-jose-conti,
+				&.wcb-speaker-sergio-vazquez,
+				&.wcb-speaker-caribay-camacho,
+				&.wcb-speaker-nahuai-badiola,
+				&.wcb-speaker-dario-bf,
+				&.wcb-speaker-alex-cuadra{
+					@media (min-width: 700px){
+						border-bottom: none;
+						box-shadow: .25rem 0 0 $color__tertiary;
+					}
+				}
+				&.wcpt-session-type-custom{
+					text-align: center;
+					.wcpt-session-title{
+						justify-content: center;
+						margin-bottom: 0;
+					}
+				}
+				&.wcpt-session-type-session{
+					height: inherit;
+					vertical-align: top;
+					&:before{
+						display: inline-block;
+						font-family: $font__main;
+						font-weight: 700;
+						font-size: .875rem;
+						color: $color__primary;
+						padding: .25rem .5rem;
+						background-color: $color__tertiary;
+						border: none;
+						margin-bottom: .5rem;
+					}
+					.wcb-session-cell-content{
+						@media (min-width: 700px){
+							padding-right: 2rem;
+						}
+						&:before{
+							display: none;
+						}
+						.wcpt-session-title{
+							display: block;
+							font-size: 1.5rem;
+							line-height: 110%;
+							margin-bottom: 1rem;
+							padding: 0;
+							@media (min-width: 700px){
+								font-size: 1.75rem;
+							}
+						}
+						.wcpt-session-speakers{
+							width: auto;
+							font-weight: 700;
+							font-size: 1.125rem;
+							padding: 0;
+							margin-top: auto;
+							margin-bottom: 0;
+							&:before{
+								content: 'por ';
+								font-weight: 400;
+								font-style: normal;
+								font-size: 1rem;
+								color: $color__primary;
+							}
+							a{
+								@extend %camptix-nice-link;
+							}
+						}
+					}
+					.wcb-session-favourite-icon{
+						position: absolute;
+						top: 1rem;
+						right: .5rem;
+						.dashicons{
+							color: $color__grey_verylight;
+							&:before{
+								content: "\f109";
+								@extend %transition;
+							}
+						}
+					}
+				}
+				&.wcb-favourite-session{
+					background-color: $color__tertiary;
+					border-color: $color__secondary;
+					.wcb-session-favourite-icon{
+						.dashicons{
+							color: $color__secondary;
+							&:before{
+								content: "\f537";
+							}
+						}
+					}
+					&:hover{
+						background-color: $color__tertiary;
+					}
+				}
+				&.wcpt-session-empty {
+					@media (min-width: 700px){
+						border-left: .125rem solid $color__primary;
+						border-right: .125rem solid $color__primary;
+						box-shadow: 4px 0 0 $color__tertiary;
+					}
+				}
+			}
+		}
+	}
+}

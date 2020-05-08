@@ -1,5 +1,6 @@
 /*_______ Blog feed _______*/
-.blog{
+.blog,
+.archive{
 	.site-main{
 		@extend %inner;
 		@extend %inner-padding;
@@ -121,6 +122,31 @@
 				img{
 					filter: grayscale(0);
 				}
+			}
+		}
+	}
+}
+
+/*_______ Sessions Category archive _______*/
+.archive{
+	&.tax-wcb_session_category{
+		.site-main{
+			margin-top: 0;
+		}
+		.page-header{
+			background-color: white;
+			padding: 4rem 2rem;
+		}
+		.hentry{
+			padding: 0;
+			border-left: .25rem solid $color__tertiary;
+			&:focus,
+			&:focus-within,
+			&:hover{
+				background-color: white;
+			}
+			.entry-title{
+				font-size: 1.5rem;
 			}
 		}
 	}

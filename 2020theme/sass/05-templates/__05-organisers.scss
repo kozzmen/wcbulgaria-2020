@@ -1,0 +1,110 @@
+/*_______ Organises list _______*/
+.wordcamp-organizers{
+	max-width: $size__content-big !important;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin: 2rem auto;
+	.wordcamp-post-list__post{
+		margin-bottom: 2rem;
+		border: .25rem solid;
+		@media (min-width: 768px){
+			max-width: 46%;
+			flex: 1 1 46%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+		.wordcamp-organizers__post{
+			position:relative;
+			display: flex;
+			flex-flow: column wrap;
+			padding: 1rem;
+		}
+		.wordcamp-image__avatar-container{
+			top: 0;
+			left: 0;
+			order: -1;
+			max-width: 6rem;
+			margin-bottom: 1rem;
+			img{
+				display: block;
+			}
+		}
+		.wordcamp-organizers__title{
+			font-size: 1.25rem;
+			margin-top: 0;
+			margin-bottom: .5rem;
+		}
+		.wordcamp-organizers__content{
+			display: flex;
+			flex-flow: column wrap;
+			p{
+				font-size: 1rem;
+				line-height: 120%;
+				margin-bottom: 0;
+				&:nth-of-type(2){
+					font-size: 0;
+					order: -1;
+					margin-bottom: .5rem;
+					strong, a{
+						display: block;
+						font-size: .875rem;
+						line-height: 100%;
+						margin-bottom: .25rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+p + .wordcamp-organizers{
+	&:first-of-type{
+		.wordcamp-post-list__post{
+			@media (min-width: 768px){
+				max-width: 31.333%;
+				flex: 1 1 31.333%;
+				margin: 0 1% 3rem;
+			}
+		}
+	}
+	&:not(:first-of-type){
+		@media (min-width: 768px){
+			display:block;
+			float: left;
+			width: 30%;
+			margin-left: 10% !important;
+		}
+		.wordcamp-post-list__post{
+			max-width: initial;
+		}
+		.wordcamp-image__avatar-container{
+			position: relative;
+			&:after{
+				content: 'Team Lead';
+				position: absolute;
+				display: block;
+				bottom:0;
+				left: 0;
+				font-size: .875rem;
+				text-align: center;
+				line-height: 100%;
+				color: white;
+				padding: .25rem;
+				background-color: $color__primary;
+			}
+		}
+	}
+	
+}
+
+.wordcamp-organizers + .wordcamp-organizers{
+	margin-bottom: 6rem;
+	@media (min-width: 768px){
+		float:right;
+		width: 50%;
+		margin-right: 10% !important;
+	}
+}

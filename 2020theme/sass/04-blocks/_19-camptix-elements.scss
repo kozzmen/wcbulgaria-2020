@@ -1,0 +1,55 @@
+/*_______ General styles for some Camptix elements _______*/
+%camptix-item{
+	padding: 1.25rem;
+	background-color: white;
+	border: .125rem solid $color__primary;
+	box-shadow: -0.25em 0.25em 0 $color__primary;
+	margin-bottom: 1rem;
+	@extend %transition;
+	img{
+		display: block;
+		filter: grayscale(100);
+		@extend %transition;
+	}
+	&:hover{
+		transform-origin: center;
+		border-color: $color__secondary;
+		box-shadow: -0.125em 0.125em 0 $color__secondary;
+		z-index: 5;
+		img{
+			filter: grayscale(0);
+		}
+	}
+}
+
+%camptix-nice-link{
+	position: relative;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 100%;
+	text-decoration: none;
+	color: $color__secondary;
+	margin-bottom: .25rem;
+	z-index: 1;
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 5%;
+		width: 100%;
+		height: .75rem;
+		background-color: $color__tertiary;
+		z-index: -1;
+		@extend %transition;
+	}
+	&:focus,
+	&:hover{
+		color: $color__grey;
+		text-decoration: underline;
+		&:after{
+			width: 0;
+		}
+	}
+}

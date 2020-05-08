@@ -7,7 +7,7 @@
 	li > ul, li > ol{
 		margin: 1rem 0;
 	}
-	ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid){
+	ul:not(.wordcamp-post-list):not(.tix-attendee-list):not(.wp-block-latest-posts__list):not(.blocks-gallery-grid):not(.wordcamp-speakers__sessions-list):not(#session-speaker-names):not(#speaker-session-names){
 		padding-left: 1.5rem;
 		@media (min-width: 480px){
 			padding-left: 2.5rem;
