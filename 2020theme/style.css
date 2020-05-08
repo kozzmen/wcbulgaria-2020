@@ -164,7 +164,8 @@ input[type="submit"] {
 
 .wcorg-sponsors, .contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
-.archive .site-main, .block-numbers, .block-imagecontents-content, .block-imagecontents,
+.archive .site-main,
+.search-results .site-main, .block-numbers, .block-imagecontents-content, .block-imagecontents,
 .block-contentsimage, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
 .post-navigation, .alignwide,
 .is-style-wide {
@@ -174,7 +175,8 @@ input[type="submit"] {
   @media (min-width: 769px) {
     .wcorg-sponsors, .contact-form, .single .posts-navigation,
     .single .post-navigation, .blog .site-main,
-    .archive .site-main, .block-numbers, .block-imagecontents-content, .block-imagecontents,
+    .archive .site-main,
+    .search-results .site-main, .block-numbers, .block-imagecontents-content, .block-imagecontents,
     .block-contentsimage, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
     .post-navigation, .alignwide,
     .is-style-wide {
@@ -211,14 +213,16 @@ input[type="submit"] {
 .error404 .page-content, .wcorg-sponsors, .contact-form, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
-.archive .site-main, .search-no-results .content-area, .block-numbers, .block-imagecontents-content, .custom-posts-pagination, .no-comments, .comments-title, .comment-respond, .comment-list {
+.archive .site-main,
+.search-results .site-main, .search-no-results .content-area, .block-numbers, .block-imagecontents-content, .custom-posts-pagination, .no-comments, .comments-title, .comment-respond, .comment-list {
   margin-left: 2rem;
   margin-right: 2rem; }
   @media (min-width: 769px) {
     .error404 .page-content, .wcorg-sponsors, .contact-form, .single .entry-footer,
     .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
     .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
-    .archive .site-main, .search-no-results .content-area, .block-numbers, .block-imagecontents-content, .custom-posts-pagination, .no-comments, .comments-title, .comment-respond, .comment-list {
+    .archive .site-main,
+    .search-results .site-main, .search-no-results .content-area, .block-numbers, .block-imagecontents-content, .custom-posts-pagination, .no-comments, .comments-title, .comment-respond, .comment-list {
       margin-left: auto;
       margin-right: auto; } }
 /*--------------------------------------------------------------
@@ -3245,13 +3249,24 @@ h6 + .notation {
 
 /*_______ Blog feed _______*/
 .blog .site-main,
-.archive .site-main {
+.archive .site-main,
+.search-results .site-main {
   display: flex;
   flex-flow: row wrap;
   margin-top: 8rem; }
-  .blog .site-main > header,
-  .archive .site-main > header {
-    flex: 1 1 100%; }
+  .blog .site-main .page-header,
+  .archive .site-main .page-header,
+  .search-results .site-main .page-header {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: white;
+    margin-bottom: 4rem; }
+    .blog .site-main .page-header .page-title,
+    .archive .site-main .page-header .page-title,
+    .search-results .site-main .page-header .page-title {
+      text-align: center;
+      margin: 0; }
 
 .archive .hentry,
 .search-results .hentry {
@@ -3703,26 +3718,18 @@ h6 + .notation {
               right: 0; } }
 /*_______ Page template _______*/
 .page-template-default .entry-header,
-.page-template .entry-header,
-.search-results .page-header,
-.archive .page-header {
+.page-template .entry-header {
   padding: 7rem 2rem;
   margin-bottom: 4rem;
   background-color: #F4EDE4; }
   .page-template-default .entry-header .entry-title,
   .page-template-default .entry-header .page-title,
   .page-template .entry-header .entry-title,
-  .page-template .entry-header .page-title,
-  .search-results .page-header .entry-title,
-  .search-results .page-header .page-title,
-  .archive .page-header .entry-title,
-  .archive .page-header .page-title {
+  .page-template .entry-header .page-title {
     text-align: center;
     margin: 0; }
   .page-template-default .entry-header .entry-image,
-  .page-template .entry-header .entry-image,
-  .search-results .page-header .entry-image,
-  .archive .page-header .entry-image {
+  .page-template .entry-header .entry-image {
     display: none; }
 
 /*_______ Contact form _______*/
