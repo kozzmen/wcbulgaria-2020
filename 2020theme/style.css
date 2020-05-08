@@ -163,7 +163,8 @@ input[type="submit"] {
   width: 100%; }
 
 .wcorg-sponsors, .contact-form, .single .posts-navigation,
-.single .post-navigation, .blog .site-main, .block-numbers, .block-imagecontents-content, .block-imagecontents,
+.single .post-navigation, .blog .site-main,
+.archive .site-main, .block-numbers, .block-imagecontents-content, .block-imagecontents,
 .block-contentsimage, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
 .post-navigation, .alignwide,
 .is-style-wide {
@@ -172,7 +173,8 @@ input[type="submit"] {
   margin-right: auto; }
   @media (min-width: 769px) {
     .wcorg-sponsors, .contact-form, .single .posts-navigation,
-    .single .post-navigation, .blog .site-main, .block-numbers, .block-imagecontents-content, .block-imagecontents,
+    .single .post-navigation, .blog .site-main,
+    .archive .site-main, .block-numbers, .block-imagecontents-content, .block-imagecontents,
     .block-contentsimage, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
     .post-navigation, .alignwide,
     .is-style-wide {
@@ -208,13 +210,15 @@ input[type="submit"] {
       max-width: 600px; } }
 .error404 .page-content, .wcorg-sponsors, .contact-form, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
-.page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main, .search-no-results .content-area, .block-numbers, .block-imagecontents-content, .custom-posts-pagination, .no-comments, .comments-title, .comment-respond, .comment-list {
+.page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
+.archive .site-main, .search-no-results .content-area, .block-numbers, .block-imagecontents-content, .custom-posts-pagination, .no-comments, .comments-title, .comment-respond, .comment-list {
   margin-left: 2rem;
   margin-right: 2rem; }
   @media (min-width: 769px) {
     .error404 .page-content, .wcorg-sponsors, .contact-form, .single .entry-footer,
     .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
-    .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main, .search-no-results .content-area, .block-numbers, .block-imagecontents-content, .custom-posts-pagination, .no-comments, .comments-title, .comment-respond, .comment-list {
+    .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
+    .archive .site-main, .search-no-results .content-area, .block-numbers, .block-imagecontents-content, .custom-posts-pagination, .no-comments, .comments-title, .comment-respond, .comment-list {
       margin-left: auto;
       margin-right: auto; } }
 /*--------------------------------------------------------------
@@ -3240,11 +3244,13 @@ h6 + .notation {
   display: none; }
 
 /*_______ Blog feed _______*/
-.blog .site-main {
+.blog .site-main,
+.archive .site-main {
   display: flex;
   flex-flow: row wrap;
   margin-top: 8rem; }
-  .blog .site-main > header {
+  .blog .site-main > header,
+  .archive .site-main > header {
     flex: 1 1 100%; }
 
 .archive .hentry,
@@ -3383,6 +3389,22 @@ h6 + .notation {
   .archive .hentry:hover .entry-image img,
   .search-results .hentry:hover .entry-image img {
     filter: grayscale(0); }
+
+/*_______ Sessions Category archive _______*/
+.archive.tax-wcb_session_category .site-main {
+  margin-top: 0; }
+
+.archive.tax-wcb_session_category .page-header {
+  background-color: white;
+  padding: 4rem 2rem; }
+
+.archive.tax-wcb_session_category .hentry {
+  padding: 0;
+  border-left: 0.25rem solid #F4EDE4; }
+  .archive.tax-wcb_session_category .hentry:focus, .archive.tax-wcb_session_category .hentry:focus-within, .archive.tax-wcb_session_category .hentry:hover {
+    background-color: white; }
+  .archive.tax-wcb_session_category .hentry .entry-title {
+    font-size: 1.5rem; }
 
 /*_______ Single view of post and page _______*/
 .single .site-content {
