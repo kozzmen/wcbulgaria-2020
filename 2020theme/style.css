@@ -3468,6 +3468,16 @@ h6 + .notation {
 .single .entry-content {
   margin-top: 6rem; }
 
+.single.single-wcb_sponsor .entry-image {
+  max-width: 400px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -4.5rem; }
+
+.single.single-wcb_sponsor .entry-title {
+  margin-bottom: 4rem; }
+
 .single .site-content a:focus, .single .site-content a:hover,
 .page .site-content a:focus,
 .page .site-content a:hover {
