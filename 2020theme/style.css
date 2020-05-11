@@ -97,7 +97,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .search-results .hentry .entry-header .entry-image img, .blog .hentry,
 .archive .hentry,
 .search-results .hentry, .session-categories-links a:after, #session-speaker-names li a:after, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:after, .wordcamp-sessions .wordcamp-sessions__speakers a:after, .personal-links a:after,
-.organizer-links a:after, #speaker-session-names img, .wcpt-schedule tbody tr td.wcpt-session-type-session img, .wcpt-schedule tbody tr td.wcpt-session-type-custom img, .wordcamp-post-list .wordcamp-post-list__post img, #speaker-session-names, .wcpt-schedule tbody tr td.wcpt-session-type-session, .wcpt-schedule tbody tr td.wcpt-session-type-custom, .wordcamp-post-list .wordcamp-post-list__post, .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text, .salient-links .wp-block-columns .wp-block-column, .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a, .footer-widgets-block .widget_nav_menu .menu .menu-item a, .custom-posts-pagination .page-numbers, .posts-navigation .nav-links a,
+.organizer-links a:after, #speaker-session-names img, .wordcamp-post-list .wordcamp-post-list__post img, #speaker-session-names, .wordcamp-post-list .wordcamp-post-list__post, .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text, .salient-links .wp-block-columns .wp-block-column, .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a, .footer-widgets-block .widget_nav_menu .menu .menu-item a, .custom-posts-pagination .page-numbers, .posts-navigation .nav-links a,
 .post-navigation .nav-links a, .menu-toggle, .more-info:after, .more-info, .main-navigation .menu .menu-item a, .main-navigation .menu .menu-item, .main-navigation .menu, .custom-header .site-branding .custom-logo-link, .wp-block-button .wp-block-button__link, button,
 input[type="button"],
 input[type="reset"],
@@ -3169,21 +3169,21 @@ h6 + .notation {
         display: none !important; }
 
 /*_______ General styles for some Camptix elements _______*/
-#speaker-session-names, .wcpt-schedule tbody tr td.wcpt-session-type-session, .wcpt-schedule tbody tr td.wcpt-session-type-custom, .wordcamp-post-list .wordcamp-post-list__post {
+#speaker-session-names, .wordcamp-post-list .wordcamp-post-list__post {
   padding: 1.25rem;
   background-color: white;
   border: 0.125rem solid #27509F;
   box-shadow: -0.25em 0.25em 0 #27509F;
   margin-bottom: 1rem; }
-  #speaker-session-names img, .wcpt-schedule tbody tr td.wcpt-session-type-session img, .wcpt-schedule tbody tr td.wcpt-session-type-custom img, .wordcamp-post-list .wordcamp-post-list__post img {
+  #speaker-session-names img, .wordcamp-post-list .wordcamp-post-list__post img {
     display: block;
     filter: grayscale(100); }
-  #speaker-session-names:hover, .wcpt-schedule tbody tr td.wcpt-session-type-session:hover, .wcpt-schedule tbody tr td.wcpt-session-type-custom:hover, .wordcamp-post-list .wordcamp-post-list__post:hover {
+  #speaker-session-names:hover, .wordcamp-post-list .wordcamp-post-list__post:hover {
     transform-origin: center;
     border-color: #F59E00;
     box-shadow: -0.125em 0.125em 0 #F59E00;
     z-index: 5; }
-    #speaker-session-names:hover img, .wcpt-schedule tbody tr td.wcpt-session-type-session:hover img, .wcpt-schedule tbody tr td.wcpt-session-type-custom:hover img, .wordcamp-post-list .wordcamp-post-list__post:hover img {
+    #speaker-session-names:hover img, .wordcamp-post-list .wordcamp-post-list__post:hover img {
       filter: grayscale(0); }
 
 .session-categories-links a, #session-speaker-names li a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a, .personal-links a,
@@ -4471,46 +4471,57 @@ div[class^="wcorg-sponsor-level-"] {
         max-width: 18%; } }
 /*_______ Schedule page _______*/
 .wcpt-schedule {
-  border-collapse: separate;
-  border-spacing: 0 .625rem;
   margin-left: auto !important;
   margin-right: auto !important; }
-  @media (min-width: 700px) {
-    .wcpt-schedule {
-      border-spacing: .625rem; } }
   .wcpt-schedule thead {
-    background-color: #F4EDE4;
     border: none; }
     .wcpt-schedule thead th {
       font-family: "PT Sans", sans-serif;
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       text-align: center;
-      padding: .5rem; }
+      color: #F4EDE4;
+      padding: 1rem;
+      background-color: #27509F;
+      border-right: .125rem solid white; }
+      .wcpt-schedule thead th:last-of-type {
+        border-right-color: #27509F; }
       .wcpt-schedule thead th.wcpt-col-time {
+        font-size: 0;
         text-indent: -9999px;
-        background-color: white; }
+        color: white;
+        padding: 0;
+        background-color: white;
+        border: none;
+        margin: 0; }
   .wcpt-schedule tbody {
     width: 100%; }
+    .wcpt-schedule tbody:before {
+      padding-top: .125rem; }
     .wcpt-schedule tbody tr {
       border: none;
       vertical-align: top; }
       .wcpt-schedule tbody tr td.wcpt-time {
-        display: table-cell;
-        width: auto;
+        display: block;
+        min-width: 100%;
+        max-height: 5rem;
         font-weight: 700;
-        font-size: 1.25rem;
-        color: #F4EDE4;
+        font-size: 1.5rem;
+        color: #787f86;
         padding: 1rem;
-        background-color: #F59E00; }
+        background-color: #DADADD;
+        border: none;
+        border-bottom: .125rem solid white;
+        overflow: hidden; }
         @media (min-width: 700px) {
           .wcpt-schedule tbody tr td.wcpt-time {
-            width: 7%; } }
+            width: 5%;
+            text-align: right; } }
       .wcpt-schedule tbody tr td.wcpt-session-type-session, .wcpt-schedule tbody tr td.wcpt-session-type-custom {
         position: relative;
         width: auto;
-        box-shadow: 0.25rem 0.25rem 0 #F4EDE4;
-        line-height: 100%; }
+        padding: 1.5rem;
+        border: 0.125rem solid #C4C4C4; }
         @media (min-width: 700px) {
           .wcpt-schedule tbody tr td.wcpt-session-type-session, .wcpt-schedule tbody tr td.wcpt-session-type-custom {
             width: 45%; } }
@@ -4523,10 +4534,6 @@ div[class^="wcorg-sponsor-level-"] {
           font-weight: 700;
           font-size: 1.25rem;
           text-decoration: none; }
-      @media (min-width: 700px) {
-        .wcpt-schedule tbody tr td.wcb-speaker-nando-pappalardo, .wcpt-schedule tbody tr td.wcb-speaker-pablo-honey, .wcpt-schedule tbody tr td.wcb-speaker-clara-avila, .wcpt-schedule tbody tr td.wcb-speaker-jose-peleato, .wcpt-schedule tbody tr td.wcb-speaker-jose-conti, .wcpt-schedule tbody tr td.wcb-speaker-sergio-vazquez, .wcpt-schedule tbody tr td.wcb-speaker-caribay-camacho, .wcpt-schedule tbody tr td.wcb-speaker-nahuai-badiola, .wcpt-schedule tbody tr td.wcb-speaker-dario-bf, .wcpt-schedule tbody tr td.wcb-speaker-alex-cuadra {
-          border-bottom: none;
-          box-shadow: 0.25rem 0 0 #F4EDE4; } }
       .wcpt-schedule tbody tr td.wcpt-session-type-custom {
         text-align: center; }
         .wcpt-schedule tbody tr td.wcpt-session-type-custom .wcpt-session-title {
@@ -4553,7 +4560,7 @@ div[class^="wcorg-sponsor-level-"] {
         .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
           display: block;
           font-size: 1.5rem;
-          line-height: 110%;
+          line-height: 120%;
           margin-bottom: 1rem;
           padding: 0; }
           @media (min-width: 700px) {
@@ -4562,38 +4569,36 @@ div[class^="wcorg-sponsor-level-"] {
         .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers {
           width: auto;
           font-weight: 700;
-          font-size: 1.125rem;
+          font-size: 1.25rem;
+          color: #27509F;
           padding: 0;
           margin-top: auto;
           margin-bottom: 0; }
           .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers:before {
-            content: 'por ';
+            content: 'by ';
             font-weight: 400;
             font-style: normal;
-            font-size: 1rem;
+            font-size: 1.125rem;
             color: #27509F; }
         .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon {
           position: absolute;
           top: 1rem;
           right: .5rem; }
           .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons {
-            color: #C4C4C4; }
+            color: #F59E00;
+            text-decoration: none; }
             .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before {
               content: "\f109"; }
       .wcpt-schedule tbody tr td.wcb-favourite-session {
         background-color: #F4EDE4;
-        border-color: #F59E00; }
+        border-color: #27509F; }
         .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons {
           color: #F59E00; }
           .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons:before {
             content: "\f537"; }
         .wcpt-schedule tbody tr td.wcb-favourite-session:hover {
           background-color: #F4EDE4; }
-      @media (min-width: 700px) {
-        .wcpt-schedule tbody tr td.wcpt-session-empty {
-          border-left: 0.125rem solid #27509F;
-          border-right: 0.125rem solid #27509F;
-          box-shadow: 4px 0 0 #F4EDE4; } }
+
 /*_______ Speaker & Session singles _______*/
 .single-wcb_speaker .entry-header,
 .single-wcb_session .entry-header {
