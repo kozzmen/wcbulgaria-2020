@@ -3910,7 +3910,7 @@ h6 + .notation {
   order: -1;
   margin-bottom: 1rem; }
   .wordcamp-sessions .wordcamp-sessions__details .wordcamp-sessions__categories {
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: .875rem;
     text-transform: uppercase;
