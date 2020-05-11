@@ -3191,7 +3191,7 @@ h6 + .notation {
   position: relative;
   display: inline-block;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 100%;
   text-decoration: none;
   color: #F59E00;
@@ -3813,7 +3813,7 @@ h6 + .notation {
       max-width: 6rem;
       margin-bottom: 1rem; }
     .wordcamp-post-list .wordcamp-post-list__post .wordcamp-block__item-title {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       line-height: 100%;
       margin-top: 0;
       margin-bottom: .5rem; }
@@ -3869,6 +3869,7 @@ h6 + .notation {
     .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:hover:before {
       width: 20rem; }
     .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:hover .wordcamp-speakers__session-info {
+      font-style: normal;
       color: #27509F; }
   .wordcamp-speakers__sessions .wordcamp-speakers__sessions-heading {
     font-size: 1.125rem;
@@ -3881,7 +3882,7 @@ h6 + .notation {
   .wordcamp-speakers__sessions .wordcamp-speakers__session-link {
     display: block;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 110%;
     text-decoration: none;
     margin-bottom: 1rem; }
@@ -3891,7 +3892,7 @@ h6 + .notation {
 .wordcamp-speakers__session-info {
   display: block;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #F59E00; }
 
@@ -3903,11 +3904,20 @@ h6 + .notation {
     color: #F59E00; }
 
 .wordcamp-sessions .wordcamp-sessions__speakers {
-  font-size: .875rem; }
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 1rem; }
 
 .wordcamp-sessions .wordcamp-sessions__details {
   order: -1;
   margin-bottom: 1rem; }
+  .wordcamp-sessions .wordcamp-sessions__details .wordcamp-sessions__categories {
+    font-weight: 700;
+    font-style: normal;
+    font-size: .875rem;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #968f88; }
 
 .wordcamp-sessions .wordcamp-sessions__time-location {
   display: block;
@@ -3918,13 +3928,6 @@ h6 + .notation {
   padding-left: .5rem;
   border-left: 0.25rem solid #F4EDE4;
   margin-bottom: .5rem; }
-
-.wordcamp-sessions .wordcamp-sessions__categories {
-  font-weight: 400;
-  font-size: .75rem;
-  text-transform: uppercase;
-  line-height: 100%;
-  margin-top: .75rem; }
 
 /*_______ Tickets form _______*/
 .tix-js {
