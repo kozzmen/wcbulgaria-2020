@@ -86,7 +86,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
-.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
+.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
 .single .post-navigation .nav-links div a:before,
 .single .post-navigation .nav-links div a:after, .single .posts-navigation .nav-links div a,
 .single .post-navigation .nav-links div a, .single .posts-navigation .nav-links div,
@@ -3869,7 +3869,6 @@ h6 + .notation {
     .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:hover:before {
       width: 20rem; }
     .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:hover .wordcamp-speakers__session-info {
-      font-style: normal;
       color: #27509F; }
   .wordcamp-speakers__sessions .wordcamp-speakers__sessions-heading {
     font-size: 1.125rem;
@@ -3888,13 +3887,12 @@ h6 + .notation {
     margin-bottom: 1rem; }
     .wordcamp-speakers__sessions .wordcamp-speakers__session-link:hover {
       text-decoration: underline !important; }
-
-.wordcamp-speakers__session-info {
-  display: block;
-  font-style: normal;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #F59E00; }
+  .wordcamp-speakers__sessions .wordcamp-speakers__session-info {
+    display: block;
+    font-style: normal;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #F59E00; }
 
 /*_______ WordCamp Sessions _______*/
 .wordcamp-sessions .wordcamp-sessions__post {
