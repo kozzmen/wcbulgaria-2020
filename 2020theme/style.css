@@ -2417,13 +2417,12 @@ table {
 /*_______ Blockquotes Blocks _______*/
 .wp-block-quote {
   position: relative;
-  padding-left: 1rem;
   padding-right: 5%;
+  padding-left: 1.5rem;
+  border-left: 0.25rem solid #F4EDE4;
   margin-bottom: 2rem; }
   .wp-block-quote p {
     font-style: italic;
-    font-size: 1.25rem;
-    font-weight: 800;
     line-height: 140%;
     margin-bottom: .5rem; }
   .wp-block-quote cite {
@@ -2434,10 +2433,6 @@ table {
     color: #787f86; }
     .wp-block-quote cite a {
       color: #787f86; }
-  .wp-block-quote.is-style-default {
-    padding-left: 1.5rem;
-    border-left: 0.5rem solid #F59E00;
-    margin-bottom: 2rem; }
   .wp-block-quote.is-style-large {
     padding: 1rem 5% 0 2.5rem;
     margin-bottom: 2rem; }
@@ -2446,7 +2441,6 @@ table {
         padding: 1rem 10% 0 3rem; } }
     .wp-block-quote.is-style-large p {
       font-weight: 700;
-      font-style: italic;
       font-size: 1.5rem;
       line-height: 120%;
       padding: .5rem 0 0;
@@ -2562,7 +2556,7 @@ table {
         flex: 0 0 31.333%;
         max-width: 31.333%; } }
     .wp-block-latest-posts.is-grid li:focus, .wp-block-latest-posts.is-grid li:focus-within, .wp-block-latest-posts.is-grid li:hover {
-      background-color: #F4EDE4; }
+      background-color: #F9F6F1; }
   .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image {
     max-height: 12rem;
     margin-bottom: .5rem !important;
@@ -2594,9 +2588,8 @@ table {
     font-size: 1rem;
     font-weight: 400;
     line-height: 120%;
+    padding-bottom: 1rem;
     margin: 0; }
-    .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt .more-link {
-      display: none !important; }
     .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a {
       display: table;
       font-size: 1rem;
@@ -3299,7 +3292,7 @@ h6 + .notation {
   .search-results .hentry:focus,
   .search-results .hentry:focus-within,
   .search-results .hentry:hover {
-    background-color: #F4EDE4; }
+    background-color: #F9F6F1; }
   .blog .hentry .entry-header,
   .archive .hentry .entry-header,
   .search-results .hentry .entry-header {
