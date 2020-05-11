@@ -4503,8 +4503,7 @@ div[class^="wcorg-sponsor-level-"] {
       border: none;
       vertical-align: top; }
       .wcpt-schedule tbody tr td.wcpt-time {
-        display: block;
-        min-width: 100%;
+        display: table-cell;
         max-height: 5rem;
         font-weight: 700;
         font-size: 1.5rem;
@@ -4516,8 +4515,9 @@ div[class^="wcorg-sponsor-level-"] {
         overflow: hidden; }
         @media (min-width: 700px) {
           .wcpt-schedule tbody tr td.wcpt-time {
-            width: 5%;
-            text-align: right; } }
+            display: block;
+            min-width: 100%;
+            text-align: center; } }
       .wcpt-schedule tbody tr td.wcpt-session-type-session, .wcpt-schedule tbody tr td.wcpt-session-type-custom {
         position: relative;
         width: auto;
@@ -4548,9 +4548,7 @@ div[class^="wcorg-sponsor-level-"] {
           font-family: "PT Sans", sans-serif;
           font-weight: 700;
           font-size: .875rem;
-          color: #27509F;
-          padding: .25rem .5rem;
-          background-color: #F4EDE4;
+          color: #737477;
           border: none;
           margin-bottom: .5rem; }
         @media (min-width: 700px) {
@@ -4587,7 +4585,7 @@ div[class^="wcorg-sponsor-level-"] {
           top: 1rem;
           right: .5rem; }
           .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons {
-            color: #F59E00;
+            color: #C4C4C4;
             text-decoration: none; }
             .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before {
               content: "\f109"; }
