@@ -49,7 +49,7 @@
 		&:focus,
 		&:focus-within,
 		&:hover{
-			background-color: $color__tertiary;
+			background-color: $color__tertiary-half;
 		}
 		@extend %transition;
 		.entry-header{

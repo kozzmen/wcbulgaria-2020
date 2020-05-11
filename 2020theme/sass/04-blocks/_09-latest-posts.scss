@@ -30,7 +30,7 @@
 			&:focus,
 			&:focus-within,
 			&:hover{
-				background-color: $color__tertiary;
+				background-color: $color__tertiary-half;
 			}
 		}
 		.wp-block-latest-posts__featured-image{
@@ -71,10 +71,11 @@
 			font-size: 1rem;
 			font-weight: 400;
 			line-height: 120%;
+			padding-bottom: 1rem;
 			margin: 0;
-			.more-link{
-				display: none !important;
-			}
+			// .more-link{
+			// 	display: none !important;
+			// }
 			a{
 				display: table;
 				font-size: 1rem;

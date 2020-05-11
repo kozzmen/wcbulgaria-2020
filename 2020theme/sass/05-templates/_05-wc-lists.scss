@@ -51,7 +51,7 @@
 			margin-bottom: 1rem;
 		}
 		.wordcamp-block__item-title{
-			font-size: 1.5rem;
+			font-size: 1.75rem;
 			line-height: 100%;
 			margin-top: 0;
 			margin-bottom: .5rem;
@@ -141,7 +141,7 @@
 	.wordcamp-speakers__session-link{
 		display: block;
 		font-weight: 700;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		line-height: 110%;
 		text-decoration: none;
 		margin-bottom: 1rem;
@@ -149,14 +149,14 @@
 			text-decoration: underline !important;
 		}
 	}
-}
-.wordcamp-speakers__session-info{
-	display: block;
-	font-style: normal;
-	font-size: 1rem;
-	font-weight: 700;
-	color: $color__secondary;
-	@extend %transition;
+	.wordcamp-speakers__session-info{
+		display: block;
+		font-style: normal;
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: $color__secondary;
+		@extend %transition;
+	}
 }
 
 /*_______ WordCamp Sessions _______*/
@@ -172,7 +172,9 @@
 		}
 	}
 	.wordcamp-sessions__speakers{
-		font-size: .875rem;
+		font-style: normal;
+		font-size: 1rem;
+		margin-bottom: 1rem;
 		a{
 			@extend %camptix-nice-link;
 		}
@@ -180,6 +182,14 @@
 	.wordcamp-sessions__details{
 		order: -1;
 		margin-bottom: 1rem;
+		.wordcamp-sessions__categories{
+			font-weight: 400;
+			font-style: normal;
+			font-size: .875rem;
+			text-transform: uppercase;
+			line-height: 100%;
+			color: $color__grey_light;
+		}
 	}
 	.wordcamp-sessions__time-location{
 		display: block;
@@ -191,12 +201,5 @@
 		border-left: .25rem solid $color__tertiary;
 		margin-bottom: .5rem;
 		@extend %transition;
-	}
-	.wordcamp-sessions__categories{
-		font-weight: 400;
-		font-size: .75rem;
-		text-transform: uppercase;
-		line-height: 100%;
-		margin-top: .75rem;
 	}
 }

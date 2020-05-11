@@ -53,6 +53,18 @@
 	.entry-content{
 		margin-top: 6rem;
 	}
+	&.single-wcb_sponsor{
+		.entry-image{
+			max-width: $size__content-supertiny;
+			background: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: -4.5rem;
+		}
+		.entry-title{
+			margin-bottom: 4rem;
+		}
+	}
 }
 
 .single,
