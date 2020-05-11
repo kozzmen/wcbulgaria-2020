@@ -4471,6 +4471,7 @@ div[class^="wcorg-sponsor-level-"] {
         max-width: 18%; } }
 /*_______ Schedule page _______*/
 .wcpt-schedule {
+  border-collapse: collapse;
   margin-left: auto !important;
   margin-right: auto !important; }
   .wcpt-schedule thead {
@@ -4561,6 +4562,7 @@ div[class^="wcorg-sponsor-level-"] {
           display: block;
           font-size: 1.5rem;
           line-height: 120%;
+          text-decoration: underline;
           margin-bottom: 1rem;
           padding: 0; }
           @media (min-width: 700px) {
@@ -4590,8 +4592,7 @@ div[class^="wcorg-sponsor-level-"] {
             .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before {
               content: "\f109"; }
       .wcpt-schedule tbody tr td.wcb-favourite-session {
-        background-color: #F4EDE4;
-        border-color: #27509F; }
+        background-color: #F4EDE4; }
         .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons {
           color: #F59E00; }
           .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons:before {
