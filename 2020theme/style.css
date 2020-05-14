@@ -4505,7 +4505,7 @@ div[class^="wcorg-sponsor-level-"] {
       border: none;
       vertical-align: top; }
       .wcpt-schedule tbody tr td.wcpt-time {
-        display: block;
+        display: table-cell;
         min-width: 15%;
         font-weight: 700;
         font-size: 1.25rem;
@@ -4565,6 +4565,15 @@ div[class^="wcorg-sponsor-level-"] {
       .wcpt-schedule tbody tr td.wcpt-session-type-session {
         height: inherit;
         vertical-align: top; }
+        .wcpt-schedule tbody tr td.wcpt-session-type-session:before {
+          display: inline-block;
+          font-family: "PT Sans", sans-serif;
+          font-weight: 700;
+          font-size: .875rem;
+          color: #737477;
+          padding: 0;
+          border: none;
+          margin-bottom: .5rem; }
         @media (min-width: 700px) {
           .wcpt-schedule tbody tr td.wcpt-session-type-session.wcb-track-track-1.wcb-track-track-2 {
             text-align: center; } }
@@ -4616,6 +4625,7 @@ div[class^="wcorg-sponsor-level-"] {
         .wcpt-schedule tbody tr td.wcb-favourite-session:hover {
           background-color: #F4EDE4; }
 
+/* Converting schedule into 2 timezones - Sjoerd Blom (@vertizio) */
 .wcpt-schedule tbody tr.wcpt-time-1300 .wcpt-time:before {
   content: "15:00 CEST"; }
 
