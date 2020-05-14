@@ -2276,11 +2276,7 @@ table {
     border-bottom: 0.125rem solid #27509F; }
     table thead th {
       padding: .25rem; }
-    @media (min-width: 480px) {
-      table thead + tbody:before {
-        content: '';
-        display: block;
-        padding-top: 1rem; } }
+
 .wp-block-table {
   font-size: 1rem;
   line-height: 120%;
@@ -3191,12 +3187,16 @@ h6 + .notation {
   position: relative;
   display: inline-block;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 100%;
   text-decoration: none;
   color: #F59E00;
   margin-bottom: .25rem;
   z-index: 1; }
+  @media (min-width: 375px) {
+    .session-categories-links a, #session-speaker-names li a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a, .personal-links a,
+    .organizer-links a {
+      font-size: 1.25rem; } }
   .session-categories-links a:after, #session-speaker-names li a:after, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:after, .wordcamp-sessions .wordcamp-sessions__speakers a:after, .personal-links a:after,
   .organizer-links a:after {
     content: '';
@@ -4471,6 +4471,9 @@ div[class^="wcorg-sponsor-level-"] {
         flex: 0 0 18%;
         max-width: 18%; } }
 /*_______ Schedule page _______*/
+.schedule-block {
+  padding: 0 1rem; }
+
 .wcpt-schedule {
   border-collapse: collapse;
   margin-left: auto !important;
@@ -4498,27 +4501,39 @@ div[class^="wcorg-sponsor-level-"] {
         margin: 0; }
   .wcpt-schedule tbody {
     width: 100%; }
-    .wcpt-schedule tbody:before {
-      padding-top: .125rem; }
     .wcpt-schedule tbody tr {
       border: none;
       vertical-align: top; }
       .wcpt-schedule tbody tr td.wcpt-time {
-        display: table-cell;
-        max-height: 5rem;
+        display: block;
+        min-width: 15%;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        text-align: left;
+        line-height: 100%;
         color: #787f86;
-        padding: 1rem;
+        padding: .5rem 1rem;
         background-color: #DADADD;
-        border: none;
-        border-bottom: .125rem solid white;
         overflow: hidden; }
         @media (min-width: 700px) {
           .wcpt-schedule tbody tr td.wcpt-time {
             display: block;
-            min-width: 100%;
-            text-align: center; } }
+            min-width: 10%;
+            font-size: 1rem;
+            text-align: right;
+            padding: .5rem;
+            border-bottom: .125rem solid white; } }
+        @media (min-width: 1024px) {
+          .wcpt-schedule tbody tr td.wcpt-time {
+            font-size: 1.25rem; } }
+        .wcpt-schedule tbody tr td.wcpt-time:before {
+          display: block;
+          color: #9e9e9e;
+          font-size: 80%;
+          margin-bottom: .25rem; }
+        .wcpt-schedule tbody tr td.wcpt-time:after {
+          content: " UTC";
+          font-size: 80%; }
       .wcpt-schedule tbody tr td.wcpt-session-type-session, .wcpt-schedule tbody tr td.wcpt-session-type-custom {
         position: relative;
         width: auto;
@@ -4536,6 +4551,12 @@ div[class^="wcorg-sponsor-level-"] {
           font-weight: 700;
           font-size: 1.25rem;
           text-decoration: none; }
+          @media (min-width: 480px) {
+            .wcpt-schedule tbody tr td.wcpt-session-type-session .wcpt-session-title, .wcpt-schedule tbody tr td.wcpt-session-type-custom .wcpt-session-title {
+              font-size: 1.5rem; } }
+          @media (min-width: 769px) {
+            .wcpt-schedule tbody tr td.wcpt-session-type-session .wcpt-session-title, .wcpt-schedule tbody tr td.wcpt-session-type-custom .wcpt-session-title {
+              font-size: 1.75rem; } }
       .wcpt-schedule tbody tr td.wcpt-session-type-custom {
         text-align: center; }
         .wcpt-schedule tbody tr td.wcpt-session-type-custom .wcpt-session-title {
@@ -4544,27 +4565,23 @@ div[class^="wcorg-sponsor-level-"] {
       .wcpt-schedule tbody tr td.wcpt-session-type-session {
         height: inherit;
         vertical-align: top; }
-        .wcpt-schedule tbody tr td.wcpt-session-type-session:before {
-          display: inline-block;
-          font-family: "PT Sans", sans-serif;
-          font-weight: 700;
-          font-size: .875rem;
-          color: #737477;
-          border: none;
-          margin-bottom: .5rem; }
+        @media (min-width: 700px) {
+          .wcpt-schedule tbody tr td.wcpt-session-type-session.wcb-track-track-1.wcb-track-track-2 {
+            text-align: center; } }
         @media (min-width: 700px) {
           .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content {
             padding-right: 2rem; } }
-        .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content:before {
-          display: none; }
         .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
           display: block;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           line-height: 120%;
           text-decoration: underline;
           margin-bottom: 1rem;
           padding: 0; }
-          @media (min-width: 700px) {
+          @media (min-width: 375px) {
+            .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
+              font-size: 1.5rem; } }
+          @media (min-width: 769px) {
             .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
               font-size: 1.75rem; } }
         .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers {
@@ -4598,6 +4615,42 @@ div[class^="wcorg-sponsor-level-"] {
             content: "\f537"; }
         .wcpt-schedule tbody tr td.wcb-favourite-session:hover {
           background-color: #F4EDE4; }
+
+.wcpt-schedule tbody tr.wcpt-time-1300 .wcpt-time:before {
+  content: "15:00 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1315 .wcpt-time:before {
+  content: "15:15 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1400 .wcpt-time:before {
+  content: "16:00 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1445 .wcpt-time:before {
+  content: "16:45 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1455 .wcpt-time:before {
+  content: "16:55 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1505 .wcpt-time:before {
+  content: "17:05 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1530 .wcpt-time:before {
+  content: "17:30 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1615 .wcpt-time:before {
+  content: "18:15 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1700 .wcpt-time:before {
+  content: "19:00 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1745 .wcpt-time:before {
+  content: "19:45 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1800 .wcpt-time:before {
+  content: "20:00 CEST"; }
+
+.wcpt-schedule tbody tr.wcpt-time-1815 .wcpt-time:before {
+  content: "20:15 CEST"; }
 
 /*_______ Speaker & Session singles _______*/
 .single-wcb_speaker .entry-header,
