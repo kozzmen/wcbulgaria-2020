@@ -86,7 +86,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
-.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .fav-session-share-tab, a.show-email-form, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
+.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .fav-session-share-tab, .entry-content a.show-email-form, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
 .single .post-navigation .nav-links div a:before,
 .single .post-navigation .nav-links div a:after, .single .posts-navigation .nav-links div a,
 .single .post-navigation .nav-links div a, .single .posts-navigation .nav-links div,
@@ -4663,7 +4663,7 @@ div[class^="wcorg-sponsor-level-"] {
   content: "20:15 CEST"; }
 
 /* Favorite Sessions tool styles */
-a.show-email-form {
+.entry-content a.show-email-form {
   bottom: 1rem;
   right: 1rem;
   line-height: 100%;
@@ -4674,22 +4674,22 @@ a.show-email-form {
   border-radius: 0;
   box-shadow: -0.25em 0.25em 0 #233353;
   z-index: 9999; }
-  a.show-email-form:hover {
+  .entry-content a.show-email-form:hover {
     color: #F4EDE4 !important;
     background-color: #27509F;
     box-shadow: -0.125em 0.125em 0 #233353;
     border-color: #27509F; }
-  a.show-email-form .dashicons-star-filled:before {
+  .entry-content a.show-email-form .dashicons-star-filled:before {
     content: "\f537";
     vertical-align: middle; }
-  a.show-email-form .dashicons-email-alt {
+  .entry-content a.show-email-form .dashicons-email-alt {
     width: auto;
     height: auto;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
     speak: normal; }
-    a.show-email-form .dashicons-email-alt:before {
+    .entry-content a.show-email-form .dashicons-email-alt:before {
       content: "Save favourites"; }
 
 .email-form {
@@ -4732,11 +4732,6 @@ a.show-email-form {
     margin-top: .5rem;
     margin-bottom: 1rem;
     padding: .5rem; }
-    #fav-session-email-form #fav-sessions-email-address::-webkit-input-placeholder {
-      text-indent: -9999px;
-      overflow: hidden; }
-      #fav-session-email-form #fav-sessions-email-address::-webkit-input-placeholder:before {
-        content: "Your email"; }
   #fav-session-email-form input[type="submit"] {
     padding: .5rem 1.5rem; }
 
