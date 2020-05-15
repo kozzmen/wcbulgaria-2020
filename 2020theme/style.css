@@ -4667,6 +4667,7 @@ div[class^="wcorg-sponsor-level-"] {
   bottom: 1rem;
   right: 1rem;
   line-height: 100%;
+  color: #27509F;
   padding: .5rem;
   background: #F59E00;
   border: 0.125rem solid #F59E00;
@@ -4676,9 +4677,11 @@ div[class^="wcorg-sponsor-level-"] {
   .show-email-form:hover {
     color: #F4EDE4 !important;
     background-color: #27509F;
-    box-shadow: -0.125em 0.125em 0 #233353; }
+    box-shadow: -0.125em 0.125em 0 #233353;
+    border-color: #27509F; }
   .show-email-form .dashicons-star-filled:before {
-    content: "\f537"; }
+    content: "\f537";
+    vertical-align: middle; }
   .show-email-form .dashicons-email-alt {
     width: auto;
     height: auto;
@@ -4702,10 +4705,12 @@ div[class^="wcorg-sponsor-level-"] {
   .email-form.fav-session-email-form-show {
     padding: 0;
     margin-bottom: 0; }
+    .email-form.fav-session-email-form-show:hover {
+      border-color: #27509F; }
 
 .fav-session-share-tab {
   background-color: white;
-  border: .25rem solid; }
+  border: none; }
   .fav-session-share-tab .fav-session-tablinks {
     font-size: 1rem;
     padding: .5rem 1rem; }
@@ -4719,9 +4724,7 @@ div[class^="wcorg-sponsor-level-"] {
   font-weight: 700;
   font-size: 1.25rem;
   padding: 1rem;
-  background-color: white;
-  border: .25rem solid;
-  border-top: none; }
+  background-color: white; }
 
 #fav-session-email-form {
   margin: 0; }
@@ -4753,8 +4756,9 @@ div[class^="wcorg-sponsor-level-"] {
 #fav-session-print {
   font-size: 1.25rem; }
   #fav-session-print:before {
-    content: "\f495";
-    font-family: 'dashicons'; }
+    content: "\f491";
+    font-family: 'dashicons';
+    vertical-align: middle; }
 
 /*_______ Speaker & Session singles _______*/
 .single-wcb_speaker .entry-header,
