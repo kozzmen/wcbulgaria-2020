@@ -4670,7 +4670,7 @@ div[class^="wcorg-sponsor-level-"] {
   padding: .5rem;
   background: #F59E00;
   border: 0.125rem solid #F59E00;
-  border-radius: none;
+  border-radius: 0;
   box-shadow: -0.25em 0.25em 0 #233353;
   z-index: 9999; }
   .show-email-form:hover {
@@ -4685,9 +4685,9 @@ div[class^="wcorg-sponsor-level-"] {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
-    speak: auto; }
+    speak: normal; }
     .show-email-form .dashicons-email-alt:before {
-      content: "\f537"; }
+      content: "Save favourites"; }
 
 .email-form {
   max-width: 300px;
@@ -4697,9 +4697,10 @@ div[class^="wcorg-sponsor-level-"] {
   border-radius: 0; }
   @media (min-width: 375px) {
     .email-form {
-      width: 350px;
+      max-width: 350px;
       right: 1rem; } }
   .email-form.fav-session-email-form-show {
+    padding: 0;
     margin-bottom: 0; }
 
 .fav-session-share-tab {
@@ -4749,9 +4750,11 @@ div[class^="wcorg-sponsor-level-"] {
   overflow: hidden;
   margin: 1rem auto; }
 
-#fav-session-print:before {
-  content: "\f495";
-  font-family: 'dashicons'; }
+#fav-session-print {
+  font-size: 1.25rem; }
+  #fav-session-print:before {
+    content: "\f495";
+    font-family: 'dashicons'; }
 
 /*_______ Speaker & Session singles _______*/
 .single-wcb_speaker .entry-header,
