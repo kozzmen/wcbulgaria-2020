@@ -4357,7 +4357,7 @@ div[class^="wcorg-sponsor-level-"] {
   max-height: 10rem; }
 
 .single.single-wcb_sponsor .entry-image {
-  padding: 2rem;
+  padding: 0 2rem;
   background: white;
   margin-bottom: -4.5rem; }
 
