@@ -210,6 +210,13 @@ input[type="submit"] {
     .single-wcb_session .entry-content, .single-wcb_speaker .entry-title,
     .single-wcb_session .entry-title {
       max-width: 600px; } }
+.single.single-wcb_sponsor .entry-image {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 769px) {
+    .single.single-wcb_sponsor .entry-image {
+      max-width: 400px; } }
 .error404 .page-content, .wcorg-sponsors, .contact-form, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
@@ -1247,16 +1254,6 @@ input[type="submit"] {
   .is-type-video figcaption {
     position: absolute;
     bottom: 0; }
-
-embed,
-iframe,
-object {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  width: 100%;
-  height: 100%; }
 
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
@@ -3462,16 +3459,6 @@ h6 + .notation {
 .single .entry-content {
   margin-top: 6rem; }
 
-.single.single-wcb_sponsor .entry-image {
-  max-width: 400px;
-  background: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -4.5rem; }
-
-.single.single-wcb_sponsor .entry-title {
-  margin-bottom: 4rem; }
-
 .single .site-content a:focus, .single .site-content a:hover,
 .page .site-content a:focus,
 .page .site-content a:hover {
@@ -4368,6 +4355,14 @@ div[class^="wcorg-sponsor-level-"] {
 .wcorg-sponsor-level-partner .wcorg-sponsor img {
   width: auto;
   max-height: 10rem; }
+
+.single.single-wcb_sponsor .entry-image {
+  padding: 2rem;
+  background: white;
+  margin-bottom: -4.5rem; }
+
+.single.single-wcb_sponsor .entry-title {
+  margin-bottom: 4rem; }
 
 /*_______ Attendees list _______*/
 #tix-attendees {
