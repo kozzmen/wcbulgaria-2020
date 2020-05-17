@@ -4356,10 +4356,11 @@ div[class^="wcorg-sponsor-level-"] {
   width: auto;
   max-height: 10rem; }
 
+/*_______ Sponsors single _______*/
 .single.single-wcb_sponsor .entry-image {
   padding: 0 2rem;
   background: white;
-  margin-bottom: -4.5rem; }
+  margin-bottom: -5.5rem; }
 
 .single.single-wcb_sponsor .entry-title {
   margin-bottom: 4rem; }
