@@ -1244,6 +1244,17 @@ input[type="submit"] {
   margin-top: 0;
   padding: 0; }
 
+/* Make sure embeds and iframes fit their containers. */
+.is-type-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin: 0 auto 3rem;
+  height: 0;
+  overflow: hidden; }
+  .is-type-video figcaption {
+    position: absolute;
+    bottom: 0; }
+
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
   display: inline-block; }
@@ -2363,6 +2374,8 @@ table {
         .wp-block-columns.info-columns .wp-block-column:not(:empty) ul.address-block,
         .wp-block-columns.info-columns .wp-block-column:not(:empty) ol.address-block {
           font-size: .875rem; }
+    .wp-block-columns.info-columns .notation {
+      margin-top: 0; }
 
 /*_______ Media-text block _______*/
 .wp-block-media-text {
