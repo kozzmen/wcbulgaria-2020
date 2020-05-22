@@ -1,4 +1,7 @@
 /*_______ Schedule page _______*/
+.schedule-block{
+	padding: 0 1rem;
+}
 .wcpt-schedule{
 	border-collapse: collapse;
 	margin-left: auto !important;
@@ -30,28 +33,44 @@
 	}
 	tbody{
 		width: 100%;
-		&:before{
-			padding-top: .125rem;
-		}
+		// &:before{
+		// 	padding-top: .125rem;
+		// }
 		tr{
 			border: none;
 			vertical-align: top;
 			td{
 				&.wcpt-time{
 					display: table-cell;
-					max-height: 5rem;
+					min-width: 15%;
 					font-weight: 700;
-					font-size: 1.5rem;
+					font-size: 1.25rem;
+					text-align: left;
+					line-height: 100%;
 					color: $color__grey_blue;
-					padding: 1rem;
+					padding: .5rem 1rem;
 					background-color: $color__grey_minimus;
-					border: none;
-					border-bottom: .125rem solid white;
 					overflow: hidden;
 					@media (min-width: 700px){
 						display: block;
-						min-width: 100%;
-						text-align: center;
+						min-width: 10%;
+						font-size: 1rem;
+						text-align: right;
+						padding: .5rem;
+						border-bottom: .125rem solid white;
+					}
+					@media (min-width: 1024px){
+						font-size: 1.25rem;
+					}
+					&:before {
+						display: block;
+						color: $color__grey-morelight;
+						font-size: 80%;
+						margin-bottom: .25rem;
+					}
+					&:after {
+						content: " UTC";
+						font-size: 80%;
 					}
 				}
 				&.wcpt-session-type-session,
@@ -73,6 +92,12 @@
 						font-weight: 700;
 						font-size: 1.25rem;
 						text-decoration: none;
+						@media (min-width: 480px){
+							font-size: 1.5rem;
+						}
+						@media (min-width: 769px){
+							font-size: 1.75rem;
+						}
 					}
 				}
 				&.wcpt-session-type-custom{
@@ -91,24 +116,30 @@
 						font-weight: 700;
 						font-size: .875rem;
 						color: $color__grey;
+						padding: 0;
 						border: none;
 						margin-bottom: .5rem;
+					}
+					&.wcb-track-track-1.wcb-track-track-2{
+						@media (min-width: 700px){
+							text-align: center;
+						}
 					}
 					.wcb-session-cell-content{
 						@media (min-width: 700px){
 							padding-right: 2rem;
 						}
-						&:before{
-							display: none;
-						}
 						.wcpt-session-title{
 							display: block;
-							font-size: 1.5rem;
+							font-size: 1.25rem;
 							line-height: 120%;
 							text-decoration: underline;
 							margin-bottom: 1rem;
 							padding: 0;
-							@media (min-width: 700px){
+							@media (min-width: 375px){
+								font-size: 1.5rem;
+							}
+							@media (min-width: 769px){
 								font-size: 1.75rem;
 							}
 						}
@@ -164,5 +195,223 @@
 				}
 			}
 		}
+	}
+}
+
+/* Converting schedule into 2 timezones - Sjoerd Blom (@vertizio) */
+.wcpt-schedule{
+	tbody{
+		tr{
+			&.wcpt-time-1300{
+				.wcpt-time{
+					&:before {
+						content: "15:00 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1315{
+				.wcpt-time{
+					&:before {
+						content: "15:15 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1400{
+				.wcpt-time{
+					&:before {
+						content: "16:00 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1445{
+				.wcpt-time{
+					&:before {
+						content: "16:45 CEST";
+					}
+				}
+			}
+
+			&.wcpt-time-1455{
+				.wcpt-time{
+					&:before {
+						content: "16:55 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1505{
+				.wcpt-time{
+					&:before {
+						content: "17:05 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1530{
+				.wcpt-time{
+					&:before {
+						content: "17:30 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1615{
+				.wcpt-time{
+					&:before {
+						content: "18:15 CEST";
+					}
+				}
+			}
+
+			&.wcpt-time-1700{
+				.wcpt-time{
+					&:before {
+						content: "19:00 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1745{
+				.wcpt-time{
+					&:before {
+						content: "19:45 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1800{
+				.wcpt-time{
+					&:before {
+						content: "20:00 CEST";
+					}
+				}
+			}
+			&.wcpt-time-1815{
+				.wcpt-time{
+					&:before {
+						content: "20:15 CEST";
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Favorite Sessions tool styles */
+.entry-content{
+	a.show-email-form {
+		bottom: 1rem;
+		right: 1rem;
+		line-height: 100%;
+		color: $color__primary;
+		padding: .5rem;
+		background: $color__secondary;
+		border: .125rem solid $color__secondary;
+		border-radius: 0;
+		box-shadow: -.25em .25em 0 $color__black_blue;
+		z-index: 9999;
+		@extend %transition;
+		&:hover{
+			color: $color__tertiary !important;
+			background-color: $color__primary;
+			box-shadow: -.125em .125em 0 $color__black_blue;
+			border-color: $color__primary;
+		}
+		.dashicons-star-filled{
+			&:before{
+				content: "\f537";
+				vertical-align: middle;
+			}
+		}
+		.dashicons-email-alt{
+			width: auto;
+			height: auto;
+			font-family: $font__main;
+			font-weight: 700;
+			font-size: 1.25rem;
+			speak: normal;
+			&:before{
+				content: "Save favourites";
+			}
+		}
+	}
+}
+
+.email-form {
+	max-width: $size__content-minimun;
+	right: .5rem;
+	bottom: 4rem;
+	font-size: 1rem;
+	border-radius: 0;
+	@media (min-width: 375px){
+		max-width: 350px;
+		right: 1rem;
+	}
+	&.fav-session-email-form-show{
+		padding: 0;
+		border: .125rem solid $color__primary;
+		box-shadow: -0.25em 0.25em 0 $color__primary;
+		margin-bottom: 0;
+	}
+}
+
+.fav-session-share-tab {
+	background-color: white;
+	border: none;
+	@extend %transition;
+	.fav-session-tablinks{
+		font-size: 1rem;
+		padding: .5rem 1rem;
+		&:hover{
+			background-color: $color__tertiary;
+		}
+		&.active {
+			font-weight: 700;
+			background-color: $color__tertiary;
+		}
+	}
+}
+
+.fav-session-share-tabcontent {
+	font-weight: 700;
+	font-size: 1.25rem;
+	padding: 1rem;
+	background-color: white;
+}
+
+#fav-session-email-form{
+	margin: 0;
+	#fav-sessions-email-address{
+		margin-top: .5rem;
+		margin-bottom: 1rem;
+		padding: .5rem;
+		// &::-webkit-input-placeholder{
+		// 	text-indent: -9999px;
+		// 	overflow: hidden;
+		// 	&:before {
+		// 		content:"Your email";
+		// 	}
+		// }
+	}
+	input[type="submit"]{
+		padding: .5rem 1.5rem;
+	}
+}
+
+#fav-sessions-link{
+	display: block;
+	width: 100%;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 100%;
+	color: $color__secondary;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 1rem auto;
+}
+
+#fav-session-print{
+	font-size: 1.25rem;
+	&:before{
+		content: "\f491";
+		font-family: 'dashicons';
+		vertical-align: middle;
 	}
 }

@@ -125,3 +125,18 @@ div[class^="wcorg-sponsor-level-"] {
 		}
 	}	
 }
+
+/*_______ Sponsors single _______*/
+.single{
+	&.single-wcb_sponsor{
+		.entry-image{
+			@extend %inner-supertiny;
+			padding: 0 2rem;
+			background: white;
+			margin-bottom: -5.5rem;
+		}
+		.entry-title{
+			margin-bottom: 4rem;
+		}
+	}
+}

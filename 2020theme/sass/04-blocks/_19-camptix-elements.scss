@@ -26,12 +26,15 @@
 	position: relative;
 	display: inline-block;
 	font-weight: 700;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	line-height: 100%;
 	text-decoration: none;
 	color: $color__secondary;
 	margin-bottom: .25rem;
 	z-index: 1;
+	@media (min-width: 375px){
+		font-size: 1.25rem;
+	}
 	&:after{
 		content: '';
 		display: block;
