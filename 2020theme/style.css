@@ -4700,27 +4700,36 @@ div[class^="wcorg-sponsor-level-"] {
     font-family: 'dashicons';
     vertical-align: middle; }
 
-.sponsors-schedule thead tr th {
-  width: 22.75%; }
-  .sponsors-schedule thead tr th:first-of-type {
-    width: 100px; }
-
-.sponsors-schedule tbody tr td {
-  font-weight: 700;
-  line-height: 120%; }
-  .sponsors-schedule tbody tr td:first-of-type {
-    font-size: 1rem;
+.sponsors-schedule {
+  empty-cells: hide; }
+  .sponsors-schedule thead tr th {
+    width: 22.75%; }
+    .sponsors-schedule thead tr th:first-of-type {
+      width: 100px; }
+  .sponsors-schedule tbody tr td {
+    font-weight: 700;
     line-height: 120%; }
-    .sponsors-schedule tbody tr td:first-of-type:after {
-      display: none; }
-  .sponsors-schedule tbody tr td a {
-    text-align: center !important;
-    margin-bottom: .5rem; }
-
-.sponsors-schedule.three-areas thead tr th {
-  width: 30%; }
-  .sponsors-schedule.three-areas thead tr th:first-of-type {
-    width: 100px; }
+    .sponsors-schedule tbody tr td:first-of-type {
+      font-size: 1rem;
+      line-height: 120%; }
+      .sponsors-schedule tbody tr td:first-of-type:after {
+        display: none; }
+    .sponsors-schedule tbody tr td:empty:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -.5rem;
+      left: 0;
+      width: 100%;
+      height: .5rem;
+      background-color: white; }
+    .sponsors-schedule tbody tr td a {
+      text-align: center !important;
+      margin-bottom: .5rem; }
+  .sponsors-schedule.three-areas thead tr th {
+    width: 30%; }
+    .sponsors-schedule.three-areas thead tr th:first-of-type {
+      width: 100px; }
 
 /*_______ Speaker & Session singles _______*/
 .single-wcb_speaker .entry-header,
