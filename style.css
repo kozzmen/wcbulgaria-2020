@@ -3544,6 +3544,9 @@ h6 + .notation {
   .single .entry-content span[id^="more-"],
   .page .entry-content span[id^="more-"] {
     display: none; }
+  .single .entry-content p a,
+  .page .entry-content p a {
+    color: #F59E00; }
   .single .entry-content a,
   .page .entry-content a {
     word-break: break-word; }

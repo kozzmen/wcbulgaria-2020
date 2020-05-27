@@ -90,6 +90,11 @@
 		span[id^="more-"]{
 			display: none;
 		}
+		p{
+			a{
+				color: $color__secondary;
+			}
+		}
 		a{
 			word-break: break-word;
 		}
