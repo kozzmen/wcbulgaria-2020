@@ -1,0 +1,40 @@
+/*_______ Notation block (paragraph highlighted with background color) _______*/
+.gray-bg {
+	background-color: $color__tertiary;
+	padding: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.inverted-text{
+	color: $color__secondary;
+}
+
+.notation{
+	padding: 2rem;
+	background-color: $color__tertiary;
+	border: .25rem solid;
+	margin-bottom: 2rem;
+	#{headings(1,6)}{
+		margin-top: 0;
+	}
+	p{
+		font-size: 1.25rem;
+		line-height: 120%;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+	ul, ol{
+		margin-top: 0;
+		padding-left: 1rem;
+	}
+	&.toc{
+		background-color: transparent;
+	}
+}
+
+p + .notation,
+%headings + .notation{
+	margin-top: 4rem;
+}

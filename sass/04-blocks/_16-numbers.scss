@@ -1,0 +1,38 @@
+/*_______ Numbers block (from the temporary theme) _______*/
+.block-numbers{
+	@extend %inner;
+	@extend %inner-padding;
+	max-width: $size__content-big;
+	justify-content: center;
+	@media (min-width: 800px){
+		padding: 0;
+	}
+	li,
+	.wp-block-column{
+		text-align: left;
+		padding-left: 1rem;
+		border-left: .3125rem solid $color__secondary;
+		margin-bottom: 2rem;
+		word-break: keep-all;
+		@media (min-width: 480px){
+			flex: 0 1 21%;
+		}
+	}
+}
+.block-numbers-amount{
+	display: block;
+	font-weight: 800;
+	font-size: 3.5rem;
+	line-height: 100%;
+	margin: 0;
+}
+.block-numbers-legend{
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.block-imagecontents,
+.block-numbers{
+	margin-bottom: 8rem;
+}
