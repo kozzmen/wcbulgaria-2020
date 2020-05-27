@@ -1,8 +1,0 @@
-/*_______ Layout for 404 and No results pages _______*/
-.error404,
-.search-no-results {
-	.content-area {
-		@extend %inner-tiny;
-		@extend %inner-padding;
-	}
-}

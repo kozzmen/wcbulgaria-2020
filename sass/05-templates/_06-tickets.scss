@@ -8,6 +8,10 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: stretch;
+		flex-flow: column wrap;
+		@media (min-width: 650px) {
+			flex-flow: row wrap;
+		}
 		thead{
 			display: none;
 		}
@@ -53,7 +57,7 @@
 		line-height: 100%;
 		color: white;
 		padding: 1rem;
-		background-color: #272727;
+		background-color: $color__primary;
 		margin-bottom: 1rem;
 	}
 	.tix-ticket-excerpt {
@@ -91,13 +95,14 @@
 			line-height: 100%;
 		}
 		select{
+			font-weight: 700;
 			max-width: 8rem;
 			margin: 1rem auto 2rem;
 		}
 	}
 	.tix-row-coupon {
-		display: flex;
 		flex: 1 1 100%;
+		display: flex;
 		text-align: center;
 		td{
 			width: 100%;
@@ -125,21 +130,43 @@
 	}
 }
 
-#tix input[type="submit"]{
-	float: none !important;
-	display: block;
-	width: 100%;
-	color: white;
-	text-transform: none;
-	letter-spacing: 0;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	background-color: $color__primary;
-	border: .25rem solid $color__primary;
-	border-radius: 0;
-	margin: 2rem auto 0;
-	@media (min-width: 650px) {
-		width: auto;
+#tix{
+	input[type="submit"]{
+		float: none !important;
+	}
+	#tix-errors,
+	#tix-infos{
+		margin: 1.5rem auto;
+		.tix-error,
+		.tix-info{
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: $color__primary;
+			background-color: $color__tertiary;
+			border: none;
+			border-left: .25rem solid;
+			border-radius: 0;
+		}
+		.tix-error{
+			border-color: $color__secondary
+			&:before {
+				content: "\f153";
+				font-family: 'dashicons';
+				display: inline-block;
+				vertical-align: middle;
+				color: $color__secondary;
+				margin-right: .5rem;
+			}
+		}
+		.tix-info{
+			&:before {
+				content: "\f529";
+				font-family: 'dashicons';
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .5rem;
+			}
+		}
 	}
 }
 
@@ -176,14 +203,14 @@
 				top: 20%;
 				left: 0;
 				width: 40%;
-				font-size: .75rem;
+				font-size: 1rem;
 				line-height: 100%;
 				text-align: right;
 				padding-right: 1rem;
 				white-space: nowrap;
 			}
 			&[class^="tix-column-"]{
-				font-size: 1rem;
+				font-size: 1.25rem;
 				strong{
 					font-weight: 400;
 				}
@@ -225,17 +252,16 @@
 		width: 100%;
 		display: flex;
 		flex-flow: column wrap;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		@media (min-width: 480px){
 			flex-flow: row nowrap;
-			margin-bottom: 4rem;
 		}
 	}
 	td.tix-left{
 		width: 100%;
 		text-align:left;
 		line-height: 120%;
-		margin-bottom: .5rem;
+		margin-bottom: .25rem;
 		@media (min-width: 480px){
 			width: 40%;
 			text-align: right;
@@ -254,20 +280,51 @@
 			width: 58%;
 			margin-left: 2rem;
 		}
+		br{
+			display: none;
+		}
+		label{
+			margin-left: 10%;
+			margin-bottom: 1.5rem;
+			@media (min-width: 480px){
+				margin-left: 0;
+			}
+			&:first-child{
+				margin-top: 1rem;
+				@media (min-width: 480px){
+					margin-top: 0;
+				}
+			}
+		}
+		input[type="radio"],
+		input[type="checkbox"]{
+			float: left;
+			margin-right: .5rem;
+			margin-bottom: 1rem;
+		}
 		input,textarea, select{
 			width:100% !important;
+		}
+		textarea{
+			min-height: 6rem;
 		}
 	}
 	.tix-required-star {
 		color: $color__secondary;
 		font-weight: 700;
 	}
-	.tix-row-question-3851 .tix-left:after {
+	.tix-row-question-3968 .tix-left:after {
 		content: "(include @)";
 		display: block;
 		font-size: 70%;
 		color: $color__grey;
-	}	
+	}
+	.tix-row-question-3969 .tix-left:after {
+		content: "(https required)";
+		display: block;
+		font-size: 70%;
+		color: $color__grey;
+	}
 }
 
 .camptix-invoice-toggle-wrapper{
@@ -296,6 +353,7 @@
 			flex-flow: row nowrap;
 			justify-content: center;
 			align-items: flex-end;
+			margin-bottom: 4rem;
 			.tix-payment-tab {
 				border: none;
 				border-radius: 0;
@@ -310,7 +368,7 @@
 				flex: 1 1 auto;
 				&:hover {
 					color: white;
-					background-color: $color__grey_morelight;
+					background-color: $color__black_blue;
 					outline: none;
 					border: 0;
 				}
@@ -329,6 +387,7 @@
 			justify-content: flex-start;
 			align-items: center;
 			padding: 0;
+			margin-bottom: 1rem;
 			label {
 				color: $color__primary;
 				font-size: 1.25rem;
@@ -341,9 +400,22 @@
 			display: flex;
 			justify-content: center;
 			padding: 0;
-			margin: 2rem auto 4rem;
+			margin: 2rem auto;
 			&.tix-hidden {
 				display: none;
+			}
+		}
+		.tix-checkout-button{
+			float: none;
+			letter-spacing: 0;
+			text-transform: none;
+			padding: .75em 1.25em;
+			border: .25rem solid $color__primary;
+			border-radius: 0;
+			&:focus,
+			&:hover{
+				color: $color__tertiary;
+				background-color: $color__primary;
 			}
 		}
 	}

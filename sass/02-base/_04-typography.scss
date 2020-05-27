@@ -6,55 +6,78 @@ body{
 }
 
 /*_______ Headings _______*/
-@include headings() {
-	font-family: $font__secondary;
-	font-weight: 800;
+@include headings {
+	font-weight: 700;
 	clear: both;
 }
 
 h1{
-	font-size: 2.5rem;
-	line-height: 110%;
-	margin: 0 0 1rem;
+	@include font-size(3);
+	line-height: 100%;
+	margin-top: 0;
+	margin-bottom: 1em;
+	@media (min-width: 769px){
+		@include font-size(3.5);
+	}
 }
 
 h2{
-	font-size: 2rem;
-	line-height: 110%;
-	margin: 0 0 1rem;
+	@include font-size(2.375);
+	line-height: 100%;
+	margin-top: 0;
+	margin-bottom: .5em;
+	@media (min-width: 769px){
+		@include font-size(2.875);
+	}
 }
 
 h3{
-	font-size: 1.75rem;
-	line-height: 110%;
-	margin: 0 0 1rem;
+	@include font-size(2);
+	line-height: 100%;
+	margin-top: 0;
+	margin-bottom: .5em;
+	@media (min-width: 769px){
+		@include font-size(2.5);
+	}
 }
 
 h4{
-	font-size: 1.5rem;
-	line-height: 110%;
-	margin: 0 0 1rem;
+	@include font-size(1.75);
+	line-height: 100%;
+	margin-top: 0;
+	margin-bottom: .25em;
+	@media (min-width: 769px){
+		@include font-size(2);
+	}
 }
   
 h5{
-	font-size: 1.25rem;
-	line-height: 110%;
-	margin: 0 0 1rem;
+	@include font-size(1.5);
+	line-height: 100%;
+	margin-top: 0;
+	margin-bottom: .25em;
+	@media (min-width: 769px){
+		@include font-size(1.75);
+	}
 }
 
 h6{
-	font-size: 1.125rem;
-	line-height: 110%;
-	margin: 0 0 1rem;
-}
-
-.entry-content{
-	@include headings(){
-		&:not(:first-child){
-			margin-top: 1em;
-		}
+	@include font-size(1.25);
+	line-height: 100%;
+	margin-top: 0;
+	margin-bottom: .125em;
+	@media (min-width: 769px){
+		@include font-size(1.5);
 	}
 }
+
+// .entry-content{
+// 	@include headings(){
+// 		&:not(:first-child){
+// 			margin-top: 1em;
+// 		}
+// 	}
+// }
 
 .big-title {
 	font-size: 2.5rem;
@@ -64,10 +87,21 @@ h6{
 
 /*_______ Typography elements _______*/
 p {
-	margin: 0 0 1.5rem;
+	@include font-size(1.25);
+	line-height: 140%;
+	margin: 0 0 1em;
+	@media (min-width: 769px){
+		@include font-size(1.5);
+	}
 	a{
 		text-decoration: underline;
 		word-break: break-word;
+		&:visited {
+			color: $color__primary;
+		}
+	}
+	&.has-small-font-size{
+		@include font-size(1);
 	}
 }
 
@@ -116,17 +150,26 @@ big {
 
 
 /*_______ Lists _______*/
+ol, ul{
+	@include font-size(1.25);
+	line-height: 120%;
+	margin-bottom: 1em;
+	@media (min-width: 769px){
+		@include font-size(1.5);
+	}
+}
+
 ul{
 	list-style: disc;
-	margin: 0;
 	li{
 		padding: 0;
-		margin-bottom: 1rem;
+		margin-bottom: 1.25em;
 	}
 }
 
 ol {
 	list-style: decimal;
+
 }
 
 li > ul,
@@ -143,87 +186,16 @@ dd {
 }
 
 
-/*_______ Tables _______*/
-table {
-	max-width: 100%;
-	width: 100%;
-	margin: 0 0 2rem;
-	text-align: left;
-	border-collapse: collapse;
-	thead{
-		font-size: .875rem;
-		text-align: left;
-		border-bottom: .125rem solid $color__primary;
-		th{
-			padding: .25rem;
-		}
-		@media (min-width: 480px){
-			+ tbody{
-				&:before{
-					content: '';
-					display: block;
-					padding-top: 1rem;
-				}
-			}
-		}
-	}
-}
-
-.wp-block-table{
-	min-width: calc(100% - 2rem);
-	max-width: calc(100% - 2rem) !important;
-	line-height: 100%;
-	text-align: center;
-	margin-bottom: 2rem;
-	border-collapse: collapse;
-	word-break: break-word;
-	@media (min-width: 768px){
-		min-width: inherit;
-		max-width: $size__content-tiny !important;
-		word-break: keep-all;
-	}
-	&.headed-table{
-		tr:first-child{
-			color: white;
-			background-color: $color__primary;
-			td{
-				border-color: white;
-				border-top-color: $color__primary;
-				&:first-child{
-					border-left-color: $color__primary;
-				}
-				&:last-child{
-					border-right-color: $color__primary;
-				}
-			}
-		}
-		td{
-			padding: .5rem;
-			border: 1px solid;
-		}
-	}
-	&.firstcol-bigger{
-		td:first-child {
-			text-align: left;
-			width: 50%;
-		}
-	}
-}
-
 /*_______ Links _______*/
 a {
-	color: $color__primary;
 	text-decoration: none;
-	&:visited{
-		color: $color__text-main;
-	}
 	&:hover,
 	&:focus,
 	&:active {
 		color: $color__grey-light;
 	}
 	&:focus {
-		outline: thin dotted;
+		outline: .125rem solid $color__secondary;
 	}
 	&:hover,
 	&:active {
@@ -231,13 +203,20 @@ a {
 	}
 }
 
-.entry-content a {
-	text-decoration: underline;
+.entry-title{
+	a {
+		text-decoration: underline;
+	}
 }
 
-.entry-meta a {
-	display: inline-block;
-	text-decoration: underline;
+.entry-content{
+	a {
+		color: inherit;
+		text-decoration: underline;
+		&:hover{
+			color: $color__secondary;
+		}
+	}
 }
 
 a.wp-block-button__link,

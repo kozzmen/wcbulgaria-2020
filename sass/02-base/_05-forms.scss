@@ -7,7 +7,7 @@ fieldset{
 label{
 	display: block;
 	font-weight: 800;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	line-height: 120%;
 	text-align: left;
 	color: $color__primary;
@@ -20,19 +20,20 @@ label{
 input,
 select,
 textarea {
-	appearance: none;
-	-moz-appearance: none;
-	-webkit-appearance: none;
+	appearance: none !important;
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
 	display: block;
+	max-width: 100%; 
 	width: 100%;
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 100%;
 	color: $color__primary;
-	padding: .75rem;
+	padding: .5em .75em;
 	background-color: white;
 	border: none;
-	border: .125rem solid $color__primary;
+	border: .1875rem solid $color__primary;
 	border-radius: 0;
 	outline: none;
 	resize: none;
@@ -40,12 +41,30 @@ textarea {
 		font-size: 1.25rem;
 	}
 	&:focus{
-		border-color: $color__text-input-focus;
+		border-color: $color__secondary;
 	}
 	&::placeholder{
-		color: $color__grey_light;
+		color: $color__primary;
 	}
 }
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+select:-webkit-autofill,
+select:-webkit-autofill:hover{
+	border: .1875rem solid $color__primary !important;
+	-webkit-text-fill-color: $color__primary !important;
+	-webkit-box-shadow: 0 0 0px 1000px $color__tertiary inset !important;
+}
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill:focus{
+	border: .1875rem solid $color__secondary !important;
+}
+
 
 input[type="checkbox"],
 input[type="radio"]{
@@ -103,14 +122,14 @@ input[type="radio"] + label{
 
 select {
 	position: relative;
-	max-width: 100%; 
+	font-size: 1.125rem;
 	padding-right: 2rem;
-	background-image: url('https://2020.europe.wordcamp.org/files/2019/10/arrow-down.png');
+	background-image: url('https://2020.europe.wordcamp.org/files/2019/12/chevron-down.png');
 	background-repeat: no-repeat;
-	background-position: right 1rem top 50%;
+	background-position: right .5em top 50%;
 	background-size: 1rem;
 	option{
-		&[value=""]
+		&[value=""],
 		&:first-child{
 			color: $color__grey;
 		}
@@ -127,4 +146,8 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+input[type="hidden"]{
+	display: none;
 }

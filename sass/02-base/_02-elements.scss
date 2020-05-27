@@ -2,6 +2,7 @@
 html {
 	margin: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 body {
 	font-weight: 400;
@@ -25,21 +26,21 @@ body {
 	box-sizing: inherit;
 }
 
+*{
+	&::selection{		
+		background-color: $color__secondary;
+	}
+	&::-moz-selection{
+		background-color: $color__secondary;
+	}
+}
+
 hr {
 	background-color: $color__primary;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
 	clear: both;
-}
-
-.wp-block-separator{
-	&.is-style-dots{
-		&:before{
-			font-weight: 800;
-			font-size: 2rem;
-		}
-	}
 }
 
 img {

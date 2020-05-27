@@ -1,14 +1,24 @@
 /*_______ Alignments _______*/
 .alignleft {
 	display: block;
-	float: left;
-	margin-right: 1.5rem;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: 480px){
+		float: left;
+		margin-right: 1.5rem;
+	}
 }
 
 .alignright {
 	display: block;
-	float: right;
-	margin-left: 1.5rem;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: 480px){
+		float: right;
+		margin-left: 1.5rem;
+	}
 }
 
 .aligncenter {
@@ -19,6 +29,9 @@
 .alignwide,
 .is-style-wide{
 	@extend %inner;
+	padding: 0 2rem;
+	margin-left: auto;
+	margin-right: auto;
 	clear: both;
 }
 
@@ -36,7 +49,7 @@
 .comment-content:after,
 .site-header:before,
 .site-header:after,
-.site-content:before,
+// .site-content:before,
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
