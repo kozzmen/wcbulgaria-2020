@@ -136,6 +136,13 @@ input[type="submit"] {
 				box-shadow: -0.125em 0.125em 0 $color__black-blue;
 			}
 		}
+		&.external{
+			.wp-block-button__link{
+				&:before{
+					content: "\f504";
+				}
+			}
+		}
 		&.map{
 			.wp-block-button__link{
 				&:before{

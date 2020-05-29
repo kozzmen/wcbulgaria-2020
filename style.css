@@ -1169,6 +1169,8 @@ input[type="submit"] {
       background-color: #F59E00;
       border-color: #F59E00;
       box-shadow: -0.125em 0.125em 0 #233353; }
+  .wp-block-button.with-icon.external .wp-block-button__link:before {
+    content: "\f504"; }
   .wp-block-button.with-icon.map .wp-block-button__link:before {
     content: "\f231";
     font-family: 'dashicons'; }
