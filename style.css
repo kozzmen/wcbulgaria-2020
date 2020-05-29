@@ -4790,8 +4790,7 @@ div[class^="wcorg-sponsor-level-"] {
       width: 100px; }
   .sponsors-schedule tbody tr td {
     font-weight: 700;
-    line-height: 120%;
-    padding-bottom: 4rem; }
+    line-height: 120%; }
     .sponsors-schedule tbody tr td:first-of-type {
       font-size: 1rem;
       line-height: 120%; }

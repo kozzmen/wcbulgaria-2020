@@ -3,7 +3,6 @@
 *
 !sass/
 !style.css/
-!2020theme/
 !.gitignore
 
 # ignore node dependency directories
