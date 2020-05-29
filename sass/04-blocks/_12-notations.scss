@@ -38,3 +38,20 @@ p + .notation,
 %headings + .notation{
 	margin-top: 4rem;
 }
+
+.schedule-time{
+	position: relative;
+	font-size: 1.5rem !important;
+	line-height: 110%;
+	padding-left: 2.25rem;
+	&:before{
+		content: "\f508";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		font-family: 'dashicons';
+		text-align: center;
+		color: $color__secondary;
+	}
+}

@@ -98,7 +98,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .search-results .hentry .entry-header .entry-image img, .blog .hentry,
 .archive .hentry,
 .search-results .hentry, .session-categories-links a:after, #session-speaker-names li a:after, .sponsors-schedule tbody tr td a:after, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:after, .wordcamp-sessions .wordcamp-sessions__speakers a:after, .personal-links a:after,
-.organizer-links a:after, #speaker-session-names img, .wordcamp-post-list .wordcamp-post-list__post img, #speaker-session-names, .wordcamp-post-list .wordcamp-post-list__post, .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text, .salient-links .wp-block-columns .wp-block-column, .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a, .footer-widgets-block:not(:first-child) .widget_nav_menu .menu .menu-item a, .custom-posts-pagination .page-numbers, .posts-navigation .nav-links a,
+.organizer-links a:after, #speaker-session-names img, .wordcamp-post-list .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img, #speaker-session-names, .wordcamp-post-list .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty), .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text, .salient-links .wp-block-columns .wp-block-column, .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a, .footer-widgets-block:not(:first-child) .widget_nav_menu .menu .menu-item a, .custom-posts-pagination .page-numbers, .posts-navigation .nav-links a,
 .post-navigation .nav-links a, .menu-toggle, .more-info:after, .more-info, .main-navigation .menu .menu-item a, .main-navigation .menu .menu-item, .main-navigation .menu, .custom-header .site-branding .custom-logo-link, .wp-block-button .wp-block-button__link, .btn,
 button,
 input[type="button"],
@@ -1125,7 +1125,7 @@ input[type="submit"] {
     padding: .75em 1.25em;
     background-color: #F59E00;
     border-radius: 0;
-    box-shadow: -0.25em 0.25em 0 #737477; }
+    box-shadow: -0.25em 0.25em 0 #27509F; }
     @media (min-width: 480px) {
       .wp-block-button .wp-block-button__link {
         font-size: 1.75rem; } }
@@ -1151,28 +1151,21 @@ input[type="submit"] {
     .wp-block-button.is-style-outline .wp-block-button__link:focus, .wp-block-button.is-style-outline .wp-block-button__link:hover {
       color: #F4EDE4;
       background-color: #27509F; }
-  .wp-block-button.with-icon .wp-block-button__link {
+  .wp-block-button.with-icon .wp-block-button__link:after {
     display: inline-block;
-    font-size: 1.25rem;
-    padding: .5em 1em;
-    background-color: #F4EDE4;
-    border-color: #F4EDE4;
-    box-shadow: -0.25em 0.25em 0 #233353; }
-    .wp-block-button.with-icon .wp-block-button__link:before {
-      display: inline-block;
-      vertical-align: middle;
-      font-family: 'dashicons';
-      font-size: 1.5rem;
-      font-weight: normal;
-      margin-right: .5rem; }
-    .wp-block-button.with-icon .wp-block-button__link:hover {
-      color: #27509F;
-      background-color: #F59E00;
-      border-color: #F59E00;
-      box-shadow: -0.125em 0.125em 0 #233353; }
-  .wp-block-button.with-icon.external .wp-block-button__link:before {
+    vertical-align: middle;
+    font-family: 'dashicons';
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-left: .5rem; }
+  .wp-block-button.with-icon .wp-block-button__link:hover {
+    color: #27509F;
+    background-color: #F59E00;
+    border-color: #F59E00;
+    box-shadow: -0.125em 0.125em 0 #233353; }
+  .wp-block-button.with-icon.external .wp-block-button__link:after {
     content: "\f504"; }
-  .wp-block-button.with-icon.map .wp-block-button__link:before {
+  .wp-block-button.with-icon.map .wp-block-button__link:after {
     content: "\f231";
     font-family: 'dashicons'; }
   .wp-block-button.external-link {
@@ -2322,6 +2315,57 @@ table {
   .wp-block-columns .wp-block-column > h1, .wp-block-columns .wp-block-column > h2, .wp-block-columns .wp-block-column > h3,
   .wp-block-columns .wp-block-column > h4, .wp-block-columns .wp-block-column > h5, .wp-block-columns .wp-block-column > h6 {
     margin-top: 0; }
+  .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) {
+    padding: 2rem !important;
+    background-color: #F4EDE4 !important; }
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h2 {
+      font-size: 32px;
+      font-size: 2rem;
+      margin-bottom: .25em; }
+      @media (min-width: 769px) {
+        .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h2 {
+          font-size: 40px;
+          font-size: 2.5rem; } }
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h3 {
+      font-size: 24px;
+      font-size: 1.5rem;
+      margin-bottom: .5em; }
+      @media (min-width: 769px) {
+        .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h3 {
+          font-size: 30px;
+          font-size: 1.875rem; } }
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h4 {
+      font-size: 20px;
+      font-size: 1.25rem;
+      margin-bottom: .25em; }
+      @media (min-width: 769px) {
+        .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h4 {
+          font-size: 24px;
+          font-size: 1.5rem; } }
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h5 {
+      font-size: 18px;
+      font-size: 1.125rem;
+      margin-bottom: .25em; }
+      @media (min-width: 769px) {
+        .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h5 {
+          font-size: 20px;
+          font-size: 1.25rem; } }
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h6 {
+      font-size: 16px;
+      font-size: 1rem;
+      margin-bottom: .125em; }
+      @media (min-width: 769px) {
+        .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h6 {
+          font-size: 18px;
+          font-size: 1.125rem; } }
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) p,
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) ul,
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) ol {
+      font-size: 1.25rem; }
+      .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) p.address-block,
+      .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) ul.address-block,
+      .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) ol.address-block {
+        font-size: .875rem; }
   .wp-block-columns.info-columns {
     justify-content: center; }
     .wp-block-columns.info-columns .wp-block-column:not(:empty) {
@@ -2764,6 +2808,21 @@ h5 + .notation,
 h6 + .notation {
   margin-top: 4rem; }
 
+.schedule-time {
+  position: relative;
+  font-size: 1.5rem !important;
+  line-height: 110%;
+  padding-left: 2.25rem; }
+  .schedule-time:before {
+    content: "\f508";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-family: 'dashicons';
+    text-align: center;
+    color: #F59E00; }
+
 /*_______ Address block (Paragraph block for a phisical address) _______*/
 .address-block {
   margin-bottom: .25em; }
@@ -3167,21 +3226,21 @@ h6 + .notation {
         display: none !important; }
 
 /*_______ General styles for some Camptix elements _______*/
-#speaker-session-names, .wordcamp-post-list .wordcamp-post-list__post {
+#speaker-session-names, .wordcamp-post-list .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) {
   padding: 1.25rem;
   background-color: white;
   border: 0.125rem solid #27509F;
   box-shadow: -0.25em 0.25em 0 #27509F;
   margin-bottom: 1rem; }
-  #speaker-session-names img, .wordcamp-post-list .wordcamp-post-list__post img {
+  #speaker-session-names img, .wordcamp-post-list .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img {
     display: block;
     filter: grayscale(100); }
-  #speaker-session-names:hover, .wordcamp-post-list .wordcamp-post-list__post:hover {
+  #speaker-session-names:hover, .wordcamp-post-list .wordcamp-post-list__post:hover, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) {
     transform-origin: center;
     border-color: #F59E00;
     box-shadow: -0.125em 0.125em 0 #F59E00;
     z-index: 5; }
-    #speaker-session-names:hover img, .wordcamp-post-list .wordcamp-post-list__post:hover img {
+    #speaker-session-names:hover img, .wordcamp-post-list .wordcamp-post-list__post:hover img, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) img {
       filter: grayscale(0); }
 
 .session-categories-links a, #session-speaker-names li a, .sponsors-schedule tbody tr td a, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a, .wordcamp-sessions .wordcamp-sessions__speakers a, .personal-links a,
