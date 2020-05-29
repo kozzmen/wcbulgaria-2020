@@ -1158,11 +1158,6 @@ input[type="submit"] {
     font-size: 1.5rem;
     font-weight: normal;
     margin-left: .5rem; }
-  .wp-block-button.with-icon .wp-block-button__link:hover {
-    color: #27509F;
-    background-color: #F59E00;
-    border-color: #F59E00;
-    box-shadow: -0.125em 0.125em 0 #233353; }
   .wp-block-button.with-icon.external .wp-block-button__link:after {
     content: "\f504"; }
   .wp-block-button.with-icon.map .wp-block-button__link:after {
@@ -2318,6 +2313,9 @@ table {
   .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) {
     padding: 2rem !important;
     background-color: #F4EDE4 !important; }
+    .wp-block-columns.highlighted-columns .wp-block-column:not(:empty):hover {
+      border-color: #27509F !important;
+      box-shadow: -0.25em 0.25em 0 #27509F !important; }
     .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) h2 {
       font-size: 32px;
       font-size: 2rem;

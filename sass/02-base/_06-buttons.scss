@@ -124,12 +124,6 @@ input[type="submit"] {
 				font-weight: normal;
 				margin-left: .5rem;
 			}
-			&:hover{
-				color: $color__primary;
-				background-color: $color__secondary;
-				border-color: $color__secondary;
-				box-shadow: -0.125em 0.125em 0 $color__black-blue;
-			}
 		}
 		&.external{
 			.wp-block-button__link{

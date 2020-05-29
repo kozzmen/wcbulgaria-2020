@@ -13,7 +13,8 @@
 			padding: 2rem !important;
 			background-color: $color__tertiary !important;
 			&:hover{
-				
+				border-color: $color__primary !important;
+				box-shadow: -0.25em 0.25em 0 $color__primary !important;
 			}
 			h2{
 				@include font-size(2);
