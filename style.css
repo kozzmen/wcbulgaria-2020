@@ -4226,13 +4226,13 @@ h6 + .notation {
   content: "(include @)";
   display: block;
   font-size: 70%;
-  color: #F4EDE4; }
+  color: #F59E00; }
 
 .tix-attendee-form .tix-row-question-3969 .tix-left:after, .tix_invoice_table .tix-row-question-3969 .tix-left:after {
   content: "(https required)";
   display: block;
   font-size: 70%;
-  color: #F4EDE4; }
+  color: #F59E00; }
 
 .camptix-invoice-toggle-wrapper {
   display: block;
