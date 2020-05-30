@@ -40,14 +40,14 @@
 			}
 		}
 	}
-	.tix-column-description{
-		text-align: center;
-		padding: 0;
-		margin-bottom: 2rem;
-		br{
-			display: none;
-		}
-	}
+	// .tix-column-description{
+	// 	text-align: center;
+	// 	padding: 0;
+	// 	margin-bottom: 2rem;
+	// 	br{
+	// 		display: none;
+	// 	}
+	// }
 	.tix-ticket-title {
 		display: block;
 		font-size: 2rem;
@@ -171,7 +171,7 @@
 /*_______ Order Sumary _______*/
 .tix-order-summary{
 	tbody{
-		display: block;
+		display: block ;
 	}
 	@media (max-width: 480px){
 		/* Force table to not be like tables anymore */
