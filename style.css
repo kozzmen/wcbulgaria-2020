@@ -3982,7 +3982,7 @@ h6 + .notation {
 /*_______ Tickets form _______*/
 .tix-js {
   max-width: 960px !important;
-  padding-top: 2rem; }
+  padding-top: 0 !important; }
   .tix-js .tix_tickets_table {
     display: flex;
     justify-content: flex-start;
@@ -4037,7 +4037,6 @@ h6 + .notation {
     line-height: 120%;
     padding: 0 2rem; }
   .tix-js .tix-column-price {
-    font-size: 2rem;
     font-weight: 700;
     text-align: center;
     line-height: 100%;
@@ -4054,10 +4053,6 @@ h6 + .notation {
       content: ' remaining'; }
   .tix-js .tix-column-quantity {
     padding: 0 2rem; }
-    .tix-js .tix-column-quantity:before {
-      content: 'Choose your quantity';
-      display: block;
-      line-height: 100%; }
     .tix-js .tix-column-quantity select {
       font-weight: 700;
       max-width: 8rem;
@@ -4181,8 +4176,6 @@ h6 + .notation {
 /*_______ Registry information _______*/
 .tix-attendee-form tr, .tix_invoice_table tr {
   width: 100%;
-  display: flex;
-  flex-flow: column wrap;
   margin-bottom: 1rem; }
   @media (min-width: 480px) {
     .tix-attendee-form tr, .tix_invoice_table tr {
