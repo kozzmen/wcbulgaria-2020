@@ -4105,7 +4105,8 @@ h6 + .notation {
 
 /*_______ Order Sumary _______*/
 .tix-order-summary tbody {
-  display: block; }
+  display: table !important;
+  width: 100%; }
 
 @media (max-width: 480px) {
   .tix-order-summary {
@@ -4122,7 +4123,7 @@ h6 + .notation {
     .tix-order-summary td {
       /* Behave  like a "row" */
       position: relative;
-      width: 100%;
+      width: 100% !important;
       font-size: 1.25rem;
       line-height: 120%;
       text-align: left;
@@ -4225,13 +4226,13 @@ h6 + .notation {
   content: "(include @)";
   display: block;
   font-size: 70%;
-  color: #737477; }
+  color: #F4EDE4; }
 
 .tix-attendee-form .tix-row-question-3969 .tix-left:after, .tix_invoice_table .tix-row-question-3969 .tix-left:after {
   content: "(https required)";
   display: block;
   font-size: 70%;
-  color: #737477; }
+  color: #F4EDE4; }
 
 .camptix-invoice-toggle-wrapper {
   display: block;

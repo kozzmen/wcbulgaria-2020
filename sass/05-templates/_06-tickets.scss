@@ -171,7 +171,8 @@
 /*_______ Order Sumary _______*/
 .tix-order-summary{
 	tbody{
-		display: block ;
+		display: table !important;
+		width: 100%;
 	}
 	@media (max-width: 480px){
 		/* Force table to not be like tables anymore */
@@ -189,7 +190,7 @@
 		td{
 			/* Behave  like a "row" */
 			position: relative;
-			width: 100%;
+			width: 100% !important;
 			font-size: 1.25rem;
 			line-height: 120%;
 			text-align: left;
@@ -318,13 +319,13 @@
 		content: "(include @)";
 		display: block;
 		font-size: 70%;
-		color: $color__grey;
+		color: $color__tertiary;
 	}
 	.tix-row-question-3969 .tix-left:after {
 		content: "(https required)";
 		display: block;
 		font-size: 70%;
-		color: $color__grey;
+		color: $color__tertiary;
 	}
 }
 
