@@ -3982,7 +3982,7 @@ h6 + .notation {
 /*_______ Tickets form _______*/
 .tix-js {
   max-width: 960px !important;
-  padding-top: 0 !important; }
+  padding-top: 2rem; }
   .tix-js .tix_tickets_table {
     display: flex;
     justify-content: flex-start;
@@ -4129,6 +4129,8 @@ h6 + .notation {
       position: absolute;
       top: -9999px;
       left: -9999px; }
+    .tix-order-summary tbody {
+      display: block; }
     .tix-order-summary td {
       /* Behave  like a "row" */
       position: relative;
@@ -4176,6 +4178,8 @@ h6 + .notation {
 /*_______ Registry information _______*/
 .tix-attendee-form tr, .tix_invoice_table tr {
   width: 100%;
+  display: flex;
+  flex-flow: column wrap;
   margin-bottom: 1rem; }
   @media (min-width: 480px) {
     .tix-attendee-form tr, .tix_invoice_table tr {
