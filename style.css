@@ -4117,6 +4117,9 @@ h6 + .notation {
     margin-right: .5rem; }
 
 /*_______ Order Sumary _______*/
+.tix-order-summary tbody {
+  display: block; }
+
 @media (max-width: 480px) {
   .tix-order-summary {
     /* Force table to not be like tables anymore */
@@ -4129,8 +4132,6 @@ h6 + .notation {
       position: absolute;
       top: -9999px;
       left: -9999px; }
-    .tix-order-summary tbody {
-      display: block; }
     .tix-order-summary td {
       /* Behave  like a "row" */
       position: relative;

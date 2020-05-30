@@ -170,6 +170,9 @@
 
 /*_______ Order Sumary _______*/
 .tix-order-summary{
+	tbody{
+		display: block;
+	}
 	@media (max-width: 480px){
 		/* Force table to not be like tables anymore */
 		thead, tbody, th, td, tr {
@@ -182,9 +185,6 @@
 			position: absolute;
 			top: -9999px;
 			left: -9999px;
-		}
-		tbody{
-			display: block;
 		}
 		td{
 			/* Behave  like a "row" */
