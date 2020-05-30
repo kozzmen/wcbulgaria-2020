@@ -4040,12 +4040,10 @@ h6 + .notation {
       content: 'Only '; }
     .tix-js .tix-column-remaining:after {
       content: ' remaining'; }
-  .tix-js .tix-column-quantity {
-    padding: 0 2rem; }
-    .tix-js .tix-column-quantity select {
-      font-weight: 700;
-      max-width: 8rem;
-      margin: 1rem auto 2rem; }
+  .tix-js .tix-column-quantity select {
+    font-weight: 700;
+    max-width: 8rem;
+    margin: 1rem auto 2rem; }
   .tix-js .tix-row-coupon {
     flex: 1 1 100%;
     display: flex;
