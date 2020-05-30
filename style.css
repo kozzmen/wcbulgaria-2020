@@ -3982,9 +3982,7 @@ h6 + .notation {
 /*_______ Tickets form _______*/
 .tix-js {
   max-width: 960px !important;
-  border-top: .25rem dashed;
-  padding-top: 2rem;
-  margin: 8rem auto; }
+  padding-top: 2rem; }
   .tix-js .tix_tickets_table {
     display: flex;
     justify-content: flex-start;
@@ -4262,8 +4260,7 @@ h6 + .notation {
 
 #tix .tix-submit {
   width: 100%;
-  padding: 2rem 1rem;
-  border-top: .25rem dashed; }
+  padding: 2rem 1rem; }
   #tix .tix-submit #tix-preferred-payment-option {
     display: none; }
   #tix .tix-submit .tix-payment-method {

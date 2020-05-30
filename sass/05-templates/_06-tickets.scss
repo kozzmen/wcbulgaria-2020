@@ -1,9 +1,7 @@
 /*_______ Tickets form _______*/
 .tix-js{
 	max-width: 960px !important;
-	border-top: .25rem dashed;
 	padding-top: 2rem;
-	margin: 8rem auto;
 	.tix_tickets_table{
 		display: flex;
 		justify-content: flex-start;
@@ -344,7 +342,6 @@
 	.tix-submit{
 		width: 100%;
 		padding: 2rem 1rem;
-		border-top: .25rem dashed;
 		#tix-preferred-payment-option {
 			display: none;
 		}
