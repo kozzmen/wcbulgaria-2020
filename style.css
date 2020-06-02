@@ -3289,6 +3289,10 @@ h6 + .notation {
     .organizer-links a:hover:after {
       width: 0; }
 
+.wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
+  margin-top: 9px;
+  font-size: 17px; }
+
 /*--------------------------------------------------------------
 # Templates
 --------------------------------------------------------------*/
