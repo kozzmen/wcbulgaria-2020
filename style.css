@@ -1129,7 +1129,7 @@ input[type="submit"] {
     padding: .75em 1.25em;
     background-color: #F59E00;
     border-radius: 0;
-    box-shadow: -0.25em 0.25em 0 #27509F; }
+    box-shadow: -0.25em 0.25em 0 #233353; }
     @media (min-width: 480px) {
       .wp-block-button .wp-block-button__link {
         font-size: 1.75rem; } }
