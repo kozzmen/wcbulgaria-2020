@@ -1,8 +1,9 @@
 /*_______ WordCamp lists _______*/
-// .wordcamp-organizers,
-// .wordcamp-speakers,
-// .wordcamp-sessions
-.wordcamp-post-list{
+.wordcamp-organizers,
+.wordcamp-speakers,
+.wordcamp-sessions
+// .wordcamp-post-list
+{
 	padding: 0 2rem;
 	margin: 2rem auto;
 	&.has-layout-list{
