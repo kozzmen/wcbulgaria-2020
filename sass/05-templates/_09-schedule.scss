@@ -47,28 +47,24 @@
 					display: table-cell;
 					min-width: 15%;
 					font-weight: 700;
-					font-size: 1.25rem;
+					font-size: .875rem;
 					text-align: left;
 					line-height: 100%;
-					color: $color__grey_blue;
+					color: $color__grey-morelight;
 					padding: .5rem 1rem;
 					background-color: $color__grey_minimus;
 					border: none;
 					overflow: hidden;
 					@media (min-width: 700px){
 						display: block;
-						font-size: rem;
 						text-align: right;
 						padding: .5rem;
 						border-bottom: .125rem solid white;
 					}
-					@media (min-width: 1024px){
-						font-size: 1.25rem;
-					}
 					&:before {
 						display: block;
-						color: $color__grey-morelight;
-						font-size: 80%;
+						color: $color__grey_blue;						
+						font-size: 1rem;
 						margin-bottom: .25rem;
 					}
 					&:after {

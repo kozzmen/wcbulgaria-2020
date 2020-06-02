@@ -4,7 +4,7 @@
 	padding-top: 2rem;
 	.tix_tickets_table{
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: stretch;
 		flex-flow: column wrap;
 		@media (min-width: 650px) {
@@ -40,14 +40,14 @@
 			}
 		}
 	}
-	// .tix-column-description{
-	// 	text-align: center;
-	// 	padding: 0;
-	// 	margin-bottom: 2rem;
-	// 	br{
-	// 		display: none;
-	// 	}
-	// }
+	.tix-column-description{
+		text-align: center;
+		padding: 0;
+		margin-bottom: 2rem;
+		br{
+			display: none;
+		}
+	}
 	.tix-ticket-title {
 		display: block;
 		font-size: 2rem;
@@ -129,6 +129,7 @@
 }
 
 #tix{
+	padding-top: 0;
 	input[type="submit"]{
 		float: none !important;
 	}

@@ -1281,6 +1281,13 @@ input[type="submit"] {
 .custom-logo-link {
   display: inline-block; }
 
+/* YouTube notation on the live chat embed */
+.wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
+  font-style: normal;
+  font-size: .875rem;
+  border-left: 0.25rem solid #F59E00;
+  padding-left: .5rem; }
+
 .sticky {
   display: block; }
 
@@ -4035,7 +4042,7 @@ h6 + .notation {
   padding-top: 2rem; }
   .tix-js .tix_tickets_table {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: stretch;
     flex-flow: column wrap; }
     @media (min-width: 650px) {
@@ -4066,6 +4073,12 @@ h6 + .notation {
           flex: 0 1 40%;
           max-width: 40%;
           margin: 0 2% 2rem; } }
+  .tix-js .tix-column-description {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 2rem; }
+    .tix-js .tix-column-description br {
+      display: none; }
   .tix-js .tix-ticket-title {
     display: block;
     font-size: 2rem;
@@ -4117,41 +4130,42 @@ h6 + .notation {
       font-size: 1.125rem;
       padding: .675rem; }
 
-#tix input[type="submit"] {
-  float: none !important; }
-
-#tix #tix-errors,
-#tix #tix-infos {
-  margin: 1.5rem auto; }
-  #tix #tix-errors .tix-error,
-  #tix #tix-errors .tix-info,
-  #tix #tix-infos .tix-error,
-  #tix #tix-infos .tix-info {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #27509F;
-    background-color: #F4EDE4;
-    border: none;
-    border-left: .25rem solid;
-    border-radius: 0; }
-  #tix #tix-errors .tix-error,
-  #tix #tix-infos .tix-error {
-    border-color: #F59E00 #tix #tix-errors .tix-error, #tix #tix-infos .tix-error; }
-    #tix #tix-errors .tix-error :before,
-    #tix #tix-infos .tix-error :before {
-      content: "\f153";
+#tix {
+  padding-top: 0; }
+  #tix input[type="submit"] {
+    float: none !important; }
+  #tix #tix-errors,
+  #tix #tix-infos {
+    margin: 1.5rem auto; }
+    #tix #tix-errors .tix-error,
+    #tix #tix-errors .tix-info,
+    #tix #tix-infos .tix-error,
+    #tix #tix-infos .tix-info {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #27509F;
+      background-color: #F4EDE4;
+      border: none;
+      border-left: .25rem solid;
+      border-radius: 0; }
+    #tix #tix-errors .tix-error,
+    #tix #tix-infos .tix-error {
+      border-color: #F59E00 #tix #tix-errors .tix-error, #tix #tix-infos .tix-error; }
+      #tix #tix-errors .tix-error :before,
+      #tix #tix-infos .tix-error :before {
+        content: "\f153";
+        font-family: 'dashicons';
+        display: inline-block;
+        vertical-align: middle;
+        color: #F59E00;
+        margin-right: .5rem; }
+    #tix #tix-errors .tix-info:before,
+    #tix #tix-infos .tix-info:before {
+      content: "\f529";
       font-family: 'dashicons';
       display: inline-block;
       vertical-align: middle;
-      color: #F59E00;
       margin-right: .5rem; }
-  #tix #tix-errors .tix-info:before,
-  #tix #tix-infos .tix-info:before {
-    content: "\f529";
-    font-family: 'dashicons';
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: .5rem; }
 
 /*_______ Order Sumary _______*/
 .tix-order-summary tbody {
@@ -4620,10 +4634,10 @@ div[class^="wcorg-sponsor-level-"] {
           display: table-cell;
           min-width: 15%;
           font-weight: 700;
-          font-size: 1.25rem;
+          font-size: .875rem;
           text-align: left;
           line-height: 100%;
-          color: #787f86;
+          color: #9e9e9e;
           padding: .5rem 1rem;
           background-color: #DADADD;
           border: none;
@@ -4631,17 +4645,13 @@ div[class^="wcorg-sponsor-level-"] {
           @media (min-width: 700px) {
             .wcpt-schedule tbody tr td:first-of-type, .wcpt-schedule tbody tr td.wcpt-time {
               display: block;
-              font-size: rem;
               text-align: right;
               padding: .5rem;
               border-bottom: .125rem solid white; } }
-          @media (min-width: 1024px) {
-            .wcpt-schedule tbody tr td:first-of-type, .wcpt-schedule tbody tr td.wcpt-time {
-              font-size: 1.25rem; } }
           .wcpt-schedule tbody tr td:first-of-type:before, .wcpt-schedule tbody tr td.wcpt-time:before {
             display: block;
-            color: #9e9e9e;
-            font-size: 80%;
+            color: #787f86;
+            font-size: 1rem;
             margin-bottom: .25rem; }
           .wcpt-schedule tbody tr td:first-of-type:after, .wcpt-schedule tbody tr td.wcpt-time:after {
             content: " UTC";
