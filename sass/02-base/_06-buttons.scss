@@ -89,7 +89,7 @@ input[type="submit"] {
 		&:hover{
 			color: $color__tertiary !important;
 			background-color: $color__primary;
-			box-shadow: -.125em .125em 0 $color__grey;
+			box-shadow: -.125em .125em 0 $color__black_blue;
 		}
 	}
 	&.is-style-outline{
