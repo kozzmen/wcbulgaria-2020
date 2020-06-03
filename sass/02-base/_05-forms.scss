@@ -19,7 +19,8 @@ label{
 
 input,
 select,
-textarea {
+textarea,
+.select2-container{
 	appearance: none !important;
 	-moz-appearance: none !important;
 	-webkit-appearance: none !important;
@@ -120,7 +121,8 @@ input[type="radio"] + label{
 	margin-bottom: 0;
 }
 
-select {
+select,
+.select2-container{
 	position: relative;
 	font-size: 1.125rem;
 	padding-right: 2rem;
@@ -150,4 +152,10 @@ textarea {
 
 input[type="hidden"]{
 	display: none;
+}
+
+
+.select2-container{
+	font-weight: 700;
+	font-size: 1.5rem;
 }
