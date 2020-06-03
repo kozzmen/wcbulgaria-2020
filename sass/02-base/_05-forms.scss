@@ -174,3 +174,13 @@ input[type="hidden"]{
 .select2-selection__arrow{
 	display: none !important;
 }
+.select2-results__options{
+	border: .1875rem solid $color__primary;
+	border-radius: 0 !important;
+}
+.select2-results__option{
+	&--highlighted{
+		color: $color__primary !important;
+		background-color: $color__secondary !important;
+	}
+}

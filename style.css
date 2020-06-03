@@ -1045,6 +1045,14 @@ input[type="hidden"] {
 .select2-selection__arrow {
   display: none !important; }
 
+.select2-results__options {
+  border: 0.1875rem solid #27509F;
+  border-radius: 0 !important; }
+
+.select2-results__option--highlighted {
+  color: #27509F !important;
+  background-color: #F59E00 !important; }
+
 .btn,
 button,
 input[type="button"],
