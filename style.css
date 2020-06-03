@@ -1582,6 +1582,10 @@ input[type=submit].outlined:hover {
   padding-left: 0.5rem;
 }
 
+.wp-block-audio {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 .wp-block-audio > * {
   min-height: 2rem;
 }
