@@ -156,6 +156,8 @@ input[type="hidden"]{
 
 
 .select2-container{
+	width: auto !important;
+	max-width: 30rem;
 	font-weight: 700;
 	font-size: 1.5rem;
 }
