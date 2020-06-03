@@ -1048,8 +1048,12 @@ input[type="hidden"] {
 .select2-selection__arrow {
   display: none !important; }
 
+.select2-dropdown {
+  border: 0.1875rem solid #27509F !important;
+  border-radius: 0 !important; }
+
 .select2-results__options {
-  border: 0.1875rem solid #27509F;
+  border: none !important;
   border-radius: 0 !important; }
 
 .select2-results__option {
