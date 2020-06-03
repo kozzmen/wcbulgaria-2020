@@ -21,6 +21,7 @@
 }
 
 .wp-block-audio{
-	width: auto;
-	min-height: 2rem;
+	> *{
+		min-height: 2rem;
+	}
 }
