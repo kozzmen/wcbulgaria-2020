@@ -1225,13 +1225,17 @@ input[type=hidden] {
   height: auto;
 }
 
-.select2-container--default .select2-selection--single {
+.select2-selection--single {
   border: none !important;
   border-radius: 0 !important;
 }
-.select2-container--default .select2-selection--single:focus {
+.select2-selection--single:focus {
+  outline: none !important;
   border: none !important;
   border-radius: 0 !important;
+}
+.select2-selection--single:focus .select2-selection__rendered {
+  border-color: #F59E00;
 }
 
 .select2-selection__rendered {
@@ -1260,10 +1264,14 @@ input[type=hidden] {
 
 .select2-results__option {
   margin-bottom: 1rem;
+  padding: 1rem !important;
 }
 .select2-results__option--highlighted {
   color: #27509F !important;
   background-color: #F59E00 !important;
+}
+.select2-results__option:focus {
+  outline: none !important;
 }
 
 .btn,

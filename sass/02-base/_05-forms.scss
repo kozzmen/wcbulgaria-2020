@@ -171,12 +171,16 @@ input[type="hidden"]{
 .speaker-feedback-navigation .select2-selection{
 	height: auto;
 }
-.select2-container--default .select2-selection--single{
+.select2-selection--single{
 	border: none !important;
 	border-radius: 0 !important;
 	&:focus{
+		outline: none !important;
 		border: none !important;
 		border-radius: 0 !important;
+		.select2-selection__rendered{
+			border-color: $color__secondary;
+		}
 	}
 }
 .select2-selection__rendered{
@@ -201,8 +205,12 @@ input[type="hidden"]{
 }
 .select2-results__option{
 	margin-bottom: 1rem;
+	padding: 1rem !important;
 	&--highlighted{
 		color: $color__primary !important;
 		background-color: $color__secondary !important;
+	}
+	&:focus{
+		outline: none !important;
 	}
 }
