@@ -56,3 +56,12 @@
 		}
 	}
 }
+
+.speaker-feedback__notice{
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: $color__primary;
+	background-color: $color__tertiary;
+	border-left: .25rem solid $color__secondary;
+	border-radius: 0;
+}

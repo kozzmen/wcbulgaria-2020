@@ -163,6 +163,9 @@ input[type="hidden"]{
 	font-weight: 700;
 	font-size: 1.5rem;
 }
+.speaker-feedback-navigation .select2-selection{
+	height: auto;
+}
 .select2-container--default .select2-selection--single{
 	border: none !important;
 	border-radius: 0 !important;
@@ -176,6 +179,7 @@ input[type="hidden"]{
 	font-size: 1.5rem;
 	line-height: 100% !important;
 	color: $color__primary !important;
+	padding-right: 4rem !important;
 	margin: 0 !important;
 }
 .select2-selection__arrow{

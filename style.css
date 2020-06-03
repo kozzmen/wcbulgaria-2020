@@ -1217,6 +1217,10 @@ input[type=hidden] {
   font-size: 1.5rem;
 }
 
+.speaker-feedback-navigation .select2-selection {
+  height: auto;
+}
+
 .select2-container--default .select2-selection--single {
   border: none !important;
   border-radius: 0 !important;
@@ -1231,6 +1235,7 @@ input[type=hidden] {
   font-size: 1.5rem;
   line-height: 100% !important;
   color: #27509F !important;
+  padding-right: 4rem !important;
   margin: 0 !important;
 }
 
@@ -4155,6 +4160,15 @@ h6 + .notation {
 .organizer-links a:focus:after, .session-categories-links a:hover:after, #session-speaker-names li a:hover:after, .sponsors-schedule tbody tr td a:hover:after, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:hover:after, .wordcamp-sessions .wordcamp-sessions__speakers a:hover:after, .personal-links a:hover:after,
 .organizer-links a:hover:after {
   width: 0;
+}
+
+.speaker-feedback__notice {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #27509F;
+  background-color: #F4EDE4;
+  border-left: 0.25rem solid #F59E00;
+  border-radius: 0;
 }
 
 .wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
