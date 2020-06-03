@@ -1210,6 +1210,10 @@ input[type=hidden] {
 }
 
 /*_______ Feedback tool select _______*/
+.speaker-feedback__wrapper input[type=submit] {
+  margin: 0;
+}
+
 .select2-container {
   width: auto !important;
   max-width: 30rem;
