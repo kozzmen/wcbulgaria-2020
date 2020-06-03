@@ -158,8 +158,12 @@ input[type="hidden"]{
 
 /*_______ Feedback tool select _______*/
 .speaker-feedback__wrapper{
+	flex-flow: row wrap;
 	input[type="submit"]{
 		margin: 0;
+	}
+	.speaker-feedback__field{
+		display: block;
 	}
 }
 .select2-container{
@@ -186,11 +190,16 @@ input[type="hidden"]{
 .select2-selection__rendered{
 	display: block !important;
 	font-weight: 700;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	line-height: 100% !important;
 	color: $color__primary !important;
 	padding-right: 2rem !important;
 	margin: 0 !important;
+	white-space: pre-wrap !important;
+	@media (min-width: 480px){
+		font-size: 1.5rem;
+    	white-space: nowrap !important;
+	}
 }
 .select2-selection__arrow{
 	display: none !important;
