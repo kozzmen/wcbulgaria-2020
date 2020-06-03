@@ -1288,6 +1288,10 @@ input[type="submit"] {
   border-left: 0.25rem solid #F59E00;
   padding-left: .5rem; }
 
+.wp-block-audio {
+  width: auto;
+  min-height: 2rem; }
+
 .sticky {
   display: block; }
 
