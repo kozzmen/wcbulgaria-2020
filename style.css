@@ -903,7 +903,7 @@ label {
 input,
 select,
 textarea,
-.select2-container {
+.select2 {
   appearance: none !important;
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
@@ -925,17 +925,17 @@ textarea,
     input,
     select,
     textarea,
-    .select2-container {
+    .select2 {
       font-size: 1.25rem; } }
   input:focus,
   select:focus,
   textarea:focus,
-  .select2-container:focus {
+  .select2:focus {
     border-color: #F59E00; }
   input::placeholder,
   select::placeholder,
   textarea::placeholder,
-  .select2-container::placeholder {
+  .select2::placeholder {
     color: #27509F; }
 
 /* Change autocomplete styles in WebKit */
@@ -1000,7 +1000,7 @@ input[type="radio"] + label {
   margin-bottom: 0; }
 
 select,
-.select2-container {
+.select2 {
   position: relative;
   font-size: 1.125rem;
   padding-right: 2rem;
@@ -1009,11 +1009,11 @@ select,
   background-position: right .5em top 50%;
   background-size: 1rem; }
   select option[value=""], select option:first-child,
-  .select2-container option[value=""],
-  .select2-container option:first-child {
+  .select2 option[value=""],
+  .select2 option:first-child {
     color: #737477; }
   select:invalid,
-  .select2-container:invalid {
+  .select2:invalid {
     color: #737477; }
 
 _:-ms-lang(x),
