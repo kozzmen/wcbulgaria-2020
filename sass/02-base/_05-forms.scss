@@ -172,9 +172,10 @@ input[type="hidden"]{
 	}
 }
 .select2-selection__rendered{
+	font-weight: 700;
+	font-size: 1.5rem;
 	line-height: 100% !important;
 	color: $color__primary !important;
-	padding: 0 !important;
 	margin: 0 !important;
 }
 .select2-selection__arrow{
