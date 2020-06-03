@@ -3110,7 +3110,7 @@ table thead th {
 .wp-block-quote {
   position: relative;
   padding-right: 5%;
-  padding-left: 0.5rem;
+  padding-left: 1.25rem;
   border-left: 0.25rem solid #F59E00;
   margin-bottom: 2rem;
 }
