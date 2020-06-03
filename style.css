@@ -1041,6 +1041,7 @@ a.more-link, .entry-title a {
   text-align: center;
 }
 
+/*_______ Common forms elements _______*/
 fieldset {
   border: none;
   padding: 0;
@@ -1065,7 +1066,7 @@ label {
 input,
 select,
 textarea,
-.select2 {
+.select2-selection__rendered {
   appearance: none !important;
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
@@ -1088,20 +1089,20 @@ textarea,
   input,
 select,
 textarea,
-.select2 {
+.select2-selection__rendered {
     font-size: 1.25rem;
   }
 }
 input:focus,
 select:focus,
 textarea:focus,
-.select2:focus {
+.select2-selection__rendered:focus {
   border-color: #F59E00;
 }
 input::placeholder,
 select::placeholder,
 textarea::placeholder,
-.select2::placeholder {
+.select2-selection__rendered::placeholder {
   color: #27509F;
 }
 
@@ -1176,7 +1177,7 @@ input[type=radio] + label {
 }
 
 select,
-.select2 {
+.select2-selection__rendered {
   position: relative;
   font-size: 1.125rem;
   padding-right: 2rem;
@@ -1186,12 +1187,12 @@ select,
   background-size: 1rem;
 }
 select option[value=""], select option:first-child,
-.select2 option[value=""],
-.select2 option:first-child {
+.select2-selection__rendered option[value=""],
+.select2-selection__rendered option:first-child {
   color: #737477;
 }
 select:invalid,
-.select2:invalid {
+.select2-selection__rendered:invalid {
   color: #737477;
 }
 
@@ -1208,6 +1209,7 @@ input[type=hidden] {
   display: none;
 }
 
+/*_______ Feedback tool select _______*/
 .select2-container {
   width: auto !important;
   max-width: 30rem;
@@ -3117,7 +3119,7 @@ table thead th {
 .wp-block-quote p {
   font-style: italic;
   line-height: 140%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 }
 .wp-block-quote cite {
   display: block;
