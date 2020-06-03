@@ -156,7 +156,7 @@
 				display: flex;
 				align-items: center;
 				margin: 0 auto;
-				border-bottom: .25rem solid secondary;
+				border-bottom: .25rem solid $color__secondary;
 				@extend %transition;
 				@media (min-width: 800px){
 					position: fixed;
