@@ -1030,6 +1030,19 @@ input[type="hidden"] {
   font-weight: 700;
   font-size: 1.5rem; }
 
+.select2-container--default .select2-selection--single {
+  border: none !important;
+  border-radius: 0 !important; }
+
+.select2-selection__rendered {
+  line-height: 100% !important;
+  color: #27509F !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.select2-selection__arrow {
+  display: none !important; }
+
 .btn,
 button,
 input[type="button"],
