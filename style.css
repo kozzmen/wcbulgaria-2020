@@ -3311,20 +3311,22 @@ table thead th {
   width: 100%;
   border: none;
   padding: 0;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
   overflow: hidden;
 }
 @media (min-width: 480px) {
   .wp-block-latest-posts.is-grid li {
     flex: 0 0 48%;
     max-width: 48%;
-    margin: 0 1% 2rem;
+    margin: 0 1% 1rem;
   }
 }
 @media (min-width: 769px) {
   .wp-block-latest-posts.is-grid li {
     flex: 0 0 31.333%;
     max-width: 31.333%;
+    margin-bottom: 0;
   }
 }
 .wp-block-latest-posts.is-grid li:focus, .wp-block-latest-posts.is-grid li:focus-within, .wp-block-latest-posts.is-grid li:hover {
