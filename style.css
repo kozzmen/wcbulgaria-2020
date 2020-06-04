@@ -103,7 +103,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img, #speaker-session-names, .wordcamp-organizers .wordcamp-post-list__post,
 .wordcamp-speakers .wordcamp-post-list__post,
 .wordcamp-sessions .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty), .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text, .salient-links .wp-block-columns .wp-block-column, .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a, .footer-widgets-block:not(:first-child) .widget_nav_menu .menu .menu-item a, .custom-posts-pagination .page-numbers, .posts-navigation .nav-links a,
-.post-navigation .nav-links a, .menu-toggle, .more-info:after, .more-info, .main-navigation .menu .menu-item a, .main-navigation .menu .menu-item, .main-navigation .menu, .custom-header .site-branding .custom-logo-link, .wp-block-buttons .wp-block-button__link, .btn,
+.post-navigation .nav-links a, .menu-toggle, .more-info:after, .more-info, .main-navigation .menu .menu-item a, .main-navigation .menu .menu-item, .main-navigation .menu, .custom-header .site-branding .custom-logo-link, .wp-block-button .wp-block-button__link, .btn,
 button,
 input[type=button],
 input[type=reset],
@@ -1400,7 +1400,11 @@ input[type=submit].outlined:hover {
 .wp-block-buttons {
   margin-bottom: 2rem;
 }
-.wp-block-buttons .wp-block-button__link {
+
+.wp-block-button {
+  margin-bottom: 2rem;
+}
+.wp-block-button .wp-block-button__link {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 100%;
@@ -1412,19 +1416,19 @@ input[type=submit].outlined:hover {
   box-shadow: -0.25em 0.25em 0 #233353;
 }
 @media (min-width: 480px) {
-  .wp-block-buttons .wp-block-button__link {
+  .wp-block-button .wp-block-button__link {
     font-size: 1.75rem;
   }
 }
-.wp-block-buttons .wp-block-button__link:focus {
+.wp-block-button .wp-block-button__link:focus {
   outline: none;
 }
-.wp-block-buttons .wp-block-button__link:focus, .wp-block-buttons .wp-block-button__link:hover {
+.wp-block-button .wp-block-button__link:focus, .wp-block-button .wp-block-button__link:hover {
   color: #F4EDE4 !important;
   background-color: #27509F;
   box-shadow: -0.125em 0.125em 0 #233353;
 }
-.wp-block-buttons.is-style-outline .wp-block-button__link {
+.wp-block-button.is-style-outline .wp-block-button__link {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 100%;
@@ -1436,14 +1440,14 @@ input[type=submit].outlined:hover {
   border-radius: 0;
   box-shadow: none;
 }
-.wp-block-buttons.is-style-outline .wp-block-button__link:focus {
+.wp-block-button.is-style-outline .wp-block-button__link:focus {
   outline: none;
 }
-.wp-block-buttons.is-style-outline .wp-block-button__link:focus, .wp-block-buttons.is-style-outline .wp-block-button__link:hover {
+.wp-block-button.is-style-outline .wp-block-button__link:focus, .wp-block-button.is-style-outline .wp-block-button__link:hover {
   color: #F4EDE4;
   background-color: #27509F;
 }
-.wp-block-buttons.with-icon .wp-block-button__link:after {
+.wp-block-button.with-icon .wp-block-button__link:after {
   display: inline-block;
   vertical-align: middle;
   font-family: "dashicons";
@@ -1451,17 +1455,17 @@ input[type=submit].outlined:hover {
   font-weight: normal;
   margin-left: 0.5rem;
 }
-.wp-block-buttons.with-icon.external .wp-block-button__link:after {
+.wp-block-button.with-icon.external .wp-block-button__link:after {
   content: "";
 }
-.wp-block-buttons.with-icon.map .wp-block-button__link:after {
+.wp-block-button.with-icon.map .wp-block-button__link:after {
   content: "";
   font-family: "dashicons";
 }
-.wp-block-buttons.external-link {
+.wp-block-button.external-link {
   margin-bottom: 1.25em;
 }
-.wp-block-buttons.external-link .wp-block-button__link {
+.wp-block-button.external-link .wp-block-button__link {
   display: inline-block;
   font-size: 1.125rem;
   padding: 0;
@@ -1471,7 +1475,7 @@ input[type=submit].outlined:hover {
   box-shadow: none;
   margin: 0;
 }
-.wp-block-buttons.external-link .wp-block-button__link:before {
+.wp-block-button.external-link .wp-block-button__link:before {
   display: inline-block;
   vertical-align: middle;
   content: "";
@@ -1481,18 +1485,18 @@ input[type=submit].outlined:hover {
   color: #F59E00;
   margin-right: 0.25rem;
 }
-.wp-block-buttons.anchor-link .wp-block-button__link {
+.wp-block-button.anchor-link .wp-block-button__link {
   color: #27509F;
   background-color: transparent;
   border: 0.25rem solid #27509F;
   box-shadow: none;
 }
-.wp-block-buttons.anchor-link .wp-block-button__link:after {
+.wp-block-button.anchor-link .wp-block-button__link:after {
   content: " ";
   font-family: "dashicons";
   vertical-align: middle;
 }
-.wp-block-buttons.anchor-link .wp-block-button__link:hover {
+.wp-block-button.anchor-link .wp-block-button__link:hover {
   color: #F4EDE4;
   background-color: #27509F;
 }
