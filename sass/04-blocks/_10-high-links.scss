@@ -1,9 +1,9 @@
 /*_______ Block with highlighted links _______*/
 * + .salient-links{
-	margin-top: 8rem;
+	margin-top: 2rem;
 }
 .salient-links{
-	margin-bottom: 8rem;
+	margin-bottom: 2rem;
 	.wp-block-columns{
 		justify-content: center;
 		margin: 0;
@@ -18,7 +18,7 @@
 			margin-bottom: 1rem;
 			@extend %transition;
 			@media (min-width: 768px){
-				flex: 0 1 30%;
+				flex: 1 1 30%;
 			}
 			&:focus,
 			&:focus-within,

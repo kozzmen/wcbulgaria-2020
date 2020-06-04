@@ -3382,11 +3382,11 @@ table thead th {
 
 /*_______ Block with highlighted links _______*/
 * + .salient-links {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .salient-links {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 .salient-links .wp-block-columns {
   justify-content: center;
@@ -3404,7 +3404,7 @@ table thead th {
 }
 @media (min-width: 768px) {
   .salient-links .wp-block-columns .wp-block-column {
-    flex: 0 1 30%;
+    flex: 1 1 30%;
   }
 }
 .salient-links .wp-block-columns .wp-block-column:focus, .salient-links .wp-block-columns .wp-block-column:focus-within, .salient-links .wp-block-columns .wp-block-column:hover {
