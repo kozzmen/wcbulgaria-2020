@@ -1455,6 +1455,9 @@ input[type=submit].outlined:hover {
   font-weight: normal;
   margin-left: 0.5rem;
 }
+.wp-block-button.with-icon.right-arrow .wp-block-button__link:after {
+  content: "";
+}
 .wp-block-button.with-icon.external .wp-block-button__link:after {
   content: "";
 }
