@@ -3483,6 +3483,11 @@ table thead th {
     font-size: 2rem;
   }
 }
+.salient-links .wp-block-columns .wp-block-column h1 br, .salient-links .wp-block-columns .wp-block-column h2 br, .salient-links .wp-block-columns .wp-block-column h3 br,
+.salient-links .wp-block-columns .wp-block-column h4 br, .salient-links .wp-block-columns .wp-block-column h5 br, .salient-links .wp-block-columns .wp-block-column h6 br,
+.salient-links .wp-block-columns .wp-block-column p br {
+  display: none;
+}
 
 /*_______ Block with highlighted links inline _______*/
 .high-links-inline .wp-block-media-text {
