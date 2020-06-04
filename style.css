@@ -1458,6 +1458,9 @@ input[type=submit].outlined:hover {
 .wp-block-button.with-icon.right-arrow .wp-block-button__link:after {
   content: "";
 }
+.wp-block-button.with-icon.down-arrow .wp-block-button__link:after {
+  content: "";
+}
 .wp-block-button.with-icon.external .wp-block-button__link:after {
   content: "";
 }

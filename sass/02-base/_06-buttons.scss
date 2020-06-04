@@ -135,6 +135,13 @@ input[type="submit"] {
 				}
 			}
 		}
+		&.down-arrow{
+			.wp-block-button__link{
+				&:after{
+					content: "\f346";
+				}
+			}
+		}
 		&.external{
 			.wp-block-button__link{
 				&:after{
