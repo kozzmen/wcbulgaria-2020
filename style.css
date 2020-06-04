@@ -1430,7 +1430,7 @@ input[type=submit].outlined:hover {
 }
 .wp-block-button.is-style-outline .wp-block-button__link {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 100%;
   color: #27509F;
   text-align: center;
