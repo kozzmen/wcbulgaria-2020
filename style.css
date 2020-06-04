@@ -1413,7 +1413,7 @@ input[type=submit].outlined:hover {
   padding: 0.75em 1.25em;
   background-color: #F59E00;
   border-radius: 0;
-  box-shadow: -0.25em 0.25em 0 #233353;
+  box-shadow: -0.25em 0.25em 0 #27509F;
 }
 @media (min-width: 480px) {
   .wp-block-button .wp-block-button__link {
@@ -3652,6 +3652,9 @@ h6 + .notation {
     margin-left: 0;
     flex: 1 1 55%;
   }
+}
+.home-header .wp-block-button__link {
+  box-shadow: -0.25em 0.25em 0 #233353;
 }
 .home-header .wp-block-button__link:hover, .home-header .wp-block-button__link:visited {
   color: #27509F;
