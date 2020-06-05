@@ -6282,6 +6282,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   font-weight: 700;
   font-size: 1.5rem;
   color: #F59E00;
+  margin-bottom: 0.5rem;
 }
 .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-speaker:before {
   content: "by ";
