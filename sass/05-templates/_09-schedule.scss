@@ -100,6 +100,17 @@
 				&.wcpt-session-type-session{
 					height: inherit;
 					vertical-align: top;
+					&:before{
+						font-weight: 700;
+						font-size: .875rem;
+						color: $color__primary;
+						padding: .25rem .5rem;
+						background-color: $color__tertiary;
+						border: none !important;
+						@media (min-width: 700px){
+							display: none;
+						}
+					}
 					&.wcb-track-track-1.wcb-track-track-2{
 						@media (min-width: 700px){
 							text-align: center;
@@ -108,17 +119,6 @@
 					.wcb-session-cell-content{
 						@media (min-width: 700px){
 							padding-right: 2rem;
-						}
-						&:before{
-							font-weight: 700;
-							font-size: .875rem;
-							color: $color__primary;
-							padding: .25rem .5rem;
-							background-color: $color__tertiary;
-							border: none !important;
-							@media (min-width: 700px){
-								display: none;
-							}
 						}
 						.wcpt-session-title{
 							display: block;

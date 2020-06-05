@@ -5943,17 +5943,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   height: inherit;
   vertical-align: top;
 }
-@media (min-width: 700px) {
-  .wcpt-schedule tbody tr td.wcpt-session-type-session.wcb-track-track-1.wcb-track-track-2 {
-    text-align: center;
-  }
-}
-@media (min-width: 700px) {
-  .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content {
-    padding-right: 2rem;
-  }
-}
-.wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content:before {
+.wcpt-schedule tbody tr td.wcpt-session-type-session:before {
   font-weight: 700;
   font-size: 0.875rem;
   color: #27509F;
@@ -5962,8 +5952,18 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   border: none !important;
 }
 @media (min-width: 700px) {
-  .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content:before {
+  .wcpt-schedule tbody tr td.wcpt-session-type-session:before {
     display: none;
+  }
+}
+@media (min-width: 700px) {
+  .wcpt-schedule tbody tr td.wcpt-session-type-session.wcb-track-track-1.wcb-track-track-2 {
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content {
+    padding-right: 2rem;
   }
 }
 .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
