@@ -1962,7 +1962,7 @@ body.admin-bar .site-header {
 @media (min-width: 900px) {
   .main-navigation .menu .menu-item {
     flex: 0 0 auto;
-    margin: 0 0 0 1rem;
+    margin: 0;
   }
 }
 .main-navigation .menu .menu-item a {
@@ -1980,7 +1980,7 @@ body.admin-bar .site-header {
 }
 @media (min-width: 1025px) {
   .main-navigation .menu .menu-item a {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 900px) {
@@ -2011,7 +2011,7 @@ body.admin-bar .site-header {
 }
 .main-navigation .menu .menu-item.emphasised a {
   color: #27509F;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.75rem;
 }
 @media (min-width: 900px) {
   .main-navigation .menu .menu-item.emphasised:focus, .main-navigation .menu .menu-item.emphasised:focus-within, .main-navigation .menu .menu-item.emphasised:hover {
@@ -2109,6 +2109,11 @@ body.admin-bar .site-header {
     top: 1.25rem;
   }
 }
+@media (min-width: 1200px) {
+  .main-navigation .sub-menu {
+    top: 1.5rem;
+  }
+}
 .main-navigation .sub-menu .menu-item {
   width: 100%;
   line-height: 120%;
@@ -2183,9 +2188,14 @@ body.admin-bar .site-header {
 }
 @media (min-width: 900px) {
   .more-info {
-    font-size: 1rem;
-    width: 5rem;
+    font-size: 0.875rem;
+    width: 4.5rem;
     padding: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .more-info {
+    top: 1rem;
   }
 }
 .more-info:after {
@@ -2196,15 +2206,21 @@ body.admin-bar .site-header {
   align-items: center;
   content: "";
   font-family: "dashicons";
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 @media (min-width: 900px) {
   .more-info:after {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 0.25rem;
     width: auto;
     height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.5rem;
+    margin-left: 0.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .more-info:after {
+    font-size: 0.875rem;
   }
 }
 .more-info:focus {
