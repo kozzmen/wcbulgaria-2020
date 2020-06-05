@@ -6237,7 +6237,11 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
     flex: 0 1 48%;
   }
 }
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session.type-custom .wordcamp-live-schedule__session-speaker {
+  display: none;
+}
 .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-track {
+  width: auto;
   display: inline-block;
   font-weight: 700;
   font-size: 1.25rem;
@@ -6246,8 +6250,10 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-bottom: 1rem;
 }
 .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details {
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
+  margin: 0;
 }
 .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-title {
   font-size: 2rem;
@@ -6275,6 +6281,13 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   font-weight: 700;
   font-size: 1.5rem;
   color: #F59E00;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-speaker:before {
+  content: "by ";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: #27509F;
 }
 
 /*_______ Speaker & Session singles _______*/
