@@ -511,6 +511,7 @@
 			text-align: center;
 		}
 		.wordcamp-live-schedule__session{
+			display: block;
 			@extend %camptix-item;
 			flex: 1 1 100%;
 			margin-bottom: 2rem;
