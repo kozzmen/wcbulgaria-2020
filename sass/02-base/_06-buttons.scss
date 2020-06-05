@@ -119,6 +119,7 @@ input[type="submit"] {
 	}
 	&.aligncenter{
 		.wp-block-button__link{
+			display: table;
 			margin-left: auto;
 			margin-right: auto;
 		}

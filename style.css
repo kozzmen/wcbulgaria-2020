@@ -98,9 +98,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .search-results .hentry .entry-header .entry-image img, .blog .hentry,
 .archive .hentry,
 .search-results .hentry, .session-categories-links a:after, #session-speaker-names li a:after, .sponsors-schedule tbody tr td a:after, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:after, .wordcamp-sessions .wordcamp-sessions__speakers a:after, .personal-links a:after,
-.organizer-links a:after, #speaker-session-names img, .wordcamp-organizers .wordcamp-post-list__post img,
+.organizer-links a:after, #speaker-session-names img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session img, .wordcamp-organizers .wordcamp-post-list__post img,
 .wordcamp-speakers .wordcamp-post-list__post img,
-.wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img, #speaker-session-names, .wordcamp-organizers .wordcamp-post-list__post,
+.wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img, #speaker-session-names, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session, .wordcamp-organizers .wordcamp-post-list__post,
 .wordcamp-speakers .wordcamp-post-list__post,
 .wordcamp-sessions .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty), .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text, .salient-links .wp-block-columns .wp-block-column, .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a, .footer-widgets-block:not(:first-child) .widget_nav_menu .menu .menu-item a, .custom-posts-pagination .page-numbers, .posts-navigation .nav-links a,
 .post-navigation .nav-links a, .menu-toggle, .more-info:after, .more-info, .main-navigation .menu .menu-item a, .main-navigation .menu .menu-item, .main-navigation .menu, .custom-header .site-branding .custom-logo-link, .wp-block-button .wp-block-button__link, .btn,
@@ -1448,6 +1448,7 @@ input[type=submit].outlined:hover {
   background-color: #27509F;
 }
 .wp-block-button.aligncenter .wp-block-button__link {
+  display: table;
   margin-left: auto;
   margin-right: auto;
 }
@@ -4141,7 +4142,7 @@ h6 + .notation {
 }
 
 /*_______ General styles for some Camptix elements _______*/
-#speaker-session-names, .wordcamp-organizers .wordcamp-post-list__post,
+#speaker-session-names, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session, .wordcamp-organizers .wordcamp-post-list__post,
 .wordcamp-speakers .wordcamp-post-list__post,
 .wordcamp-sessions .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) {
   padding: 1.25rem;
@@ -4150,13 +4151,13 @@ h6 + .notation {
   box-shadow: -0.25em 0.25em 0 #27509F;
   margin-bottom: 1rem;
 }
-#speaker-session-names img, .wordcamp-organizers .wordcamp-post-list__post img,
+#speaker-session-names img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session img, .wordcamp-organizers .wordcamp-post-list__post img,
 .wordcamp-speakers .wordcamp-post-list__post img,
 .wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img {
   display: block;
   filter: grayscale(100);
 }
-#speaker-session-names:hover, .wordcamp-organizers .wordcamp-post-list__post:hover,
+#speaker-session-names:hover, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover, .wordcamp-organizers .wordcamp-post-list__post:hover,
 .wordcamp-speakers .wordcamp-post-list__post:hover,
 .wordcamp-sessions .wordcamp-post-list__post:hover, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) {
   transform-origin: center;
@@ -4164,7 +4165,7 @@ h6 + .notation {
   box-shadow: -0.125em 0.125em 0 #F59E00;
   z-index: 5;
 }
-#speaker-session-names:hover img, .wordcamp-organizers .wordcamp-post-list__post:hover img,
+#speaker-session-names:hover img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover img, .wordcamp-organizers .wordcamp-post-list__post:hover img,
 .wordcamp-speakers .wordcamp-post-list__post:hover img,
 .wordcamp-sessions .wordcamp-post-list__post:hover img, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) img {
   filter: grayscale(0);
@@ -6215,6 +6216,65 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 }
 .sponsors-schedule.three-areas thead tr th:first-of-type {
   width: 100px;
+}
+
+/*_______ Live Schedule block _______*/
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__title {
+  width: 100%;
+  text-align: center;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session {
+  flex: 1 1 100%;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session {
+    flex: 0 1 48%;
+  }
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-track {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #F4EDE4;
+  margin-bottom: 1rem;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details {
+  display: flex;
+  flex-flow: column wrap;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-title a {
+  text-decoration: none;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-time {
+  display: block;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  border-left: 0.25rem solid #F59E00;
+  margin-bottom: 1rem;
+  order: -1;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-time:after {
+  content: " UTC";
+  font-weight: 400;
+  font-size: 80%;
+}
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-speaker {
+  display: inline-block;
+  width: auto;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #F59E00;
 }
 
 /*_______ Speaker & Session singles _______*/
