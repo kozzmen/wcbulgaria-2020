@@ -5695,6 +5695,18 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-bottom: 4rem;
 }
 
+.sponosor-booths {
+  max-width: 600px;
+}
+.sponosor-booths tr td:first-child {
+  max-width: 200px;
+  text-align: right;
+}
+.sponosor-booths tr h1, .sponosor-booths tr h2, .sponosor-booths tr h3,
+.sponosor-booths tr h4, .sponosor-booths tr h5, .sponosor-booths tr h6 {
+  font-size: 1.75rem;
+}
+
 /*_______ Attendees list _______*/
 #tix-attendees {
   max-width: 1200px;

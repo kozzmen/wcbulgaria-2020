@@ -153,3 +153,19 @@ div[class^="wcorg-sponsor-level-"] {
 		}
 	}
 }
+
+
+.sponosor-booths{
+	max-width: $size__content-moretiny;
+	tr{
+		td{
+			&:first-child{
+				max-width: 200px;
+				text-align: right;
+			}
+		}
+		%headings{
+			font-size: 1.75rem;
+		}
+	}
+}
