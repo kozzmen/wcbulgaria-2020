@@ -109,6 +109,9 @@
 						@media (min-width: 700px){
 							padding-right: 2rem;
 						}
+						&:before{
+							display: none;
+						}
 						.wcpt-session-title{
 							display: block;
 							font-size: 1.25rem;
