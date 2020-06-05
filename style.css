@@ -6059,7 +6059,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   bottom: 1rem;
   right: 1rem;
   line-height: 100%;
-  color: #27509F;
+  color: #27509F !important;
   padding: 0.5rem;
   background: #F59E00;
   border: 0.125rem solid #F59E00;
