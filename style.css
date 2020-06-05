@@ -5944,12 +5944,15 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   vertical-align: top;
 }
 .wcpt-schedule tbody tr td.wcpt-session-type-session:before {
+  display: inline-block;
   font-weight: 700;
   font-size: 0.875rem;
+  line-height: 100%;
   color: #27509F;
   padding: 0.25rem 0.5rem;
   background-color: #F4EDE4;
-  border: none !important;
+  border: none;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 700px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session:before {
