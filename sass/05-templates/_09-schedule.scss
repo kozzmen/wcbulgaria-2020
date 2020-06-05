@@ -101,6 +101,12 @@
 					height: inherit;
 					vertical-align: top;
 					&.wcb-track-track-1.wcb-track-track-2{
+						font-weight: 700;
+						font-size: .875rem;
+						color: $color__primary;
+						padding: .25rem .5rem;
+						background-color: $color__tertiary;
+						border: none !important;
 						@media (min-width: 700px){
 							text-align: center;
 						}

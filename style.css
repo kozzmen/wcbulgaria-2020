@@ -5943,6 +5943,14 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   height: inherit;
   vertical-align: top;
 }
+.wcpt-schedule tbody tr td.wcpt-session-type-session.wcb-track-track-1.wcb-track-track-2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #27509F;
+  padding: 0.25rem 0.5rem;
+  background-color: #F4EDE4;
+  border: none !important;
+}
 @media (min-width: 700px) {
   .wcpt-schedule tbody tr td.wcpt-session-type-session.wcb-track-track-1.wcb-track-track-2 {
     text-align: center;
