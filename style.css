@@ -5952,9 +5952,9 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content {
     padding-right: 2rem;
   }
-}
-.wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content:before {
-  display: none;
+  .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content:before {
+    display: none;
+  }
 }
 .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-title {
   display: block;

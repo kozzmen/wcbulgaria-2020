@@ -108,9 +108,9 @@
 					.wcb-session-cell-content{
 						@media (min-width: 700px){
 							padding-right: 2rem;
-						}
-						&:before{
-							display: none;
+							&:before{
+								display: none;
+							}
 						}
 						.wcpt-session-title{
 							display: block;
