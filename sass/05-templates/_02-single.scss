@@ -90,7 +90,7 @@
 		span[id^="more-"]{
 			display: none;
 		}
-		p{
+		p:not(.wp-block-button){
 			a{
 				color: $color__secondary;
 			}

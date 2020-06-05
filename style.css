@@ -1408,7 +1408,7 @@ input[type=submit].outlined:hover {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 100%;
-  color: #27509F;
+  color: #27509F !important;
   text-align: center;
   padding: 0.75em 1.25em;
   background-color: #F59E00;
@@ -1446,6 +1446,10 @@ input[type=submit].outlined:hover {
 .wp-block-button.is-style-outline .wp-block-button__link:focus, .wp-block-button.is-style-outline .wp-block-button__link:hover {
   color: #F4EDE4;
   background-color: #27509F;
+}
+.wp-block-button.aligncenter .wp-block-button__link {
+  margin-left: auto;
+  margin-right: auto;
 }
 .wp-block-button.with-icon .wp-block-button__link:after {
   display: inline-block;
@@ -4598,8 +4602,8 @@ h6 + .notation {
 .page .entry-content span[id^=more-] {
   display: none;
 }
-.single .entry-content p a,
-.page .entry-content p a {
+.single .entry-content p:not(.wp-block-button) a,
+.page .entry-content p:not(.wp-block-button) a {
   color: #F59E00;
 }
 .single .entry-content a,

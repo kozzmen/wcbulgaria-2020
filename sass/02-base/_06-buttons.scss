@@ -75,7 +75,7 @@ input[type="submit"] {
 		font-weight: 700;
 		font-size: 1.5rem;
 		line-height: 100%;
-		color: $color__primary;
+		color: $color__primary !important;
 		text-align: center;
 		padding: .75em 1.25em;
 		background-color: $color__secondary;
@@ -115,6 +115,12 @@ input[type="submit"] {
 				color: $color__tertiary;
 				background-color: $color__primary;
 			}
+		}
+	}
+	&.aligncenter{
+		.wp-block-button__link{
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 	&.with-icon{
