@@ -6027,6 +6027,12 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 .wcpt-schedule tbody tr td.wcb-favourite-session:hover {
   background-color: #F4EDE4;
 }
+@media (max-width: 700px) {
+  .wcpt-schedule tbody tr td.wcpt-session-empty {
+    display: none;
+  }
+}
+
 /*_______ Hidden speaker name for the Matt's session _______*/
 /*_______ Adding session categories on the schedule table - Sjoerd Blom (@vertizio) _______*/
 .wcpt-schedule td.wcpt-session-type-session:after {

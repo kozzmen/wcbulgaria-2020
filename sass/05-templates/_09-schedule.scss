@@ -186,6 +186,9 @@
 					}
 				}
 				&.wcpt-session-empty {
+					@media (max-width: 700px){
+						display: none;
+					}
 				}
 			}
 		}
