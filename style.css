@@ -6290,6 +6290,14 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   font-size: 1.125rem;
   color: #27509F;
 }
+.wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-cats {
+  display: block;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #C4C4C4;
+}
 
 /*_______ Speaker & Session singles _______*/
 .single-wcb_speaker .entry-header,

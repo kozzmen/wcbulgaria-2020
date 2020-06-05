@@ -572,6 +572,14 @@
 					color: $color__primary;
 				}
 			}
+			.wordcamp-live-schedule__session-cats{
+				display: block;
+				font-weight: 700;
+				font-size: .875rem;
+				line-height: 100%;
+				text-transform: uppercase;
+				color: $color__grey_verylight;
+			}
 		}
 	}
 }
