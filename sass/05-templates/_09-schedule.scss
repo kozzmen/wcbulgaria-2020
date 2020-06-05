@@ -50,9 +50,9 @@
 					font-size: .875rem;
 					text-align: left;
 					line-height: 100%;
-					color: $color__grey-morelight;
+					color: white;
 					padding: .5rem 1rem;
-					background-color: $color__grey_minimus;
+					background-color: $color__primary;
 					border: none;
 					overflow: hidden;
 					@media (min-width: 700px){
@@ -63,7 +63,6 @@
 					}
 					&:before {
 						display: block;
-						color: $color__grey_blue;						
 						font-size: 1rem;
 						margin-bottom: .25rem;
 					}

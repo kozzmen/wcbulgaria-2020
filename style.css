@@ -5926,9 +5926,9 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   font-size: 0.875rem;
   text-align: left;
   line-height: 100%;
-  color: #9e9e9e;
+  color: white;
   padding: 0.5rem 1rem;
-  background-color: #DADADD;
+  background-color: #27509F;
   border: none;
   overflow: hidden;
 }
@@ -5942,7 +5942,6 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 }
 .wcpt-schedule tbody tr td:first-of-type:before, .wcpt-schedule tbody tr td.wcpt-time:before {
   display: block;
-  color: #787f86;
   font-size: 1rem;
   margin-bottom: 0.25rem;
 }
