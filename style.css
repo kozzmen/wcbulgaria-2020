@@ -5695,16 +5695,45 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-bottom: 4rem;
 }
 
-.sponosor-booths {
-  max-width: 600px;
+.sponsor-booths {
+  max-width: 70% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-collapse: collapse;
 }
-.sponosor-booths tr td:first-child {
-  max-width: 200px;
-  text-align: right;
+@media (min-width: 768px) {
+  .sponsor-booths {
+    max-width: 600px;
+  }
 }
-.sponosor-booths tr h1, .sponosor-booths tr h2, .sponosor-booths tr h3,
-.sponosor-booths tr h4, .sponosor-booths tr h5, .sponosor-booths tr h6 {
+@media (min-width: 768px) {
+  .sponsor-booths tr {
+    border: none;
+  }
+}
+.sponsor-booths tr td {
+  display: block;
+}
+@media (min-width: 768px) {
+  .sponsor-booths tr td {
+    display: table-cell;
+  }
+}
+.sponsor-booths tr td:first-child {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sponsor-booths tr td:first-child {
+    max-width: 200px;
+    text-align: right;
+  }
+}
+.sponsor-booths tr h1, .sponsor-booths tr h2, .sponsor-booths tr h3,
+.sponsor-booths tr h4, .sponsor-booths tr h5, .sponsor-booths tr h6 {
   font-size: 1.75rem;
+}
+.sponsor-booths tr .wp-block-button__link {
+  font-size: 1.25rem !important;
 }
 
 /*_______ Attendees list _______*/

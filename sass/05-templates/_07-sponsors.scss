@@ -155,17 +155,36 @@ div[class^="wcorg-sponsor-level-"] {
 }
 
 
-.sponosor-booths{
-	max-width: $size__content-moretiny;
+.sponsor-booths{
+	max-width: 70% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	border-collapse: collapse;
+	@media(min-width: 768px){
+		max-width: $size__content-moretiny;
+	}
 	tr{
+		@media(min-width: 768px){
+			border: none;
+		}
 		td{
+			display: block;
+			@media(min-width: 768px){
+				display: table-cell;
+			}
 			&:first-child{
-				max-width: 200px;
-				text-align: right;
+				text-align: center;
+				@media(min-width: 768px){
+					max-width: 200px;
+					text-align: right;
+				}
 			}
 		}
 		%headings{
 			font-size: 1.75rem;
+		}
+		.wp-block-button__link{
+			font-size: 1.25rem !important;
 		}
 	}
 }
