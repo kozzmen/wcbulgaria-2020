@@ -28,10 +28,10 @@ body {
 
 *{
 	&::selection{		
-		background-color: $color__secondary;
+		background-color: $color__tertiary;
 	}
 	&::-moz-selection{
-		background-color: $color__secondary;
+		background-color: $color__tertiary;
 	}
 }
 

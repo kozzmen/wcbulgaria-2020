@@ -676,10 +676,10 @@ body.noscroll {
 }
 
 *::selection {
-  background-color: #F59E00;
+  background-color: #F4EDE4;
 }
 *::-moz-selection {
-  background-color: #F59E00;
+  background-color: #F4EDE4;
 }
 
 hr {
