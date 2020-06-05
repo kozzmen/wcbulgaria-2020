@@ -5719,13 +5719,11 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
     display: table-cell;
   }
 }
-.sponsor-booths tr td:first-child {
-  text-align: center;
-}
 @media (min-width: 768px) {
   .sponsor-booths tr td:first-child {
     max-width: 200px;
     text-align: right;
+    padding-right: 2rem;
   }
 }
 .sponsor-booths tr h1, .sponsor-booths tr h2, .sponsor-booths tr h3,
