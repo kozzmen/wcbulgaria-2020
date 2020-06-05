@@ -6036,7 +6036,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   line-height: 100%;
   text-transform: uppercase;
   color: #C4C4C4;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-business:after {
   content: "Business";
