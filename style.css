@@ -5991,10 +5991,6 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   background-color: #F4EDE4;
 }
 /*_______ Hidden speaker name for the Matt's session _______*/
-.wcb-speaker-matt-mullenweg .wcpt-session-speakers {
-  display: none;
-}
-
 /*_______ Adding session categories on the schedule table - Sjoerd Blom (@vertizio) _______*/
 .wcpt-schedule td.wcpt-session-type-session:before {
   display: block;
