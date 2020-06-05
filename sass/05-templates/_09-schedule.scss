@@ -192,7 +192,7 @@
 .wcpt-schedule{
 	td{
 		&.wcpt-session-type-session{
-			&:before{
+			&:after{
 				display: block;
 				font-weight: 700;
 				font-size: .875rem;
@@ -202,27 +202,27 @@
 				margin-bottom: .5rem;
 			}
 			&.wcb-session-category-business{
-				&:before{
+				&:after{
 					content: "Business";
 				}
 			}
 			&.wcb-session-category-community{
-				&:before{
+				&:after{
 					content: "Community";
 				}
 			}
 			&.wcb-session-category-content{
-				&:before{
+				&:after{
 					content: "Content";
 				}
 			}
 			&.wcb-session-category-design{
-				&:before{
+				&:after{
 					content: "Design";
 				}
 			}
 			&.wcb-session-category-development{
-				&:before{
+				&:after{
 					content: "Development";
 				}
 			}

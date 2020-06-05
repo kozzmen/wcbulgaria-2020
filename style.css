@@ -6016,7 +6016,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 }
 /*_______ Hidden speaker name for the Matt's session _______*/
 /*_______ Adding session categories on the schedule table - Sjoerd Blom (@vertizio) _______*/
-.wcpt-schedule td.wcpt-session-type-session:before {
+.wcpt-schedule td.wcpt-session-type-session:after {
   display: block;
   font-weight: 700;
   font-size: 0.875rem;
@@ -6025,19 +6025,19 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   color: #C4C4C4;
   margin-bottom: 0.5rem;
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-business:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-business:after {
   content: "Business";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-community:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-community:after {
   content: "Community";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-content:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-content:after {
   content: "Content";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-design:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-design:after {
   content: "Design";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-development:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-development:after {
   content: "Development";
 }
 
