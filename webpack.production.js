@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const perfectionist = require('perfectionist');
 
 module.exports = {
   mode: 'production',
@@ -11,10 +12,18 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s(a|c)ss$/,
+        test: /\.(css|scss|sass)$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                perfectionist(),
+              ],
+            },
+          },
           'sass-loader',
         ],
       }
