@@ -7106,7 +7106,7 @@ div[class^="wcorg-sponsor-level-"] h6:before {
 .salient-link {
     display: block;
     text-decoration: none !important;
-    margin: 12px 0 32px 12px;
+    padding: 12px 0 32px 12px;
 }
 
 .salient-link i {
