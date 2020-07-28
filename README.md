@@ -12,7 +12,7 @@ To set up your development environment follow these steps:
 5. Close the link we just opened. *If hot reloading stops working at any time in the future you may need to repeat step 5.*
 6. Run `npm run hot` or `yarn hot` in your terminal and leave it open. When you're done working, you can cancel it using `Ctrl+C`.
 7. Open `https://2020.bulgaria.wordcamp.org/`.
-8. Open your browser's Dev Tools and paste this code in the console:
+8. Open your browser's Dev Tools, paste this code in the console and press your `Enter` key:
   ```js
   window.jQuery('#wp-custom-css').remove();const hot = document.createElement('script');hot.setAttribute('src', 'https://localhost:8080/bundle.js');document.head.appendChild(hot);
   ```
