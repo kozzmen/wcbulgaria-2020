@@ -7098,3 +7098,6 @@ div[class^="wcorg-sponsor-level-"] h6:before {
     text-decoration: none;
 }
 
+.wordcamp-organizers__content hr {
+    width: 80%;
+}
