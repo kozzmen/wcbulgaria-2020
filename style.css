@@ -7103,8 +7103,13 @@ div[class^="wcorg-sponsor-level-"] h6:before {
     width: 80%;
 }
 
-.salient-links i {
+.salient-link {
+    display: block;
+    text-decoration: none !important;
+    margin: 12px 0 32px 12px;
+}
+
+.salient-link i {
     color: white;
     font-size: 80px;
-    margin: 12px 0 32px 12px;
 }
