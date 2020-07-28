@@ -7101,3 +7101,9 @@ div[class^="wcorg-sponsor-level-"] h6:before {
 .wordcamp-organizers__content hr {
     width: 80%;
 }
+
+.salient-links i {
+    color: white;
+    font-size: 80px;
+    margin: 12px 0 32px 12px;
+}
