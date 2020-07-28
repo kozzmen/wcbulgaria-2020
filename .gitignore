@@ -1,15 +1,10 @@
 # ignore everything in the theme directory, except:
 # "sass/", "style.css"
-*
-!sass/
-!style.css/
-!.gitignore
+/dist/
+/yarn.lock
 
 # ignore node dependency directories
 node_modules/
 
 # ignore log files and databases
-*.log
-*.sql
-*.sqlite
-config.codekit3
+.idea/
