@@ -172,3 +172,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "05-templates/10-speakers-sessions";
 @import "05-templates/11-404";
 @import "05-templates/12-facilitators";
+
+body {
+    /* Testing Remote CSS automatic sync: */
+    background: green;
+}
