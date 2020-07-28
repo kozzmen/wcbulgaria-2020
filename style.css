@@ -7107,6 +7107,7 @@ div[class^="wcorg-sponsor-level-"] h6:before {
     display: block;
     text-decoration: none !important;
     padding: 12px 0 32px 12px;
+    flex-grow: 1;
 }
 
 .salient-link i {
