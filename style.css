@@ -3146,7 +3146,7 @@ table thead th {
     position: relative;
     padding-right: 5%;
     padding-left: 1.25rem;
-    border-left: .25rem solid #f59e00;
+    border-left: .25rem solid #3C902D;
     margin-bottom: 2rem;
 }
 
@@ -4756,7 +4756,7 @@ h5+.notation, h6+.notation {
 
 .single .entry-content p:not(.wp-block-button) a,
 .page .entry-content p:not(.wp-block-button) a {
-    color: #f59e00;
+    color: #D62612;
 }
 
 .single .entry-content a, .page .entry-content a {
