@@ -1880,7 +1880,7 @@ body.admin-bar .site-header {
     .main-navigation .menu .menu-item.menu-item-has-children:hover,
     .main-navigation .menu .menu-item.menu-item-has-children>a:focus,
     .main-navigation .menu .menu-item.menu-item-has-children>a:hover {
-        background-color: #f59e00;
+        background-color: #D62612;
     }
 
     .main-navigation .menu .menu-item.menu-item-has-children.focus a:after,
@@ -1906,7 +1906,7 @@ body.admin-bar .site-header {
 
 @media (min-width: 900px) {
     .main-navigation .menu .menu-item.menu-item-has-children.current-menu-parent {
-        color: #f4ede4;
+        color: #D62612;
         border-bottom: .125rem solid;
     }
 }
@@ -3433,7 +3433,6 @@ table thead th {
     flex: 1 1 100%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
     background-color: #27509f;
     padding: 1.5rem !important;
     margin-left: 1%;
@@ -7099,18 +7098,3 @@ div[class^="wcorg-sponsor-level-"] h6:before {
     text-decoration: none;
 }
 
-.wordcamp-organizers__content hr {
-    width: 80%;
-}
-
-.salient-link {
-    display: block;
-    text-decoration: none !important;
-    padding: 12px 0 32px 12px;
-    flex-grow: 1;
-}
-
-.salient-link i {
-    color: white;
-    font-size: 80px;
-}
