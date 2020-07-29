@@ -4275,8 +4275,8 @@ h5+.notation, h6+.notation {
 #speaker-session-names {
     padding: 1.25rem;
     background-color: white;
-    border: .125rem solid #27509f;
-    box-shadow: -0.25em .25em 0 #27509f;
+    border: .125rem solid #3C902D;
+    box-shadow: -0.25em .25em 0 #3C902D;
     margin-bottom: 1rem;
 }
 
@@ -4297,8 +4297,8 @@ h5+.notation, h6+.notation {
 .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover,
 #speaker-session-names:hover {
     transform-origin: center;
-    border-color: #f59e00;
-    box-shadow: -0.125em .125em 0 #f59e00;
+    border-color: #D62612;
+    box-shadow: -0.125em .125em 0 #D62612;
     z-index: 5;
 }
 
