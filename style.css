@@ -3436,6 +3436,7 @@ table thead th {
     flex: 1 1 100%;
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-between;
     background-color: #3C902D;
     padding: 1.5rem !important;
     margin-left: 1%;
@@ -7101,3 +7102,18 @@ div[class^="wcorg-sponsor-level-"] h6:before {
     text-decoration: none;
 }
 
+.wordcamp-organizers__content hr {	
+    width: 80%;	
+}	
+
+.salient-link {	
+    display: block;	
+    text-decoration: none !important;	
+    padding: 12px 0 32px 12px;	
+    flex-grow: 1;	
+}	
+
+.salient-link i {	
+    color: white;	
+    font-size: 80px;	
+}
