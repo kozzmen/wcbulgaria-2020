@@ -5745,7 +5745,7 @@ h5+.notation, h6+.notation {
     font-weight: 700;
     color: white;
     padding: .5rem;
-    background-color: #27509f;
+    background-color: #3C902D;
     border: none;
 }
 
@@ -5759,7 +5759,7 @@ h5+.notation, h6+.notation {
 }
 
 #tix .tix-submit .tix-alternate-payment-option label {
-    color: #27509f;
+    color: #3C902D;
     font-size: 1.25rem;
     padding: 0;
 }
@@ -5782,14 +5782,14 @@ h5+.notation, h6+.notation {
     letter-spacing: 0;
     text-transform: none;
     padding: .75em 1.25em;
-    border: .25rem solid #27509f;
+    border: .25rem solid #3C902D;
     border-radius: 0;
 }
 
 #tix .tix-submit .tix-checkout-button:focus,
 #tix .tix-submit .tix-checkout-button:hover {
     color: #f4ede4;
-    background-color: #27509f;
+    background-color: #D62612;
 }
 
 .home-sponsors {
