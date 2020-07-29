@@ -2353,7 +2353,7 @@ body.admin-bar .site-header {
 .footer-widgets-block:not(:first-child) input[type="submit"]:active {
     outline: none;
     color: #f4ede4;
-    background-color: #787f86;
+    background-color: #D62612;
     border-color: #787f86;
 }
 
@@ -2404,7 +2404,7 @@ body.admin-bar .site-header {
 }
 
 .footer-widgets-block:not(:first-child) .widget_nav_menu .menu .menu-item a:hover {
-    color: #27509f;
+    color: #f4ede4;
     background-color: #D62612;
     border-color: #EB2C16; /* border color try nasiusII*/
 }
