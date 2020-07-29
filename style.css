@@ -1992,15 +1992,15 @@ body.admin-bar .site-header {
 .main-navigation .sub-menu .menu-item:focus,
 .main-navigation .sub-menu .menu-item:focus-within,
 .main-navigation .sub-menu .menu-item:hover {
-    background-color: #787f86;
+    background-color: #524F4C;
 }
 
 .main-navigation .sub-menu .menu-item:active {
-    background-color: #27509f;
+    background-color: #524F4C;
 }
 
 .main-navigation .sub-menu .menu-item.current-menu-item {
-    background-color: #787f86;
+    background-color: #524F4C;
 }
 
 .main-navigation .sub-menu .menu-item.current-menu-item a {
