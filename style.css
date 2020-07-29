@@ -1829,7 +1829,7 @@ body.admin-bar .site-header {
     .main-navigation .menu .menu-item.emphasised:focus,
     .main-navigation .menu .menu-item.emphasised:focus-within,
     .main-navigation .menu .menu-item.emphasised:hover {
-        background-color: #f4ede4;
+        background-color: #D62612;
         box-shadow: -0.125em .125em 0 #233353;
     }
 }
@@ -1880,7 +1880,7 @@ body.admin-bar .site-header {
     .main-navigation .menu .menu-item.menu-item-has-children:hover,
     .main-navigation .menu .menu-item.menu-item-has-children>a:focus,
     .main-navigation .menu .menu-item.menu-item-has-children>a:hover {
-        background-color: #f4ede4;
+        background-color: #D62612;
     }
 
     .main-navigation .menu .menu-item.menu-item-has-children.focus a:after,
@@ -1906,7 +1906,7 @@ body.admin-bar .site-header {
 
 @media (min-width: 900px) {
     .main-navigation .menu .menu-item.menu-item-has-children.current-menu-parent {
-        color: #f4ede4;
+        color: #D62612;
         border-bottom: .125rem solid;
     }
 }
