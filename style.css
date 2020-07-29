@@ -459,7 +459,7 @@ html {
 body {
     font-weight: 400;
     font-size: 16px;
-    color: #27509f;
+    color: #524F4C;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -485,7 +485,7 @@ body.noscroll {
 }
 
 hr {
-    background-color: #27509f;
+    background-color: #3C902D;
     border: 0;
     height: 1px;
     margin-bottom: 1.5em;
