@@ -2405,8 +2405,8 @@ body.admin-bar .site-header {
 
 .footer-widgets-block:not(:first-child) .widget_nav_menu .menu .menu-item a:hover {
     color: #27509f;
-    background-color: #f59e00;
-    border-color: #f59e00;
+    background-color: #D62612;
+    border-color: #EB2C16; /* border color try nasiusII*/
 }
 
 .footer-widgets-block:not(:first-child) .widget_nav_menu .menu .menu-item .sub-menu {
