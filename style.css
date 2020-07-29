@@ -4849,7 +4849,7 @@ h5+.notation, h6+.notation {
         font-size: 0;
         width: 3rem;
         height: 3rem;
-        background-color: #f59e00;
+        background-color: #3C902D;
     }
 }
 
@@ -4885,7 +4885,7 @@ h5+.notation, h6+.notation {
 .single .post-navigation .nav-links div a:focus,
 .single .post-navigation .nav-links div a:hover {
     outline: none;
-    color: #f59e00;
+    color: #3C902D;
 }
 
 @media (min-width: 800px) {
@@ -4893,7 +4893,7 @@ h5+.notation, h6+.notation {
     .single .posts-navigation .nav-links div a:hover,
     .single .post-navigation .nav-links div a:focus,
     .single .post-navigation .nav-links div a:hover {
-        background-color: #27509f;
+        background-color: #3C902D;
     }
 }
 
@@ -4903,7 +4903,7 @@ h5+.notation, h6+.notation {
     left: 0;
     text-align: left;
     padding-left: .5rem;
-    border-left: .125rem solid #f59e00;
+    border-left: .125rem solid #3C902D;
 }
 
 @media (min-width: 800px) {
