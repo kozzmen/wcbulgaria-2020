@@ -4645,7 +4645,7 @@ h5+.notation, h6+.notation {
 }
 
 .single .entry-title {
-    color: #27509f;
+    color: #524F4C;
     text-align: center;
     z-index: 2;
     margin-top: 0;
@@ -4654,7 +4654,7 @@ h5+.notation, h6+.notation {
 
 .single .entry-meta {
     font-size: 1rem;
-    color: #f59e00;
+    color: #3C902D;
     margin-bottom: 2rem;
 }
 
@@ -4665,7 +4665,7 @@ h5+.notation, h6+.notation {
 }
 
 .single .entry-meta a {
-    color: #f59e00;
+    color: #3C902D;
     text-decoration: none;
 }
 
@@ -4680,7 +4680,7 @@ h5+.notation, h6+.notation {
 .single .site-content a:focus, .single .site-content a:hover,
 .page .site-content a:focus, .page .site-content a:hover {
     outline: none;
-    color: #f59e00;
+    color: #D62612;
     text-decoration: none;
 }
 
@@ -4771,7 +4771,7 @@ h5+.notation, h6+.notation {
 .tags-links a {
     display: inline-block;
     line-height: 100%;
-    color: #27509f;
+    color: #524F4C;
     background-color: #f4ede4;
     padding: .125rem .25rem;
     margin-bottom: .5rem;
