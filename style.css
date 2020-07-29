@@ -2829,7 +2829,7 @@ body.admin-bar .site-header {
     left: -1.5rem;
     width: .75em;
     height: .25rem;
-    background-color: #f59e00;
+    background-color: #D62612;
 }
 
 @media (min-width: 480px) {
@@ -2865,7 +2865,7 @@ body.admin-bar .site-header {
     height: 1.25rem;
     font-weight: 800;
     line-height: .5rem;
-    color: #f59e00;
+    color: #D62612;
     background-color: #f4ede4;
     margin-top: .5rem;
 }
