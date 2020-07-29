@@ -1113,26 +1113,26 @@ input[type="reset"]:visited, input[type="submit"]:visited {
 input[type="button"]:hover, input[type="reset"]:focus, input[type="reset"]:hover,
 input[type="submit"]:focus, input[type="submit"]:hover {
     color: #f4ede4;
-    background-color: #27509f;
+    background-color: #D62612;
 }
 
 .btn:active, button:active, input[type="button"]:active,
 input[type="reset"]:active, input[type="submit"]:active {
-    color: #27509f;
-    background-color: #f59e00;
+    color: #524F4C;
+    background-color: #D62612;
 }
 
 .btn.invert, button.invert, input[type="button"].invert,
 input[type="reset"].invert, input[type="submit"].invert {
     color: #f4ede4;
-    background-color: #27509f;
+    background-color: #524F4C;
 }
 
 .btn.invert:focus, .btn.invert:hover, button.invert:focus, button.invert:hover,
 input[type="button"].invert:focus, input[type="button"].invert:hover,
 input[type="reset"].invert:focus, input[type="reset"].invert:hover,
 input[type="submit"].invert:focus, input[type="submit"].invert:hover {
-    color: #27509f;
+    color: #524F4C;
     background-color: #f4ede4;
 }
 
@@ -1141,11 +1141,11 @@ input[type="reset"].outlined, input[type="submit"].outlined {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 100%;
-    color: #27509f;
+    color: #524F4C;
     text-align: center;
     padding: .75em 1.25em;
     background-color: transparent;
-    border: .25rem solid #27509f;
+    border: .25rem solid #D62612;
     border-radius: 0;
     box-shadow: none;
 }
@@ -1157,7 +1157,7 @@ input[type="reset"].outlined:hover, input[type="submit"].outlined:focus,
 input[type="submit"].outlined:hover {
     outline: none;
     color: #f4ede4;
-    background-color: #27509f;
+    background-color: #3C902D;
 }
 
 .wp-block-buttons {
@@ -1175,9 +1175,9 @@ input[type="submit"].outlined:hover {
     color: #27509f !important;
     text-align: center;
     padding: .75em 1.25em;
-    background-color: #f59e00;
+    background-color: #3C902D;
     border-radius: 0;
-    box-shadow: -0.25em .25em 0 #27509f;
+    box-shadow: -0.25em .25em 0 #3C902D;
 }
 
 @media (min-width: 480px) {
@@ -1193,7 +1193,7 @@ input[type="submit"].outlined:hover {
 .wp-block-button .wp-block-button__link:focus,
 .wp-block-button .wp-block-button__link:hover {
     color: #f4ede4 !important;
-    background-color: #27509f;
+    background-color: #3C902D;
     box-shadow: -0.125em .125em 0 #233353;
 }
 
@@ -1201,11 +1201,11 @@ input[type="submit"].outlined:hover {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 100%;
-    color: #27509f;
+    color: #3C902D;
     text-align: center;
     padding: .75em 1.25em;
     background-color: transparent;
-    border: .25rem solid #27509f;
+    border: .25rem solid #3C902D;
     border-radius: 0;
     box-shadow: none;
 }
@@ -1217,7 +1217,7 @@ input[type="submit"].outlined:hover {
 .wp-block-button.is-style-outline .wp-block-button__link:focus,
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
     color: #f4ede4;
-    background-color: #27509f;
+    background-color: #3C902D;
 }
 
 .wp-block-button.aligncenter .wp-block-button__link {
@@ -1279,9 +1279,9 @@ input[type="submit"].outlined:hover {
 }
 
 .wp-block-button.anchor-link .wp-block-button__link {
-    color: #27509f;
+    color: #3C902D;
     background-color: transparent;
-    border: .25rem solid #27509f;
+    border: .25rem solid #3C902D;
     box-shadow: none;
 }
 
@@ -1293,7 +1293,7 @@ input[type="submit"].outlined:hover {
 
 .wp-block-button.anchor-link .wp-block-button__link:hover {
     color: #f4ede4;
-    background-color: #27509f;
+    background-color: #3C902D;
 }
 
 .wceu-big-btn {
@@ -1306,7 +1306,7 @@ input[type="submit"].outlined:hover {
     font-size: 1.75rem;
     font-weight: 700;
     padding: .75em 1em;
-    box-shadow: -0.25em .25em 0 #233353;
+    box-shadow: -0.25em .25em 0 #3C902D;
 }
 
 @media (min-width: 480px) {
@@ -1318,7 +1318,7 @@ input[type="submit"].outlined:hover {
 .wceu-big-btn .wp-block-button__link:focus,
 .wceu-big-btn .wp-block-button__link:hover {
     color: #f4ede4 !important;
-    background-color: #27509f;
+    background-color: #3C902D;
     box-shadow: -0.125em .125em 0 #737477;
 }
 
