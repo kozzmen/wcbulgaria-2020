@@ -2656,13 +2656,13 @@ body.admin-bar .site-header {
 
 .site-info p {
     font-size: .875rem;
-    color: #27509f;
+    color: #3C902D;
 }
 
 .site-info a {
     display: block;
     font-size: .875rem;
-    color: #27509f;
+    color: #3C902D;
     padding: 0;
 }
 
@@ -2674,7 +2674,7 @@ body.admin-bar .site-header {
 }
 
 .site-info a:hover {
-    color: #737477;
+    color: #524F4C;
 }
 
 .site-info span {
