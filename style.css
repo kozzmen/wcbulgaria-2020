@@ -2346,7 +2346,8 @@ body.admin-bar .site-header {
     outline: none;
     color: #f4ede4; /* nasiusII */
     background-color: #D62612; /* nasiusII */
-    border-color: #f59e00;
+    border-color: #f4ede4;
+    border-radius: 4px;
 }
 
 .footer-widgets-block:not(:first-child) button:active,
