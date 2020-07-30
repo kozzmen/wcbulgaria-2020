@@ -3927,10 +3927,10 @@ h5+.notation, h6+.notation {
     to {
         width: 100%;
         height: 100%;
-        border-top-color: #27509f;
-        border-right-color: #27509f;
-        border-bottom-color: #27509f;
-        border-left-color: #27509f;
+        border-top-color: #3C902D;
+        border-right-color: #3C902D;
+        border-bottom-color: #3C902D;
+        border-left-color: #3C902D;
     }
 }
 
@@ -4139,7 +4139,7 @@ h5+.notation, h6+.notation {
 .block-numbers li, .block-numbers .wp-block-column {
     text-align: left;
     padding-left: 1rem;
-    border-left: .3125rem solid #f59e00;
+    border-left: .3125rem solid #3C902D;
     margin-bottom: 2rem;
     word-break: keep-all;
 }
@@ -4323,7 +4323,7 @@ h5+.notation, h6+.notation {
     font-size: 1.125rem;
     line-height: 100%;
     text-decoration: none;
-    color: #f59e00;
+    color: #3C902D;
     margin-bottom: .25rem;
     z-index: 1;
 }
@@ -4384,9 +4384,9 @@ h5+.notation, h6+.notation {
 .speaker-feedback__notice {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #27509f;
+    color: #3C902D;
     background-color: #f4ede4;
-    border-left: .25rem solid #f59e00;
+    border-left: .25rem solid #D62612;
     border-radius: 0;
 }
 
@@ -4511,7 +4511,7 @@ h5+.notation, h6+.notation {
 .blog .hentry .entry-header .entry-title a,
 .archive .hentry .entry-header .entry-title a,
 .search-results .hentry .entry-header .entry-title a {
-    color: #27509f;
+    color: #3C902D;
 }
 
 .blog .hentry .entry-header .entry-title:hover a,
@@ -4526,7 +4526,7 @@ h5+.notation, h6+.notation {
     font-weight: 400;
     font-size: 1rem;
     line-height: 100%;
-    color: #f59e00;
+    color: #D62612;
     margin-bottom: .5rem;
 }
 
@@ -4570,13 +4570,13 @@ h5+.notation, h6+.notation {
     font-weight: 700;
     text-decoration: none;
     padding-bottom: .125rem;
-    border-bottom: .125rem solid #f59e00;
+    border-bottom: .125rem solid #3C902D;
     margin: 1rem 0 1rem auto;
 }
 
 .blog .hentry .more-link:hover, .archive .hentry .more-link:hover,
 .search-results .hentry .more-link:hover {
-    color: #f59e00;
+    color: #D62612;
 }
 
 .blog .hentry .entry-footer, .archive .hentry .entry-footer,
@@ -4786,12 +4786,12 @@ h5+.notation, h6+.notation {
     margin-right: .25rem;
     font-size: .875rem;
     text-decoration: none;
-    color: #f59e00;
+    color: #3C902D;
     border: none;
 }
 
 .cat-links a {
-    color: #f59e00;
+    color: #3C902D;
     text-decoration: underline;
 }
 
@@ -4821,7 +4821,7 @@ h5+.notation, h6+.notation {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    border-bottom: .25rem solid #f59e00;
+    border-bottom: .25rem solid #D62612;
 }
 
 @media (min-width: 800px) {
