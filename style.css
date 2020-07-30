@@ -2499,6 +2499,26 @@ body.admin-bar .site-header {
     margin: 0 auto;
 }
 
+
+@media (min-width: 1025px) {
+    #footer-widget-2 {
+        margin-bottom: 0;
+    }
+    
+    #footer-widget-2 .widget {
+        margin-bottom: 0;
+    }
+    
+    #footer-widget-2 .widget_media_image {
+        text-align: right;
+        margin: 0;
+    }
+    
+    #footer-widget-2 .widget:nth-of-type(4) {
+        display: inline-block;
+    }
+}
+
 #footer-widget-3 {
     padding-top: 2rem;
     border-top: 1px solid #f4ede4;
