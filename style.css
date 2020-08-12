@@ -7138,9 +7138,9 @@ div[class^="wcorg-sponsor-level-"] h6:before {
     font-size: 80px;	
 }
 
-
-
-
-
-
-
+/* Header and Widget Background */
+.page-template-default .entry-header,
+.page-template .entry-header,
+#footer-widget-1 {
+    background-color: #fff;
+}
