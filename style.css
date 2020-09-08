@@ -7144,3 +7144,8 @@ div[class^="wcorg-sponsor-level-"] h6:before {
 #footer-widget-1 {
     background-color: #fff;
 }
+
+/* Speakers page - subscribe button paddings */
+#subscribe-submit {
+    padding: 0px 75px 10px 14px;
+}
